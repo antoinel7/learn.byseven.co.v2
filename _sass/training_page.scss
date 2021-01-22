@@ -1,0 +1,209 @@
+.container-training-page-seven {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 1440px;
+  background-color: white;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    color: black;
+  }
+}
+
+.training-page-main {
+  padding: 0 50px;
+  margin: 70px 0;
+
+  @include from-medium-high {
+    padding: 0 100px;
+  }
+}
+
+.training-page-main-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  @include from-medium-high {
+    flex-direction: row;
+  }
+}
+
+.training-page-main-banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+
+
+  h1 {
+    font-family: 'Poppins Bold';
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  h4 {
+    font-family: 'Poppins Bold';
+    font-size: 12px;
+    letter-spacing: .3rem;
+    background-color: #FCC94B;
+    display:inline-block;
+    padding: 5px;
+    margin: 0 0 20px 0;
+  }
+
+  p:first-of-type {
+    font-family: 'Roboto Italic';
+    color: black;
+    margin: 0;
+  }
+
+  @include from-medium-high {
+    width: 50%;
+    height: 350px;
+    margin: 6px 0 0 10px;
+  }
+}
+
+.training-page-main-banner-right {
+  width: 50%;
+  display: none;
+
+  img {
+    height: 350px;
+    width: 100%;
+  }
+
+  @include from-medium-high {
+    display: block;
+  }
+}
+
+.training-page-infos {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  // margin: 0 100px;
+  padding: 10px 0;
+  background-color: rgba(252,201,75,0.2);
+
+  p {
+    color: black;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  & > div > i {
+    margin-top: 10px;
+  }
+
+  & > div > div {
+    margin: 0 0 20px 0;
+    width: 173px;
+
+    p {
+      font-family: 'Roboto Regular';
+      margin-bottom: 5px;
+    }
+
+    p:first-of-type {
+      font-family: 'Poppins Bold';
+    }
+  }
+
+  .training-page-picto {
+    height: 30px;
+    display: none;
+  }
+
+  @include from-medium {
+    flex-direction: row;
+    align-items: flex-start;
+
+    .training-page-picto {
+      display: block;
+    }
+
+    & > div > div {
+      margin: 6px 0 0 10px;
+    }
+  }
+}
+
+.training-page-main-description {
+  padding: 0 50px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+
+  .training-page-main-description-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include from-medium-high {
+    padding: 0 100px;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .training-page-main-description-left {
+      padding-right: 30px;
+    }
+
+    .training-page-main-description-right {
+      padding-left: 30px;
+    }
+  }
+}
+
+.training-page-main-description-left, .training-page-main-description-right {
+  width: 100%;
+
+  h4 {
+    font-family: 'Poppins Bold';
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-family: 'Roboto Bold';
+  }
+
+  p {
+    font-family: 'Roboto Regular';
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  &  > p:last-of-type {
+    margin: 0;
+  }
+
+  @include from-medium-high {
+    width: 50%;
+  }
+}
+
+.training-page-faq-answer {
+  padding-left: 20px;
+}
+
+.etre_inspire_et_inspirant {
+  height: 551.4px;
+}

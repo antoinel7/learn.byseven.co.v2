@@ -1,0 +1,29 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div id="modal-title" style=" display: flex; justify-content: space-between;">
+      <h3 class="modal-title" id="myModalLabel">Contactez-nous</h3>
+    </div>
+  </div>
+  <div class="modal-body" id="modalNewBookinBody">
+    <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
+      <div class="form-group">
+        <label for="form-name">Votre nom</label>
+        <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
+      </div>
+      <div class="form-group hidden">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="email_2" id='form-email2' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="email" id='form-email' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Votre message</label>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+      </div>
+      <button type="submit" class="btn contact-button" id='form-button'>Envoyez</button>
+    </form>
+  </div>
+</div>

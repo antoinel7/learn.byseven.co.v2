@@ -1,0 +1,26 @@
+<div class="navbar-lab-seven">
+  <a href='../' class="flex-row-between-end">
+    <img src="/assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'>
+    <p>LE LAB</p>
+  </a>
+  <h2>Punchline pour voir ce que nous faisons</h2>
+  <div class='flex-row-between-centered'>
+    <div class="dropdown">
+      <button class="btn btn-navbar-lab-1 dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p>&#9660; Categories</p></button>
+      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButton" style='left: -1px;'>
+        <div>
+          <a class="dropdown-item dropdown-item-1" href="/">Home</a>
+          <!-- <a class="dropdown-item dropdown-item-2" href="/trainings">Formations</a> -->
+        </div>
+      </div>
+    </div>
+    <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact_modal.html %}
+  </div>
+</div>

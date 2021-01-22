@@ -1,0 +1,319 @@
+// HOME
+
+.navbar-seven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.8s ease;
+  width: 100%;
+
+  img {
+    height: 33px;
+    margin: 7px 0;
+  }
+
+  i {
+    color: white;
+    font-size: 14px;
+  }
+
+  @include from-medium {
+    padding: 30px 70px;
+  }
+}
+
+.seven-burger-menu {
+  background-color: rgba(0,0,0,0);
+  top: -4px;
+  left: -135px;
+  box-shadow: none;
+  border: none;
+  cursor: default !important;
+  min-width: 0;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    align-items: flex-end
+  }
+
+  a {
+    font-family: 'Poppins Bold';
+    font-size: 18.36px;
+    color: white;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    width: min-content;
+    // display: none;
+    opacity: 0;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+
+    @keyframes translateX {
+      0% {
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      50% {
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  @for $item from 1 through 2 {
+    a:nth-of-type(#{$item}) {
+      animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
+      // transform-origin: top center;
+    }
+  }
+}
+
+.burger-icon {
+  cursor: pointer;
+  z-index: 2000;
+}
+
+// LAB
+
+.navbar-lab-seven {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.8s ease;
+  width: 100%;
+  background-color: rgb(255,255,255);
+
+  img {
+    height: 33px;
+    margin: 7px 0 21px 0;
+    padding-right: 10px;
+    border-right: 2px solid black;
+
+    @include from-medium {
+      margin: 7px 0;
+    }
+  }
+
+  p {
+    padding-left: 10px;
+    color: black;
+    font-family: 'Poppins Bold';
+    font-size: 18.36px;
+    height: 20px;
+    margin: 7px 0 21px 0;
+
+    @include from-medium {
+      margin: 7px 0;
+    }
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  h2 {
+    color: black;
+    display: none;
+
+    @include from-medium-high {
+      display: inline-block;
+      flex-direction: row;
+    }
+  }
+
+  @include from-medium {
+    padding: 30px 70px;
+    flex-direction: row;
+  }
+}
+
+.dropdown-menu-lab {
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+  border: none;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    align-items: flex-end;
+  }
+
+  a {
+    font-family: 'Poppins Bold';
+    font-size: 18.36px;
+    color: black;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    width: min-content;
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+.btn-navbar-lab-1 {
+  background-color: white;
+  border: 1px solid #FCC94B;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: #FCC94B;
+
+    p {
+      color: white;
+    }
+  }
+
+   p {
+    padding-left: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Poppins Light';
+    font-size: 14px;
+  }
+}
+
+.btn-navbar-lab-2 {
+  background-color: #FCC94B;
+  border: 1px solid #FCC94B;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: #FCC94B;
+
+    p {
+      color: black;
+    }
+  }
+
+   p {
+    padding-left: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins Light';
+    font-size: 14px;
+  }
+}
+
+
+// TRAININGS
+
+.navbar-trainings-seven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 70px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.8s ease;
+  width: 100%;
+  background-color: rgb(255,255,255);
+
+  .navbar-trainings-logo {
+    height: 33px;
+    margin: 7px 0;
+    padding-right: 10px;
+  }
+}
+
+.btn-navbar-trainings-1 {
+  background-color: #FCC94B;
+  border: 1px solid #FCC94B;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: #FCC94B;
+
+    p {
+      color: black;
+    }
+  }
+
+   p {
+    padding-left: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins Light';
+    font-size: 14px;
+  }
+}
+
+.seven-burger-menu-trainings {
+  background-color: rgba(0,0,0,0);
+  top: 25px;
+  left: -60px;
+  box-shadow: none;
+  border: none;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    align-items: flex-end
+  }
+
+  a {
+    font-family: 'Poppins Bold';
+    font-size: 18.36px;
+    color: black;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    width: min-content;
+    // display: none;
+    opacity: 0;
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+
+    @keyframes translateX {
+      0% {
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      50% {
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-10px);
+      }
+    }
+  }
+  @for $item from 1 through 2 {
+    a:nth-of-type(#{$item}) {
+      animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
+      // transform-origin: top center;
+    }
+  }
+}

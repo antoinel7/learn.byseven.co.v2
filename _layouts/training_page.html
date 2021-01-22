@@ -1,0 +1,14 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+  {% include head.html %}
+  <body class="page-{{ page.type }}{% if page.layout contains 'content' %} content{% endif %}{% if page.color %} {{ page.color }}{% endif %}">
+    <main>
+      <div class="container-training-page-seven">
+        {% include header_trainings.html %}
+        {{ content }}
+        {% include footer_training_page.html %}
+      </div>
+    </main>
+  </body>
+  <script src="/assets/javascripts/bootstrap.js"></script>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Seven | Trainings - Learn by Seven</title>
+  <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
+  <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  <meta property="og:site_name" content="Learn by SEVEN">
+
+  <script>
+    var host = "learn.byseven.co";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/trainings.css">
+  <link rel="icon" href="/assets/img/favicon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146774110-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146774110-1');
+  </script>
+</head>
+
+  <body class="page-trainings">
+    <main>
+      <div class="container-trainings-seven">
+        <div class="navbar-trainings-seven">
+  <div class="flex-row-between-end">
+    <img src="/assets/img/LOGO-LEARN-02.png" alt="" class='navbar-trainings-logo'>
+  </div>
+  <div class='flex-row-between-centered'>
+    <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+    <div class="dropdown">
+      <img src="/assets/img/BURGER_BLACK.png" style='height: 20px;' class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown-menu seven-burger-menu-trainings" aria-labelledby="dropdownMenuButton">
+        <div>
+          <a class="dropdown-item dropdown-item-1" href="/">Home</a>
+          <a class="dropdown-item dropdown-item-2" href="/trainings">Trainings</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div id="modal-title" style=" display: flex; justify-content: space-between;">
+      <h3 class="modal-title" id="myModalLabel">Contactez-nous</h3>
+    </div>
+  </div>
+  <div class="modal-body" id="modalNewBookinBody">
+    <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
+      <div class="form-group">
+        <label for="form-name">Votre nom</label>
+        <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
+      </div>
+      <div class="form-group hidden">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="email_2" id='form-email2' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="email" id='form-email' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Votre message</label>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+      </div>
+      <button type="submit" class="btn contact-button" id='form-button'>Envoyez</button>
+    </form>
+  </div>
+</div>
+
+  </div>
+</div>
+
+        <div class="banner-trainings">
+  <div class="banner-trainings-description">
+    <h1>Formations</h1>
+    <h4>Des formations rythmées et une expérience riche pour tous nos participants</h4>
+  </div>
+</div>
+<div class="main-trainings">
+    <ul class="nav main-trainings-left" id="menuTab" role="tablist">
+      <li class="nav-item"><a class="nav-link active" id="leadership-tab" data-toggle="tab" role="tab" aria-controls="leadership" aria-selected="true" href="#leadership">Leadership</a></li>
+      <li class="nav-item"><a class="nav-link" id="team-management-tab" data-toggle="tab" role="tab" aria-controls="team-management" aria-selected="true" href="#team-management">Gestion d'équipe</a></li>
+      <li class="nav-item"><a class="nav-link" id="communication-tab" data-toggle="tab" role="tab" aria-controls="communication" aria-selected="true" href="#communication">Communication</a></li>
+      <li class="nav-item"><a class="nav-link" id="business-tab" data-toggle="tab" role="tab" aria-controls="business" aria-selected="true" href="#business">Business Development</a></li>
+      <li class="nav-item"><a class="nav-link" id="project-tab" data-toggle="tab" role="tab" aria-controls="project" aria-selected="true" href="#project">Gestion de projet</a></li>
+      <li class="nav-item"><a class="nav-link" id="team-building-tab" data-toggle="tab" role="tab" aria-controls="team-building" aria-selected="true" href="#team-building">Team Building</a></li>
+      <li class="nav-item"><a class="nav-link" id="digital-tab" data-toggle="tab" role="tab" aria-controls="digital" aria-selected="true" href="#digital">Outils digitaux</a></li>
+    </ul>
+    <div class="tab-content main-trainings-right" id="menuTabContent">
+      <div class="tab-pane fade" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
+        <div class="row">
+          <a class="col-sm-4" href='../trainings/etre_inspiré_et_inspirant'>
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Etre inspiré et inspirant</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"People don't buy what you do, they buy why you do it." - Simon Sinek</p>
+            </div>
+          </a>
+          <a class="col-sm-4">
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Créer un climat de confiance</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"Lorsque deux forces sont jointes, leur efficacité est double." - Isaac Newton</p>
+            </div>
+          </a>
+          <a class="col-sm-4">
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Faire preuve de courage managérial</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"Quand la prudence est partout, le courage n'est nulle part." - Aristote</p>
+            </div>
+          </a>
+          <a class="col-sm-4">
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Savoir dire non</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"Un négociateur qui dit oui, cela veut dire peut être, un négociateur qui dit peut être, cela veut dire non."</p>
+            </div>
+          </a>
+          <a class="col-sm-4">
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Transmettre avec les 7 intelligences</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"Tout ce qui vaut la peine d'être enseigné peut être présenté de différentes façons." - Howard Gardner</p>
+            </div>
+          </a>
+          <a class="col-sm-4">
+            <div class="main-trainings-card main-trainings-card-leadership">
+              <h5>Créer un trame de formation Seven</h5>
+              <div class="main-training-card-separator"></div>
+              <p>"Quand la prudence est partout, le courage n'est nulle part." - Aristote</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="team-management" role="tabpanel" aria-labelledby="team-management-tab"><p>Ceci est un autre test</p></div>
+      <div class="tab-pane fade" id="communication" role="tabpanel" aria-labelledby="commmunication-tab">...</div>
+    </div>
+</div>
+
+<!-- <script>
+  var links = document.querySelectorAll('.nav-link');
+  var main = document.querySelector('.main-trainings');
+  const base = main.clientHeight;
+  links.forEach(function(element) {
+    element.addEventListener('click', event => {
+      console.log('toto');
+      main.style.height = '600px';
+      main.style.height = (main.clientHeight + document.getElementById(element.getAttribute('aria-controls')).clientHeight).toString() + 'px';
+    });
+  });
+</script> -->
+
+        <div class="footer-trainings-seven">
+  <img src="../assets/img/LOGO_BLANC_LEARN2.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
+  <div class="footer-lab-media footer-lab-links-1">
+    <p>Suivez-nous</p>
+    <div class="footer-lab-media-icons">
+      <img src="../assets/img/LOGO_LINKEDIN.png" alt="">
+      <img src="../assets/img/LOGO_FB.png" alt="">
+      <img src="../assets/img/LOGO_INSTA.png" alt="">
+    </div>
+  </div>
+  <div class="footer-lab-links footer-lab-links-2">
+    <p>Newsletter</p>
+    <a href="">S'inscrire</a>
+  </div>
+  <div class="footer-lab-links footer-lab-links-3">
+    <p>A propos</p>
+    <a href="">Méthode</a>
+    <a href="">Notre équipe</a>
+    <a href="">Contactez-nous</a>
+  </div>
+  <div class="footer-lab-links footer-lab-links-4">
+    <p>Univers</p>
+    <a href="">SEVEN</a>
+    <a href="">SEVEN learn</a>
+    <a href="">SEVEN home</a>
+    <a href="">SEVEN invest</a>
+  </div>
+</div>
+
+      </div>
+    </main>
+  </body>
+  <script src="/assets/javascripts/bootstrap.js"></script>
+</html>

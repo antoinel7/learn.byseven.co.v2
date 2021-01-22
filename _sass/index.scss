@@ -1,0 +1,155 @@
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+  height: 100%;
+}
+
+h1, h2, p {
+  color: white;
+}
+
+h1 {
+    font-family: "Poppins SemiBold";
+    font-size: 21px;
+}
+
+h2 {
+    font-family: "InfoDispBold Roman";
+    font-size: 20px;
+}
+
+h3 {
+  font-family: "Infotext Normal";
+  font-size: 16px;
+
+  @include from-medium {
+    font-size: 20px;
+  }
+
+  @include from-large {
+    font-size: 24px;
+  }
+}
+
+p {
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: white;
+}
+
+a {
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+
+.centered-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-between-centered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-row-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex-row-start-centered {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row-around-centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-column-between-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-between-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-navbar-trainings-1 {
+
+  p {
+    font-family: 'Poppins Light' !important;
+    margin: 0 !important;
+  }
+}
+
+.modal {
+
+  h3 {
+    font-family: 'Poppins Bold';
+  }
+
+  label, input {
+    font-family: 'Roboto Regular';
+  }
+
+  button.contact-button {
+    background-color: #FCC94B;
+    color: white;
+    font-family: 'Poppins Light';
+
+    &:hover {
+      color: black;
+    }
+  }
+}
