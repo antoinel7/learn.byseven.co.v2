@@ -80,7 +80,7 @@
   }
 
   li:first-of-type > a:hover, li:first-of-type > a:focus {
-    color: #FCC94B;
+    color: #F9D071;
   }
 
   li:nth-of-type(2) > a:hover, li:nth-of-type(2) > a:focus {
@@ -134,8 +134,8 @@
   transition-timing-function: ease-in;
 
   &:hover {
-    background-color: #FCC94B;
-    border: 1px solid #FCC94B;
+    background-color: #F9D071;
+    border: 1px solid #F9D071;
     border-radius: 30px;
 
     .main-training-card-separator {
@@ -145,7 +145,7 @@
 
     h5, p {
       // color: white;
-      // color: #FCC94B;
+      // color: #F9D071;
     }
   }
 
@@ -167,7 +167,7 @@
 
   .main-training-card-separator {
     width: 30%;
-    border: 2px solid #FCC94B;
+    border: 2px solid #F9D071;
     transition: all .3s ease-in;
   }
 }

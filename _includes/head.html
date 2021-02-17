@@ -5,12 +5,24 @@
 
   <title>{{ page.title }}{% if page.type != 'index' %} - Learn by Seven{% endif %}</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:title" content="Learn by SEVEN - {{page.title}}"></meta>
+  <meta name="twitter:description" content="{{page.teaser}}" />
+  <meta name="twitter:image" content="{{site.url}}{{page.image_twitter}}" />
   <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="twitter:url" content="{{page.url}}" />
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
-  <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  {% if page.custom_head %}
+    <meta property="og:title" content="Learn by SEVEN - {{page.title}}">
+    <meta property="og:image" content="{{page.image}}">
+  {% else %}
+    <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
+    <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  {% endif %}
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="Learn by SEVEN">
+  <meta property="og:site_name" content="{{site.url}}">
+  <meta property="og:url" content="{{page.url}}">
 
   <script>
     var host = "learn.byseven.co";
@@ -22,6 +34,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.type }}.css">
   <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v9.0" nonce="pqxmUHD5"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146774110-1"></script>

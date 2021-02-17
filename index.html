@@ -7,15 +7,15 @@ ref: home
 ---
 
 
-<div class="home-main">
-  <div class="home-main-container">
+<div class="home-main-container">
+  <div>
     <div class="home-main-left">
       <span class="glyphicon glyphicon-chevron-up hidden"></span>
       <div id='home-main-left-retractable'>
         <div class="home-main-left-description">
-          <h1>Créez des expériences d'apprentissage inoubliables pour vos collaborateurs</h1>
-          <p>Seven accompagne les organisations dans le développement de leur capital humain. Notre pédagogie active mobilise différents types d'intelligence pour adresser tous les participants.</p>
-          <p>Nos clients reconnaissent notre expertise en ingénierie pédagogique et en animation, indépendamment de la richesse des contenus de formation.</p>
+          <h1>Apprendre pour<span class="txt-rotate" data-period="2000" data-rotate='[ "innover", "manager", "vendre", "transformer", "créer", "piloter", "développer", "communiquer", "diriger", "construire", "inspirer" ]'></span></h1>
+          <p>Présentiel, Digital, Blended, Expérientiel. Notre pédagogie mobilise différents types d'intelligence pour partager des connaissances que vous ne pourrez jamais oublier.</p>
+          <p>Nous sommes un cabinet de formations agréé, dont les clients reconnaissent l'expertise en ingénierie pédagogique et en animation, indépendamment de la richesse des contenus.</p>
         </div>
         <div class="home-main-left-statistics flex-row-between-start">
           <div class="home-main-left-statistics-1">
@@ -87,18 +87,18 @@ ref: home
       <div class="home-main-right-form">
         <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
           <div class="form-group">
-            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" class='form-control'>
+            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre nom et prénom'" onchange="this.style.color='#FBC84A'" class='form-control'>
           </div>
           <div class="form-group hidden">
             <input type="email" name="email_2" id='form-email2' placeholder="Votre e-mail" class='form-control'>
           </div>
           <div class="form-group">
-            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" class='form-control'>
+            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre e-mail'" onchange="this.style.color='#FBC84A'" class='form-control'>
           </div>
           <div class="form-group">
-            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." class='form-control'></textarea>
+            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder =  'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'" onchange="this.style.color='#FBC84A'" class='form-control'></textarea>
           </div>
-          <button type="submit" class="btn contact-button" id='form-button'>ENVOYER</button>
+          <button type="submit" class="btn contact-button" id='form-button'><p>ENVOYER</p></button>
         </form>
       </div>
     </div>
@@ -110,26 +110,119 @@ ref: home
   function reveal(element) {
     element.classList.remove('hidden');
   }
+
+  function resizeShow() {
+    if ($(window).width() < 1024) {
+      button_up.style.transform = 'translateY(0)';
+      retractable.style.transform = 'translateY(0)';
+      retractable.style.height = '100%';
+      carousel.style.transform = 'translateY(0)';
+      mainLeft.style.height = 'auto';
+      setTimeout(function(){button_up.classList.add('hidden')}, 1200);
+    } else {
+      mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+      retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+    }
+  }
+
   let button = document.getElementById('home-main-left-details-button');
   let button_up = document.querySelector('.glyphicon-chevron-up');
   let carousel = document.getElementById('home-main-left-customers-comments');
   let retractable = document.getElementById('home-main-left-retractable');
+  let main = document.querySelector('.home-main-left').parentNode;
+  let mainLeft = document.querySelector('.home-main-left');
+  let mainRight = document.querySelector('.home-main-right');
+  $( document ).ready(function() {
+    if ($(window).width() >= 1024) {
+      mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+      retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+    }
+  });
   button.addEventListener('click', element => {
     if ($(window).width() >= 1024){
       retractable.style.transform = 'translateY(-1000px)';
-      retractable.style.height = '0px';
       carousel.style.transform = 'translateY(-1000px)';
-      carousel.style.height = 'auto';
       button_up.style.transform = 'translateY(-1000px)';
+      retractable.style.height = '0px';
+      mainLeft.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
+      carousel.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
       setTimeout(function(){button_up.classList.remove('hidden')}, 1200);
+      setTimeout(function(){mainLeft.style.overflow = 'visible'}, 1200);
     }
   })
   button_up.addEventListener('click', element => {
     button_up.style.transform = 'translateY(0)';
     retractable.style.transform = 'translateY(0)';
-    retractable.style.height = 'auto';
     carousel.style.transform = 'translateY(0)';
+    retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+    mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+    // mainLeft.style.height = 'auto';
+    // carousel.style.height = 'auto';
+    mainLeft.style.overflow = 'hidden';
     setTimeout(function(){carousel.style.height = '0px'}, 1200);
     setTimeout(function(){button_up.classList.add('hidden')}, 1200);
   })
+
+  window.addEventListener('resize', resizeShow);
+</script>
+
+<!-- Text Carousel -->
+
+<script>
+  var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">&nbsp;'+this.txt+'<div class="span_border"></span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
 </script>

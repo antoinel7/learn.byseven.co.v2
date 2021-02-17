@@ -38,15 +38,15 @@ permalink: /:ref/
 # langs: ['fr', 'en']
 
 # Collections settings
-# collections:
-#   training:
-#     output: true
-#   content:
-#     output: true
-#   people:
-#     output: false
-#   home:
-#     output: false
+collections:
+  training:
+    output: true
+  articles:
+    output: true
+  people:
+    output: false
+  home:
+    output: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

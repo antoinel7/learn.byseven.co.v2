@@ -2,7 +2,16 @@
   <img src="/assets/img/LOGO_BLANC_LEARN.png" alt="" id='seven-logo'>
   <div>
     <div class="dropdown">
-      <img src="/assets/img/BURGER.png" style='height: 20px;' class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!--       <img src="/assets/img/BURGER.png" style='height: 20px;' class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+<!--       <i class="fas fa-bars" style='font-size: 30px; color: white;' class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
+      <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="dropdown-menu seven-burger-menu" aria-labelledby="dropdownMenuButton">
         <div>
           <a class="dropdown-item dropdown-item-1" href="/lab">Lab</a>
@@ -12,3 +21,11 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('#dropdownMenuButton').click(function(){
+      $(this).toggleClass('open');
+    });
+  });
+</script>

@@ -7,12 +7,21 @@
 
   <title>Seven | Lab - Learn by Seven</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:title" content="Learn by SEVEN - Seven | Lab"></meta>
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="http://localhost:4000" />
   <meta name="keywords" content="">
+  <meta name="twitter:url" content="/lab/" />
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
-  <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  
+    <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
+    <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="Learn by SEVEN">
+  <meta property="og:site_name" content="http://localhost:4000">
+  <meta property="og:url" content="/lab/">
 
   <script>
     var host = "learn.byseven.co";
@@ -24,6 +33,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/lab.css">
   <link rel="icon" href="/assets/img/favicon.ico">
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v9.0" nonce="pqxmUHD5"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146774110-1"></script>
@@ -39,23 +53,40 @@
     <body class="page-lab">
       <main>
         <div class="container-lab-seven">
-          <div class="navbar-lab-seven">
+          <div class="navbar-lab-seven sticky-top">
   <a href='../' class="flex-row-between-end">
     <img src="/assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'>
     <p>LE LAB</p>
   </a>
-  <h2>Punchline pour voir ce que nous faisons</h2>
   <div class='flex-row-between-centered'>
-    <div class="dropdown">
-      <button class="btn btn-navbar-lab-1 dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p>&#9660; Categories</p></button>
-      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButton" style='left: -1px;'>
-        <div>
-          <a class="dropdown-item dropdown-item-1" href="/">Home</a>
-          <!-- <a class="dropdown-item dropdown-item-2" href="/trainings">Formations</a> -->
-        </div>
-      </div>
-    </div>
     <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+    <div class="dropdown">
+      <button class="btn btn-navbar-lab-1 burger-icon" type="button" aria-haspopup="true" aria-expanded="false">
+        <p>Categories</p>
+        <div>
+          <div class="dropdown-toggle burger-icon dropdown-menu-lab" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+    </button>
+<!--       <button class="btn btn-navbar-lab-1 dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i style='margin-right: 1rem;' class="fas fa-bars"></i><p>Categories</p></button> -->
+<!--       <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab" style='left: -77px;'>
+        <div>
+          <a class="dropdown-item dropdown-item-1 navbar-categories-leadership" href="/" onmouseover="this.style.backgroundColor = '#F9D071'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Leadership</a>
+          <a class="dropdown-item dropdown-item-2 navbar-categories-team-m" href="" onmouseover="this.style.backgroundColor = '#EF8C64'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Gestion d'équipe</a>
+          <a class="dropdown-item dropdown-item-3 navbar-categories-communication" href="" onmouseover="this.style.backgroundColor = '#5AC3C8'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Communication</a>
+          <a class="dropdown-item dropdown-item-4 navbar-categories-bizdev" href="">Business Development</a>
+          <a class="dropdown-item dropdown-item-5 navbar-categories-digital" href="">Digital</a>
+          <a class="dropdown-item dropdown-item-6 navbar-categories-project" href="">Gestion de projet</a>
+          <a class="dropdown-item dropdown-item-7 navbar-categories-team-b" href="">Team Building</a>
+        </div>
+      </div> -->
+    </div>
   </div>
 </div>
 
@@ -72,20 +103,16 @@
   <div class="modal-body" id="modalNewBookinBody">
     <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
       <div class="form-group">
-        <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
       <div class="form-group hidden">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email_2" id='form-email2' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email" id='form-email' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-message">Votre message</label>
-        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Message" class='form-control'></textarea>
       </div>
       <button type="submit" class="btn contact-button" id='form-button'>Envoyez</button>
     </form>
@@ -95,101 +122,199 @@
   </div>
 </div>
 
-          <div class="banner-lab">
+<div class="navbar-category-menu">
+  <h4 class='category-1'>Categorie 1</h4>
+  <h4 class='category-2'>Categorie 2</h4>
+  <h4 class='category-3'>Categorie 3</h4>
+  <h4 class='category-4'>Categorie 4</h4>
+  <h4 class='category-5'>Categorie 5</h4>
+  <h4 class='category-6'>Categorie 6</h4>
+  <h4 class='category-7'>Categorie 7</h4>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.dropdown-menu-lutton').click(function(){
+      $(this).toggleClass('open');
+    });
+  });
+</script>
+
+
+<script>
+  var button = document.querySelector('.btn-navbar-lab-1');
+  var menu = document.querySelector('.navbar-category-menu');
+  button.addEventListener('click', element => {
+    button.querySelector('.dropdown-menu-lab').classList.toggle('open');
+    if (menu.style.transform == 'translateX(-357.67px)') {
+      menu.style.transform = 'translateX(0)';
+    } else {
+      menu.style.transform = 'translateX(-357.67px)';
+    }
+  })
+</script>
+
+          <div class="lab-teaser centered-item">
+  <h1>Restez curieux. Découvrez nos réalisations et réflexions sur l'innovation, le leadership, la coopération et tellement plus.</h1>
+</div>
+<div class="banner-lab">
   <div class="banner-lab-img"></div>
   <div class="banner-lab-description">
-    <h3>La confiance dès les premiers instants</h3>
+    <h2>La confiance dès les premiers instants</h2>
     <div class="banner-lab-separator"></div>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    <div class="flex-row-between-start">
+    <div class="banner-lab-tags">
       <p style='font-family: "Roboto Light";'>14 Octobre 2020</p>
-      <span>tag blabla seven yahya</span>
+      <p>tag blabla seven yahya</p>
     </div>
   </div>
 </div>
 <div class="main-lab">
   <div class="main-lab-left">
     <div class="row">
-      <div class="col-md-6">
-        <a href="article_test">
-          <div class="article-card">
-            <div class="article-card-topic topic-yellow"><h4>LEADERSHIP</h4></div>
-            <h3 class="article-card-title">La confiance dès les premiers instants</h3>
-            <div class="article-card-separator separator-yellow"></div>
-            <p class="article-card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <div class="article-card-footer">
-              <p class="article-card-date">14 Octobre 2020</p>
-              <span class='article-card-tag'>Tagtagtagtag</span>
-              <span class='article-card-tag'>Tagtagtagtag</span>
+      
+      
+        <div class="col-md-6">
+          <a href="/lab/articles/why-jacinda-ardern">
+            <div class="article-card">
+              <div class="article-card-topic"><h4 style='background-color: #F9D071;'>LEADERSHIP</h4></div>
+              <h3 class="article-card-title">L’application du Why en politique avec Jacinda Ardern</h3>
+              <div class="article-card-separator" style='border: 1px solid #F9D071;'></div>
+              <div class="article-card-image-wrap">
+                <img src="/assets/img/articles/why-jacinda-ardern.jpeg" alt="Application du Why Jacinda Ardern" class="article-card-image">
+                <div class="article-card-content" style='background-color: #F9D071;'><p>S’appuyer sur son Why, sur sa raison d’être, s’applique dans tous secteurs, y compris en politique. Le Premier Ministre néo-zélandais, Yacinda Ardern en est un bon exemple puisqu’elle a su appliquer le Why dans un cadre politique.</p></div>
+              </div>
+              <div class="article-card-footer">
+                <p class="article-card-date">22 Janvier 2021</p>
+                <p class='article-card-tag'>Tendance</p>
+                <!-- <span class='article-card-tag'></span> -->
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6">
-        <div class="article-card">
-          <div class="article-card-topic topic-blue"><h4>COMMUNICATION</h4></div>
-          <h3 class="article-card-title">ROI en formation : que retiennent les participants ?</h3>
-          <div class="article-card-separator separator-blue"></div>
-          <p class="article-card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-          <div class="article-card-footer">
-            <p class="article-card-date">14 Octobre 2020</p>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-          </div>
+          </a>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="article-card">
-          <div class="article-card-topic topic-red"><h4>GESTION D'EQUIPE</h4></div>
-          <h3 class="article-card-title">Un titre sur une ligne test</h3>
-          <div class="article-card-separator separator-red"></div>
-          <p class="article-card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-          <div class="article-card-footer">
-            <p class="article-card-date">14 Octobre 2020</p>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-          </div>
+      
+        <div class="col-md-6">
+          <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
+            <div class="article-card">
+              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>COMMUNICATION</h4></div>
+              <h3 class="article-card-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
+              <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+              <div class="article-card-image-wrap">
+                <img src="/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg" alt="Pensée latérale de Bono utilisation involontaire en entreprise lors de la crise" class="article-card-image">
+                <div class="article-card-content" style='background-color: #5AC3C8;'><p>Pour maintenir leur activité durant la crise sanitaire, certains collaborateurs ont fait preuve d’adaptabilité et de créativité. Sans s’en rendre compte, ils ont recouru à la théorie de Bono sur la pensée latérale, ce qui s’est avéré fort enrichissant.</p></div>
+              </div>
+              <div class="article-card-footer">
+                <p class="article-card-date">22 Janvier 2021</p>
+                <p class='article-card-tag'>Tendance</p>
+                <!-- <span class='article-card-tag'></span> -->
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="article-card">
-          <div class="article-card-topic topic-yellow"><h4>LEADERSHIP</h4></div>
-          <h3 class="article-card-title">La confiance dès les premiers instants</h3>
-          <div class="article-card-separator separator-yellow"></div>
-          <p class="article-card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-          <div class="article-card-footer">
-            <p class="article-card-date">14 Octobre 2020</p>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-            <span class='article-card-tag'>Tagtagtagtag</span>
-          </div>
+      
+        <div class="col-md-6">
+          <a href="/lab/articles/tik-tok-communication-non-verbale">
+            <div class="article-card">
+              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>COMMUNICATION</h4></div>
+              <h3 class="article-card-title">La puissance de la communication non-verbale avec Tik Tok</h3>
+              <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+              <div class="article-card-image-wrap">
+                <img src="/assets/img/articles/communication-non-verbale-tiktok.jpeg" alt="Communication non-verbale avec Tik Tok" class="article-card-image">
+                <div class="article-card-content" style='background-color: #5AC3C8;'><p>Si la communication non-verbale est en principe peu ou difficilement maîtrisée, Tik Tok renverse ces codes en permettant aux internautes d’être maîtres de leurs contenus. De façon indirecte, la règle des 3 V de Mehrabian est appliquée.</p></div>
+              </div>
+              <div class="article-card-footer">
+                <p class="article-card-date">22 Janvier 2021</p>
+                <p class='article-card-tag'>Tendance</p>
+                <!-- <span class='article-card-tag'></span> -->
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
+      
+        <div class="col-md-6">
+          <a href="/lab/articles/resolutions-objectifs-smart">
+            <div class="article-card">
+              <div class="article-card-topic"><h4 style='background-color: #EF8C64;'>GESTION D'EQUIPE</h4></div>
+              <h3 class="article-card-title">Utiliser les objectifs SMART pour tenir ses bonnes résolutions 2021</h3>
+              <div class="article-card-separator" style='border: 1px solid #EF8C64;'></div>
+              <div class="article-card-image-wrap">
+                <img src="/assets/img/articles/objectifs_smart.jpg" alt="Se fixer des résolutions avec les objectifs SMART" class="article-card-image">
+                <div class="article-card-content" style='background-color: #EF8C64;'><p>En début d’année, il est courant de faire le point sur l’année précédente pour se fixer des bonnes résolutions. Or, celles-ci sont difficilement tenues. Pour enfin s’y tenir, les objectifs SMART restent une solution efficace.</p></div>
+              </div>
+              <div class="article-card-footer">
+                <p class="article-card-date">22 Janvier 2021</p>
+                <p class='article-card-tag'>Tendance</p>
+                <!-- <span class='article-card-tag'></span> -->
+              </div>
+            </div>
+          </a>
+        </div>
+      
     </div>
-
   </div>
   <div class="main-lab-right">
     <div class="main-lab-right-recent">
-      <h3 class="main-lab-right-recent-title">LES DERNIERES PUBLICATIONS</h3>
-      <div class="main-lab-right-recent-card">
-        <h6 class="main-lab-right-recent-card-t1">GESTION D'EQUIPE</h6>
-        <p>14 Octobre 2020</p>
-        <p>Co-créer les sens au travail</p>
-      </div>
-      <div class="main-lab-right-separator"></div>
-      <div class="main-lab-right-recent-card">
-        <h6 class="main-lab-right-recent-card-t2">LEADERSHIP</h6>
-        <p>14 Octobre 2020</p>
-        <p>La confiance dès les premiers instants</p>
-      </div>
-      <div class="main-lab-right-separator"></div>
-      <div class="main-lab-right-recent-card">
-        <h6 class="main-lab-right-recent-card-t3">COMMUNICATION</h6>
-        <p>14 Octobre 2020</p>
-        <p>Exemple de titre pour cette rubrique</p>
-      </div>
+      <h4>LES DERNIERES PUBLICATIONS</h4>
+    
+      <div class="main-lab-right-separator" style='border-top: 2px solid #F9D071;'></div>
+      <a href="/lab/articles/why-jacinda-ardern">
+        <div class="main-lab-right-recent-card">
+          <div class="main-lab-right-recent-infos">
+            <h4 style='color: #F9D071;'>LEADERSHIP</h4>
+            <p>22 Janvier 2021</p>
+          </div>
+          <h3 class="main-lab-right-recent-title">L’application du Why en politique avec Jacinda Ardern</h3>
+        </div>
+      </a>
+    
+      <div class="main-lab-right-separator" style='border-top: 2px solid #5AC3C8;'></div>
+      <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
+        <div class="main-lab-right-recent-card">
+          <div class="main-lab-right-recent-infos">
+            <h4 style='color: #5AC3C8;'>COMMUNICATION</h4>
+            <p>22 Janvier 2021</p>
+          </div>
+          <h3 class="main-lab-right-recent-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
+        </div>
+      </a>
+    
+      <div class="main-lab-right-separator" style='border-top: 2px solid #5AC3C8;'></div>
+      <a href="/lab/articles/tik-tok-communication-non-verbale">
+        <div class="main-lab-right-recent-card">
+          <div class="main-lab-right-recent-infos">
+            <h4 style='color: #5AC3C8;'>COMMUNICATION</h4>
+            <p>22 Janvier 2021</p>
+          </div>
+          <h3 class="main-lab-right-recent-title">La puissance de la communication non-verbale avec Tik Tok</h3>
+        </div>
+      </a>
+    
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function recentCardFront() {
+    var titles = document.querySelectorAll('.article-card-title');
+    if (window.innerWidth > 990) {
+      var max = 0;
+      titles.forEach((element) => {
+        if (element.clientHeight > max) {
+          max = element.clientHeight;
+        }
+      })
+      titles.forEach((element) => {
+        element.style.height = max.toString() + 'px';
+      })
+    } else {
+      titles.forEach((element) => {
+        element.style.height = 'auto';
+      })
+    }
+  }
+  recentCardFront();
+  window.addEventListener('resize', recentCardFront);
+</script>
 
           <div class="footer-lab-seven">
   <img src="/assets/img/LOGO_BLANC_LEARN2.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>

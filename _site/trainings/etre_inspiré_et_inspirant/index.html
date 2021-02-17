@@ -7,12 +7,21 @@
 
   <title>Seven | Trainings - Learn by Seven</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:title" content="Learn by SEVEN - Seven | Trainings"></meta>
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="http://localhost:4000" />
   <meta name="keywords" content="">
+  <meta name="twitter:url" content="/trainings/etre_inspiré_et_inspirant/" />
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
-  <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  
+    <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
+    <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+  
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="Learn by SEVEN">
+  <meta property="og:site_name" content="http://localhost:4000">
+  <meta property="og:url" content="/trainings/etre_inspiré_et_inspirant/">
 
   <script>
     var host = "learn.byseven.co";
@@ -24,6 +33,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/training_page.css">
   <link rel="icon" href="/assets/img/favicon.ico">
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v9.0" nonce="pqxmUHD5"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146774110-1"></script>
@@ -70,20 +84,16 @@
   <div class="modal-body" id="modalNewBookinBody">
     <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
       <div class="form-group">
-        <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
       <div class="form-group hidden">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email_2" id='form-email2' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email" id='form-email' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-message">Votre message</label>
-        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Message" class='form-control'></textarea>
       </div>
       <button type="submit" class="btn contact-button" id='form-button'>Envoyez</button>
     </form>
@@ -222,20 +232,16 @@
   <div class="modal-body" id="modalNewBookinBody">
     <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
       <div class="form-group">
-        <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
       <div class="form-group hidden">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email_2" id='form-email2' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-email">Votre adresse email</label>
         <input type="email" name="email" id='form-email' placeholder="Adresse email" class='form-control'>
       </div>
       <div class="form-group">
-        <label for="form-message">Votre message</label>
-        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Message" class='form-control'></textarea>
       </div>
       <button type="submit" class="btn contact-button" id='form-button'>Envoyez</button>
     </form>
