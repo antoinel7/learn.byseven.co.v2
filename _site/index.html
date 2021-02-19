@@ -32,7 +32,6 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="icon" href="/assets/img/favicon.ico">
 
   <!-- Facebook -->
   <div id="fb-root"></div>
@@ -50,6 +49,7 @@
   </script>
 </head>
 
+    <link rel="icon" href="/assets/img/favicon.ico?v=1.0">
     <body class="page-index">
       <main>
         <div class="container-seven">
@@ -121,6 +121,18 @@
           <img src="../assets/img/ESSEC_NB.png">
           <img src="../assets/img/PWC_NB.png">
           <img src="../assets/img/DIABELOOP_NB.png">
+<!--           <ul id="customers-carousel">
+            <li id='1' class='customers-carousel-item'><img src="../assets/img/EY_NB.png"></li>
+            <li id='2' class='customers-carousel-item'><img src="../assets/img/DELIVEROO_NB.png"></li>
+            <li id='3' class='customers-carousel-item'><img src="../assets/img/ESSEC_NB.png"></li>
+            <li id='4' class='customers-carousel-item'><img src="../assets/img/PWC_NB.png"></li>
+
+            <li id='5' class='customers-carousel-item'><img src="../assets/img/DIABELOOP_NB.png"></li>
+            <li id='6' class='customers-carousel-item'><img src="../assets/img/MEERO.png"></li>
+            <li id='7' class='customers-carousel-item'><img src="../assets/img/DOCTOLIB.png"></li>
+            <li id='8' class='customers-carousel-item'><img src="../assets/img/SIDE.png"></li>
+
+          </ul> -->
         </div>
         <div class="home-main-left-details">
           <a id='home-main-left-details-button'>&#42;Ils nous ont fait confiance</a>
@@ -198,8 +210,8 @@
       mainLeft.style.height = 'auto';
       setTimeout(function(){button_up.classList.add('hidden')}, 1200);
     } else {
-      mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
-      retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+      mainLeft.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
+      retractable.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
     }
   }
 
@@ -212,8 +224,8 @@
   let mainRight = document.querySelector('.home-main-right');
   $( document ).ready(function() {
     if ($(window).width() >= 1024) {
-      mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
-      retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+      mainLeft.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
+      retractable.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
     }
   });
   button.addEventListener('click', element => {
@@ -232,8 +244,8 @@
     button_up.style.transform = 'translateY(0)';
     retractable.style.transform = 'translateY(0)';
     carousel.style.transform = 'translateY(0)';
-    retractable.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
-    mainLeft.style.height = main.getBoundingClientRect()['height'].toString() + 'px';
+    retractable.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
+    mainLeft.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
     // mainLeft.style.height = 'auto';
     // carousel.style.height = 'auto';
     mainLeft.style.overflow = 'hidden';
@@ -305,10 +317,103 @@
   };
 </script>
 
+<!-- Customer Carousel -->
+
+<script>
+  var timer = 4000;
+
+  var i = 1;
+  var max = $('#customers-carousel > li').length;
+
+  // $("#customers-carousel > li").eq(i).addClass('carousel_active').css('left','0');
+  // $("#customers-carousel > li").eq(i + 1).addClass('carousel_active').css('left','25%');
+  // $("#customers-carousel > li").eq(i + 2).addClass('carousel_active').css('left','50%');
+  // $("#customers-carousel > li").eq(i + 3).addClass('carousel_active').css('left','75%');
+
+
+  // setInterval(function(){
+
+  //   $("#customers-carousel > li").removeClass('carousel_active');
+
+  //   $("#customers-carousel > li").eq(i).css('transition-delay','0.25s');
+  //   $("#customers-carousel > li").eq(i + 1).css('transition-delay','0.5s');
+  //   $("#customers-carousel > li").eq(i + 2).css('transition-delay','0.75s');
+  //   $("#customers-carousel > li").eq(i + 3).css('transition-delay','1s');
+
+  //   if (i < max-4) {
+  //     i = i+4;
+  //   }
+
+  //   else {
+  //     i = 0;
+  //   }
+
+  //   $("#customers-carousel > li").eq(i).css('left','0').addClass('carousel_active').css('transition-delay','1.25s');
+  //   $("#customers-carousel > li").eq(i + 1).css('left','25%').addClass('carousel_active').css('transition-delay','1.5s');
+  //   $("#customers-carousel > li").eq(i + 2).css('left','50%').addClass('carousel_active').css('transition-delay','1.75s');
+  //   $("#customers-carousel > li").eq(i + 3).css('left','75%').addClass('carousel_active').css('transition-delay','2s');
+
+  // }, timer);
+
+
+
+  // var arr_diff = function(a1, a2) {
+  //   var a = [], diff = [];
+  //   for (var i = 0; i < a1.length; i++) {
+  //       a[a1[i]] = true;
+  //   }
+  //   for (var i = 0; i < a2.length; i++) {
+  //       if (a[a2[i]]) {
+  //           delete a[a2[i]];
+  //       } else {
+  //           a[a2[i]] = true;
+  //       }
+  //   }
+  //   for (var k in a) {
+  //       diff.push(parseInt(k,10));
+  //   }
+  //   return diff;
+  // }
+
+  // var checkAll = function() {
+  //   array = []
+  //   $(".customers-carousel-item").each(function() {
+  //     array.push(parseInt(this.id,10));
+  //   })
+  //   return array;
+  // }
+
+  // var checkAvailability = function() {
+  //   array = []
+  //   $(".carousel_active").each(function() {
+  //     array.push(parseInt(this.id,10));
+  //   })
+  //   return array;
+  // }
+
+  // var randomIcon = function() {
+  //    $("#" + i.toString()).removeClass('carousel_active');
+  //   // $("#customers-carousel > li").eq(i).css('transition-delay','0.25s');
+  //   console.log(i);
+  //   array = arr_diff(checkAll(), checkAvailability())
+  //   i = array[Math.floor(Math.random() * array.length)];
+  //   console.log(array);
+
+  //   $("#" + i.toString()).css('left','0').addClass('carousel_active').css('transition-delay','2.5s');
+  // }
+
+  // setInterval(function(){
+
+  //   randomIcon();
+
+  // }, 2500);
+
+</script>
+
           <div class="footer-seven">
   <div class="flex-row-between-centered">
-    <a href='https://byseven.co' style="font-family: 'Roboto Black';font-size: 12px;margin-right: 10px;">SEVEN</a>
-    <p style="font-family: 'Roboto Light';font-size: 12px;">WE EMPOWER PEOPLE</p>
+    <a href='https://byseven.co' style="font-family: 'Montserrat Black';font-size: 12px;margin-right: 10px;">SEVEN</a>
+    <p style="font-family: 'Montserrat Light';font-size: 12px;">WE EMPOWER PEOPLE</p>
   </div>
   <div class="flex-row-between-end">
     <a class='footer-links footer-link-linkedin'><i class="fab fa-linkedin-in"></i></a>

@@ -5,16 +5,12 @@
   background-color: white;
   overflow: auto;
   position: relative;
-  padding-bottom: 300px;
-  padding-top: 107px;
+  padding-bottom: 256px;
+  padding-top: 54px;
 
   h1 {
     color: black;
     line-height: 3.6rem;
-  }
-
-  @include from-medium {
-    padding-bottom: 17rem;
   }
 
   p {
@@ -26,11 +22,31 @@
   h3 {
     line-height: 2.3rem;
   }
+
+  @include from-medium {
+    padding-top: 107px;
+    padding-bottom: 17rem;
+  }
 }
 
 .lab-teaser {
-  padding: 0 15%;
-  margin-top: 5rem;
+  padding: 1rem;
+  text-align: center;
+
+  h1 {
+    font-family: 'Montserrat Regular';
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  @include from-medium {
+    padding: 0 7rem;
+    text-align: left;
+
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .banner-lab {
@@ -45,14 +61,14 @@
     flex-direction: row;
     height: 350px;
     padding: 0 10rem;
-    margin: 7rem 0 100px 0;
+    margin: 10rem 0;
   }
 }
 
 .banner-lab-img {
   padding: 0 50px;
   height: 350px;
-  width: calc(100% - 100px);
+  width: calc(100% - 4rem);
   background-image: url('https://images.unsplash.com/photo-1601224748193-d24f166b5c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');
   background-size: cover;
   background-position: 10%;
@@ -67,7 +83,7 @@
 }
 
 .banner-lab-description {
-  padding: 0 50px;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,6 +107,10 @@
   span {
     background-color: rgb(231,230,230);
     padding: 0 5px;
+  }
+
+  @include from-medium {
+    padding: 0 5rem;
   }
 
   @include from-medium-high {
@@ -150,7 +170,7 @@
 
 .main-lab-left {
   width: 100%;
-  padding: 0 50px 50px 50px;
+  padding: 0 2rem;
 
   @include from-medium {
     padding: 0 50px;
@@ -164,11 +184,15 @@
   h3, a {
     color: black;
   }
+
+  @include from-medium {
+    padding: 0 5rem 5rem 5rem;
+  }
 }
 
 .main-lab-right {
   // width: 100%;
-  margin: 0 5rem;
+  margin: 0 2rem;
 
   h3 {
     margin-top: 0;
@@ -178,9 +202,12 @@
     color: black;
   }
 
+  @include from-medium {
+    padding-right: 5rem;
+  }
+
   @include from-medium-high {
     width: 30%;
-    padding-right: 10rem;
     margin: 0 0 5rem 0;
   }
 }
@@ -214,7 +241,7 @@
     display: inline-block;
     width: auto;
     padding: 5px;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 12px;
     letter-spacing: .3rem;
     margin: 0;
@@ -223,10 +250,12 @@
 }
 
 .article-card-title {
-  font-family: 'Poppins Bold';
+  height: 105px;
+  font-family: 'Montserrat Bold';
   font-size: 2rem;
   display: block;
-  overflow: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 2.4rem 0 1.2rem 0;
   margin: 0;
 }
@@ -331,7 +360,7 @@
   }
 
   & > h4 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 2rem;
     margin: 0 0 3rem 0;
     padding: 0 3rem;
@@ -363,13 +392,13 @@
 }
 
 .main-lab-right-popular-title, .main-lab-right-recent-title {
-  font-family: 'Poppins Bold';
+  font-family: 'Montserrat Bold';
 }
 
 .main-lab-right-popular-infos, .main-lab-right-recent-infos {
 
   h4 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 12px;
     letter-spacing: .3rem;
     margin-top: 0;
@@ -401,10 +430,14 @@
 
 .container-lab-article {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 2rem;
 
   @include from-medium {
-    padding: 0 100px;
+    padding: 0 5rem;
+  }
+
+  @include from-large {
+    padding: 0 10rem;
   }
 
 
@@ -422,7 +455,7 @@
   overflow: hidden;
 
   h1 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 20px;
     margin: 25px 0;
     text-align: center;
@@ -430,7 +463,8 @@
     @include from-medium-high {
       width: 50%;
       text-align: center;
-      font-size: 32px;
+      font-size: 5rem;
+      line-height: 5rem;
       margin: 25px 0 75px 0;
     }
   }
@@ -445,8 +479,8 @@
 .lab-article-banner-tags {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 
   p, a {
@@ -463,9 +497,6 @@
   }
 
   @include from-medium-low {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 4rem;
   }
 
@@ -484,7 +515,7 @@
     display: inline-block;
     width: auto;
     padding: .5rem;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 1.4rem;
     letter-spacing: .3rem;
     margin: 0 2rem 0 0;
@@ -525,8 +556,8 @@
 
   a {
     color: white;
-    font-family: 'Poppins Light';
-    margin: 10px 10px 0 0;
+    font-family: 'Montserrat Light';
+    margin: 0 0 0 1rem;
     padding: 5px;
     font-size: 1.4rem;
     cursor: pointer;
@@ -553,6 +584,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.25s ease-in-out;
 
       &:hover {
         background-color: #4267B2;
@@ -615,6 +647,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.25s ease-in-out;
 
     &:hover {
       background-color: #1DA1F2;
@@ -677,6 +710,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.25s ease-in-out;
 
     &:hover {
       background-color: #0072b1;
@@ -739,7 +773,7 @@
 }
 
 .lab-article-text {
-  margin: 5rem 0 10rem 0;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -747,6 +781,7 @@
 
   @include from-medium-high {
     padding: 0 10rem;
+    margin: 5rem 0 10rem 0;
 
     .lab-article-text-primary, .lab-article-text-secondary {
       width: 60%;
@@ -754,28 +789,28 @@
   }
 
   h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     margin-bottom: 3rem;
-    line-height: 2.8rem;
+    line-height: 3.2rem;
   }
 
   h5 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 2rem;
-    line-height: 2.6rem;
+    line-height: 3.2rem;
   }
 
   h6 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 3.2rem;
   }
 
   p {
     margin: 0;
     margin-bottom: 3rem;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 2.8rem;
   }
 
   h2, h5, ul {
@@ -795,7 +830,7 @@
     }
 
     p {
-      font-family: 'Poppins Light';
+      font-family: 'Montserrat Light';
       margin: 0;
     }
   }
@@ -858,9 +893,9 @@
 
   a {
     color: white;
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     font-size: 1.4rem;
-    margin: 10px 10px 0 0;
+    margin-left: 1rem;
     padding: 5px;
     cursor: pointer;
     border-radius: 4px;
@@ -891,8 +926,16 @@
 
 .lab-article-recents {
   background-color: rgb(231,230,230);
-  padding: 5rem 10rem;
-  margin-bottom: 100px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+
+  h6 {
+    font-family: 'Montserrat Bold';
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+  }
 
   a {
     color: black;
@@ -900,6 +943,15 @@
 
   .col-md-4 {
 
+  }
+
+  @include from-medium {
+    padding: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  @include from-large {
+    padding: 5rem 10rem;
   }
 }
 
@@ -909,7 +961,7 @@
   border-radius: 4px;
 
   h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     height: auto;
     font-size: 2rem;
   }
@@ -918,7 +970,7 @@
     display: inline-block;
     width: auto;
     padding: 5px;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 14px;
     letter-spacing: .3rem;
     margin-bottom: 1rem;
@@ -952,7 +1004,7 @@
   margin-top: 20px;
 
   p {
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     margin: 0 10px 10px 0;
   }
 }

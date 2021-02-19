@@ -70,7 +70,7 @@ h1, h2, p {
 }
 
 h1 {
-    font-family: "Poppins SemiBold";
+    font-family: "Montserrat Bold";
     font-size: 21px;
 }
 
@@ -181,7 +181,7 @@ a {
 .btn-navbar-trainings-1 {
 
   p {
-    font-family: 'Poppins Light' !important;
+    font-family: 'Montserrat Light' !important;
     margin: 0 !important;
   }
 }
@@ -189,17 +189,17 @@ a {
 .modal {
 
   h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
   }
 
-  label, input {
-    font-family: 'Roboto Regular';
+  label, input, textarea {
+    font-family: 'Montserrat Regular';
   }
 
   button.contact-button {
     background-color: #F9D071;
     color: white;
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
 
     &:hover {
       color: black;

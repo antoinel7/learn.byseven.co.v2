@@ -5789,35 +5789,26 @@ span.glyphicon.glyphicon-chevron-up:hover, span.glyphicon.glyphicon-chevron-up:f
   font-family: "Poppins Bold";
   src: url("../fonts/Poppins-Bold.ttf"); }
 @font-face {
-  font-family: "Roboto Light";
-  src: url("../fonts/Roboto-Light.ttf"); }
-@font-face {
-  font-family: "Roboto Thin";
-  src: url("../fonts/Roboto-Thin.ttf"); }
-@font-face {
-  font-family: "Roboto Regular";
-  src: url("../fonts/Roboto-Regular.ttf"); }
-@font-face {
-  font-family: "Roboto Medium";
-  src: url("../fonts/Roboto-Medium.ttf"); }
-@font-face {
-  font-family: "Roboto Bold";
-  src: url("../fonts/Roboto-Bold.ttf"); }
-@font-face {
-  font-family: "Roboto Black";
-  src: url("../fonts/Roboto-Black.ttf"); }
-@font-face {
-  font-family: "Montserrat Regular";
-  src: url("../fonts/Montserrat-Regular.ttf"); }
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url("../fonts/Montserrat-Bold.ttf"); }
-@font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/Montserrat-Light.ttf"); }
 @font-face {
   font-family: "Montserrat Thin";
   src: url("../fonts/Montserrat-Thin.ttf"); }
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.ttf"); }
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf"); }
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("../fonts/Montserrat-Black.ttf"); }
+@font-face {
+  font-family: "Montserrat Italic";
+  src: url("../fonts/Montserrat-Italic.ttf"); }
 /**
  * Mediaqueries following the mobile-first method
  * CSS are set from mobile first, then rules are extented to:
@@ -5896,7 +5887,7 @@ h1, h2, p {
   color: white; }
 
 h1 {
-  font-family: "Poppins SemiBold";
+  font-family: "Montserrat Bold";
   font-size: 21px; }
 
 h2 {
@@ -5984,17 +5975,17 @@ a:hover {
   display: none !important; }
 
 .btn-navbar-trainings-1 p {
-  font-family: 'Poppins Light' !important;
+  font-family: 'Montserrat Light' !important;
   margin: 0 !important; }
 
 .modal h3 {
-  font-family: 'Poppins Bold'; }
-.modal label, .modal input {
-  font-family: 'Roboto Regular'; }
+  font-family: 'Montserrat Bold'; }
+.modal label, .modal input, .modal textarea {
+  font-family: 'Montserrat Regular'; }
 .modal button.contact-button {
   background-color: #F9D071;
   color: white;
-  font-family: 'Poppins Light'; }
+  font-family: 'Montserrat Light'; }
   .modal button.contact-button:hover {
     color: black; }
 
@@ -6034,7 +6025,8 @@ a:hover {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     @media only screen and (min-width: 64em) {
       .home-main-container > div {
         flex-direction: row;
@@ -6042,7 +6034,6 @@ a:hover {
 
 .home-main-left {
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6154,21 +6145,37 @@ a:hover {
   justify-content: space-between;
   align-items: center; }
   .home-main-left-customers img {
-    height: 24.5px; }
+    height: 4rem; }
+  .home-main-left-customers ul > li > img {
+    height: 4rem; }
     @media only screen and (min-width: 37.5em) {
-      .home-main-left-customers img {
-        height: 39px; } }
+      .home-main-left-customers ul > li > img {
+        height: 10rem; } }
     @media only screen and (min-width: 80em) {
-      .home-main-left-customers img {
-        height: 49px; } }
-  .home-main-left-customers img:last-of-type {
-    height: 10px; }
-    @media only screen and (min-width: 37.5em) {
-      .home-main-left-customers img:last-of-type {
-        height: 16px; } }
-    @media only screen and (min-width: 80em) {
-      .home-main-left-customers img:last-of-type {
-        height: 20px; } }
+      .home-main-left-customers ul > li > img {
+        max-width: 10rem; } }
+  .home-main-left-customers ul {
+    position: relative;
+    width: 100%;
+    height: 10rem; }
+  .home-main-left-customers ul > li {
+    width: 25%;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    height: 100px;
+    opacity: 0;
+    text-align: center;
+    transition: 1s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .home-main-left-customers .carousel_active {
+    opacity: 1; }
+  @media only screen and (min-width: 37.5em) {
+    .home-main-left-customers img {
+      height: 7rem; } }
 
 .home-main-left-details {
   display: none;
@@ -6222,7 +6229,7 @@ a:hover {
 
 #home-main-left-customers-comments {
   height: 100%;
-  margin-top: 100px;
+  margin-top: 7rem;
   height: auto;
   transition: transform 1.2s ease-out;
   overflow: hidden;
@@ -6249,7 +6256,7 @@ a:hover {
     width: 125px;
     border-radius: 50%; }
   #home-main-left-customers-comments p:first-of-type {
-    font-family: 'Poppins SemiBold';
+    font-family: 'Montserrat Bold';
     font-size: 2.1rem;
     margin-bottom: 3rem; }
   #home-main-left-customers-comments .item {
@@ -6258,19 +6265,22 @@ a:hover {
       #home-main-left-customers-comments .item {
         padding: 0 75px; } }
     #home-main-left-customers-comments .item p:first-of-type {
-      font-family: 'Poppins Bold';
+      font-family: 'Montserrat Bold';
       font-size: 1.4rem;
       margin: 0; }
     #home-main-left-customers-comments .item p:nth-of-type(2) {
-      font-family: 'Poppins Regular';
+      font-family: 'Montserrat Regular';
       font-size: 1.4rem;
       margin-bottom: 2rem; }
     #home-main-left-customers-comments .item p:last-of-type {
       text-align: justify;
-      font-family: 'Poppins Italic';
+      font-family: 'Montserrat Italic';
       font-size: 1.4rem;
       line-height: 1.8rem;
       margin-bottom: 1rem; }
+    @media only screen and (min-width: 37.5em) {
+      #home-main-left-customers-comments .item {
+        margin-top: 100px; } }
   #home-main-left-customers-comments .carousel-control > span {
     top: 150px !important; }
     @media only screen and (min-width: 80em) {
@@ -6313,7 +6323,7 @@ a:hover {
       padding-right: 50px;
       justify-content: flex-start; } }
   .home-main-right-description h2 {
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     font-size: 21px;
     margin: 0; }
 
@@ -6356,7 +6366,7 @@ a:hover {
       padding-left: 0;
       margin: 0;
       color: white;
-      font-family: 'Poppins Light';
+      font-family: 'Montserrat Light';
       font-size: 14px; }
   .home-main-right-form .form-group {
     margin: 0; }
@@ -6385,24 +6395,35 @@ a:hover {
   background-color: white;
   overflow: auto;
   position: relative;
-  padding-bottom: 300px;
-  padding-top: 107px; }
+  padding-bottom: 256px;
+  padding-top: 54px; }
   .container-lab-seven h1 {
     color: black;
     line-height: 3.6rem; }
-  @media only screen and (min-width: 37.5em) {
-    .container-lab-seven {
-      padding-bottom: 17rem; } }
   .container-lab-seven p {
     color: #5F6471;
     font-size: 1.4rem;
     line-height: 2rem; }
   .container-lab-seven h3 {
     line-height: 2.3rem; }
+  @media only screen and (min-width: 37.5em) {
+    .container-lab-seven {
+      padding-top: 107px;
+      padding-bottom: 17rem; } }
 
 .lab-teaser {
-  padding: 0 15%;
-  margin-top: 5rem; }
+  padding: 1rem;
+  text-align: center; }
+  .lab-teaser h1 {
+    font-family: 'Montserrat Regular';
+    font-size: 1.2rem;
+    line-height: 2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .lab-teaser {
+      padding: 0 7rem;
+      text-align: left; }
+      .lab-teaser h1 {
+        font-size: 1.4rem; } }
 
 .banner-lab {
   width: 100%;
@@ -6416,12 +6437,12 @@ a:hover {
       flex-direction: row;
       height: 350px;
       padding: 0 10rem;
-      margin: 7rem 0 100px 0; } }
+      margin: 10rem 0; } }
 
 .banner-lab-img {
   padding: 0 50px;
   height: 350px;
-  width: calc(100% - 100px);
+  width: calc(100% - 4rem);
   background-image: url("https://images.unsplash.com/photo-1601224748193-d24f166b5c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
   background-size: cover;
   background-position: 10%;
@@ -6434,7 +6455,7 @@ a:hover {
       margin: 0; } }
 
 .banner-lab-description {
-  padding: 0 50px;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6453,6 +6474,9 @@ a:hover {
   .banner-lab-description span {
     background-color: #e7e6e6;
     padding: 0 5px; }
+  @media only screen and (min-width: 37.5em) {
+    .banner-lab-description {
+      padding: 0 5rem; } }
   @media only screen and (min-width: 64em) {
     .banner-lab-description {
       width: 50%;
@@ -6495,7 +6519,7 @@ a:hover {
 
 .main-lab-left {
   width: 100%;
-  padding: 0 50px 50px 50px; }
+  padding: 0 2rem; }
   @media only screen and (min-width: 37.5em) {
     .main-lab-left {
       padding: 0 50px; } }
@@ -6505,17 +6529,22 @@ a:hover {
       padding: 0 7rem 0 100px; } }
   .main-lab-left h3, .main-lab-left a {
     color: black; }
+  @media only screen and (min-width: 37.5em) {
+    .main-lab-left {
+      padding: 0 5rem 5rem 5rem; } }
 
 .main-lab-right {
-  margin: 0 5rem; }
+  margin: 0 2rem; }
   .main-lab-right h3 {
     margin-top: 0; }
   .main-lab-right a {
     color: black; }
+  @media only screen and (min-width: 37.5em) {
+    .main-lab-right {
+      padding-right: 5rem; } }
   @media only screen and (min-width: 64em) {
     .main-lab-right {
       width: 30%;
-      padding-right: 10rem;
       margin: 0 0 5rem 0; } }
 
 .article-card {
@@ -6537,17 +6566,19 @@ a:hover {
   display: inline-block;
   width: auto;
   padding: 5px;
-  font-family: 'Poppins Bold';
+  font-family: 'Montserrat Bold';
   font-size: 12px;
   letter-spacing: .3rem;
   margin: 0;
   border-radius: 4px; }
 
 .article-card-title {
-  font-family: 'Poppins Bold';
+  height: 105px;
+  font-family: 'Montserrat Bold';
   font-size: 2rem;
   display: block;
-  overflow: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 2.4rem 0 1.2rem 0;
   margin: 0; }
 
@@ -6628,7 +6659,7 @@ a:hover {
     .main-lab-right-recent {
       margin: 0; } }
   .main-lab-right-recent > h4 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 2rem;
     margin: 0 0 3rem 0;
     padding: 0 3rem; }
@@ -6650,10 +6681,10 @@ a:hover {
       color: white; }
 
 .main-lab-right-popular-title, .main-lab-right-recent-title {
-  font-family: 'Poppins Bold'; }
+  font-family: 'Montserrat Bold'; }
 
 .main-lab-right-popular-infos h4, .main-lab-right-recent-infos h4 {
-  font-family: 'Poppins Bold';
+  font-family: 'Montserrat Bold';
   font-size: 12px;
   letter-spacing: .3rem;
   margin-top: 0;
@@ -6673,10 +6704,13 @@ a:hover {
 
 .container-lab-article {
   width: 100%;
-  padding: 0 50px; }
+  padding: 0 2rem; }
   @media only screen and (min-width: 37.5em) {
     .container-lab-article {
-      padding: 0 100px; } }
+      padding: 0 5rem; } }
+  @media only screen and (min-width: 64em) {
+    .container-lab-article {
+      padding: 0 10rem; } }
   .container-lab-article p {
     font-family: 'Montserrat Regular'; }
 
@@ -6688,7 +6722,7 @@ a:hover {
   align-items: center;
   overflow: hidden; }
   .lab-article-banner h1 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 20px;
     margin: 25px 0;
     text-align: center; }
@@ -6696,7 +6730,8 @@ a:hover {
       .lab-article-banner h1 {
         width: 50%;
         text-align: center;
-        font-size: 32px;
+        font-size: 5rem;
+        line-height: 5rem;
         margin: 25px 0 75px 0; } }
   .lab-article-banner img {
     width: 100%;
@@ -6706,8 +6741,8 @@ a:hover {
 .lab-article-banner-tags {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem; }
   .lab-article-banner-tags p, .lab-article-banner-tags a {
     margin: 1rem 1rem 0 0;
@@ -6719,9 +6754,6 @@ a:hover {
         margin-top: 0; } }
   @media only screen and (min-width: 50em) {
     .lab-article-banner-tags {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
       margin-bottom: 4rem; } }
   .lab-article-banner-tags p, .lab-article-banner-tags a {
     margin-right: 2rem; }
@@ -6735,7 +6767,7 @@ a:hover {
     display: inline-block;
     width: auto;
     padding: .5rem;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 1.4rem;
     letter-spacing: .3rem;
     margin: 0 2rem 0 0;
@@ -6764,8 +6796,8 @@ a:hover {
   align-items: center; }
   .lab-article-banner-tags-right a {
     color: white;
-    font-family: 'Poppins Light';
-    margin: 10px 10px 0 0;
+    font-family: 'Montserrat Light';
+    margin: 0 0 0 1rem;
     padding: 5px;
     font-size: 1.4rem;
     cursor: pointer;
@@ -6786,7 +6818,8 @@ a:hover {
     text-align: left;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.25s ease-in-out; }
     .lab-article-banner-tags-right .tooltip-facebook:hover {
       background-color: #4267B2; }
     .lab-article-banner-tags-right .tooltip-facebook .top {
@@ -6834,7 +6867,8 @@ a:hover {
     text-align: left;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.25s ease-in-out; }
     .lab-article-banner-tags-right .tooltip-twitter:hover {
       background-color: #1DA1F2; }
     .lab-article-banner-tags-right .tooltip-twitter .top {
@@ -6882,7 +6916,8 @@ a:hover {
     text-align: left;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.25s ease-in-out; }
     .lab-article-banner-tags-right .tooltip-linkedin:hover {
       background-color: #0072b1; }
     .lab-article-banner-tags-right .tooltip-linkedin .top {
@@ -6928,33 +6963,34 @@ a:hover {
       margin: 0 0 0 10px; } }
 
 .lab-article-text {
-  margin: 5rem 0 10rem 0;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   @media only screen and (min-width: 64em) {
     .lab-article-text {
-      padding: 0 10rem; }
+      padding: 0 10rem;
+      margin: 5rem 0 10rem 0; }
       .lab-article-text .lab-article-text-primary, .lab-article-text .lab-article-text-secondary {
         width: 60%; } }
   .lab-article-text h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     margin-bottom: 3rem;
-    line-height: 2.8rem; }
+    line-height: 3.2rem; }
   .lab-article-text h5 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 2rem;
-    line-height: 2.6rem; }
+    line-height: 3.2rem; }
   .lab-article-text h6 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 1.6rem;
-    line-height: 2.4rem; }
+    line-height: 3.2rem; }
   .lab-article-text p {
     margin: 0;
     margin-bottom: 3rem;
     font-size: 1.6rem;
-    line-height: 2.4rem; }
+    line-height: 2.8rem; }
   .lab-article-text h2, .lab-article-text h5, .lab-article-text ul {
     margin-bottom: 2rem; }
   .lab-article-text h6 {
@@ -6965,7 +7001,7 @@ a:hover {
     .lab-article-text button:hover {
       opacity: 1; }
     .lab-article-text button p {
-      font-family: 'Poppins Light';
+      font-family: 'Montserrat Light';
       margin: 0; }
   .lab-article-text .lab-article-text-separator {
     height: 0;
@@ -7004,9 +7040,9 @@ a:hover {
     margin: 1rem 1rem 0 0; }
   .lab-article-text-medias a {
     color: white;
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     font-size: 1.4rem;
-    margin: 10px 10px 0 0;
+    margin-left: 1rem;
     padding: 5px;
     cursor: pointer;
     border-radius: 4px;
@@ -7028,24 +7064,37 @@ a:hover {
 
 .lab-article-recents {
   background-color: #e7e6e6;
-  padding: 5rem 10rem;
-  margin-bottom: 100px; }
+  padding: 2rem;
+  margin-bottom: 5rem; }
+  .lab-article-recents h6 {
+    font-family: 'Montserrat Bold';
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 5rem; }
   .lab-article-recents a {
     color: black; }
+  @media only screen and (min-width: 37.5em) {
+    .lab-article-recents {
+      padding: 5rem;
+      margin-bottom: 10rem; } }
+  @media only screen and (min-width: 64em) {
+    .lab-article-recents {
+      padding: 5rem 10rem; } }
 
 .lab-article-recents-card {
   transition: all .25s ease;
   padding: 2rem;
   border-radius: 4px; }
   .lab-article-recents-card h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     height: auto;
     font-size: 2rem; }
   .lab-article-recents-card h4 {
     display: inline-block;
     width: auto;
     padding: 5px;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 14px;
     letter-spacing: .3rem;
     margin-bottom: 1rem;
@@ -7071,7 +7120,7 @@ a:hover {
   align-items: center;
   margin-top: 20px; }
   .lab-article-recents-tags p {
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     margin: 0 10px 10px 0; }
 
 .navbar-seven {
@@ -7106,7 +7155,7 @@ a:hover {
     width: 110px;
     align-items: flex-end; }
   .seven-burger-menu a {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 18.36px;
     color: white;
     margin-bottom: 5px;
@@ -7216,30 +7265,28 @@ a:hover {
 
 .navbar-lab-seven {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 30px 50px;
+  padding: 1rem;
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  max-width: 1440px;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease;
   width: 100%;
   background-color: white; }
   .navbar-lab-seven img {
-    height: 33px;
-    margin: 7px 0 21px 0;
-    padding-right: 10px;
-    border-right: 2px solid black; }
+    height: 2rem; }
     @media only screen and (min-width: 37.5em) {
       .navbar-lab-seven img {
-        margin: 7px 0; } }
+        margin: 7px 0;
+        height: 33px; } }
   .navbar-lab-seven p {
     padding-left: 10px;
     color: black;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 18.36px;
     height: 20px;
     margin: 7px 0 21px 0; }
@@ -7255,60 +7302,199 @@ a:hover {
       .navbar-lab-seven h2 {
         display: inline-block;
         flex-direction: row; } }
+  .navbar-lab-seven > div {
+    width: 60%; }
+    @media only screen and (min-width: 37.5em) {
+      .navbar-lab-seven > div {
+        width: auto; } }
   @media only screen and (min-width: 37.5em) {
     .navbar-lab-seven {
       padding: 30px 70px;
-      flex-direction: row; } }
-
-.navbar-categories-leadership:hover {
-  border-bottom: 1px solid #F9D071; }
-
-.navbar-categories-team-m:hover {
-  border-bottom: 1px solid #EF8C64; }
-
-.navbar-categories-communication:hover {
-  border-bottom: 1px solid #5AC3C8; }
-
-.dropdown-menu-lab {
-  margin-left: 1rem; }
-  .dropdown-menu-lab span {
-    background: black !important; }
+      flex-wrap: wrap; } }
 
 .btn-navbar-lab-1 {
   background-color: white;
-  border: 1px solid #F9D071;
   display: flex;
   align-items: center; }
-  .btn-navbar-lab-1:hover {
-    background-color: #F9D071; }
-    .btn-navbar-lab-1:hover p {
-      color: white; }
+  .btn-navbar-lab-1:hover p {
+    color: #95B9DB; }
+  .btn-navbar-lab-1:active {
+    box-shadow: none; }
+  .btn-navbar-lab-1:focus {
+    outline: 0; }
   .btn-navbar-lab-1 p {
     padding-left: 0;
     margin: 0;
     color: black;
-    font-family: 'Poppins Light';
-    font-size: 14px; }
-  .btn-navbar-lab-1 > div {
-    transform: scale(0.7);
-    -moz-transform: scale(0.7); }
+    font-family: 'Montserrat Bold';
+    font-size: 1rem;
+    transition: color 0.25s ease-in-out;
+    display: none; }
+  .btn-navbar-lab-1 i {
+    color: black;
+    font-size: 2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .btn-navbar-lab-1 p {
+      font-size: 1.4rem;
+      display: block; }
+    .btn-navbar-lab-1 i {
+      display: none; } }
 
 .btn-navbar-lab-2 {
-  background-color: #F9D071;
-  border: 1px solid #F9D071;
+  background-color: #95B9DB;
+  border: 1px solid #95B9DB;
   display: flex;
-  align-items: center;
-  margin-right: 20px; }
+  align-items: center; }
   .btn-navbar-lab-2:hover {
-    background-color: #F9D071; }
+    background-color: #95B9DB; }
     .btn-navbar-lab-2:hover p {
       color: black; }
   .btn-navbar-lab-2 p {
     padding-left: 0;
     margin: 0;
     color: white;
-    font-family: 'Poppins Light';
-    font-size: 14px; }
+    font-family: 'Montserrat Bold';
+    font-size: 1rem;
+    transition: color 0.25s ease-in-out; }
+  @media only screen and (min-width: 37.5em) {
+    .btn-navbar-lab-2 {
+      margin-right: 2rem; }
+      .btn-navbar-lab-2 p {
+        font-size: 1.4rem; } }
+
+.dropdown-mobile {
+  display: block; }
+  @media only screen and (min-width: 37.5em) {
+    .dropdown-mobile {
+      display: none; } }
+  .dropdown-mobile #dropdownMenuButtonLabMobile {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: black;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 3px 3px 0; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(odd) {
+    left: 0px;
+    border-radius: 3px 0 0 3px; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(1), .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(2) {
+    top: 0px; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(3), .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(4) {
+    top: 6px; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(5), .dropdown-mobile #dropdownMenuButtonLabMobile span:nth-child(6) {
+    top: 12px; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(1), .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(2), .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(1) {
+    left: calc(5px / 3);
+    top: calc(7px / 3); }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(2) {
+    left: calc(50% - calc(5px / 3));
+    top: calc(7px / 3); }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0; }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(5) {
+    left: calc(5px / 3);
+    top: calc(27px / 3); }
+  .dropdown-mobile #dropdownMenuButtonLabMobile.open span:nth-child(6) {
+    left: calc(50% - calc(5px / 3));
+    top: calc(27px / 3); }
+
+.dropdown-desktop {
+  display: none; }
+  @media only screen and (min-width: 37.5em) {
+    .dropdown-desktop {
+      display: block; } }
+
+.open > .dropdown-menu-lab {
+  display: flex;
+  flex-direction: column; }
+
+.dropdown-menu-lab {
+  padding: 0;
+  margin: 0;
+  left: -12rem;
+  top: 150%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15); }
+  .dropdown-menu-lab .dropdown-item {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1rem 2rem;
+    color: black;
+    font-family: 'Montserrat Regular';
+    font-size: 1.4rem;
+    transition: color 0.25s ease-in-out; }
+    .dropdown-menu-lab .dropdown-item:hover {
+      color: #95B9DB; }
+  .dropdown-menu-lab .dropdown-item:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 2rem; }
+  .dropdown-menu-lab .dropdown-item:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 2rem; }
+  .dropdown-menu-lab i {
+    position: absolute;
+    top: -11px;
+    left: 88%;
+    margin-left: -12px;
+    width: 24px;
+    height: 12px;
+    overflow: hidden; }
+  .dropdown-menu-lab i::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    background-color: white; }
+  @media only screen and (min-width: 37.5em) {
+    .dropdown-menu-lab {
+      left: -7rem; }
+      .dropdown-menu-lab i {
+        left: 75%; } }
 
 .navbar-category-menu {
   position: absolute;
@@ -7320,19 +7506,27 @@ a:hover {
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  transition: transform 1s ease;
-  border: 1px solid #FCC94B;
-  border-radius: 4px; }
+  transition: transform 1s ease; }
   .navbar-category-menu h4 {
     width: 100%;
     text-align: center;
     background-color: white;
     padding: 1rem 0;
-    font-size: 14px; }
+    font-size: 14px;
+    border-left: 1px solid #95B9DB;
+    border-right: 1px solid #95B9DB; }
     .navbar-category-menu h4:hover {
-      background: #FCC94B;
+      background: #95B9DB;
       color: white;
       transition: all .3s ease; }
+  .navbar-category-menu h4:first-of-type {
+    border-top: 1px solid #95B9DB;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .navbar-category-menu h4:last-of-type {
+    border-bottom: 1px solid #95B9DB;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
 
 .navbar-trainings-seven {
   display: flex;
@@ -7366,7 +7560,7 @@ a:hover {
     padding-left: 0;
     margin: 0;
     color: white;
-    font-family: 'Poppins Light';
+    font-family: 'Montserrat Light';
     font-size: 14px; }
 
 .seven-burger-menu-trainings {
@@ -7381,7 +7575,7 @@ a:hover {
     width: 110px;
     align-items: flex-end; }
   .seven-burger-menu-trainings a {
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 18.36px;
     color: black;
     margin-bottom: 5px;
@@ -7441,15 +7635,15 @@ a:hover {
   grid-auto-columns: auto;
   grid-auto-rows: minmax(75px, auto);
   background-color: black;
-  padding: 20px 50px; }
+  padding: 2rem 5rem; }
   .footer-lab-seven p {
     width: 100px;
-    font-family: 'Poppins Bold';
+    font-family: 'Montserrat Bold';
     font-size: 1.6rem;
     color: white; }
   .footer-lab-seven a {
     width: 100px;
-    font-family: 'Roboto Thin';
+    font-family: 'Montserrat Light';
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.8); }
     .footer-lab-seven a:hover {
@@ -7459,11 +7653,31 @@ a:hover {
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
       height: 170px;
-      padding: 30px 60px;
+      padding: 3rem 10rem 3rem 6rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start; } }
+
+.footer-lab-logo {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .footer-lab-logo p {
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+    margin: 0; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-logo {
+      flex-direction: column;
+      justify-content: flex-start;
+      border-right: 2px solid white;
+      padding-right: 3rem;
+      margin-bottom: 0; }
+      .footer-lab-logo p {
+        margin: 1rem 0; } }
 
 .footer-lab-links-title {
   grid-column: 1;
@@ -7474,7 +7688,8 @@ a:hover {
 .footer-lab-links-1 {
   width: 100px;
   grid-column: 1 / 3;
-  grid-row: 2; }
+  grid-row: 2;
+  margin-right: 5rem; }
   .footer-lab-links-1 p {
     white-space: nowrap; }
 
@@ -7505,13 +7720,22 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 90px; }
-  .footer-lab-media-icons img {
-    height: 15px; }
+  .footer-lab-media-icons a {
+    margin: 0;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    font-family: 'Montserrat Light'; }
+    .footer-lab-media-icons a i {
+      font-size: 14px; }
+    .footer-lab-media-icons a:hover {
+      color: #95B9DB; }
 
 .footer-lab-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
+  .footer-lab-links a:hover {
+    color: #95B9DB; }
 
 .footer-trainings-seven {
   width: 100%;
@@ -7523,10 +7747,10 @@ a:hover {
   margin-top: 50px; }
   .footer-trainings-seven p {
     width: 100px;
-    font-family: 'Poppins Bold'; }
+    font-family: 'Montserrat Bold'; }
   .footer-trainings-seven a {
     width: 100px;
-    font-family: 'Roboto Thin'; }
+    font-family: 'Montserrat Thin'; }
   @media only screen and (min-width: 37.5em) {
     .footer-trainings-seven {
       height: 170px;

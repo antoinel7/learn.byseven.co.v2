@@ -32,7 +32,6 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/lab.css">
-  <link rel="icon" href="/assets/img/favicon.ico">
 
   <!-- Facebook -->
   <div id="fb-root"></div>
@@ -50,42 +49,43 @@
   </script>
 </head>
 
+    <link rel="icon" href="/assets/img/favicon-lab.ico?v=1.0">
     <body class="page-lab">
       <main>
         <div class="container-lab-seven">
           <div class="navbar-lab-seven sticky-top">
   <a href='../' class="flex-row-between-end">
-    <img src="/assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'>
-    <p>LE LAB</p>
+    <img src="/assets/img/LOGO_SEVEN_LAB.png" alt="" id='seven-logo'>
   </a>
   <div class='flex-row-between-centered'>
     <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
-    <div class="dropdown">
-      <button class="btn btn-navbar-lab-1 burger-icon" type="button" aria-haspopup="true" aria-expanded="false">
-        <p>Categories</p>
-        <div>
-          <div class="dropdown-toggle burger-icon dropdown-menu-lab" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-    </button>
-<!--       <button class="btn btn-navbar-lab-1 dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i style='margin-right: 1rem;' class="fas fa-bars"></i><p>Categories</p></button> -->
-<!--       <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab" style='left: -77px;'>
-        <div>
-          <a class="dropdown-item dropdown-item-1 navbar-categories-leadership" href="/" onmouseover="this.style.backgroundColor = '#F9D071'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Leadership</a>
-          <a class="dropdown-item dropdown-item-2 navbar-categories-team-m" href="" onmouseover="this.style.backgroundColor = '#EF8C64'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Gestion d'équipe</a>
-          <a class="dropdown-item dropdown-item-3 navbar-categories-communication" href="" onmouseover="this.style.backgroundColor = '#5AC3C8'; this.style.color = 'white'" onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black'">Communication</a>
-          <a class="dropdown-item dropdown-item-4 navbar-categories-bizdev" href="">Business Development</a>
-          <a class="dropdown-item dropdown-item-5 navbar-categories-digital" href="">Digital</a>
-          <a class="dropdown-item dropdown-item-6 navbar-categories-project" href="">Gestion de projet</a>
-          <a class="dropdown-item dropdown-item-7 navbar-categories-team-b" href="">Team Building</a>
-        </div>
-      </div> -->
+    <div class="dropdown dropdown-desktop">
+      <a class="btn btn-navbar-lab-1 dropdown-toggle" role="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <p>Catégories</p>
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab">
+        <a class="dropdown-item" href="/">Réflexions</a>
+        <a class="dropdown-item" href="">Cas Réels</a>
+        <a class="dropdown-item" href="">Interviews</a>
+        <i></i>
+      </div>
+    </div>
+    <div class="dropdown dropdown-mobile">
+      <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLabMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLabMobile">
+        <a class="dropdown-item" href="/">Réflexions</a>
+        <a class="dropdown-item" href="">Cas Réels</a>
+        <a class="dropdown-item" href="">Interviews</a>
+        <i></i>
+      </div>
     </div>
   </div>
 </div>
@@ -122,26 +122,17 @@
   </div>
 </div>
 
-<div class="navbar-category-menu">
-  <h4 class='category-1'>Categorie 1</h4>
-  <h4 class='category-2'>Categorie 2</h4>
-  <h4 class='category-3'>Categorie 3</h4>
-  <h4 class='category-4'>Categorie 4</h4>
-  <h4 class='category-5'>Categorie 5</h4>
-  <h4 class='category-6'>Categorie 6</h4>
-  <h4 class='category-7'>Categorie 7</h4>
-</div>
 
 <script>
   $(document).ready(function(){
-    $('.dropdown-menu-lutton').click(function(){
+    $('#dropdownMenuButtonLabMobile').click(function(){
       $(this).toggleClass('open');
     });
   });
 </script>
 
 
-<script>
+<!-- <script>
   var button = document.querySelector('.btn-navbar-lab-1');
   var menu = document.querySelector('.navbar-category-menu');
   button.addEventListener('click', element => {
@@ -152,10 +143,10 @@
       menu.style.transform = 'translateX(-357.67px)';
     }
   })
-</script>
+</script> -->
 
-          <div class="lab-teaser centered-item">
-  <h1>Restez curieux. Découvrez nos réalisations et réflexions sur l'innovation, le leadership, la coopération et tellement plus.</h1>
+          <div class="lab-teaser">
+  <h1>Restons curieux. Découvrez nos réalisations, réflexions et idées.</h1>
 </div>
 <div class="banner-lab">
   <div class="banner-lab-img"></div>
@@ -164,7 +155,7 @@
     <div class="banner-lab-separator"></div>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     <div class="banner-lab-tags">
-      <p style='font-family: "Roboto Light";'>14 Octobre 2020</p>
+      <p style='font-family: "Montserrat Light";'>14 Octobre 2020</p>
       <p>tag blabla seven yahya</p>
     </div>
   </div>
@@ -177,7 +168,7 @@
         <div class="col-md-6">
           <a href="/lab/articles/why-jacinda-ardern">
             <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #F9D071;'>LEADERSHIP</h4></div>
+              <div class="article-card-topic"><h4 style='background-color: #F9D071;'>INTERVIEWS</h4></div>
               <h3 class="article-card-title">L’application du Why en politique avec Jacinda Ardern</h3>
               <div class="article-card-separator" style='border: 1px solid #F9D071;'></div>
               <div class="article-card-image-wrap">
@@ -196,7 +187,7 @@
         <div class="col-md-6">
           <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
             <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>COMMUNICATION</h4></div>
+              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>REFLEXIONS</h4></div>
               <h3 class="article-card-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
               <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
               <div class="article-card-image-wrap">
@@ -215,7 +206,7 @@
         <div class="col-md-6">
           <a href="/lab/articles/tik-tok-communication-non-verbale">
             <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>COMMUNICATION</h4></div>
+              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>REFLEXIONS</h4></div>
               <h3 class="article-card-title">La puissance de la communication non-verbale avec Tik Tok</h3>
               <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
               <div class="article-card-image-wrap">
@@ -234,7 +225,7 @@
         <div class="col-md-6">
           <a href="/lab/articles/resolutions-objectifs-smart">
             <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #EF8C64;'>GESTION D'EQUIPE</h4></div>
+              <div class="article-card-topic"><h4 style='background-color: #EF8C64;'>CAS RÉELS</h4></div>
               <h3 class="article-card-title">Utiliser les objectifs SMART pour tenir ses bonnes résolutions 2021</h3>
               <div class="article-card-separator" style='border: 1px solid #EF8C64;'></div>
               <div class="article-card-image-wrap">
@@ -260,7 +251,7 @@
       <a href="/lab/articles/why-jacinda-ardern">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #F9D071;'>LEADERSHIP</h4>
+            <h4 style='color: #F9D071;'>INTERVIEWS</h4>
             <p>22 Janvier 2021</p>
           </div>
           <h3 class="main-lab-right-recent-title">L’application du Why en politique avec Jacinda Ardern</h3>
@@ -271,7 +262,7 @@
       <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #5AC3C8;'>COMMUNICATION</h4>
+            <h4 style='color: #5AC3C8;'>REFLEXIONS</h4>
             <p>22 Janvier 2021</p>
           </div>
           <h3 class="main-lab-right-recent-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
@@ -282,7 +273,7 @@
       <a href="/lab/articles/tik-tok-communication-non-verbale">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #5AC3C8;'>COMMUNICATION</h4>
+            <h4 style='color: #5AC3C8;'>REFLEXIONS</h4>
             <p>22 Janvier 2021</p>
           </div>
           <h3 class="main-lab-right-recent-title">La puissance de la communication non-verbale avec Tik Tok</h3>
@@ -293,7 +284,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function recentCardFront() {
     var titles = document.querySelectorAll('.article-card-title');
     if (window.innerWidth > 990) {
@@ -314,35 +305,40 @@
   }
   recentCardFront();
   window.addEventListener('resize', recentCardFront);
-</script>
+</script> -->
 
           <div class="footer-lab-seven">
-  <img src="/assets/img/LOGO_BLANC_LEARN2.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
-  <div class="footer-lab-media footer-lab-links-1">
-    <p>Suivez-nous</p>
-    <div class="footer-lab-media-icons">
-      <img src="/assets/img/LOGO_LINKEDIN.png" alt="">
-      <img src="/assets/img/LOGO_FB.png" alt="">
-      <img src="/assets/img/LOGO_INSTA.png" alt="">
+  <div class="footer-lab-logo">
+    <img src="/assets/img/LOGO_SEVEN_BLANC_LAB.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
+    <p>Pour le plaisir d'apprendre ensemble</p>
+  </div>
+  <div class="flex-row-between-start">
+    <div class="footer-lab-media footer-lab-links-1">
+      <p>Suivez-nous</p>
+      <div class="footer-lab-media-icons">
+        <a class='footer-links footer-link-linkedin'>LinkedIn</a>
+  <!--       <img src="/assets/img/LOGO_FB.png" alt="">
+        <img src="/assets/img/LOGO_INSTA.png" alt=""> -->
+      </div>
+    </div>
+    <div class="footer-lab-links footer-lab-links-4">
+      <p>Univers</p>
+      <a href="">SEVEN</a>
+      <a href="">SEVEN learn</a>
+      <a href="">SEVEN home</a>
+      <a href="">SEVEN invest</a>
     </div>
   </div>
-  <div class="footer-lab-links footer-lab-links-2">
+<!--   <div class="footer-lab-links footer-lab-links-2">
     <p>Newsletter</p>
     <a href="">S'inscrire</a>
-  </div>
-  <div class="footer-lab-links footer-lab-links-3">
+  </div> -->
+<!--   <div class="footer-lab-links footer-lab-links-3">
     <p>A propos</p>
     <a href="">Méthode</a>
     <a href="">Notre équipe</a>
     <a href="">Contactez-nous</a>
-  </div>
-  <div class="footer-lab-links footer-lab-links-4">
-    <p>Univers</p>
-    <a href="">SEVEN</a>
-    <a href="">SEVEN learn</a>
-    <a href="">SEVEN home</a>
-    <a href="">SEVEN invest</a>
-  </div>
+  </div> -->
 </div>
 
         </div>

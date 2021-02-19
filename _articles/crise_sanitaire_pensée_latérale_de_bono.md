@@ -11,7 +11,7 @@ image: "/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg"
 image_twitter: "/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg"
 image_alt: "Pensée latérale de Bono utilisation involontaire en entreprise lors de la crise"
 order: 3
-theme: "COMMUNICATION"
+theme: "REFLEXIONS"
 theme_colour: "#5AC3C8"
 tag1: "Tendance"
 tag2: ""
@@ -110,7 +110,7 @@ lang: fr
 <!-- <button class="btn" type="button" style='background-color: {{page.theme_colour}};'><p>En savoir plus sur la formation</p></button> -->
     </div>
     <div class="lab-article-text-medias">
-      <p>Call to action</p>
+      <p>Partagez cet article autour de vous</p>
       <a target="_blank" href="{{page.facebook_href}}"><i class="fab fa-facebook-f"></i></a>
       <a href='{{page.twitter_href}}' target="_blank"><i class="fab fa-twitter"></i></a>
       <a href='https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}' target='_blank'><i class="fab fa-linkedin-in"></i></a>
@@ -119,6 +119,7 @@ lang: fr
   </div>
 </div>
 <div class="lab-article-recents">
+  <h6>Articles liés</h6>
   <div class="row">
     {% assign articles = site.articles | sort: 'order' | reverse %}
     {% for article in articles limit: 3 %}
