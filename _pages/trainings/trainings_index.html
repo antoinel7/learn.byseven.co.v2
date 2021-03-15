@@ -2,7 +2,7 @@
 layout: trainings
 type: trainings
 permalink: /trainings/
-title: Seven | Trainings
+title: Seven | Formations
 lang: fr
 ref: trainings
 ---
@@ -87,3 +87,15 @@ ref: trainings
     });
   });
 </script> -->
+
+<script>
+  $(document).ready(function(){
+    $(".nav-link").click(function() {
+      if (window.innerWidth < 1024) {
+        $('html,body').animate({
+            scrollTop: $(".tab-content").offset().top - 60},
+            'slow');
+      }
+    });
+  });
+</script>

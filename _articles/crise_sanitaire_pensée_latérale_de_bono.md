@@ -2,35 +2,44 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/theorie-de-bono-crise-sanitaire"
-absolute_link: "http://test.byseven.co/lab/articles/theorie-de-bono-crise-sanitaire"
-facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftest.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&amp;src=sdkpreparse"
-twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Ftest.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&text=Pens%C3%A9e%20lat%C3%A9rale%20de%20Bono%20%3A%20une%20utilisation%20involontaire%20en%20entreprise%20lors%20de%20la%20crise"
+absolute_link: "http://learn.byseven.co/lab/articles/theorie-de-bono-crise-sanitaire"
+facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&amp;src=sdkpreparse"
+twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&text=Pens%C3%A9e%20lat%C3%A9rale%20de%20Bono%20%3A%20une%20utilisation%20involontaire%20en%20entreprise%20lors%20de%20la%20crise"
 training_link : ""
 title: "Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise"
 image: "/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg"
 image_twitter: "/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg"
 image_alt: "Pensée latérale de Bono utilisation involontaire en entreprise lors de la crise"
 order: 3
-theme: "REFLEXIONS"
+theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
 tag1: "Tendance"
 tag2: ""
-created_at: "22 Janvier 2021"
+created_at: "12 Janvier 2021"
 teaser: "Pour maintenir leur activité durant la crise sanitaire, certains collaborateurs ont fait preuve d’adaptabilité et de créativité. Sans s’en rendre compte, ils ont recouru à la théorie de Bono sur la pensée latérale, ce qui s’est avéré fort enrichissant."
 custom_head: true
 lang: fr
 ---
 
 <div class="container-lab-article">
+  <div class="lab-breadcrumb">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ul>
+        <li><a href="/lab">Accueil</a></li>
+        <li><a href="/lab/{{page.theme | downcase}}s">{{page.theme | capitalize}}s</a></li>
+        <li><span aria-current="page">Article</span></li>
+      </ul>
+    </nav>
+  </div>
   <div class="lab-article-banner">
     <h1>{{page.title}}</h1>
+    <div class="flex-row-between-centered">
+      <p class="lab-article-banner-tag">{{page.tag1}}</p>
+    </div>
     <div class="lab-article-banner-tags">
       <div class="lab-article-banner-tags-left">
-        <h4 style='background-color: {{page.theme_colour}};'>{{page.theme}}</h4>
+        <a href="/lab/{{page.theme | downcase}}s"><h4 style='background-color: {{page.theme_colour}};'>{{page.theme}}</h4></a>
         <p class="lab-article-banner-tags-date">{{page.created_at}}</p>
-        <div>
-          <p class="lab-article-banner-tag">{{page.tag1}}</p>
-        </div>
       </div>
       <div class="lab-article-banner-tags-right">
         <div class="fb-share-button" data-href="{{page.absolute_link}}" data-layout="button" data-size="small">
@@ -77,7 +86,7 @@ lang: fr
     <div class="lab-article-text-secondary">
       <h5>Appliquer concrètement avec les 6 chapeaux de De Bono</h5>
       <p>Pour permettre aux participants de s’accorder sur un mode de pensée latérale commun, De Bono les réunit autour d’une méthode rythmée qui mobilise l’intelligence collective. Des chapeaux de différentes couleurs vont représenter les différents styles de pensée. Au fur et à mesure de l’atelier, les chapeaux se succèdent, proposant aux participants d’orienter leur créativité dans telle ou telle direction. <br><br>
-      De Bono identifie ainsi 6 types de réflexion :
+      De Bono identifie ainsi 6 types de réflexion :</p>
       <ul>
       <li>le blanc représente une pensée concrète, factuelle et neutre </li>
       <li>le rouge, fidèle à lui-même, évoque les émotions qui peuvent être irrationnelles </li>
@@ -86,7 +95,7 @@ lang: fr
       <li>le vert, comme la nature riche et luxuriante, fait référence à la créativité sans limite</li>
       <li>enfin le bleu est en lien avec l’organisation, la gestion du temps et de la logistique</li>
       </ul>
-      À l’issue des séquences, les participants auront identifié leurs couleurs dominantes et pu aborder des approches de résolution de problèmes différentes de celles qu’ils utilisent habituellement. <br><br>
+      <p>À l’issue des séquences, les participants auront identifié leurs couleurs dominantes et pu aborder des approches de résolution de problèmes différentes de celles qu’ils utilisent habituellement. <br><br>
       Chez Seven, nous avons fait évoluer l’outil en utilisant 6 lunettes, chacune caractérisant notre manière de voir et d’appréhender le monde. Les participants de notre formation <strong>Définir son profil de communicant</strong> découvrent les caractéristiques de leurs propres lunettes et apprennent à identifier celles de leurs interlocuteurs. Le but étant qu’ils améliorent la qualité des interactions dans une organisation.</p>
     </div>
     <div class="lab-article-text-secondary">
@@ -115,7 +124,10 @@ lang: fr
       <a href='{{page.twitter_href}}' target="_blank"><i class="fab fa-twitter"></i></a>
       <a href='https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}' target='_blank'><i class="fab fa-linkedin-in"></i></a>
     </div>
-    <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs' style='background-color: {{page.theme_colour}};border: none;'><p>Contactez nous</p></button>
+    <!-- <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-lab-2'><p>Contactez nous</p></button>
+    </a>
   </div>
 </div>
 <div class="lab-article-recents">
@@ -143,7 +155,7 @@ lang: fr
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -175,7 +187,7 @@ lang: fr
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <script type="text/javascript">
   function recentCardFront() {

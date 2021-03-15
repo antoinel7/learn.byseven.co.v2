@@ -8,10 +8,10 @@
   <title>Seven | Lab - Learn by Seven</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:title" content="Learn by SEVEN - Seven | Lab"></meta>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn by SEVEN - Seven | Lab">
   <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="http://localhost:4000" />
+  <meta name="twitter:image:src" content="https://learn.byseven.co" />
   <meta name="keywords" content="">
   <meta name="twitter:url" content="/lab/" />
   <meta name="robots" content="index, follow">
@@ -20,15 +20,18 @@
     <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
   
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="http://localhost:4000">
+  <meta property="og:site_name" content="https://learn.byseven.co">
   <meta property="og:url" content="/lab/">
+  
+     <link rel="icon" href="/assets/img/favicon-lab.ico">
+  
 
   <script>
     var host = "learn.byseven.co";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/lab.css">
@@ -49,7 +52,6 @@
   </script>
 </head>
 
-    <link rel="icon" href="/assets/img/favicon-lab.ico?v=1.0">
     <body class="page-lab">
       <main>
         <div class="container-lab-seven">
@@ -58,32 +60,18 @@
     <img src="/assets/img/LOGO_SEVEN_LAB.png" alt="" id='seven-logo'>
   </a>
   <div class='flex-row-between-centered'>
-    <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+    <!-- <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-lab-2'><p>Contactez nous</p></button>
+    </a>
     <div class="dropdown dropdown-desktop">
       <a class="btn btn-navbar-lab-1 dropdown-toggle" role="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <p>Catégories</p>
-        <i class="fas fa-bars"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
-        <i></i>
-      </div>
-    </div>
-    <div class="dropdown dropdown-mobile">
-      <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLabMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLabMobile">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
+        <a class="dropdown-item" href="/lab/réflexions">Réflexions</a>
+        <a class="dropdown-item" href="/lab/cas pratiques">Cas Pratiques</a>
+        <a class="dropdown-item" href="/lab/interviews">Interviews</a>
         <i></i>
       </div>
     </div>
@@ -91,7 +79,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
   <div class="modal-header">
@@ -120,126 +108,189 @@
 </div>
 
   </div>
-</div>
-
-
-<script>
-  $(document).ready(function(){
-    $('#dropdownMenuButtonLabMobile').click(function(){
-      $(this).toggleClass('open');
-    });
-  });
-</script>
-
-
-<!-- <script>
-  var button = document.querySelector('.btn-navbar-lab-1');
-  var menu = document.querySelector('.navbar-category-menu');
-  button.addEventListener('click', element => {
-    button.querySelector('.dropdown-menu-lab').classList.toggle('open');
-    if (menu.style.transform == 'translateX(-357.67px)') {
-      menu.style.transform = 'translateX(0)';
-    } else {
-      menu.style.transform = 'translateX(-357.67px)';
-    }
-  })
-</script> -->
+</div> -->
 
           <div class="lab-teaser">
   <h1>Restons curieux. Découvrez nos réalisations, réflexions et idées.</h1>
 </div>
 <div class="banner-lab">
-  <div class="banner-lab-img"></div>
-  <div class="banner-lab-description">
-    <h2>La confiance dès les premiers instants</h2>
-    <div class="banner-lab-separator"></div>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    <div class="banner-lab-tags">
-      <p style='font-family: "Montserrat Light";'>14 Octobre 2020</p>
-      <p>tag blabla seven yahya</p>
+  
+    
+  
+    
+  
+    
+    <a class='stretched-link' href="/lab/articles/conduite-changement-kotter"></a>
+    <div class="banner-lab-img" style="background-image: url(/assets/img/articles/conduite-changement-kotter.jpg);
+"></div>
+    <div class="banner-lab-description">
+      <a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a>
+      <h2>La conduite du changement en entreprise : les 8 étapes selon Kotter</h2>
+      <div class="banner-lab-separator"></div>
+      <p>Lors d’une conduite de changement en entreprise, il est normal d’avoir des collaborateurs réticents. Pour les faire adhérer à cette nouveauté, les 8 étapes de Kotter peuvent éventuellement s’appliquer.</p>
+      <div class="banner-lab-tags">
+        <p style='font-family: "Montserrat Light";'>20 Janvier 2021</p>
+        <p>Article de fond</p>
+      </div>
     </div>
-  </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 </div>
 <div class="main-lab">
   <div class="main-lab-left">
     <div class="row">
       
+        
       
-        <div class="col-md-6">
-          <a href="/lab/articles/why-jacinda-ardern">
-            <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #F9D071;'>INTERVIEWS</h4></div>
-              <h3 class="article-card-title">L’application du Why en politique avec Jacinda Ardern</h3>
-              <div class="article-card-separator" style='border: 1px solid #F9D071;'></div>
-              <div class="article-card-image-wrap">
-                <img src="/assets/img/articles/why-jacinda-ardern.jpeg" alt="Application du Why Jacinda Ardern" class="article-card-image">
-                <div class="article-card-content" style='background-color: #F9D071;'><p>S’appuyer sur son Why, sur sa raison d’être, s’applique dans tous secteurs, y compris en politique. Le Premier Ministre néo-zélandais, Yacinda Ardern en est un bon exemple puisqu’elle a su appliquer le Why dans un cadre politique.</p></div>
-              </div>
-              <div class="article-card-footer">
-                <p class="article-card-date">22 Janvier 2021</p>
-                <p class='article-card-tag'>Tendance</p>
-                <!-- <span class='article-card-tag'></span> -->
-              </div>
-            </div>
-          </a>
-        </div>
+        
       
-        <div class="col-md-6">
-          <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
+        
+          <div class="col-md-6 article-banner-card">
             <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>REFLEXIONS</h4></div>
-              <h3 class="article-card-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
+              <a class='stretched-link' href="/lab/articles/conduite-changement-kotter"></a>
+              <div class="article-card-topic"><a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a></div>
+              <h3 class="article-card-title">La conduite du changement en entreprise : les 8 étapes selon Kotter</h3>
               <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
               <div class="article-card-image-wrap">
-                <img src="/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg" alt="Pensée latérale de Bono utilisation involontaire en entreprise lors de la crise" class="article-card-image">
-                <div class="article-card-content" style='background-color: #5AC3C8;'><p>Pour maintenir leur activité durant la crise sanitaire, certains collaborateurs ont fait preuve d’adaptabilité et de créativité. Sans s’en rendre compte, ils ont recouru à la théorie de Bono sur la pensée latérale, ce qui s’est avéré fort enrichissant.</p></div>
+                <img src="/assets/img/articles/conduite-changement-kotter.jpg" alt="Conduite du changement en entreprise, 8 étapes selon Kotter" class="article-card-image">
+                <div class="article-card-content" style='background-color: #5AC3C8;'><p>Lors d’une conduite de changement en entreprise, il est normal d’avoir des collaborateurs réticents. Pour les faire adhérer à cette nouveauté, les 8 étapes de Kotter peuvent éventuellement s’appliquer.</p></div>
               </div>
               <div class="article-card-footer">
-                <p class="article-card-date">22 Janvier 2021</p>
-                <p class='article-card-tag'>Tendance</p>
+                <p class="article-card-date">20 Janvier 2021</p>
+                <p class='article-card-tag'>Article de fond</p>
                 <!-- <span class='article-card-tag'></span> -->
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        
       
-        <div class="col-md-6">
-          <a href="/lab/articles/tik-tok-communication-non-verbale">
-            <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #5AC3C8;'>REFLEXIONS</h4></div>
-              <h3 class="article-card-title">La puissance de la communication non-verbale avec Tik Tok</h3>
-              <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
-              <div class="article-card-image-wrap">
-                <img src="/assets/img/articles/communication-non-verbale-tiktok.jpeg" alt="Communication non-verbale avec Tik Tok" class="article-card-image">
-                <div class="article-card-content" style='background-color: #5AC3C8;'><p>Si la communication non-verbale est en principe peu ou difficilement maîtrisée, Tik Tok renverse ces codes en permettant aux internautes d’être maîtres de leurs contenus. De façon indirecte, la règle des 3 V de Mehrabian est appliquée.</p></div>
-              </div>
-              <div class="article-card-footer">
-                <p class="article-card-date">22 Janvier 2021</p>
-                <p class='article-card-tag'>Tendance</p>
-                <!-- <span class='article-card-tag'></span> -->
-              </div>
-            </div>
-          </a>
-        </div>
+        
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
         <div class="col-md-6">
-          <a href="/lab/articles/resolutions-objectifs-smart">
-            <div class="article-card">
-              <div class="article-card-topic"><h4 style='background-color: #EF8C64;'>CAS RÉELS</h4></div>
-              <h3 class="article-card-title">Utiliser les objectifs SMART pour tenir ses bonnes résolutions 2021</h3>
-              <div class="article-card-separator" style='border: 1px solid #EF8C64;'></div>
-              <div class="article-card-image-wrap">
-                <img src="/assets/img/articles/objectifs_smart.jpg" alt="Se fixer des résolutions avec les objectifs SMART" class="article-card-image">
-                <div class="article-card-content" style='background-color: #EF8C64;'><p>En début d’année, il est courant de faire le point sur l’année précédente pour se fixer des bonnes résolutions. Or, celles-ci sont difficilement tenues. Pour enfin s’y tenir, les objectifs SMART restent une solution efficace.</p></div>
-              </div>
-              <div class="article-card-footer">
-                <p class="article-card-date">22 Janvier 2021</p>
-                <p class='article-card-tag'>Tendance</p>
-                <!-- <span class='article-card-tag'></span> -->
-              </div>
+          <div class="article-card">
+            <a class='stretched-link' href="/lab/articles/why-jacinda-ardern"></a>
+            <div class="article-card-topic"><a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a></div>
+            <h3 class="article-card-title">L’application du Why en politique avec Jacinda Ardern</h3>
+            <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+            <div class="article-card-image-wrap">
+              <img src="/assets/img/articles/why-jacinda-ardern.jpeg" alt="Application du Why Jacinda Ardern" class="article-card-image">
+              <div class="article-card-content" style='background-color: #5AC3C8;'><p>S’appuyer sur son Why, sur sa raison d’être, s’applique dans tous secteurs, y compris en politique. Le Premier Ministre néo-zélandais, Yacinda Ardern en est un bon exemple puisqu’elle a su appliquer le Why dans un cadre politique.</p></div>
             </div>
-          </a>
+            <div class="article-card-footer">
+              <p class="article-card-date">15 Janvier 2021</p>
+              <p class='article-card-tag'>Tendance</p>
+              <!-- <span class='article-card-tag'></span> -->
+            </div>
+          </div>
         </div>
+        
+      
+        
+        <div class="col-md-6">
+          <div class="article-card">
+            <a class='stretched-link' href="/lab/articles/theorie-de-bono-crise-sanitaire"></a>
+            <div class="article-card-topic"><a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a></div>
+            <h3 class="article-card-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
+            <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+            <div class="article-card-image-wrap">
+              <img src="/assets/img/articles/theorie-de-bono-crise-sanitaire.jpeg" alt="Pensée latérale de Bono utilisation involontaire en entreprise lors de la crise" class="article-card-image">
+              <div class="article-card-content" style='background-color: #5AC3C8;'><p>Pour maintenir leur activité durant la crise sanitaire, certains collaborateurs ont fait preuve d’adaptabilité et de créativité. Sans s’en rendre compte, ils ont recouru à la théorie de Bono sur la pensée latérale, ce qui s’est avéré fort enrichissant.</p></div>
+            </div>
+            <div class="article-card-footer">
+              <p class="article-card-date">12 Janvier 2021</p>
+              <p class='article-card-tag'>Tendance</p>
+              <!-- <span class='article-card-tag'></span> -->
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="col-md-6">
+          <div class="article-card">
+            <a class='stretched-link' href="/lab/articles/tik-tok-communication-non-verbale"></a>
+            <div class="article-card-topic"><a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a></div>
+            <h3 class="article-card-title">La puissance de la communication non-verbale avec Tik Tok</h3>
+            <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+            <div class="article-card-image-wrap">
+              <img src="/assets/img/articles/communication-non-verbale-tiktok.jpeg" alt="Communication non-verbale avec Tik Tok" class="article-card-image">
+              <div class="article-card-content" style='background-color: #5AC3C8;'><p>Si la communication non-verbale est en principe peu ou difficilement maîtrisée, Tik Tok renverse ces codes en permettant aux internautes d’être maîtres de leurs contenus. De façon indirecte, la règle des 3 V de Mehrabian est appliquée.</p></div>
+            </div>
+            <div class="article-card-footer">
+              <p class="article-card-date">7 Janvier 2021</p>
+              <p class='article-card-tag'>Tendance</p>
+              <!-- <span class='article-card-tag'></span> -->
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="col-md-6">
+          <div class="article-card">
+            <a class='stretched-link' href="/lab/articles/resolutions-objectifs-smart"></a>
+            <div class="article-card-topic"><a href="./réflexions"><h4 style='background-color: #5AC3C8;'>RÉFLEXION</h4></a></div>
+            <h3 class="article-card-title">Utiliser les objectifs SMART pour tenir ses bonnes résolutions 2021</h3>
+            <div class="article-card-separator" style='border: 1px solid #5AC3C8;'></div>
+            <div class="article-card-image-wrap">
+              <img src="/assets/img/articles/objectifs_smart.jpg" alt="Se fixer des résolutions avec les objectifs SMART" class="article-card-image">
+              <div class="article-card-content" style='background-color: #5AC3C8;'><p>En début d’année, il est courant de faire le point sur l’année précédente pour se fixer des bonnes résolutions. Or, celles-ci sont difficilement tenues. Pour enfin s’y tenir, les objectifs SMART restent une solution efficace.</p></div>
+            </div>
+            <div class="article-card-footer">
+              <p class="article-card-date">4 Janvier 2021</p>
+              <p class='article-card-tag'>Tendance</p>
+              <!-- <span class='article-card-tag'></span> -->
+            </div>
+          </div>
+        </div>
+        
       
     </div>
   </div>
@@ -247,36 +298,36 @@
     <div class="main-lab-right-recent">
       <h4>LES DERNIERES PUBLICATIONS</h4>
     
-      <div class="main-lab-right-separator" style='border-top: 2px solid #F9D071;'></div>
-      <a href="/lab/articles/why-jacinda-ardern">
+      <div class="main-lab-right-separator" style='border-top: 2px solid #5AC3C8;'></div>
+      <a href="/lab/articles/sens-au-travail">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #F9D071;'>INTERVIEWS</h4>
-            <p>22 Janvier 2021</p>
+            <h4 style='color: #5AC3C8;'>RÉFLEXION</h4>
+            <p>15 Février 2021</p>
           </div>
-          <h3 class="main-lab-right-recent-title">L’application du Why en politique avec Jacinda Ardern</h3>
+          <h3 class="main-lab-right-recent-title">Co-créer le sens au travail de vos collaborateurs</h3>
         </div>
       </a>
     
       <div class="main-lab-right-separator" style='border-top: 2px solid #5AC3C8;'></div>
-      <a href="/lab/articles/theorie-de-bono-crise-sanitaire">
+      <a href="/lab/articles/maintenir-attention-étudiants">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #5AC3C8;'>REFLEXIONS</h4>
-            <p>22 Janvier 2021</p>
+            <h4 style='color: #5AC3C8;'>RÉFLEXION</h4>
+            <p>10 Février 2021</p>
           </div>
-          <h3 class="main-lab-right-recent-title">Pensée latérale de Bono : une utilisation involontaire en entreprise lors de la crise</h3>
+          <h3 class="main-lab-right-recent-title">Comment maintenir l’attention des étudiants et les rendre acteurs de leur propre apprentissage ?</h3>
         </div>
       </a>
     
       <div class="main-lab-right-separator" style='border-top: 2px solid #5AC3C8;'></div>
-      <a href="/lab/articles/tik-tok-communication-non-verbale">
+      <a href="/lab/articles/integration-nouveaux-collaborateurs">
         <div class="main-lab-right-recent-card">
           <div class="main-lab-right-recent-infos">
-            <h4 style='color: #5AC3C8;'>REFLEXIONS</h4>
-            <p>22 Janvier 2021</p>
+            <h4 style='color: #5AC3C8;'>RÉFLEXION</h4>
+            <p>05 Février 2021</p>
           </div>
-          <h3 class="main-lab-right-recent-title">La puissance de la communication non-verbale avec Tik Tok</h3>
+          <h3 class="main-lab-right-recent-title">Performance de l’entreprise : l’enjeu de l’intégration de vos nouveaux collaborateurs</h3>
         </div>
       </a>
     
@@ -307,26 +358,42 @@
   window.addEventListener('resize', recentCardFront);
 </script> -->
 
+
+<script>
+  var ellipsizeTextBox = function (element_class) {
+    var scroll = document.querySelectorAll(element_class);
+    scroll.forEach((el) => {
+      var wordArray = el.innerHTML.split(' ');
+      while(el.scrollHeight > el.offsetHeight) {
+          wordArray.pop();
+          el.innerHTML = wordArray.join(' ') + '...';
+       }
+    })
+  }
+  ellipsizeTextBox('.article-card-title');
+</script>
+
           <div class="footer-lab-seven">
   <div class="footer-lab-logo">
     <img src="/assets/img/LOGO_SEVEN_BLANC_LAB.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
-    <p>Pour le plaisir d'apprendre ensemble</p>
+    <p>Pour le plaisir de réfléchir ensemble</p>
   </div>
   <div class="flex-row-between-start">
     <div class="footer-lab-media footer-lab-links-1">
       <p>Suivez-nous</p>
       <div class="footer-lab-media-icons">
-        <a class='footer-links footer-link-linkedin'>LinkedIn</a>
+        <a class='footer-links footer-link-linkedin' href='https://www.linkedin.com/company/learnbyseven/' target="_blank">LinkedIn</a>
   <!--       <img src="/assets/img/LOGO_FB.png" alt="">
         <img src="/assets/img/LOGO_INSTA.png" alt=""> -->
       </div>
     </div>
     <div class="footer-lab-links footer-lab-links-4">
       <p>Univers</p>
-      <a href="">SEVEN</a>
-      <a href="">SEVEN learn</a>
-      <a href="">SEVEN home</a>
-      <a href="">SEVEN invest</a>
+      <a href="https://byseven.co" target="_blank">SEVEN</a>
+      <a href="https://learn.byseven.co" target="_blank">SEVEN learn</a>
+      <a href="https://learn.byseven.co/lab" target="_blank">SEVEN lab</a>
+      <a href="https://home.byseven.co" target="_blank">SEVEN home</a>
+      <a href="https://invest.byseven.co" target="_blank">SEVEN invest</a>
     </div>
   </div>
 <!--   <div class="footer-lab-links footer-lab-links-2">

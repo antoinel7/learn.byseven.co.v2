@@ -4,14 +4,32 @@
   max-width: 1440px;
   background-color: white;
   overflow: auto;
-  margin-bottom: -170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1 0 auto;
+  position: relative;
+  padding-bottom: 256px;
+  padding-top: 54px;
 
   h1 {
     color: black;
+    line-height: 3.6rem;
+  }
+
+  p {
+    color: #5F6471;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    line-height: 2.3rem;
+  }
+
+  a {
+    color: black;
+  }
+
+  @include from-medium {
+    padding-top: 107px;
+    padding-bottom: 17rem;
   }
 }
 
@@ -38,15 +56,15 @@
   h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-top: 0;
+    margin-bottom: 3rem;
   }
 
   h4 {
     font-family: 'Montserrat Light';
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 2rem;
+    padding: 1rem 0;
   }
 }
 
@@ -71,6 +89,8 @@
   a {
     color: black;
     font-family: 'Montserrat Bold';
+    transition: color 0.25s ease-in-out;
+    font-size: 1.6rem;
   }
 
   a:hover, a:focus {
@@ -80,15 +100,31 @@
   }
 
   li:first-of-type > a:hover, li:first-of-type > a:focus {
-    color: #F9D071;
+    color: #DD3C3C;
   }
 
   li:nth-of-type(2) > a:hover, li:nth-of-type(2) > a:focus {
-    color: #FF8E66;
+    color: #EF8C64;
   }
 
   li:nth-of-type(3) > a:hover, li:nth-of-type(3) > a:focus {
-    color: #4BC2C7;
+    color: #F9D071;
+  }
+
+  li:nth-of-type(4) > a:hover, li:nth-of-type(3) > a:focus {
+    color: #F3B0A3;
+  }
+
+  li:nth-of-type(5) > a:hover, li:nth-of-type(3) > a:focus {
+    color: #5AC3C8;
+  }
+
+  li:nth-of-type(6) > a:hover, li:nth-of-type(3) > a:focus {
+    color: #739DBF;
+  }
+
+  li:nth-of-type(7) > a:hover, li:nth-of-type(3) > a:focus {
+    color: #845ec2;
   }
 
   @include from-medium-high {

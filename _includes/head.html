@@ -6,10 +6,10 @@
   <title>{{ page.title }}{% if page.type != 'index' %} - Learn by Seven{% endif %}</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:title" content="Learn by SEVEN - {{page.title}}"></meta>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn by SEVEN - {{page.title}}">
   <meta name="twitter:description" content="{{page.teaser}}" />
-  <meta name="twitter:image" content="{{site.url}}{{page.image_twitter}}" />
+  <meta name="twitter:image:src" content="{{site.url}}{{page.image_twitter}}" />
   <meta name="keywords" content="{{ site.keywords }}">
   <meta name="twitter:url" content="{{page.url}}" />
   <meta name="robots" content="index, follow">
@@ -23,16 +23,21 @@
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <meta property="og:site_name" content="{{site.url}}">
   <meta property="og:url" content="{{page.url}}">
+  {% if page.layout == 'base' %}
+    <link rel="icon" href="/assets/img/favicon.ico">
+  {% elsif page.layout == 'lab' or page.layout == 'lab_category' %}
+     <link rel="icon" href="/assets/img/favicon-lab.ico">
+  {% endif %}
 
   <script>
     var host = "learn.byseven.co";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.type }}.css">
+  <link rel="stylesheet" href="/assets/css/{{ page.type }}.css">
 
   <!-- Facebook -->
   <div id="fb-root"></div>

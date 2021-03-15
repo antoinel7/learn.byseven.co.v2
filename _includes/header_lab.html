@@ -3,32 +3,18 @@
     <img src="/assets/img/LOGO_SEVEN_LAB.png" alt="" id='seven-logo'>
   </a>
   <div class='flex-row-between-centered'>
-    <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+    <!-- <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-lab-2'><p>Contactez nous</p></button>
+    </a>
     <div class="dropdown dropdown-desktop">
       <a class="btn btn-navbar-lab-1 dropdown-toggle" role="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <p>Catégories</p>
-        <i class="fas fa-bars"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
-        <i></i>
-      </div>
-    </div>
-    <div class="dropdown dropdown-mobile">
-      <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLabMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLabMobile">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
+        <a class="dropdown-item" href="/lab/réflexions">Réflexions</a>
+        <a class="dropdown-item" href="/lab/cas pratiques">Cas Pratiques</a>
+        <a class="dropdown-item" href="/lab/interviews">Interviews</a>
         <i></i>
       </div>
     </div>
@@ -36,31 +22,8 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     {% include contact_modal.html %}
   </div>
-</div>
-
-
-<script>
-  $(document).ready(function(){
-    $('#dropdownMenuButtonLabMobile').click(function(){
-      $(this).toggleClass('open');
-    });
-  });
-</script>
-
-
-<!-- <script>
-  var button = document.querySelector('.btn-navbar-lab-1');
-  var menu = document.querySelector('.navbar-category-menu');
-  button.addEventListener('click', element => {
-    button.querySelector('.dropdown-menu-lab').classList.toggle('open');
-    if (menu.style.transform == 'translateX(-357.67px)') {
-      menu.style.transform = 'translateX(0)';
-    } else {
-      menu.style.transform = 'translateX(-357.67px)';
-    }
-  })
-</script> -->
+</div> -->

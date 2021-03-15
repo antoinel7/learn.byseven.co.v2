@@ -55,13 +55,15 @@ html {
   font-size: 62.5%;
   overflow: hidden;
   height: 100%;
+  // scroll-behavior: smooth;
 }
 
 body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100%;
 }
 
@@ -100,8 +102,15 @@ p {
 
 a {
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
+  }
+}
+
+button {
+
+  &:focus, &:active {
+    outline: none !important;
   }
 }
 
@@ -178,13 +187,6 @@ a {
   display: none !important;
 }
 
-.btn-navbar-trainings-1 {
-
-  p {
-    font-family: 'Montserrat Light' !important;
-    margin: 0 !important;
-  }
-}
 
 .modal {
 
@@ -205,4 +207,16 @@ a {
       color: black;
     }
   }
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
 }

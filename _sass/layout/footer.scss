@@ -30,15 +30,11 @@
 
 .footer-link-linkedin {
   margin-left: 15px;
-  color: white;
   transition: all .25s ease-in-out;
+  cursor: pointer;
 
   i{
     font-size: 2rem;
-  }
-
-  &:hover {
-    color: #2867b2;
   }
 
   img {
@@ -46,11 +42,21 @@
   }
 }
 
-// .footer-seven {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-// }
+.footer-seven {
+
+  .footer-link-linkedin {
+    color: white;
+  }
+}
+
+.footer-seven-training-page {
+
+  .footer-link-linkedin {
+    color: black;
+  }
+}
+
+
 
 // LAB
 
@@ -58,11 +64,14 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: minmax(75px, auto);;
+  // display: grid;
+  // grid-auto-columns: auto;
+  // grid-auto-rows: minmax(75px, auto);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: rgb(0,0,0);
-  padding: 2rem 5rem;
+  padding: 2rem;
 
   p {
     width: 100px;
@@ -87,8 +96,9 @@
   }
 
   @include from-medium {
-    height: 170px;
-    padding: 3rem 10rem 3rem 6rem;
+    height: 200px;
+    // padding: 3rem 10rem 3rem 6rem;
+    padding: 3rem 6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,9 +109,13 @@
 .footer-lab-logo {
   margin-bottom: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
+
+  img {
+    margin-bottom: 1rem;
+  }
 
   p {
     font-family: 'Montserrat Regular';
@@ -111,50 +125,48 @@
   }
 
   @include from-medium {
-    flex-direction: column;
-    justify-content: flex-start;
     border-right: 2px solid white;
     padding-right: 3rem;
     margin-bottom: 0;
 
-    p {
-      margin: 1rem 0;
+    img {
+      margin: 1rem;
     }
   }
 }
 
-.footer-lab-links-title {
-  grid-column: 1;
-  grid-column-start: 1;
-  grid-column-end: auto;
-  grid-row: 1;
-}
+// .footer-lab-links-title {
+//   grid-column: 1;
+//   grid-column-start: 1;
+//   grid-column-end: auto;
+//   grid-row: 1;
+// }
 
-.footer-lab-links-1 {
-  width: 100px;
-  grid-column: 1 / 3;
-  grid-row: 2;
-  margin-right: 5rem;
+// .footer-lab-links-1 {
+//   width: 100px;
+//   grid-column: 1 / 3;
+//   grid-row: 2;
+//   margin-right: 5rem;
 
-  p {
-    white-space: nowrap;
-  }
-}
+//   p {
+//     white-space: nowrap;
+//   }
+// }
 
-.footer-lab-links-2 {
-  grid-column: 3;
-  grid-row: 2;
-}
+// .footer-lab-links-2 {
+//   grid-column: 3;
+//   grid-row: 2;
+// }
 
-.footer-lab-links-3 {
-  grid-column: 1;
-  grid-row: 3;
-}
+// .footer-lab-links-3 {
+//   grid-column: 1;
+//   grid-row: 3;
+// }
 
-.footer-lab-links-4 {
-  grid-column: 3;
-  grid-row: 3;
-}
+// .footer-lab-links-4 {
+//   grid-column: 3;
+//   grid-row: 3;
+// }
 
 .footer-lab-div {
   margin-bottom: 20px;
@@ -167,6 +179,19 @@
 #seven-logo-footer {
   height: 30px;
 }
+
+.footer-lab-media {
+  margin: 0 1rem;
+
+  p {
+    width: auto;
+  }
+
+  @include from-medium {
+    margin: 0 2rem 0 0;
+  }
+}
+
 
 .footer-lab-media-icons {
   display: flex;
@@ -197,10 +222,38 @@
   flex-direction: column;
   align-items: flex-start;
 
-  a {
+  a:nth-of-type(1) {
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  a:nth-of-type(2) {
+
+    &:hover {
+      color: #FBC84A;
+    }
+  }
+
+  a:nth-of-type(3) {
 
     &:hover {
       color: #95B9DB;
+    }
+  }
+
+  a:nth-of-type(4) {
+
+    &:hover {
+      color: #3DA1A9;
+    }
+  }
+
+  a:nth-of-type(5) {
+
+    &:hover {
+      color: #E95F48;
     }
   }
 }

@@ -5809,6 +5809,9 @@ span.glyphicon.glyphicon-chevron-up:hover, span.glyphicon.glyphicon-chevron-up:f
 @font-face {
   font-family: "Montserrat Italic";
   src: url("../fonts/Montserrat-Italic.ttf"); }
+@font-face {
+  font-family: "Montserrat BoldItalic";
+  src: url("../fonts/Montserrat-BoldItalic.ttf"); }
 /**
  * Mediaqueries following the mobile-first method
  * CSS are set from mobile first, then rules are extented to:
@@ -5880,7 +5883,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100%; }
 
 h1, h2, p {
@@ -5909,8 +5913,11 @@ p {
   font-size: 14px;
   color: white; }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none; }
+
+button:focus, button:active {
+  outline: none !important; }
 
 .stretched-link::after {
   position: absolute;
@@ -5974,10 +5981,6 @@ a:hover {
 .hidden {
   display: none !important; }
 
-.btn-navbar-trainings-1 p {
-  font-family: 'Montserrat Light' !important;
-  margin: 0 !important; }
-
 .modal h3 {
   font-family: 'Montserrat Bold'; }
 .modal label, .modal input, .modal textarea {
@@ -5988,6 +5991,17 @@ a:hover {
   font-family: 'Montserrat Light'; }
   .modal button.contact-button:hover {
     color: black; }
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0); }
 
 .container-seven {
   width: 100vw;
@@ -6126,7 +6140,7 @@ a:hover {
     color: #FBC84A;
     font-size: 24px;
     position: absolute;
-    left: 7rem;
+    left: 4rem;
     top: 0; }
   .home-main-left-statistics p {
     font-family: 'Montserrat Bold';
@@ -6137,6 +6151,8 @@ a:hover {
 
 .home-main-left-statistics-3 {
   border: none !important; }
+  .home-main-left-statistics-3 p {
+    font-family: 'Montserrat BoldItalic'; }
 
 .home-main-left-customers {
   width: 100%;
@@ -6145,37 +6161,36 @@ a:hover {
   justify-content: space-between;
   align-items: center; }
   .home-main-left-customers img {
-    height: 4rem; }
-  .home-main-left-customers ul > li > img {
-    height: 4rem; }
-    @media only screen and (min-width: 37.5em) {
-      .home-main-left-customers ul > li > img {
-        height: 10rem; } }
-    @media only screen and (min-width: 80em) {
-      .home-main-left-customers ul > li > img {
-        max-width: 10rem; } }
-  .home-main-left-customers ul {
+    height: 5rem; }
+  .home-main-left-customers .icon-carousel {
     position: relative;
-    width: 100%;
-    height: 10rem; }
-  .home-main-left-customers ul > li {
-    width: 25%;
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    padding: 20px;
-    height: 100px;
-    opacity: 0;
-    text-align: center;
-    transition: 1s opacity;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .home-main-left-customers .carousel_active {
-    opacity: 1; }
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer; }
+    .home-main-left-customers .icon-carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transition: transform .5s, opacity 0.25s ease; }
+    .home-main-left-customers .icon-carousel .img-revealed {
+      opacity: 1; }
+    .home-main-left-customers .icon-carousel .img-hidden {
+      opacity: 0;
+      transform: rotateY(180deg); }
   @media only screen and (min-width: 37.5em) {
+    .home-main-left-customers .icon-carousel {
+      height: 7rem;
+      width: 7rem; }
     .home-main-left-customers img {
       height: 7rem; } }
+  @media only screen and (min-width: 80em) {
+    .home-main-left-customers .icon-carousel {
+      height: 10rem;
+      width: 10rem; }
+    .home-main-left-customers img {
+      height: 10rem; } }
 
 .home-main-left-details {
   display: none;
@@ -6240,8 +6255,7 @@ a:hover {
   @media only screen and (min-width: 64em) {
     #home-main-left-customers-comments {
       display: flex;
-      margin-top: 0;
-      padding-top: .5rem;
+      margin-top: .5rem;
       position: absolute;
       top: 995px;
       left: 0;
@@ -6267,7 +6281,7 @@ a:hover {
     #home-main-left-customers-comments .item p:first-of-type {
       font-family: 'Montserrat Bold';
       font-size: 1.4rem;
-      margin: 0; }
+      margin: 1rem; }
     #home-main-left-customers-comments .item p:nth-of-type(2) {
       font-family: 'Montserrat Regular';
       font-size: 1.4rem;
@@ -6278,9 +6292,9 @@ a:hover {
       font-size: 1.4rem;
       line-height: 1.8rem;
       margin-bottom: 1rem; }
-    @media only screen and (min-width: 37.5em) {
-      #home-main-left-customers-comments .item {
-        margin-top: 100px; } }
+      @media only screen and (min-width: 64em) {
+        #home-main-left-customers-comments .item p:last-of-type {
+          height: 216px; } }
   #home-main-left-customers-comments .carousel-control > span {
     top: 150px !important; }
     @media only screen and (min-width: 80em) {
@@ -6356,7 +6370,7 @@ a:hover {
     border: 1px solid white;
     margin-right: 20px;
     float: left;
-    max-width: 10rem; }
+    max-width: 12rem; }
     .home-main-right-form button:hover {
       background-color: #F9D071;
       border: 1px solid #F9D071; }
@@ -6366,8 +6380,7 @@ a:hover {
       padding-left: 0;
       margin: 0;
       color: white;
-      font-family: 'Montserrat Light';
-      font-size: 14px; }
+      font-size: 1.4rem; }
   .home-main-right-form .form-group {
     margin: 0; }
     .home-main-right-form .form-group:first-of-type {
@@ -6394,13 +6407,24 @@ a:hover {
   max-width: 1440px;
   background-color: white;
   overflow: auto;
-  margin-bottom: -170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1 0 auto; }
+  position: relative;
+  padding-bottom: 256px;
+  padding-top: 54px; }
   .container-trainings-seven h1 {
+    color: black;
+    line-height: 3.6rem; }
+  .container-trainings-seven p {
+    color: #5F6471;
+    font-size: 1.4rem;
+    line-height: 2rem; }
+  .container-trainings-seven h3 {
+    line-height: 2.3rem; }
+  .container-trainings-seven a {
     color: black; }
+  @media only screen and (min-width: 37.5em) {
+    .container-trainings-seven {
+      padding-top: 107px;
+      padding-bottom: 17rem; } }
 
 .banner-trainings {
   height: 120px;
@@ -6422,13 +6446,13 @@ a:hover {
   .banner-trainings-description h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-top: 0; }
+    margin-bottom: 3rem; }
   .banner-trainings-description h4 {
     font-family: 'Montserrat Light';
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    font-size: 20px;
-    padding: 10px 0; }
+    font-size: 2rem;
+    padding: 1rem 0; }
 
 .main-trainings {
   display: flex;
@@ -6447,17 +6471,27 @@ a:hover {
   margin-bottom: 50px; }
   .main-trainings-left a {
     color: black;
-    font-family: 'Montserrat Bold'; }
+    font-family: 'Montserrat Bold';
+    transition: color 0.25s ease-in-out;
+    font-size: 1.6rem; }
   .main-trainings-left a:hover, .main-trainings-left a:focus {
     border: none !important;
     background-color: white !important;
     color: white; }
   .main-trainings-left li:first-of-type > a:hover, .main-trainings-left li:first-of-type > a:focus {
-    color: #F9D071; }
+    color: #DD3C3C; }
   .main-trainings-left li:nth-of-type(2) > a:hover, .main-trainings-left li:nth-of-type(2) > a:focus {
-    color: #FF8E66; }
+    color: #EF8C64; }
   .main-trainings-left li:nth-of-type(3) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
-    color: #4BC2C7; }
+    color: #F9D071; }
+  .main-trainings-left li:nth-of-type(4) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+    color: #F3B0A3; }
+  .main-trainings-left li:nth-of-type(5) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+    color: #5AC3C8; }
+  .main-trainings-left li:nth-of-type(6) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+    color: #739DBF; }
+  .main-trainings-left li:nth-of-type(7) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+    color: #845ec2; }
   @media only screen and (min-width: 64em) {
     .main-trainings-left {
       width: 30%;
@@ -6663,12 +6697,12 @@ a:hover {
   width: 100vw;
   max-width: 1440px;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   transition: all 0.8s ease;
   width: 100%;
   background-color: white; }
   .navbar-lab-seven img {
-    height: 2rem; }
+    height: 3rem; }
     @media only screen and (min-width: 37.5em) {
       .navbar-lab-seven img {
         margin: 7px 0;
@@ -6693,7 +6727,7 @@ a:hover {
         display: inline-block;
         flex-direction: row; } }
   .navbar-lab-seven > div {
-    width: 60%; }
+    width: 53%; }
     @media only screen and (min-width: 37.5em) {
       .navbar-lab-seven > div {
         width: auto; } }
@@ -6718,15 +6752,13 @@ a:hover {
     color: black;
     font-family: 'Montserrat Bold';
     font-size: 1rem;
-    transition: color 0.25s ease-in-out;
-    display: none; }
+    transition: color 0.25s ease-in-out; }
   .btn-navbar-lab-1 i {
     color: black;
     font-size: 2rem; }
   @media only screen and (min-width: 37.5em) {
     .btn-navbar-lab-1 p {
-      font-size: 1.4rem;
-      display: block; }
+      font-size: 1.4rem; }
     .btn-navbar-lab-1 i {
       display: none; } }
 
@@ -6735,10 +6767,8 @@ a:hover {
   border: 1px solid #95B9DB;
   display: flex;
   align-items: center; }
-  .btn-navbar-lab-2:hover {
-    background-color: #95B9DB; }
-    .btn-navbar-lab-2:hover p {
-      color: black; }
+  .btn-navbar-lab-2:hover p {
+    color: black; }
   .btn-navbar-lab-2 p {
     padding-left: 0;
     margin: 0;
@@ -6826,12 +6856,6 @@ a:hover {
     left: calc(50% - calc(5px / 3));
     top: calc(27px / 3); }
 
-.dropdown-desktop {
-  display: none; }
-  @media only screen and (min-width: 37.5em) {
-    .dropdown-desktop {
-      display: block; } }
-
 .open > .dropdown-menu-lab {
   display: flex;
   flex-direction: column; }
@@ -6839,11 +6863,12 @@ a:hover {
 .dropdown-menu-lab {
   padding: 0;
   margin: 0;
-  left: -12rem;
-  top: 150%;
+  left: calc(-100vw + 30px);
+  top: 233%;
   border-radius: 4px;
   border: none;
-  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15);
+  width: 100vw; }
   .dropdown-menu-lab .dropdown-item {
     border-left: 1px solid rgba(0, 0, 0, 0.15);
     border-right: 1px solid rgba(0, 0, 0, 0.15);
@@ -6851,9 +6876,14 @@ a:hover {
     color: black;
     font-family: 'Montserrat Regular';
     font-size: 1.4rem;
-    transition: color 0.25s ease-in-out; }
-    .dropdown-menu-lab .dropdown-item:hover {
-      color: #95B9DB; }
+    transition: color 0.25s ease-in-out;
+    text-align: center; }
+    .dropdown-menu-lab .dropdown-item:first-of-type:hover {
+      color: #5AC3C8; }
+    .dropdown-menu-lab .dropdown-item:nth-of-type(2):hover {
+      color: #EF8C64; }
+    .dropdown-menu-lab .dropdown-item:last-of-type:hover {
+      color: #F9D071; }
   .dropdown-menu-lab .dropdown-item:first-of-type {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -6867,7 +6897,7 @@ a:hover {
   .dropdown-menu-lab i {
     position: absolute;
     top: -11px;
-    left: 88%;
+    left: 95%;
     margin-left: -12px;
     width: 24px;
     height: 12px;
@@ -6882,7 +6912,11 @@ a:hover {
     background-color: white; }
   @media only screen and (min-width: 37.5em) {
     .dropdown-menu-lab {
-      left: -7rem; }
+      left: -7.5rem;
+      width: auto;
+      top: 150%; }
+      .dropdown-menu-lab .dropdown-item {
+        text-align: left; }
       .dropdown-menu-lab i {
         left: 75%; } }
 
@@ -6920,28 +6954,53 @@ a:hover {
 
 .navbar-trainings-seven {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 30px 70px;
-  position: sticky;
-  position: -webkit-sticky;
+  padding: 1rem;
+  position: fixed;
+  width: 100vw;
+  max-width: 1440px;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease;
   width: 100%;
   background-color: white; }
-  .navbar-trainings-seven .navbar-trainings-logo {
-    height: 33px;
-    margin: 7px 0;
-    padding-right: 10px; }
+  .navbar-trainings-seven img {
+    height: 3rem; }
+    @media only screen and (min-width: 37.5em) {
+      .navbar-trainings-seven img {
+        margin: 7px 0;
+        height: 33px; } }
+  .navbar-trainings-seven p {
+    padding-left: 10px;
+    color: black;
+    font-family: 'Montserrat Bold';
+    font-size: 18.36px;
+    height: 20px;
+    margin: 7px 0 21px 0; }
+    @media only screen and (min-width: 37.5em) {
+      .navbar-trainings-seven p {
+        margin: 7px 0; } }
+  .navbar-trainings-seven a:hover, .navbar-trainings-seven a:focus {
+    text-decoration: none; }
+  .navbar-trainings-seven h2 {
+    color: black;
+    display: none; }
+    @media only screen and (min-width: 64em) {
+      .navbar-trainings-seven h2 {
+        display: inline-block;
+        flex-direction: row; } }
+  @media only screen and (min-width: 37.5em) {
+    .navbar-trainings-seven {
+      padding: 30px 70px;
+      flex-wrap: wrap; } }
 
 .btn-navbar-trainings-1 {
   background-color: #F9D071;
   border: 1px solid #F9D071;
   display: flex;
-  align-items: center;
-  margin-right: 20px; }
+  align-items: center; }
   .btn-navbar-trainings-1:hover {
     background-color: #F9D071; }
     .btn-navbar-trainings-1:hover p {
@@ -6950,8 +7009,9 @@ a:hover {
     padding-left: 0;
     margin: 0;
     color: white;
-    font-family: 'Montserrat Light';
-    font-size: 14px; }
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    transition: color 0.25s ease-in-out; }
 
 .seven-burger-menu-trainings {
   background-color: rgba(0, 0, 0, 0);
@@ -7008,24 +7068,28 @@ a:hover {
 
 .footer-link-linkedin {
   margin-left: 15px;
-  color: white;
-  transition: all .25s ease-in-out; }
+  transition: all .25s ease-in-out;
+  cursor: pointer; }
   .footer-link-linkedin i {
     font-size: 2rem; }
-  .footer-link-linkedin:hover {
-    color: #2867b2; }
   .footer-link-linkedin img {
     height: 20px; }
+
+.footer-seven .footer-link-linkedin {
+  color: white; }
+
+.footer-seven-training-page .footer-link-linkedin {
+  color: black; }
 
 .footer-lab-seven {
   width: 100%;
   position: absolute;
   bottom: 0;
-  display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: minmax(75px, auto);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: black;
-  padding: 2rem 5rem; }
+  padding: 2rem; }
   .footer-lab-seven p {
     width: 100px;
     font-family: 'Montserrat Bold';
@@ -7042,8 +7106,8 @@ a:hover {
     margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 170px;
-      padding: 3rem 10rem 3rem 6rem;
+      height: 200px;
+      padding: 3rem 6rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -7052,48 +7116,22 @@ a:hover {
 .footer-lab-logo {
   margin-bottom: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start; }
+  .footer-lab-logo img {
+    margin-bottom: 1rem; }
   .footer-lab-logo p {
     font-family: 'Montserrat Regular';
     font-size: 14px;
     margin: 0; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-logo {
-      flex-direction: column;
-      justify-content: flex-start;
       border-right: 2px solid white;
       padding-right: 3rem;
       margin-bottom: 0; }
-      .footer-lab-logo p {
-        margin: 1rem 0; } }
-
-.footer-lab-links-title {
-  grid-column: 1;
-  grid-column-start: 1;
-  grid-column-end: auto;
-  grid-row: 1; }
-
-.footer-lab-links-1 {
-  width: 100px;
-  grid-column: 1 / 3;
-  grid-row: 2;
-  margin-right: 5rem; }
-  .footer-lab-links-1 p {
-    white-space: nowrap; }
-
-.footer-lab-links-2 {
-  grid-column: 3;
-  grid-row: 2; }
-
-.footer-lab-links-3 {
-  grid-column: 1;
-  grid-row: 3; }
-
-.footer-lab-links-4 {
-  grid-column: 3;
-  grid-row: 3; }
+      .footer-lab-logo img {
+        margin: 1rem; } }
 
 .footer-lab-div {
   margin-bottom: 20px; }
@@ -7103,6 +7141,14 @@ a:hover {
 
 #seven-logo-footer {
   height: 30px; }
+
+.footer-lab-media {
+  margin: 0 1rem; }
+  .footer-lab-media p {
+    width: auto; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-media {
+      margin: 0 2rem 0 0; } }
 
 .footer-lab-media-icons {
   display: flex;
@@ -7124,8 +7170,16 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
-  .footer-lab-links a:hover {
+  .footer-lab-links a:nth-of-type(1):hover {
+    color: white; }
+  .footer-lab-links a:nth-of-type(2):hover {
+    color: #FBC84A; }
+  .footer-lab-links a:nth-of-type(3):hover {
     color: #95B9DB; }
+  .footer-lab-links a:nth-of-type(4):hover {
+    color: #3DA1A9; }
+  .footer-lab-links a:nth-of-type(5):hover {
+    color: #E95F48; }
 
 .footer-trainings-seven {
   width: 100%;

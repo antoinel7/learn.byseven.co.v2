@@ -8,10 +8,10 @@
   <title>Seven | Lab - Learn by Seven</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:title" content="Learn by SEVEN - Seven | Lab"></meta>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn by SEVEN - Seven | Lab">
   <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="http://localhost:4000" />
+  <meta name="twitter:image:src" content="https://learn.byseven.co" />
   <meta name="keywords" content="">
   <meta name="twitter:url" content="/lab/articles/article_test/" />
   <meta name="robots" content="index, follow">
@@ -20,15 +20,18 @@
     <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
   
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="http://localhost:4000">
+  <meta property="og:site_name" content="https://learn.byseven.co">
   <meta property="og:url" content="/lab/articles/article_test/">
+  
+     <link rel="icon" href="/assets/img/favicon-lab.ico">
+  
 
   <script>
     var host = "learn.byseven.co";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/lab.css">
@@ -49,7 +52,6 @@
   </script>
 </head>
 
-    <link rel="icon" href="/assets/img/favicon-lab.ico?v=1.0">
     <body class="page-lab">
       <main>
         <div class="container-lab-seven">
@@ -58,32 +60,18 @@
     <img src="/assets/img/LOGO_SEVEN_LAB.png" alt="" id='seven-logo'>
   </a>
   <div class='flex-row-between-centered'>
-    <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
+    <!-- <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-lab-2'><p>Contactez nous</p></button>
+    </a>
     <div class="dropdown dropdown-desktop">
       <a class="btn btn-navbar-lab-1 dropdown-toggle" role="button" id="dropdownMenuButtonLab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <p>Catégories</p>
-        <i class="fas fa-bars"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLab">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
-        <i></i>
-      </div>
-    </div>
-    <div class="dropdown dropdown-mobile">
-      <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButtonLabMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="dropdown-menu dropdown-menu-lab" aria-labelledby="dropdownMenuButtonLabMobile">
-        <a class="dropdown-item" href="/">Réflexions</a>
-        <a class="dropdown-item" href="">Cas Réels</a>
-        <a class="dropdown-item" href="">Interviews</a>
+        <a class="dropdown-item" href="/lab/réflexions">Réflexions</a>
+        <a class="dropdown-item" href="/lab/cas pratiques">Cas Pratiques</a>
+        <a class="dropdown-item" href="/lab/interviews">Interviews</a>
         <i></i>
       </div>
     </div>
@@ -91,7 +79,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
   <div class="modal-header">
@@ -120,30 +108,7 @@
 </div>
 
   </div>
-</div>
-
-
-<script>
-  $(document).ready(function(){
-    $('#dropdownMenuButtonLabMobile').click(function(){
-      $(this).toggleClass('open');
-    });
-  });
-</script>
-
-
-<!-- <script>
-  var button = document.querySelector('.btn-navbar-lab-1');
-  var menu = document.querySelector('.navbar-category-menu');
-  button.addEventListener('click', element => {
-    button.querySelector('.dropdown-menu-lab').classList.toggle('open');
-    if (menu.style.transform == 'translateX(-357.67px)') {
-      menu.style.transform = 'translateX(0)';
-    } else {
-      menu.style.transform = 'translateX(-357.67px)';
-    }
-  })
-</script> -->
+</div> -->
 
           <div class="centered-item" style='height: 100%;'>
   <h1>Test</h1>
@@ -152,23 +117,24 @@
           <div class="footer-lab-seven">
   <div class="footer-lab-logo">
     <img src="/assets/img/LOGO_SEVEN_BLANC_LAB.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
-    <p>Pour le plaisir d'apprendre ensemble</p>
+    <p>Pour le plaisir de réfléchir ensemble</p>
   </div>
   <div class="flex-row-between-start">
     <div class="footer-lab-media footer-lab-links-1">
       <p>Suivez-nous</p>
       <div class="footer-lab-media-icons">
-        <a class='footer-links footer-link-linkedin'>LinkedIn</a>
+        <a class='footer-links footer-link-linkedin' href='https://www.linkedin.com/company/learnbyseven/' target="_blank">LinkedIn</a>
   <!--       <img src="/assets/img/LOGO_FB.png" alt="">
         <img src="/assets/img/LOGO_INSTA.png" alt=""> -->
       </div>
     </div>
     <div class="footer-lab-links footer-lab-links-4">
       <p>Univers</p>
-      <a href="">SEVEN</a>
-      <a href="">SEVEN learn</a>
-      <a href="">SEVEN home</a>
-      <a href="">SEVEN invest</a>
+      <a href="https://byseven.co" target="_blank">SEVEN</a>
+      <a href="https://learn.byseven.co" target="_blank">SEVEN learn</a>
+      <a href="https://learn.byseven.co/lab" target="_blank">SEVEN lab</a>
+      <a href="https://home.byseven.co" target="_blank">SEVEN home</a>
+      <a href="https://invest.byseven.co" target="_blank">SEVEN invest</a>
     </div>
   </div>
 <!--   <div class="footer-lab-links footer-lab-links-2">

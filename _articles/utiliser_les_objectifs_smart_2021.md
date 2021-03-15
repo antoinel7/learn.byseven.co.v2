@@ -2,35 +2,44 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/resolutions-objectifs-smart"
-absolute_link: "http://test.byseven.co/lab/articles/resolutions-objectifs-smart"
-facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftest.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&amp;src=sdkpreparse"
-twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Ftest.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&text=Utiliser%20les%20objectifs%20SMART%20pour%20tenir%20ses%20bonnes%20r%C3%A9solutions%202021"
+absolute_link: "http://learn.byseven.co/lab/articles/resolutions-objectifs-smart"
+facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&amp;src=sdkpreparse"
+twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&text=Utiliser%20les%20objectifs%20SMART%20pour%20tenir%20ses%20bonnes%20r%C3%A9solutions%202021"
 training_link : ""
 title: "Utiliser les objectifs SMART pour tenir ses bonnes résolutions 2021"
 image: "/assets/img/articles/objectifs_smart.jpg"
 image_twitter: "/assets/img/articles/objectifs_smart.jpg"
 image_alt: "Se fixer des résolutions avec les objectifs SMART"
 order: 1
-theme: "CAS RÉELS"
-theme_colour: "#EF8C64"
+theme: "RÉFLEXION"
+theme_colour: "#5AC3C8"
 tag1: "Tendance"
 tag2: ""
-created_at: "22 Janvier 2021"
+created_at: "4 Janvier 2021"
 teaser: "En début d’année, il est courant de faire le point sur l’année précédente pour se fixer des bonnes résolutions. Or, celles-ci sont difficilement tenues. Pour enfin s’y tenir, les objectifs SMART restent une solution efficace."
 custom_head: true
 lang: fr
 ---
 
 <div class="container-lab-article">
+  <div class="lab-breadcrumb">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ul>
+          <li><a href="/lab">Accueil</a></li>
+          <li><a href="/lab/{{page.theme | downcase}}s">{{page.theme | capitalize}}s</a></li>
+          <li><span aria-current="page">Article</span></li>
+      </ul>
+    </nav>
+  </div>
   <div class="lab-article-banner">
     <h1>{{page.title}}</h1>
+    <div class="flex-row-between-centered">
+      <p class="lab-article-banner-tag">{{page.tag1}}</p>
+    </div>
     <div class="lab-article-banner-tags">
       <div class="lab-article-banner-tags-left">
-        <h4 style='background-color: {{page.theme_colour}};'>{{page.theme}}</h4>
+        <a href="/lab/{{page.theme | downcase}}s"><h4 style='background-color: {{page.theme_colour}};'>{{page.theme}}</h4></a>
         <p class="lab-article-banner-tags-date">{{page.created_at}}</p>
-        <div>
-          <p class="lab-article-banner-tag">{{page.tag1}}</p>
-        </div>
       </div>
       <div class="lab-article-banner-tags-right">
         <div class="fb-share-button" data-href="{{page.absolute_link}}" data-layout="button" data-size="small">
@@ -123,7 +132,10 @@ lang: fr
       <a href='{{page.twitter_href}}' target="_blank"><i class="fab fa-twitter"></i></a>
       <a href='https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}' target='_blank'><i class="fab fa-linkedin-in"></i></a>
     </div>
-    <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs' style='background-color: {{page.theme_colour}};border: none;'><p>Contactez nous</p></button>
+    <!-- <button class='btn btn-navbar-lab-2' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-lab-2'><p>Contactez nous</p></button>
+    </a>
   </div>
 </div>
 <div class="lab-article-recents">
@@ -151,7 +163,7 @@ lang: fr
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -183,7 +195,7 @@ lang: fr
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <script type="text/javascript">
   function recentCardFront() {

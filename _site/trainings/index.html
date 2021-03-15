@@ -5,13 +5,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Seven | Trainings - Learn by Seven</title>
+  <title>Seven | Formations - Learn by Seven</title>
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"></meta>
-  <meta name="twitter:title" content="Learn by SEVEN - Seven | Trainings"></meta>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn by SEVEN - Seven | Formations">
   <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="http://localhost:4000" />
+  <meta name="twitter:image:src" content="https://learn.byseven.co" />
   <meta name="keywords" content="">
   <meta name="twitter:url" content="/trainings/" />
   <meta name="robots" content="index, follow">
@@ -20,15 +20,16 @@
     <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
   
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
-  <meta property="og:site_name" content="http://localhost:4000">
+  <meta property="og:site_name" content="https://learn.byseven.co">
   <meta property="og:url" content="/trainings/">
+  
 
   <script>
     var host = "learn.byseven.co";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/trainings.css">
@@ -56,22 +57,25 @@
   <div class="flex-row-between-end">
     <img src="/assets/img/LOGO-LEARN-02.png" alt="" class='navbar-trainings-logo'>
   </div>
-  <div class='flex-row-between-centered'>
-    <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button>
-    <div class="dropdown">
+  <div>
+    <!-- <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+    <a href="/" target="_blank">
+      <button class='btn btn-navbar-trainings-1'><p>Contactez nous</p></button>
+    </a>
+    <!-- <div class="dropdown">
       <img src="/assets/img/BURGER_BLACK.png" style='height: 20px;' class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <div class="dropdown-menu seven-burger-menu-trainings" aria-labelledby="dropdownMenuButton">
         <div>
-          <a class="dropdown-item dropdown-item-1" href="/">Home</a>
+          <a class="dropdown-item dropdown-item-1" href="/" target="_blank">Home</a>
           <a class="dropdown-item dropdown-item-2" href="/trainings">Trainings</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
   <div class="modal-header">
@@ -100,7 +104,7 @@
 </div>
 
   </div>
-</div>
+</div> -->
 
         <div class="banner-trainings">
   <div class="banner-trainings-description">
@@ -183,33 +187,50 @@
   });
 </script> -->
 
-        <div class="footer-trainings-seven">
-  <img src="../assets/img/LOGO_BLANC_LEARN2.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
-  <div class="footer-lab-media footer-lab-links-1">
-    <p>Suivez-nous</p>
-    <div class="footer-lab-media-icons">
-      <img src="../assets/img/LOGO_LINKEDIN.png" alt="">
-      <img src="../assets/img/LOGO_FB.png" alt="">
-      <img src="../assets/img/LOGO_INSTA.png" alt="">
+<script>
+  $(document).ready(function(){
+    $(".nav-link").click(function() {
+      if (window.innerWidth < 1024) {
+        $('html,body').animate({
+            scrollTop: $(".tab-content").offset().top - 60},
+            'slow');
+      }
+    });
+  });
+</script>
+
+        <div class="footer-lab-seven">
+  <div class="footer-lab-logo">
+    <img src="/assets/img/LOGO_SEVEN_BLANC_LAB.png" alt="" id='seven-logo-footer' class='footer-lab-links-title'>
+    <p>Pour le plaisir de réfléchir ensemble</p>
+  </div>
+  <div class="flex-row-between-start">
+    <div class="footer-lab-media footer-lab-links-1">
+      <p>Suivez-nous</p>
+      <div class="footer-lab-media-icons">
+        <a class='footer-links footer-link-linkedin'>LinkedIn</a>
+  <!--       <img src="/assets/img/LOGO_FB.png" alt="">
+        <img src="/assets/img/LOGO_INSTA.png" alt=""> -->
+      </div>
+    </div>
+    <div class="footer-lab-links footer-lab-links-4">
+      <p>Univers</p>
+      <a href="">SEVEN</a>
+      <a href="">SEVEN learn</a>
+      <a href="">SEVEN home</a>
+      <a href="">SEVEN invest</a>
     </div>
   </div>
-  <div class="footer-lab-links footer-lab-links-2">
+<!--   <div class="footer-lab-links footer-lab-links-2">
     <p>Newsletter</p>
     <a href="">S'inscrire</a>
-  </div>
-  <div class="footer-lab-links footer-lab-links-3">
+  </div> -->
+<!--   <div class="footer-lab-links footer-lab-links-3">
     <p>A propos</p>
     <a href="">Méthode</a>
     <a href="">Notre équipe</a>
     <a href="">Contactez-nous</a>
-  </div>
-  <div class="footer-lab-links footer-lab-links-4">
-    <p>Univers</p>
-    <a href="">SEVEN</a>
-    <a href="">SEVEN learn</a>
-    <a href="">SEVEN home</a>
-    <a href="">SEVEN invest</a>
-  </div>
+  </div> -->
 </div>
 
       </div>
