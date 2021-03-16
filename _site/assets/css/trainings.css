@@ -6449,26 +6449,28 @@ button:focus, button:active {
     margin-bottom: 3rem; }
   .banner-trainings-description h4 {
     font-family: 'Montserrat Light';
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     font-size: 2rem;
-    padding: 1rem 0; }
+    line-height: 1.8; }
 
 .main-trainings {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px; }
+  padding: 0 50px;
+  margin-bottom: 100px; }
   @media only screen and (min-width: 64em) {
     .main-trainings {
-      flex-direction: row;
-      padding: 0 100px; } }
+      flex-direction: row; } }
+
+.underline {
+  color: black;
+  border-bottom: 5px solid #F9D071; }
 
 .main-trainings-left {
   width: 100%;
   display: block;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .main-trainings-left a {
     color: black;
     font-family: 'Montserrat Bold';
@@ -6479,18 +6481,20 @@ button:focus, button:active {
     background-color: white !important;
     color: white; }
   .main-trainings-left li:first-of-type > a:hover, .main-trainings-left li:first-of-type > a:focus {
-    color: #DD3C3C; }
+    color: grey; }
   .main-trainings-left li:nth-of-type(2) > a:hover, .main-trainings-left li:nth-of-type(2) > a:focus {
-    color: #EF8C64; }
+    color: #E95F48; }
   .main-trainings-left li:nth-of-type(3) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+    color: #EF8C64; }
+  .main-trainings-left li:nth-of-type(4) > a:hover, .main-trainings-left li:nth-of-type(4) > a:focus {
     color: #F9D071; }
-  .main-trainings-left li:nth-of-type(4) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+  .main-trainings-left li:nth-of-type(5) > a:hover, .main-trainings-left li:nth-of-type(5) > a:focus {
     color: #F3B0A3; }
-  .main-trainings-left li:nth-of-type(5) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+  .main-trainings-left li:nth-of-type(6) > a:hover, .main-trainings-left li:nth-of-type(6) > a:focus {
     color: #5AC3C8; }
-  .main-trainings-left li:nth-of-type(6) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+  .main-trainings-left li:nth-of-type(7) > a:hover, .main-trainings-left li:nth-of-type(7) > a:focus {
     color: #739DBF; }
-  .main-trainings-left li:nth-of-type(7) > a:hover, .main-trainings-left li:nth-of-type(3) > a:focus {
+  .main-trainings-left li:nth-of-type(8) > a:hover, .main-trainings-left li:nth-of-type(8) > a:focus {
     color: #845ec2; }
   @media only screen and (min-width: 64em) {
     .main-trainings-left {
@@ -6513,39 +6517,51 @@ button:focus, button:active {
       width: 70%; } }
 
 .main-trainings-card {
-  height: 250px;
+  height: 300px;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
-  text-align: center;
-  transition: border-radius .3s, background .3s;
-  transition-timing-function: ease-in; }
-  .main-trainings-card:hover {
-    background-color: #F9D071;
-    border: 1px solid #F9D071;
-    border-radius: 30px; }
-    .main-trainings-card:hover .main-training-card-separator {
-      border: 2px solid white; }
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.05); }
   .main-trainings-card h5 {
-    margin: 0;
+    text-align: center;
     font-family: 'Montserrat Bold';
     font-size: 16px;
-    transition: all .3s ease-in;
-    color: black; }
+    color: white; }
   .main-trainings-card p {
     margin: 0;
     font-family: 'Montserrat Italic';
     font-size: 12px;
-    transition: all .3s ease-in;
-    color: black; }
-  .main-trainings-card .main-training-card-separator {
-    width: 30%;
-    border: 2px solid #F9D071;
-    transition: all .3s ease-in; }
+    color: white; }
+  .main-trainings-card .training-main-info-flex {
+    display: flex;
+    align-items: center; }
+  .main-trainings-card p {
+    color: white !important; }
+  .main-trainings-card .training-page-picto {
+    width: 35px; }
+  .main-trainings-card .training-page-picto-lieu {
+    width: 35px;
+    padding: 5px; }
+  .main-trainings-card:hover {
+    opacity: 0.5; }
+
+.main-trainings-card-leadership {
+  background-color: #E95F48; }
+
+.main-trainings-card-gestion {
+  background-color: #EF8C64; }
+
+.main-trainings-card-communication {
+  background-color: #F9D071; }
+
+.main-trainings-card-business {
+  background-color: #F3B0A3; }
+
+.main-trainings-card-project {
+  background-color: #5AC3C8; }
 
 .navbar-seven {
   display: flex;
