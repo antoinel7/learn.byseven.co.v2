@@ -1,9 +1,13 @@
+html {
+  overflow: visible !important;
+}
+
 .container-trainings-seven {
   min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
+  overflow: visible;
   position: relative;
   padding-bottom: 256px;
   padding-top: 54px;
@@ -28,7 +32,6 @@
   }
 
   @include from-medium {
-    padding-top: 107px;
     padding-bottom: 17rem;
   }
 }
@@ -36,8 +39,9 @@
 .banner-trainings {
   height: 120px;
   width: 100%;
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +60,7 @@
   h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   h4 {
@@ -71,11 +75,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px;
   margin-bottom: 100px;
+  padding: 0 10px;
   @include from-medium-high {
-    flex-direction: row;
-    // padding: 0 100px;
+    padding: 0 100px;
   }
 }
 
@@ -88,14 +91,16 @@
 }
 
 .main-trainings-left {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   a {
     color: black;
     font-family: 'Montserrat Bold';
     transition: color 0.25s ease-in-out;
     font-size: 1.6rem;
+  }
+
+  li > a {
+    padding: 10px 0px;
   }
 
   a:hover, a:focus {
@@ -136,12 +141,12 @@
   }
 
   @include from-medium-high {
-    width: 30%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    li > a {
+    padding: 10px 15px;
+    }
   }
 }
 
@@ -161,6 +166,7 @@
 
   @include from-medium-high {
     width: 70%;
+    padding: 0px;
   }
 }
 
@@ -221,3 +227,5 @@
 .main-trainings-card-project {
   background-color: #5AC3C8;
 }
+
+

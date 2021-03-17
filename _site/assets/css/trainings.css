@@ -6401,12 +6401,15 @@ button:focus, button:active {
     .home-main-right-form {
       max-width: 80rem; } }
 
+html {
+  overflow: visible !important; }
+
 .container-trainings-seven {
   min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
+  overflow: visible;
   position: relative;
   padding-bottom: 256px;
   padding-top: 54px; }
@@ -6423,14 +6426,14 @@ button:focus, button:active {
     color: black; }
   @media only screen and (min-width: 37.5em) {
     .container-trainings-seven {
-      padding-top: 107px;
       padding-bottom: 17rem; } }
 
 .banner-trainings {
   height: 120px;
   width: 100%;
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -6446,7 +6449,7 @@ button:focus, button:active {
   .banner-trainings-description h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
   .banner-trainings-description h4 {
     font-family: 'Montserrat Light';
     font-size: 2rem;
@@ -6457,25 +6460,25 @@ button:focus, button:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 10px; }
   @media only screen and (min-width: 64em) {
     .main-trainings {
-      flex-direction: row; } }
+      padding: 0 100px; } }
 
 .underline {
   color: black;
   border-bottom: 5px solid #F9D071; }
 
 .main-trainings-left {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
   .main-trainings-left a {
     color: black;
     font-family: 'Montserrat Bold';
     transition: color 0.25s ease-in-out;
     font-size: 1.6rem; }
+  .main-trainings-left li > a {
+    padding: 10px 0px; }
   .main-trainings-left a:hover, .main-trainings-left a:focus {
     border: none !important;
     background-color: white !important;
@@ -6498,12 +6501,11 @@ button:focus, button:active {
     color: #845ec2; }
   @media only screen and (min-width: 64em) {
     .main-trainings-left {
-      width: 30%;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin: 0; } }
+      margin-bottom: 30px;
+      justify-content: space-evenly; }
+      .main-trainings-left li > a {
+        padding: 10px 15px; } }
 
 .main-trainings-right {
   width: 100%;
@@ -6514,7 +6516,8 @@ button:focus, button:active {
     width: 100%; }
   @media only screen and (min-width: 64em) {
     .main-trainings-right {
-      width: 70%; } }
+      width: 70%;
+      padding: 0px; } }
 
 .main-trainings-card {
   height: 300px;
@@ -7122,7 +7125,7 @@ button:focus, button:active {
     margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 200px;
+      height: 160px;
       padding: 3rem 6rem;
       display: flex;
       flex-direction: row;

@@ -6401,12 +6401,15 @@ button:focus, button:active {
     .home-main-right-form {
       max-width: 80rem; } }
 
+html {
+  overflow: visible !important; }
+
 .container-trainings-seven {
   min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
+  overflow: visible;
   position: relative;
   padding-bottom: 256px;
   padding-top: 54px; }
@@ -6423,14 +6426,14 @@ button:focus, button:active {
     color: black; }
   @media only screen and (min-width: 37.5em) {
     .container-trainings-seven {
-      padding-top: 107px;
       padding-bottom: 17rem; } }
 
 .banner-trainings {
   height: 120px;
   width: 100%;
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -6446,7 +6449,7 @@ button:focus, button:active {
   .banner-trainings-description h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
   .banner-trainings-description h4 {
     font-family: 'Montserrat Light';
     font-size: 2rem;
@@ -6457,25 +6460,25 @@ button:focus, button:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 10px; }
   @media only screen and (min-width: 64em) {
     .main-trainings {
-      flex-direction: row; } }
+      padding: 0 100px; } }
 
 .underline {
   color: black;
   border-bottom: 5px solid #F9D071; }
 
 .main-trainings-left {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
   .main-trainings-left a {
     color: black;
     font-family: 'Montserrat Bold';
     transition: color 0.25s ease-in-out;
     font-size: 1.6rem; }
+  .main-trainings-left li > a {
+    padding: 10px 0px; }
   .main-trainings-left a:hover, .main-trainings-left a:focus {
     border: none !important;
     background-color: white !important;
@@ -6498,12 +6501,11 @@ button:focus, button:active {
     color: #845ec2; }
   @media only screen and (min-width: 64em) {
     .main-trainings-left {
-      width: 30%;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin: 0; } }
+      margin-bottom: 30px;
+      justify-content: space-evenly; }
+      .main-trainings-left li > a {
+        padding: 10px 15px; } }
 
 .main-trainings-right {
   width: 100%;
@@ -6514,7 +6516,8 @@ button:focus, button:active {
     width: 100%; }
   @media only screen and (min-width: 64em) {
     .main-trainings-right {
-      width: 70%; } }
+      width: 70%;
+      padding: 0px; } }
 
 .main-trainings-card {
   height: 300px;
@@ -6563,6 +6566,38 @@ button:focus, button:active {
 .main-trainings-card-project {
   background-color: #5AC3C8; }
 
+.breadcrumb {
+  background-color: white;
+  margin: 2rem 0 0 0; }
+  @media only screen and (min-width: 37.5em) {
+    .breadcrumb {
+      margin: 2rem 0; } }
+
+.trainings-breadcrumb {
+  display: flex;
+  justify-content: right; }
+  @media only screen and (min-width: 37.5em) {
+    .trainings-breadcrumb {
+      justify-content: flex-start;
+      padding: 0px 60px; } }
+
+.trainings-breadcrumb ul {
+  display: flex; }
+
+.trainings-breadcrumb li {
+  font-family: 'Montserrat Light';
+  font-size: 1.4rem; }
+  .trainings-breadcrumb li a:hover {
+    color: #95B9DB; }
+
+.trainings-breadcrumb li::before {
+  content: ">";
+  margin: 0 1rem; }
+
+.trainings-breadcrumb li:first-child::before {
+  content: "";
+  margin: 0; }
+
 .container-training-page-seven {
   min-height: 100vh;
   width: 100vw;
@@ -6572,23 +6607,25 @@ button:focus, button:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 54px; }
+  padding-top: 54px;
+  position: relative; }
   @media only screen and (min-width: 37.5em) {
     .container-training-page-seven {
       padding-top: 107px; } }
 
 .training-page-main {
-  padding: 0 50px;
-  margin: 70px 0; }
+  padding: 0 10px;
+  margin: 10px 0; }
   @media only screen and (min-width: 64em) {
     .training-page-main {
-      padding: 0 100px; } }
+      padding: 0 60px; } }
 
 .training-page-main-banner {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 64em) {
     .training-page-main-banner {
       flex-direction: row; } }
@@ -6606,7 +6643,8 @@ button:focus, button:active {
     color: black; }
   .training-page-main-banner-left h4 {
     font-family: 'Montserrat Bold';
-    font-size: 12px;
+    font-size: 16px;
+    line-spacing: 32px;
     letter-spacing: .3rem;
     background-color: #F9D071;
     display: inline-block;
@@ -6614,7 +6652,7 @@ button:focus, button:active {
     margin: 0 0 20px 0; }
   .training-page-main-banner-left p {
     font-family: 'Montserrat Regular';
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.4rem; }
   .training-page-main-banner-left p:first-of-type {
     font-family: 'Montserrat Italic';
@@ -6629,7 +6667,8 @@ button:focus, button:active {
 
 .training-page-main-banner-right {
   width: 50%;
-  display: none; }
+  display: none;
+  margin-bottom: 25px; }
   .training-page-main-banner-right img {
     height: 350px;
     width: 100%; }
@@ -6675,14 +6714,21 @@ button:focus, button:active {
       .training-page-infos > div > div {
         margin: 6px 0 0 10px; } }
 
+.training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
+  max-width: 80px; }
+  @media only screen and (min-width: 64em) {
+    .training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
+      max-width: 300px; } }
+
 .training-page-main-description {
-  padding: 0 50px;
+  padding: 0 10px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: scroll; }
+  overflow: scroll;
+  margin-bottom: 164px; }
   .training-page-main-description .training-page-main-description-right {
     display: flex;
     flex-direction: column;
@@ -6690,11 +6736,12 @@ button:focus, button:active {
     align-items: flex-start; }
   @media only screen and (min-width: 64em) {
     .training-page-main-description {
-      padding: 0 100px;
+      padding: 0 60px;
       flex-direction: row;
       align-items: flex-start; }
       .training-page-main-description .training-page-main-description-left {
-        padding-right: 30px; }
+        padding-right: 30px;
+        margin-bottom: 20px; }
       .training-page-main-description .training-page-main-description-right {
         padding-left: 30px; } }
 
@@ -6704,8 +6751,8 @@ button:focus, button:active {
     font-family: 'Montserrat Bold';
     text-decoration: underline;
     margin-bottom: 20px;
-    font-size: 1.6rem;
-    line-height: 2.8rem; }
+    font-size: 20px;
+    line-height: 32px; }
   .training-page-main-description-left h5, .training-page-main-description-right h5 {
     font-family: 'Montserrat Bold'; }
   .training-page-main-description-left p, .training-page-main-description-right p {
@@ -6713,21 +6760,41 @@ button:focus, button:active {
     color: black;
     margin-bottom: 20px; }
   .training-page-main-description-left h5, .training-page-main-description-left p, .training-page-main-description-right h5, .training-page-main-description-right p {
-    font-size: 1.4rem;
-    line-height: 2.4rem; }
+    font-size: 16px;
+    line-height: 28px; }
   .training-page-main-description-left > p:last-of-type, .training-page-main-description-right > p:last-of-type {
     margin: 0; }
   @media only screen and (min-width: 64em) {
     .training-page-main-description-left, .training-page-main-description-right {
       width: 50%; } }
 
+.training-page-faq-element {
+  padding: 6px;
+  box-shadow: 0 15px 35px rgba(126, 87, 88, 0.1), 0 5px 15px rgba(0, 0, 0, 0.04);
+  margin-bottom: 10px;
+  border-radius: 5px; }
+  .training-page-faq-element p {
+    margin: 0;
+    font-size: 14px; }
+  @media only screen and (min-width: 64em) {
+    .training-page-faq-element {
+      font-size: 16px; } }
+
 .training-page-faq-question {
-  margin-bottom: 2rem; }
+  padding: 10px; }
   .training-page-faq-question p {
-    margin: 0; }
+    margin: 0;
+    max-width: 300px; }
+  @media only screen and (min-width: 64em) {
+    .training-page-faq-question p {
+      max-width: 800px; } }
 
 .training-page-faq-answer {
-  padding-left: 20px; }
+  padding-left: 20px;
+  max-width: 430px; }
+  @media only screen and (min-width: 64em) {
+    .training-page-faq-answer {
+      max-width: 500px; } }
 
 .etre_inspire_et_inspirant {
   height: 551.4px; }
@@ -7291,7 +7358,7 @@ button:focus, button:active {
     margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 200px;
+      height: 160px;
       padding: 3rem 6rem;
       display: flex;
       flex-direction: row;
