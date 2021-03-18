@@ -6499,7 +6499,7 @@ html {
     color: #739DBF; }
   .main-trainings-left li:nth-of-type(8) > a:hover, .main-trainings-left li:nth-of-type(8) > a:focus {
     color: #845ec2; }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 50em) {
     .main-trainings-left {
       display: flex;
       margin-bottom: 30px;

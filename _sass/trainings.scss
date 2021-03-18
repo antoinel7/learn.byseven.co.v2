@@ -136,7 +136,7 @@ html {
     color: #845ec2;
   }
 
-  @include from-medium-high {
+  @include from-medium-low {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-evenly;
