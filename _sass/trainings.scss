@@ -40,12 +40,10 @@ html {
   height: 120px;
   width: 100%;
   padding: 0 10px;
-  margin-top: 50px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin: 50px 10px 30px 10px;
   @include from-medium-high {
     padding: 0 100px;
   }
@@ -77,6 +75,7 @@ html {
   align-items: flex-start;
   margin-bottom: 100px;
   padding: 0 10px;
+  margin: 10px;
   @include from-medium-high {
     padding: 0 100px;
   }
@@ -144,6 +143,7 @@ html {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     li > a {
     padding: 10px 15px;
     }
@@ -165,13 +165,22 @@ html {
   }
 
   @include from-medium-high {
-    width: 70%;
     padding: 0px;
   }
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .main-trainings-card {
+  margin: 10px;
+  position:relative;
   height: 300px;
+  width: 280px;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
@@ -192,6 +201,16 @@ html {
     font-family: 'Montserrat Italic';
     font-size: 12px;
     color: white;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
   }
 .training-main-info-flex {
     display: flex;

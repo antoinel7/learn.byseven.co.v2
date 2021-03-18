@@ -6432,11 +6432,10 @@ html {
   height: 120px;
   width: 100%;
   padding: 0 10px;
-  margin-top: 50px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 50px 10px 30px 10px; }
   @media only screen and (min-width: 64em) {
     .banner-trainings {
       padding: 0 100px; } }
@@ -6461,7 +6460,8 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 100px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  margin: 10px; }
   @media only screen and (min-width: 64em) {
     .main-trainings {
       padding: 0 100px; } }
@@ -6503,7 +6503,8 @@ html {
     .main-trainings-left {
       display: flex;
       margin-bottom: 30px;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
       .main-trainings-left li > a {
         padding: 10px 15px; } }
 
@@ -6516,11 +6517,19 @@ html {
     width: 100%; }
   @media only screen and (min-width: 64em) {
     .main-trainings-right {
-      width: 70%;
       padding: 0px; } }
 
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
 .main-trainings-card {
+  margin: 10px;
+  position: relative;
   height: 300px;
+  width: 280px;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
@@ -6538,6 +6547,14 @@ html {
     font-family: 'Montserrat Italic';
     font-size: 12px;
     color: white; }
+  .main-trainings-card a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer; }
   .main-trainings-card .training-main-info-flex {
     display: flex;
     align-items: center; }
@@ -6678,7 +6695,7 @@ html {
 
 .training-page-infos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 10px 0;
   background-color: rgba(252, 201, 75, 0.2); }
   .training-page-infos p {
@@ -6705,17 +6722,21 @@ html {
   .training-page-infos .training-page-picto {
     height: 30px;
     display: none; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .training-page-infos {
       flex-direction: row;
       align-items: flex-start; }
-      .training-page-infos .training-page-picto {
-        display: block; }
       .training-page-infos > div > div {
         margin: 6px 0 0 10px; } }
+  @media only screen and (min-width: 64em) {
+    .training-page-infos .training-page-picto {
+      display: block; } }
+
+.color p {
+  color: #F9D071; }
 
 .training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
-  max-width: 80px; }
+  max-width: 100px; }
   @media only screen and (min-width: 64em) {
     .training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
       max-width: 300px; } }
@@ -6748,13 +6769,15 @@ html {
 .training-page-main-description-left, .training-page-main-description-right {
   width: 100%; }
   .training-page-main-description-left h4, .training-page-main-description-right h4 {
+    text-decoration-color: #F9D071 !important;
     font-family: 'Montserrat Bold';
     text-decoration: underline;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 32px; }
   .training-page-main-description-left h5, .training-page-main-description-right h5 {
-    font-family: 'Montserrat Bold'; }
+    font-family: 'Montserrat Bold';
+    color: #F9D071; }
   .training-page-main-description-left p, .training-page-main-description-right p {
     font-family: 'Montserrat Regular';
     color: black;
@@ -6770,7 +6793,6 @@ html {
 
 .training-page-faq-element {
   padding: 6px;
-  box-shadow: 0 15px 35px rgba(126, 87, 88, 0.1), 0 5px 15px rgba(0, 0, 0, 0.04);
   margin-bottom: 10px;
   border-radius: 5px; }
   .training-page-faq-element p {
@@ -6783,11 +6805,14 @@ html {
 .training-page-faq-question {
   padding: 10px; }
   .training-page-faq-question p {
-    margin: 0;
+    font-family: 'Montserrat Bold';
     max-width: 300px; }
   @media only screen and (min-width: 64em) {
     .training-page-faq-question p {
       max-width: 800px; } }
+
+.fa-angle-down:before {
+  color: #F9D071; }
 
 .training-page-faq-answer {
   padding-left: 20px;
@@ -6798,6 +6823,9 @@ html {
 
 .etre_inspire_et_inspirant {
   height: 551.4px; }
+
+.test {
+  color: #F9D071 !important; }
 
 .navbar-seven {
   display: flex;
@@ -7208,8 +7236,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 15px 20px;
   align-items: center;
-  padding: 1rem;
   position: fixed;
   width: 100vw;
   max-width: 1440px;
@@ -7243,7 +7271,7 @@ html {
       .navbar-trainings-seven h2 {
         display: inline-block;
         flex-direction: row; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .navbar-trainings-seven {
       padding: 30px 70px;
       flex-wrap: wrap; } }

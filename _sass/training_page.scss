@@ -139,7 +139,7 @@
 
 .training-page-infos {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   // margin: 0 100px;
   padding: 10px 0;
   background-color: rgba(252,201,75,0.2);
@@ -186,22 +186,31 @@
     display: none;
   }
 
-  @include from-medium {
+  @include from-medium-high {
     flex-direction: row;
     align-items: flex-start;
 
-    .training-page-picto {
-      display: block;
-    }
 
     & > div > div {
       margin: 6px 0 0 10px;
     }
   }
+   @include from-large {
+    .training-page-picto {
+      display: block;
+    }
+   }
+}
+
+.color {
+  p
+  {
+    color:#F9D071;
+  }
 }
 
 .training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
-  max-width: 80px;
+  max-width: 100px;
   @include from-medium-high {
   max-width:300px;
   }
@@ -244,6 +253,7 @@
   width: 100%;
 
   h4 {
+    text-decoration-color: #F9D071 !important;
     font-family: 'Montserrat Bold';
     text-decoration: underline;
     margin-bottom: 20px;
@@ -253,6 +263,7 @@
 
   h5 {
     font-family: 'Montserrat Bold';
+    color:#F9D071;
   }
 
   p {
@@ -277,7 +288,6 @@
 
 .training-page-faq-element {
   padding: 6px;
-  box-shadow:0 15px 35px rgba(126,87,88,0.1),0 5px 15px rgba(0,0,0,0.04);
   margin-bottom: 10px;
   border-radius: 5px;
   p {
@@ -293,7 +303,7 @@
 .training-page-faq-question {
   padding: 10px;
   p {
-    margin: 0;
+    font-family: 'Montserrat Bold';
     max-width:300px;
   }
   @include from-medium-high {
@@ -301,6 +311,10 @@
     max-width:800px;
    }
   }
+}
+
+.fa-angle-down:before {
+  color: #F9D071;
 }
 
 .training-page-faq-answer {
@@ -313,4 +327,8 @@
 
 .etre_inspire_et_inspirant {
   height: 551.4px;
+}
+
+.test {
+  color: #F9D071 !important;
 }
