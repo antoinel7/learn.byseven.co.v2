@@ -6401,12 +6401,15 @@ button:focus, button:active {
     .home-main-right-form {
       max-width: 80rem; } }
 
+html {
+  overflow: visible !important; }
+
 .container-trainings-seven {
   min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
+  overflow: visible;
   position: relative;
   padding-bottom: 256px;
   padding-top: 54px; }
@@ -6423,17 +6426,16 @@ button:focus, button:active {
     color: black; }
   @media only screen and (min-width: 37.5em) {
     .container-trainings-seven {
-      padding-top: 107px;
       padding-bottom: 17rem; } }
 
 .banner-trainings {
   height: 120px;
   width: 100%;
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 50px 10px 30px 10px; }
   @media only screen and (min-width: 64em) {
     .banner-trainings {
       padding: 0 100px; } }
@@ -6446,7 +6448,7 @@ button:focus, button:active {
   .banner-trainings-description h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
   .banner-trainings-description h4 {
     font-family: 'Montserrat Light';
     font-size: 2rem;
@@ -6457,25 +6459,26 @@ button:focus, button:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 10px;
+  margin: 10px; }
   @media only screen and (min-width: 64em) {
     .main-trainings {
-      flex-direction: row; } }
+      padding: 0 100px; } }
 
 .underline {
   color: black;
   border-bottom: 5px solid #F9D071; }
 
 .main-trainings-left {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
   .main-trainings-left a {
     color: black;
     font-family: 'Montserrat Bold';
     transition: color 0.25s ease-in-out;
     font-size: 1.6rem; }
+  .main-trainings-left li > a {
+    padding: 10px 0px; }
   .main-trainings-left a:hover, .main-trainings-left a:focus {
     border: none !important;
     background-color: white !important;
@@ -6496,14 +6499,14 @@ button:focus, button:active {
     color: #739DBF; }
   .main-trainings-left li:nth-of-type(8) > a:hover, .main-trainings-left li:nth-of-type(8) > a:focus {
     color: #845ec2; }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 50em) {
     .main-trainings-left {
-      width: 30%;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin: 0; } }
+      margin-bottom: 30px;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      .main-trainings-left li > a {
+        padding: 10px 15px; } }
 
 .main-trainings-right {
   width: 100%;
@@ -6514,10 +6517,19 @@ button:focus, button:active {
     width: 100%; }
   @media only screen and (min-width: 64em) {
     .main-trainings-right {
-      width: 70%; } }
+      padding: 0px; } }
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .main-trainings-card {
+  margin: 10px;
+  position: relative;
   height: 300px;
+  width: 280px;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
@@ -6535,6 +6547,14 @@ button:focus, button:active {
     font-family: 'Montserrat Italic';
     font-size: 12px;
     color: white; }
+  .main-trainings-card a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer; }
   .main-trainings-card .training-main-info-flex {
     display: flex;
     align-items: center; }
@@ -6972,8 +6992,8 @@ button:focus, button:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 15px 20px;
   align-items: center;
-  padding: 1rem;
   position: fixed;
   width: 100vw;
   max-width: 1440px;
@@ -7007,7 +7027,7 @@ button:focus, button:active {
       .navbar-trainings-seven h2 {
         display: inline-block;
         flex-direction: row; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .navbar-trainings-seven {
       padding: 30px 70px;
       flex-wrap: wrap; } }
@@ -7122,7 +7142,7 @@ button:focus, button:active {
     margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 200px;
+      height: 160px;
       padding: 3rem 6rem;
       display: flex;
       flex-direction: row;

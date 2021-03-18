@@ -1,3 +1,45 @@
+.breadcrumb {
+  background-color: white;
+  margin: 2rem 0 0 0;
+
+  @include from-medium {
+    margin: 2rem 0;
+  }
+}
+
+.trainings-breadcrumb {
+  display:flex;
+  justify-content: right;
+  @include from-medium {
+    justify-content: flex-start;
+    padding: 0px 60px;
+  }
+}
+
+.trainings-breadcrumb ul {
+    display: flex;
+}
+
+.trainings-breadcrumb li {
+  font-family: 'Montserrat Light';
+  font-size: 1.4rem;
+
+  a:hover {
+    color: #95B9DB;
+  }
+}
+
+.trainings-breadcrumb li::before {
+    content: ">";
+    margin: 0 1rem;
+}
+
+.trainings-breadcrumb li:first-child::before {
+    content: "";
+    margin: 0;
+}
+
+
 .container-training-page-seven {
   min-height: 100vh;
   width: 100vw;
@@ -8,6 +50,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 54px;
+  position: relative;
 
   @include from-medium {
       padding-top: 107px;
@@ -15,11 +58,11 @@
 }
 
 .training-page-main {
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
+  margin: 10px 0;
 
   @include from-medium-high {
-    padding: 0 100px;
+    padding: 0 60px;
   }
 }
 
@@ -28,7 +71,7 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-
+  margin-bottom: 50px;
   @include from-medium-high {
     flex-direction: row;
   }
@@ -51,7 +94,8 @@
 
   h4 {
     font-family: 'Montserrat Bold';
-    font-size: 12px;
+    font-size: 16px;
+    line-spacing:32px;
     letter-spacing: .3rem;
     background-color: #F9D071;
     display:inline-block;
@@ -61,8 +105,8 @@
 
   p {
     font-family: 'Montserrat Regular';
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1.6rem;
+    line-height:2.4rem;
   }
 
   p:first-of-type {
@@ -82,7 +126,7 @@
 .training-page-main-banner-right {
   width: 50%;
   display: none;
-
+  margin-bottom: 25px;
   img {
     height: 350px;
     width: 100%;
@@ -95,7 +139,7 @@
 
 .training-page-infos {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   // margin: 0 100px;
   padding: 10px 0;
   background-color: rgba(252,201,75,0.2);
@@ -142,28 +186,45 @@
     display: none;
   }
 
-  @include from-medium {
+  @include from-medium-high {
     flex-direction: row;
     align-items: flex-start;
 
-    .training-page-picto {
-      display: block;
-    }
 
     & > div > div {
       margin: 6px 0 0 10px;
     }
   }
+   @include from-large {
+    .training-page-picto {
+      display: block;
+    }
+   }
+}
+
+.color {
+  p
+  {
+    color:#F9D071;
+  }
+}
+
+.training-pages-infos-price, .training-pages-infos-place, .training-pages-infos-date {
+  max-width: 100px;
+  @include from-medium-high {
+  max-width:300px;
+  }
 }
 
 .training-page-main-description {
-  padding: 0 50px;
+  padding: 0 10px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: scroll;
+  margin-bottom: 164px;
 
   .training-page-main-description-right {
     display: flex;
@@ -173,12 +234,13 @@
   }
 
   @include from-medium-high {
-    padding: 0 100px;
+    padding: 0 60px;
     flex-direction: row;
     align-items: flex-start;
 
     .training-page-main-description-left {
       padding-right: 30px;
+      margin-bottom: 20px;
     }
 
     .training-page-main-description-right {
@@ -191,15 +253,17 @@
   width: 100%;
 
   h4 {
+    text-decoration-color: #F9D071 !important;
     font-family: 'Montserrat Bold';
     text-decoration: underline;
     margin-bottom: 20px;
-    font-size: 1.6rem;
-    line-height: 2.8rem;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   h5 {
     font-family: 'Montserrat Bold';
+    color:#F9D071;
   }
 
   p {
@@ -209,8 +273,8 @@
   }
 
   h5, p {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 16px;
+    line-height: 28px;
   }
 
   &  > p:last-of-type {
@@ -222,18 +286,49 @@
   }
 }
 
-.training-page-faq-question {
-  margin-bottom: 2rem;
-
+.training-page-faq-element {
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
   p {
     margin: 0;
+    font-size: 14px;
   }
+  @include from-medium-high {
+    font-size: 16px;
+  }
+}
+
+
+.training-page-faq-question {
+  padding: 10px;
+  p {
+    font-family: 'Montserrat Bold';
+    max-width:300px;
+  }
+  @include from-medium-high {
+   p {
+    max-width:800px;
+   }
+  }
+}
+
+.fa-angle-down:before {
+  color: #F9D071;
 }
 
 .training-page-faq-answer {
   padding-left: 20px;
+  max-width:430px;
+  @include from-medium-high {
+    max-width: 500px;
+  }
 }
 
 .etre_inspire_et_inspirant {
   height: 551.4px;
+}
+
+.test {
+  color: #F9D071 !important;
 }

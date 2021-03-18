@@ -1,9 +1,13 @@
+html {
+  overflow: visible !important;
+}
+
 .container-trainings-seven {
   min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
+  overflow: visible;
   position: relative;
   padding-bottom: 256px;
   padding-top: 54px;
@@ -28,7 +32,6 @@
   }
 
   @include from-medium {
-    padding-top: 107px;
     padding-bottom: 17rem;
   }
 }
@@ -36,12 +39,11 @@
 .banner-trainings {
   height: 120px;
   width: 100%;
-  padding: 0 50px;
-  margin: 70px 0;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin: 50px 10px 30px 10px;
   @include from-medium-high {
     padding: 0 100px;
   }
@@ -56,7 +58,7 @@
   h1 {
     font-family: 'Montserrat Bold';
     font-size: 32px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   h4 {
@@ -71,31 +73,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 50px;
   margin-bottom: 100px;
+  padding: 0 10px;
+  margin: 10px;
   @include from-medium-high {
-    flex-direction: row;
-    // padding: 0 100px;
+    padding: 0 100px;
   }
 }
 
 .underline {
   color: black;
   border-bottom: 5px solid #F9D071;
-  @include from-medium-high {
-
-  }
 }
 
 .main-trainings-left {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   a {
     color: black;
     font-family: 'Montserrat Bold';
     transition: color 0.25s ease-in-out;
     font-size: 1.6rem;
+  }
+
+  li > a {
+    padding: 10px 0px;
   }
 
   a:hover, a:focus {
@@ -135,13 +136,14 @@
     color: #845ec2;
   }
 
-  @include from-medium-high {
-    width: 30%;
+  @include from-medium-low {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    li > a {
+    padding: 10px 15px;
+    }
   }
 }
 
@@ -160,12 +162,22 @@
   }
 
   @include from-medium-high {
-    width: 70%;
+    padding: 0px;
   }
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .main-trainings-card {
+  margin: 10px;
+  position:relative;
   height: 300px;
+  width: 280px;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
@@ -186,6 +198,16 @@
     font-family: 'Montserrat Italic';
     font-size: 12px;
     color: white;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
   }
 .training-main-info-flex {
     display: flex;
@@ -221,3 +243,5 @@
 .main-trainings-card-project {
   background-color: #5AC3C8;
 }
+
+
