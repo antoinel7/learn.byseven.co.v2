@@ -76,7 +76,7 @@ html {
   margin-bottom: 100px;
   padding: 0 10px;
   margin: 10px;
-  @include from-medium {
+  @include from-medium-high {
     padding: 0 100px;
   }
 }
