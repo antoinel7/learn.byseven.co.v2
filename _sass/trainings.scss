@@ -76,7 +76,7 @@ html {
   margin-bottom: 100px;
   padding: 0 10px;
   margin: 10px;
-  @include from-medium-high {
+  @include from-medium {
     padding: 0 100px;
   }
 }
@@ -84,9 +84,6 @@ html {
 .underline {
   color: black;
   border-bottom: 5px solid #F9D071;
-  @include from-medium-high {
-
-  }
 }
 
 .main-trainings-left {
