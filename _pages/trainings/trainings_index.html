@@ -26,57 +26,63 @@ ref: trainings
   </ul>
   <div class="tab-content main-trainings-right" id="menuTabContent">
     <div class="tab-pane fade active in" id="all" role="tabpanel" aria-labelledby="all-tab">
-       <div class="row">
+      <div class="row">
         {% assign trainings = site.trainings %}
         {% for training in trainings %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
         {% endfor %}
-       </div>
+      </div>
     </div>
     <div class="tab-pane fade" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
       <div class="row">
         {% assign trainings_leadership = site.trainings | where: 'category', 'LEADERSHIP' %}
         {% for training in trainings_leadership %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -87,25 +93,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_team_management = site.trainings | where: 'category', 'TEAM MANAGEMENT' %}
         {% for training in trainings_team_management %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -116,25 +125,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_communication = site.trainings | where: 'category', 'COMMUNICATION' %}
         {% for training in trainings_communication %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -145,25 +157,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_business = site.trainings | where: 'category', 'BUSINESS DEVELOPMENT' %}
         {% for training in trainings_business %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -174,25 +189,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_project = site.trainings | where: 'category', 'PROJECT MANAGEMENT' %}
         {% for training in trainings_project %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -203,25 +221,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_team_building = site.trainings | where: 'category', 'TEAM BUILDING' %}
         {% for training in trainings_team_building %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -232,25 +253,28 @@ ref: trainings
       <div class="row">
         {% assign trainings_digital = site.trainings | where: 'category', 'DIGITAL' %}
         {% for training in trainings_digital %}
-          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
-            <h5>{{training.title}}</h5>
-            <p>{{training.quote}}</p>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
                 <div>
-                  <p>{{training.duration}}</p>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>{{training.location}}</p>
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>{{training.price}} par personne</p>
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
               </div>
             </div>
           </div>
@@ -260,28 +284,56 @@ ref: trainings
   </div>
 </div>
 
-<!-- <script>
-  var links = document.querySelectorAll('.nav-link');
-  var main = document.querySelector('.main-trainings');
-  const base = main.clientHeight;
-  links.forEach(function(element) {
-    element.addEventListener('click', event => {
-      console.log('toto');
-      main.style.height = '600px';
-      main.style.height = (main.clientHeight + document.getElementById(element.getAttribute('aria-controls')).clientHeight).toString() + 'px';
-    });
-  });
-</script> -->
-
-<!-- <script>
-  $(document).ready(function(){
-    $(".nav-link").click(function() {
-      if (window.innerWidth < 1024) {
-        $('html,body').animate({
-            scrollTop: $(".tab-content").offset().top - 60},
-            'slow');
-      }
-    });
-  });
+<script>
+  cards = document.querySelectorAll('.main-trainings-card');
+  test = document.querySelector('.main-trainings-card');
+  color_test = 'r' + test.style.border.split('r')[1];
+  cards.forEach(element => {
+    element.addEventListener('mouseover', el => {
+      color = 'r' + element.style.border.split('r')[1];
+      title = event.currentTarget.querySelector('h5');
+      texts = event.currentTarget.querySelectorAll('p');
+      pictos_white = event.currentTarget.querySelectorAll('.picto-white');
+      console.log(pictos_white);
+      pictos_black = event.currentTarget.querySelectorAll('.picto-black');
+      event.currentTarget.style.backgroundColor = color;
+      title.style.color = 'white';
+      texts.forEach(text => {
+        text.style.color = 'white';
+      })
+      pictos_white.forEach(white => {
+        white.style.display = 'block';
+        white.style.visibility = 'visible';
+        white.style.opacity = '1';
+      })
+      pictos_black.forEach(black => {
+        black.style.display = 'none';
+        black.style.visibility = 'hidden';
+        black.style.opacity = '0';
+      })
+    })
+    element.addEventListener('mouseout', el => {
+      color = 'r' + element.style.border.split('r')[1];
+      title = event.currentTarget.querySelector('h5');
+      texts = event.currentTarget.querySelectorAll('p');
+      pictos_white = event.currentTarget.querySelectorAll('.picto-white');
+      console.log(pictos_white);
+      pictos_black = event.currentTarget.querySelectorAll('.picto-black');
+      event.currentTarget.style.backgroundColor = 'white';
+      title.style.color = color;
+      texts.forEach(text => {
+        text.style.color = color;
+      })
+      pictos_white.forEach(white => {
+        white.style.display = 'none';
+        white.style.visibility = 'hidden';
+        white.style.opacity = '0';
+      })
+      pictos_black.forEach(black => {
+        black.style.display = 'block';
+        black.style.visibility = 'visible';
+        black.style.opacity = '1';
+      })
+    })
+  })
 </script>
- -->

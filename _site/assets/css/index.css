@@ -7250,7 +7250,7 @@ button:focus, button:active {
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     width: min-content;
-    margin: 0;
+    margin-bottom: 1rem;
     opacity: 0;
     transition: all .25s ease-in-out; }
     .seven-burger-menu a:hover {
@@ -7771,7 +7771,7 @@ button:focus, button:active {
     margin-bottom: 1rem; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 160px;
+      height: 200px;
       padding: 3rem 6rem;
       display: flex;
       flex-direction: row;

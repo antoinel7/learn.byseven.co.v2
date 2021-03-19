@@ -3,7 +3,7 @@ layout: training_page
 type: training_page
 permalink: "/trainings/team-building/manager-selon-la-situation.html"
 absolute_link: "http://learn.byseven.co/trainings/manager-selon-la-situation"
-title: "MANAGER SELON LA SITUATION & BIEN DÉLÉGUER"
+title: "Manager selon la situation & Bien déléguer"
 quote: "“Le management, ce n'est pas un art, c'est une discipline.”
  – Noel Goutard"
 duration: "2 demi-journées"
@@ -32,7 +32,7 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title}}</h1>
+        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
