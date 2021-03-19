@@ -1,7 +1,7 @@
 ---
 layout: trainings
 type: trainings
-permalink: /trainings/
+permalink: /trainings
 title: Seven | Formations
 lang: fr
 ref: trainings
@@ -25,239 +25,238 @@ ref: trainings
     <li class="nav-item"><a class="nav-link" id="digital-tab" data-toggle="tab" role="tab" aria-controls="digital" aria-selected="true" href="#digital">Outils digitaux</a></li>
   </ul>
   <div class="tab-content main-trainings-right" id="menuTabContent">
-     <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+    <div class="tab-pane fade active in" id="all" role="tabpanel" aria-labelledby="all-tab">
        <div class="row">
-          <div class="main-trainings-card main-trainings-card-leadership col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Créer un climat de confiance</h5>
-            <p>"Lorsque deux forces sont jointes, leur efficacité est double." - Isaac Newton</p>
+        {% assign trainings = site.trainings %}
+        {% for training in trainings %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
                 <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
+                <p>{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
+                <p>{{training.price}} par personne</p>
               </div>
             </div>
           </div>
-          <div class="main-trainings-card main-trainings-card-business col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Transmettre avec les 7 intelligences</h5>
-            <p>"Tout ce qui vaut la peine d'être enseigné peut être présenté de différentes façons." - Howard Gardner</p>
-            <div class="training-main-info">
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
-                <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
-                </div>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
-              </div>
-            </div>
-          </div>
-          <div class="main-trainings-card main-trainings-card-project col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Créer un trame de formation Seven</h5>
-            <p>"Quand la prudence est partout, le courage n'est nulle part." - Aristote</p>
-            <div class="training-main-info">
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
-                <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
-                </div>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
-              </div>
-            </div>
-          </div>
+        {% endfor %}
        </div>
-     </div>
+    </div>
     <div class="tab-pane fade" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
       <div class="row">
-          <div class="main-trainings-card main-trainings-card-leadership col-xs-12 col-sm-4 col-lg-3">
-          <a href='../trainings/etre_inspiré_et_inspirant'>
-          </a>
-            <h5>Etre inspiré et inspirant</h5>
-            <p>"People don't buy what you do, they buy why you do it." - Simon Sinek</p>
+        {% assign trainings_leadership = site.trainings | where: 'category', 'LEADERSHIP' %}
+        {% for training in trainings_leadership %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
                 <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
+                <p>{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
+                <p>{{training.price}} par personne</p>
               </div>
             </div>
           </div>
-          <div class="main-trainings-card main-trainings-card-leadership col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Créer un climat de confiance</h5>
-            <p>"Lorsque deux forces sont jointes, leur efficacité est double." - Isaac Newton</p>
-            <div class="training-main-info">
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
-                <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
-                </div>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
-              </div>
-              <div class="training-main-info-flex">
-                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
-              </div>
-            </div>
-          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="tab-pane fade" id="team-management" role="tabpanel" aria-labelledby="team-management-tab">
-     <div class="row">
-          <div class="main-trainings-card main-trainings-card-gestion col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Faire preuve de courage managérial</h5>
-            <p>"Quand la prudence est partout, le courage n'est nulle part." - Aristote</p>
+      <div class="row">
+        {% assign trainings_team_management = site.trainings | where: 'category', 'TEAM MANAGEMENT' %}
+        {% for training in trainings_team_management %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
                 <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
+                <p>{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
+                <p>{{training.price}} par personne</p>
               </div>
             </div>
           </div>
+        {% endfor %}
       </div>
     </div>
     <div class="tab-pane fade" id="communication" role="tabpanel" aria-labelledby="commmunication-tab">
       <div class="row">
-            <div class="main-trainings-card main-trainings-card-communication col-xs-12 col-sm-4 col-lg-3">
-            <a>
+        {% assign trainings_communication = site.trainings | where: 'category', 'COMMUNICATION' %}
+        {% for training in trainings_communication %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
             </a>
-              <h5>Savoir dire non</h5>
-              <p>"Un négociateur qui dit oui, cela veut dire peut être, un négociateur qui dit peut être, cela veut dire non."</p>
-              <div class="training-main-info">
-                <div class="training-main-info-flex">
-                  <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
-                  <div>
-                    <p>Jeudi 16 Juillet 2020</p>
-                    <p>Mercredi 22 Juillet 2020</p>
-                  </div>
-                </div>
-                <div class="training-main-info-flex">
-                  <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                  <p>Paris</p>
-                </div>
-                <div class="training-main-info-flex">
-                  <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                  <p>400€ HT par personne</p>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
+            <div class="training-main-info">
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <div>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
+                <p>{{training.location}}</p>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
+                <p>{{training.price}} par personne</p>
+              </div>
             </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
       <div class="row">
-          <div class="main-trainings-card main-trainings-card-business col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Transmettre avec les 7 intelligences</h5>
-            <p>"Tout ce qui vaut la peine d'être enseigné peut être présenté de différentes façons." - Howard Gardner</p>
+        {% assign trainings_business = site.trainings | where: 'category', 'BUSINESS DEVELOPMENT' %}
+        {% for training in trainings_business %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
                 <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
+                <p>{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
+                <p>{{training.price}} par personne</p>
               </div>
             </div>
           </div>
+        {% endfor %}
       </div>
     </div>
     <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
       <div class="row">
-          <div class="main-trainings-card main-trainings-card-project col-xs-12 col-sm-4 col-lg-3">
-          <a>
-          </a>
-            <h5>Créer un trame de formation Seven</h5>
-            <p>"Quand la prudence est partout, le courage n'est nulle part." - Aristote</p>
+        {% assign trainings_project = site.trainings | where: 'category', 'PROJECT MANAGEMENT' %}
+        {% for training in trainings_project %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
             <div class="training-main-info">
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
                 <div>
-                  <p>Jeudi 16 Juillet 2020</p>
-                  <p>Mercredi 22 Juillet 2020</p>
+                  <p>{{training.duration}}</p>
                 </div>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
-                <p>Paris</p>
+                <p>{{training.location}}</p>
               </div>
               <div class="training-main-info-flex">
                 <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
-                <p>400€ HT par personne</p>
+                <p>{{training.price}} par personne</p>
               </div>
             </div>
-        </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
-      <div class="tab-pane fade" id="team-building" role="tabpanel" aria-labelledby="team-building-tab"></div>
-      <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab"></div>
+    <div class="tab-pane fade" id="team-building" role="tabpanel" aria-labelledby="team-building-tab">
+      <div class="row">
+        {% assign trainings_team_building = site.trainings | where: 'category', 'TEAM BUILDING' %}
+        {% for training in trainings_team_building %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
+            <div class="training-main-info">
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <div>
+                  <p>{{training.duration}}</p>
+                </div>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
+                <p>{{training.location}}</p>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
+                <p>{{training.price}} par personne</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab">
+      <div class="row">
+        {% assign trainings_digital = site.trainings | where: 'category', 'DIGITAL' %}
+        {% for training in trainings_digital %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background: {{training.category_colour}};">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5>{{training.title}}</h5>
+            <p>{{training.quote}}</p>
+            <div class="training-main-info">
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto'>
+                <div>
+                  <p>{{training.duration}}</p>
+                </div>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu'>
+                <p>{{training.location}}</p>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto'>
+                <p>{{training.price}} par personne</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
 

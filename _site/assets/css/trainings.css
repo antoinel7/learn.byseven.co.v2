@@ -6568,21 +6568,6 @@ html {
   .main-trainings-card:hover {
     opacity: 0.5; }
 
-.main-trainings-card-leadership {
-  background-color: #E95F48; }
-
-.main-trainings-card-gestion {
-  background-color: #EF8C64; }
-
-.main-trainings-card-communication {
-  background-color: #F9D071; }
-
-.main-trainings-card-business {
-  background-color: #F3B0A3; }
-
-.main-trainings-card-project {
-  background-color: #5AC3C8; }
-
 .navbar-seven {
   display: flex;
   justify-content: space-between;

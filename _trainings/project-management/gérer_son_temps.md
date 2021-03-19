@@ -1,10 +1,22 @@
 ---
 layout: training_page
 type: training_page
-permalink: /trainings/etre_inspiré_et_inspirant/
-title: Seven | Formations
+permalink: "/trainings/project_management/gérer-son-temps"
+absolute_link: "http://learn.byseven.co/lab/trainings/team-building/gérer-son-temps"
+title: "GÉRER SON TEMPS ET SES PRIORITÉS"
+quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
+duration: "2 demi-journées"
+location: "Paris ou en ligne"
+price: "420€ HT"
+image: "/assets/img/trainings/gérer-son-temps.png"
+image_twitter: "/assets/img/trainings/gérer-son-temps.png"
+order: 1
+category: "PROJECT MANAGEMENT"
+category_colour: "#5AC3C8"
+created_at: "15 Janvier 2021"
+teaser: ""
+custom_head: true
 lang: fr
-ref: training_page
 ---
 
 <div class="trainings-breadcrumb">
@@ -19,79 +31,84 @@ ref: training_page
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">Etre inspiré et inspirant</h1>
-        <h4 class="training-page-main-banner-left-category">LEADERSHIP</h4>
-        <p class="training-page-main-banner-left-quote"><em>"People don't buy what you do, they buy why you do it." - Simon Sinek</em></p>
+        <h1 class="training-page-main-banner-left-title">{{page.title}}</h1>
+        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+        <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Construit à partir de la théorie des Golden Circles de Simon Sinek, cet atelier s'adresse aux équipes qui souhaitent travailler sur la vision de leur projet, de leur entreprise, en identifiant les valeurs qui les inspirent individuellement et collectivement et en construisant le message correspondant. <br>
-      Au travers d'un atelier individuel puis d'un pitch en public, les participants seront amenés à définir leur Why, How et What. Ils développeront ainsi leur capacité à être inpirant et à devenir des leaders.
+      <p class="training-page-main-banner-left-description">Dans cet atelier ludique les participants découvriront les fondements du management situationnel et travailleront leur capacité à s’adapter à chaque situation pour mobiliser leurs équipes, les faire grandir et bien déléguer. <br><br>
+      A l’aide de la théorie du Management Situationnel et Hersey & Blanchard et du jeu de Delegation Poker de Jurgen Appelo, les participants adopteront le bon style de management et le bon niveau de délégation pour générer des résultats.
       </p>
     </div>
     <div class="training-page-main-banner-right">
-      <img src="/assets/img/trainings/etre-inspiré-et-inspirant.jpg" alt="">
+      <img src="{{page.image}}" alt="">
     </div>
   </div>
 </div>
-<div class="training-page-infos">
+<div class="training-page-infos" style="background: {{page.category_colour}};">
   <div class="training-pages-infos-date">
-    <!-- <i class="far fa-calendar-alt"></i> -->
     <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto'>
     <div class="traning-pages-info-text">
-        <p>DATES & HORAIRES</p>
-        <p>Jeudi 16 Juillet 2020</p>
-        <p>Mercredi 22 Juillet 2020</p>
-        <p>De 9 à 17h</p>
+        <p>DURÉE DE LA FORMATION</p>
+        <p>{{page.duration}}</p>
     </div>
   </div>
   <div class="training-pages-infos-place">
-    <!-- <i class="fas fa-map-marker-alt"></i> -->
     <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto'>
     <div class="traning-pages-info-text">
         <p>LIEU & FORMAT</p>
-        <p>Paris</p>
+        <p>{{page.location}}</p>
         <p>Groupes de 6 à 9 personnes</p>
         <p>Online</p>
     </div>
   </div>
   <div class="training-pages-infos-price">
     <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto'>
-    <!-- <i class="fas fa-euro-sign"></i> -->
     <div class="traning-pages-info-text">
         <p class="align">TARIF</p>
-        <p>400€ HT <br>par personne</p>
-      <!-- <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
+        <p>{{page.price}} <br>par personne</p>
     </div>
   </div>
 </div>
-<div class="training-page-main-description etre_inspiré_et_inspirant">
-  <div class="training-page-main-description-left etre_inspiré_et_inspirant" >
-    <h4>Programme de la formation</h4>
-    <h5>1 | PREPARER LA FORMATION</h5>
+<div class="training-page-main-description">
+  <div class="training-page-main-description-left" >
+    <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
     <p>La préparation est un élément essentiel qui ne doit pas être négligée pour assurer le bon déroulement du chantier. C'est à ce titre que nous nous tenons à votre disposition, en amont des sessions collectives, pour échanger sur les divers articles, livres et écrits qui ont inspiré le contenu de cette formation et notre pédagogie.</p>
-    <h5>2 | DEVENIR INSPIRANT</h5>
-    <p>Les grands leaders qui inspirent se posent d'abord la question du pourquoi. Pourquoi ils se lèvent le matin, pourquoi ils travaillent, pourquoi ils se battent. Nous ne suivons pas les grands leaders pour eux, mais pour nous-même. Chez SEVEN, nous vous invitons à comprendre et appliquer cette méthode, pour devenir inspiré et inspirant.</p>
-    <h5>3 | L'ART DE COMMUNIQUER</h5>
-    <p>Le bon déroulement d'un échange dépend principalement de la façon dont le message va être émis et perçu. Chez SEVEN nous considérons que l'émetteur et 100% responsable de la qualité de perception par le récepteur.Les différents outils, modules et mises en situation vous permettront d'optimiser votre communication de façon à avoir un maximum d'impact au moment de votre prise de parole. Aussi, il s'agit de comprendre le profil de l'audience et de se préparer en amont à toutes les questions et objections possibles.</p>
-    <h5>4 | SUIVI INDIVIDUEL PERSONNALISÉ</h5>
-    <p>La formation ne s'arrête pas là ! A la suite des sessions collectives nous vous proposons un suivi individuel personnalisé pour échangement sur de nouvelles problématiques et l'application des concepts théoriques à votre quotidien.</p>
+    <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
+    <h5 style="color: {{page.category_colour}};">1 | FORMATION COLLECTIVE</h5>
+    <h6>A. ATELIER ÊTRE « EFFICIENT » AVEC LES LOIS DU TEMPS</h6>
+    <ul>
+      <li>Comprendre les différences dans le rapport de chacun au temps</li>
+      <li>Être en mesure de mettre en place une organisation efficace pour réaliser ses tâches dans un laps de temps plus court</li>
+      <li>Mettre en place une organisation qui permette d’aborder l’avenir avec sérénité</li>
+    </ul>
+    <h6>B. ATELIER GÉRER SES PRIORITÉS</h6>
+    <ul>
+      <li>Maîtriser la différence entre les notions d’urgence et d’importance</li>
+      <li>Identifier des activités “polluantes” et savoir les traiter</li>
+      <li>Mettre en place des actions correctrices concrètes pour gérer ses priorités avec méthode</li>
+    </ul>
+    <h5 style="color: {{page.category_colour}};">2 | COACHING INDIVIDUEL PERSONNALISÉ</h5>
+    <ul>
+      <li>Travailler, avec l’aide du formateur, sur des situations de travail actuelles</li>
+      <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
+    </ul>
   </div>
   <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
     <div>
-      <h4>Objectifs de la formation</h4>
+      <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Adopter une posture inspirante. <br>
-        - Faire adhérer en communiquant efficacement. <br>
-        - Développer son influence personnelle.
+        - Savoir utiliser d’autres leviers que l’argent pour motiver des collaborateurs<br>
+        - Savoir construire un collectif performant dans lequel chaque collaborateur trouve sa place
       </p>
-      <h4>Points forts de la formation</h4>
+      <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
         <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus. <br>
         <strong>Des mises en situations</strong> et retours d'expériences pour s'approprier les concepts. <br>
         <strong>Des outils accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
       </p>
-      <h4>À propos</h4>
+      <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">
-        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1" style="color: {{page.category_colour}};">
           <div class="training-page-faq-question flex-row-between-centered">
             <p><strong>Cette formation est-elle prise en charge par les OPCO ?</strong></p>
             <i class="fas fa-angle-down fa-2x"></i>
@@ -103,7 +120,7 @@ ref: training_page
         </div>
       </div>
       <div class="training-page-faq-element">
-        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2" style="color: {{page.category_colour}};">
           <div class="training-page-faq-question flex-row-between-centered">
             <p><strong>A qui s’adresse cette formation ?</strong></p>
             <i class="fas fa-angle-down fa-2x"></i>
@@ -115,7 +132,7 @@ ref: training_page
         </div>
       </div>
       <div class="training-page-faq-element">
-        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3" style="color: {{page.category_colour}};">
           <div class="training-page-faq-question flex-row-between-centered">
             <p><strong>Comment puis-je m’inscrire ?</strong></p>
             <i class="fas fa-angle-down fa-2x"></i>
@@ -127,7 +144,7 @@ ref: training_page
         </div>
       </div>
       <div class="training-page-faq-element">
-        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse3">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
           <div class="training-page-faq-question flex-row-between-centered">
             <p><strong>Cette formation entre-t'elle dans le cadre du dispositif FNE-Formation ?</strong></p>
             <i class="fas fa-angle-down fa-2x"></i>
@@ -139,24 +156,7 @@ ref: training_page
         </div>
       </div>
     </div>
-    <!-- <button class='btn btn-navbar-trainings-1' data-toggle='modal' data-target='#contactUs'><p>Contactez nous</p></button> -->
   </div>
 </div>
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    {% include contact_modal.html %}
-  </div>
-</div> -->
-
-
-<script>
-  var questions = document.querySelectorAll('.training-page-faq-question-link');
-  questions.forEach((element) => {
-    element.addEventListener('click', el => {
-      element.querySelector('.fa-angle-down').classList.toggle('hidden');
-      element.querySelector('.fa-angle-up').classList.toggle('hidden');
-    })
-  })
-</script>
+{% include training_page_js.html %}

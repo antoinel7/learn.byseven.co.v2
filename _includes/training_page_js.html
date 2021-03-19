@@ -1,0 +1,20 @@
+<script>
+  left = document.querySelector('.training-page-main-banner-left');
+  right = document.querySelector('.training-page-main-banner-right');
+
+  function resizeBanner() {
+    if (left.offsetHeight > 350) {
+      right.style.height = left.getBoundingClientRect()['height'].toString() + 'px';
+    }
+  }
+
+  window.addEventListener('resize', resizeBanner);
+
+  var questions = document.querySelectorAll('.training-page-faq-question-link');
+  questions.forEach((element) => {
+    element.addEventListener('click', el => {
+      element.querySelector('.fa-angle-down').classList.toggle('hidden');
+      element.querySelector('.fa-angle-up').classList.toggle('hidden');
+    })
+  })
+</script>
