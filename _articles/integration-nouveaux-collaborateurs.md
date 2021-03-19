@@ -102,7 +102,7 @@ lang: fr
     </div>
     <div class="lab-article-text-secondary">
       <h5>Prendre le temps d’intégrer</h5>
-      <p>Bruce Wayne Tuckman, psycho-sociologue américain, a longtemps travaillé sur <strong>la construction de la cohésion au sein des groupes</strong>. Il a notamment modélisé un process, articulé autour de 4 (puis 5) étapes pour optimiser le fonctionnement des équipes, c’est ce qu’on appelle la <a href=""><strong>méthode Tuckman</strong></a>.
+      <p>Bruce Wayne Tuckman, psycho-sociologue américain, a longtemps travaillé sur <strong>la construction de la cohésion au sein des groupes</strong>. Il a notamment modélisé un process, articulé autour de 4 (puis 5) étapes pour optimiser le fonctionnement des équipes, c’est ce qu’on appelle la <a><strong>méthode Tuckman</strong></a>.
       </p>
       <ul>
         <li><strong>Forming</strong>, correspond au temps de rencontre des individus entre eux et avec leur nouvelle structure puis de création des connections entre les membres du groupe;</li>

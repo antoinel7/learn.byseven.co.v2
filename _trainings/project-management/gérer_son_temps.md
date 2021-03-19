@@ -3,7 +3,7 @@ layout: training_page
 type: training_page
 permalink: "/trainings/project_management/gérer-son-temps"
 absolute_link: "http://learn.byseven.co/lab/trainings/team-building/gérer-son-temps"
-title: "GÉRER SON TEMPS ET SES PRIORITÉS"
+title: "Gérer son temps et ses priorités"
 quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
 duration: "2 demi-journées"
 location: "Paris ou en ligne"
@@ -31,7 +31,7 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title}}</h1>
+        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>

@@ -183,14 +183,15 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 5px;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .05);
+  transition: all .25s ease-in-out;
 
   h5 {
     text-align:center;
     font-family: 'Montserrat Bold';
     font-size: 16px;
     color: white;
+    transition: all .25s ease-in-out;
   }
 
   p {
@@ -198,6 +199,7 @@ html {
     font-family: 'Montserrat Italic';
     font-size: 12px;
     color: white;
+    transition: all .25s ease-in-out;
   }
 
   a {
@@ -209,12 +211,34 @@ html {
     z-index: 10;
     cursor: pointer;
   }
-.training-main-info-flex {
+
+  &:hover {
+    border-radius: 15px;
+
+    a {
+      border-radius: 15px;
+    }
+  }
+
+  .visuallyhidden {
+    opacity: 0;
+  }
+
+  .picto-white {
+    display:none;
+    transition: all .25s ease-in-out;
+  }
+
+  .picto-black {
+    transition: all .25s ease-in-out;
+  }
+
+  .training-main-info-flex {
     display: flex;
     align-items: center;
   }
   p {
-    color: white !important;
+    color: white;
   }
   .training-page-picto {
     width: 35px;
@@ -222,8 +246,5 @@ html {
     .training-page-picto-lieu {
     width: 35px;
     padding: 5px;
-  }
-  &:hover {
-    opacity: 0.5;
   }
 }

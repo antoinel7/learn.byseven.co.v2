@@ -3,7 +3,7 @@ layout: training_page
 type: training_page
 permalink: "/trainings/team-building/motiver-son-équipe"
 absolute_link: "http://learn.byseven.co/lab/trainings/team-building/motiver-son-équipe"
-title: "MOTIVER SON ÉQUIPE ET CONSTRUIRE UN COLLECTIF PERFORMANT"
+title: "Motiver son équipe et construire un collectif performant"
 quote: "« Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite. »  – Henry Ford"
 duration: "2 demi-journées"
 location: "Paris ou en ligne"
@@ -31,7 +31,7 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title}}</h1>
+        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
