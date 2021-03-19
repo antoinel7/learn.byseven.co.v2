@@ -39,7 +39,7 @@ permalink: /:ref/
 
 # Collections settings
 collections:
-  training:
+  trainings:
     output: true
   articles:
     output: true

@@ -6568,21 +6568,6 @@ html {
   .main-trainings-card:hover {
     opacity: 0.5; }
 
-.main-trainings-card-leadership {
-  background-color: #E95F48; }
-
-.main-trainings-card-gestion {
-  background-color: #EF8C64; }
-
-.main-trainings-card-communication {
-  background-color: #F9D071; }
-
-.main-trainings-card-business {
-  background-color: #F3B0A3; }
-
-.main-trainings-card-project {
-  background-color: #5AC3C8; }
-
 .breadcrumb {
   background-color: white;
   margin: 2rem 0 0 0; }
@@ -6631,8 +6616,8 @@ html {
       padding-top: 107px; } }
 
 .training-page-main {
-  padding: 0 10px;
-  margin: 10px 0; }
+  padding: 0 1rem;
+  margin: 1rem 0; }
   @media only screen and (min-width: 64em) {
     .training-page-main {
       padding: 0 60px; } }
@@ -6642,10 +6627,12 @@ html {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px; }
+  margin: 2rem 0; }
   @media only screen and (min-width: 64em) {
     .training-page-main-banner {
-      flex-direction: row; } }
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 0 2rem 0; } }
 
 .training-page-main-banner-left {
   display: flex;
@@ -6674,21 +6661,22 @@ html {
   .training-page-main-banner-left p:first-of-type {
     font-family: 'Montserrat Italic';
     color: black;
-    margin: 0; }
+    margin: 1rem; }
   @media only screen and (min-width: 64em) {
     .training-page-main-banner-left {
       width: 50%;
-      height: 350px;
-      margin: 6px 0 0 10px;
+      min-height: 350px;
       padding-right: 2rem; } }
 
 .training-page-main-banner-right {
   width: 50%;
+  height: 35rem;
   display: none;
   margin-bottom: 25px; }
   .training-page-main-banner-right img {
-    height: 350px;
-    width: 100%; }
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
   @media only screen and (min-width: 64em) {
     .training-page-main-banner-right {
       display: block; } }
@@ -6696,6 +6684,7 @@ html {
 .training-page-infos {
   display: flex;
   justify-content: space-evenly;
+  opacity: .8;
   padding: 10px 0;
   background-color: rgba(252, 201, 75, 0.2); }
   .training-page-infos p {
@@ -6769,7 +6758,6 @@ html {
 .training-page-main-description-left, .training-page-main-description-right {
   width: 100%; }
   .training-page-main-description-left h4, .training-page-main-description-right h4 {
-    text-decoration-color: #F9D071 !important;
     font-family: 'Montserrat Bold';
     text-decoration: underline;
     margin-bottom: 20px;
@@ -6778,15 +6766,18 @@ html {
   .training-page-main-description-left h5, .training-page-main-description-right h5 {
     font-family: 'Montserrat Bold';
     color: #F9D071; }
-  .training-page-main-description-left p, .training-page-main-description-right p {
-    font-family: 'Montserrat Regular';
-    color: black;
+  .training-page-main-description-left p, .training-page-main-description-left ul, .training-page-main-description-right p, .training-page-main-description-right ul {
     margin-bottom: 20px; }
-  .training-page-main-description-left h5, .training-page-main-description-left p, .training-page-main-description-right h5, .training-page-main-description-right p {
+  .training-page-main-description-left h5, .training-page-main-description-left h6, .training-page-main-description-left p, .training-page-main-description-left li, .training-page-main-description-right h5, .training-page-main-description-right h6, .training-page-main-description-right p, .training-page-main-description-right li {
     font-size: 16px;
     line-height: 28px; }
-  .training-page-main-description-left > p:last-of-type, .training-page-main-description-right > p:last-of-type {
-    margin: 0; }
+  .training-page-main-description-left h6, .training-page-main-description-left p, .training-page-main-description-left li, .training-page-main-description-right h6, .training-page-main-description-right p, .training-page-main-description-right li {
+    font-family: 'Montserrat Regular';
+    color: black; }
+  .training-page-main-description-left ul, .training-page-main-description-right ul {
+    list-style: inside; }
+  .training-page-main-description-left li, .training-page-main-description-right li {
+    margin-left: 1rem; }
   @media only screen and (min-width: 64em) {
     .training-page-main-description-left, .training-page-main-description-right {
       width: 50%; } }
@@ -6810,9 +6801,6 @@ html {
   @media only screen and (min-width: 64em) {
     .training-page-faq-question p {
       max-width: 800px; } }
-
-.fa-angle-down:before {
-  color: #F9D071; }
 
 .training-page-faq-answer {
   padding-left: 20px;
