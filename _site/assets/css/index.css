@@ -6424,7 +6424,7 @@ button:focus, button:active {
   @media only screen and (min-width: 37.5em) {
     .container-lab-seven {
       padding-top: 107px;
-      padding-bottom: 17rem; } }
+      padding-bottom: 0px; } }
 
 .lab-teaser {
   padding: 1rem;
@@ -7748,34 +7748,36 @@ button:focus, button:active {
 
 .footer-lab-seven {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  max-height: 180px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   background-color: black;
   padding: 2rem; }
   .footer-lab-seven p {
-    width: 100px;
     font-family: 'Montserrat Bold';
+    font-weight: 700;
     font-size: 1.6rem;
     color: white; }
   .footer-lab-seven a {
-    width: 100px;
-    font-family: 'Montserrat Light';
-    font-size: 1.4rem;
+    margin-left: 15px;
+    line-height: 20.2px;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8); }
     .footer-lab-seven a:hover {
       color: white; }
-  .footer-lab-seven p, .footer-lab-seven a {
+  .footer-lab-seven p {
     margin-bottom: 1rem; }
+  .footer-lab-seven .footer-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 200px;
-      padding: 3rem 6rem;
+      padding: 2rem 4rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       align-items: flex-start; } }
 
 .footer-lab-logo {
@@ -7783,20 +7785,20 @@ button:focus, button:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  border-right: 2px solid white;
+  padding-right: 2rem; }
   .footer-lab-logo img {
     margin-bottom: 1rem; }
   .footer-lab-logo p {
-    font-family: 'Montserrat Regular';
-    font-size: 14px;
+    font-family: 'Montserrat Bold';
+    font-size: 13.5px;
     margin: 0; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-logo {
       border-right: 2px solid white;
-      padding-right: 3rem;
-      margin-bottom: 0; }
-      .footer-lab-logo img {
-        margin: 1rem; } }
+      padding-right: 4rem;
+      margin-bottom: 0; } }
 
 .footer-lab-div {
   margin-bottom: 20px; }
@@ -7805,29 +7807,164 @@ button:focus, button:active {
       margin: 0; } }
 
 #seven-logo-footer {
-  height: 30px; }
+  height: 3rem; }
 
 .footer-lab-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 1rem; }
   .footer-lab-media p {
+    font-size: 1.8rem;
     width: auto; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-media {
-      margin: 0 2rem 0 0; } }
+      margin-bottom: 10px; } }
 
 .footer-lab-media-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90px; }
+  width: 120px; }
   .footer-lab-media-icons a {
     margin: 0;
     transition: all .25s ease-in-out;
     font-size: 14px;
-    font-family: 'Montserrat Light'; }
-    .footer-lab-media-icons a i {
-      font-size: 14px; }
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    color: white; }
+    .footer-lab-media-icons a:hover {
+      color: #95B9DB; }
+
+.footer-lab-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .footer-lab-links a:nth-of-type(1):hover {
+    color: white; }
+  .footer-lab-links a:nth-of-type(2):hover {
+    color: #FBC84A; }
+  .footer-lab-links a:nth-of-type(3):hover {
+    color: #95B9DB; }
+  .footer-lab-links a:nth-of-type(4):hover {
+    color: #3DA1A9; }
+  .footer-lab-links a:nth-of-type(5):hover {
+    color: #E95F48; }
+
+.footer-trainings-seven {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: minmax(75px, auto);
+  background-color: black;
+  padding: 20px 50px;
+  margin-top: 50px; }
+  .footer-trainings-seven p {
+    width: 100px;
+    font-family: 'Montserrat Bold';
+    font-weight: 700; }
+  .footer-trainings-seven a {
+    width: 100px;
+    font-family: 'Montserrat Regular';
+    font-weight: 200; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-trainings-seven {
+      height: 170px;
+      padding: 30px 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; } }
+
+.footer-seven-training-page p {
+  color: black; }
+
+.flex-row-between-start {
+  display: flex; }
+
+p {
+  font-family: 'Montserrat Bold';
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white; }
+
+a {
+  margin-left: 15px;
+  line-height: 20.2px;
+  font-family: 'Montserrat Regular';
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8); }
+  a:hover {
+    color: white; }
+
+p {
+  margin-bottom: 1rem; }
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+@media only screen and (min-width: 37.5em) {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+.footer-lab-logo {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 2px solid white;
+  padding-right: 2rem; }
+  .footer-lab-logo img {
+    margin-bottom: 1rem; }
+  .footer-lab-logo p {
+    font-family: 'Montserrat Bold';
+    font-size: 13.5px;
+    margin: 0; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-logo {
+      border-right: 2px solid white;
+      padding-right: 4rem;
+      margin-bottom: 0; } }
+
+.footer-lab-div {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-div {
+      margin: 0; } }
+
+#seven-logo-footer {
+  height: 3rem; }
+
+.footer-lab-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem; }
+  .footer-lab-media p {
+    font-size: 1.8rem;
+    width: auto; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-media {
+      margin-bottom: 10px; } }
+
+.footer-lab-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px; }
+  .footer-lab-media-icons a {
+    margin: 0;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    font-family: 'Montserrat Thin';
+    color: white; }
     .footer-lab-media-icons a:hover {
       color: #95B9DB; }
 
@@ -7871,3 +8008,9 @@ button:focus, button:active {
 
 .footer-seven-training-page p {
   color: black; }
+
+.flex-row-between-start {
+  display: flex; }
+
+.side-text {
+  width: 100px; }
