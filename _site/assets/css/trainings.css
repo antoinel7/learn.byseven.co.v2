@@ -6426,7 +6426,7 @@ html {
     color: black; }
   @media only screen and (min-width: 37.5em) {
     .container-trainings-seven {
-      padding-bottom: 17rem; } }
+      padding-bottom: 0px; } }
 
 .banner-trainings {
   height: 120px;
@@ -7191,7 +7191,7 @@ html {
 .footer-lab-media-icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 120px; }
   .footer-lab-media-icons a {
@@ -7323,7 +7323,7 @@ p {
 .footer-lab-media-icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 120px; }
   .footer-lab-media-icons a {
