@@ -5,7 +5,6 @@
   background-color: white;
   overflow: auto;
   position: relative;
-  padding-bottom: 256px;
   padding-top: 54px;
 
   h1 {
@@ -29,7 +28,7 @@
 
   @include from-medium {
     padding-top: 107px;
-    padding-bottom: 17rem;
+    padding-bottom: 0px;
   }
 }
 
