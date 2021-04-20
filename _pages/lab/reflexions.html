@@ -60,3 +60,9 @@ ref: lab_category
   }
   ellipsizeTextBox('.article-card-title');
 </script>
+
+
+{% assign trainings = site.trainings %}
+  {% for training in trainings %}
+    <h1>{{training.title}}</h1>
+  {% endfor %}

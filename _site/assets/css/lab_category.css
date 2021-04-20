@@ -6408,7 +6408,6 @@ button:focus, button:active {
   background-color: white;
   overflow: auto;
   position: relative;
-  padding-bottom: 256px;
   padding-top: 54px; }
   .container-lab-seven h1 {
     color: black;
@@ -6424,7 +6423,7 @@ button:focus, button:active {
   @media only screen and (min-width: 37.5em) {
     .container-lab-seven {
       padding-top: 107px;
-      padding-bottom: 17rem; } }
+      padding-bottom: 0px; } }
 
 .lab-teaser {
   padding: 1rem;
@@ -7384,7 +7383,7 @@ button:focus, button:active {
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     width: min-content;
-    margin: 0;
+    margin-bottom: 1rem;
     opacity: 0;
     transition: all .25s ease-in-out; }
     .seven-burger-menu a:hover {
@@ -7882,55 +7881,68 @@ button:focus, button:active {
 
 .footer-lab-seven {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  max-height: 180px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   background-color: black;
   padding: 2rem; }
   .footer-lab-seven p {
     width: 100px;
     font-family: 'Montserrat Bold';
+    font-weight: 700;
     font-size: 1.6rem;
     color: white; }
   .footer-lab-seven a {
+    margin-left: 5px !important;
+    margin-bottom: 6px;
     width: 100px;
-    font-family: 'Montserrat Light';
-    font-size: 1.4rem;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.8); }
     .footer-lab-seven a:hover {
       color: white; }
-  .footer-lab-seven p, .footer-lab-seven a {
+  .footer-lab-seven p {
     margin-bottom: 1rem; }
+  .footer-lab-seven .footer-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 160px;
-      padding: 3rem 6rem;
+      padding: 2rem 4rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; } }
+      align-items: flex-start; }
+      .footer-lab-seven a {
+        margin-left: 15px !important;
+        font-size: 1.5rem;
+        width: 120px; } }
 
 .footer-lab-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  border-right: 2px solid white;
+  padding-right: 2rem; }
   .footer-lab-logo img {
-    margin-bottom: 1rem; }
+    margin-bottom: 0rem; }
   .footer-lab-logo p {
-    font-family: 'Montserrat Regular';
-    font-size: 14px;
+    font-family: 'Montserrat Bold';
+    font-size: 10.5px;
     margin: 0; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-logo {
+      margin-bottom: 3rem;
       border-right: 2px solid white;
-      padding-right: 3rem;
+      padding-right: 4rem;
       margin-bottom: 0; }
+      .footer-lab-logo p {
+        font-size: 13.5px; }
       .footer-lab-logo img {
-        margin: 1rem; } }
+        margin-bottom: 1rem; } }
 
 .footer-lab-div {
   margin-bottom: 20px; }
@@ -7939,31 +7951,48 @@ button:focus, button:active {
       margin: 0; } }
 
 #seven-logo-footer {
-  height: 30px; }
+  height: 3rem; }
 
 .footer-lab-media {
-  margin: 0 1rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .footer-lab-media p {
+    font-size: 1.2rem;
     width: auto; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-media {
-      margin: 0 2rem 0 0; } }
+      margin: 0 1rem;
+      margin-bottom: 10px;
+      justify-content: center; }
+      .footer-lab-media p {
+        font-size: 1.8rem; } }
 
 .footer-lab-media-icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 90px; }
+  width: 120px; }
   .footer-lab-media-icons a {
+    text-align: center;
     margin: 0;
     transition: all .25s ease-in-out;
     font-size: 14px;
-    font-family: 'Montserrat Light'; }
-    .footer-lab-media-icons a i {
-      font-size: 14px; }
+    font-family: 'Montserrat Regular';
+    font-weight: 300; }
     .footer-lab-media-icons a:hover {
       color: #95B9DB; }
+    .footer-lab-media-icons a .fab {
+      color: white !important; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-media-icons {
+      width: 100px !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
 
 .footer-lab-links {
   display: flex;
@@ -7990,10 +8019,12 @@ button:focus, button:active {
   margin-top: 50px; }
   .footer-trainings-seven p {
     width: 100px;
-    font-family: 'Montserrat Bold'; }
+    font-family: 'Montserrat Bold';
+    font-weight: 700; }
   .footer-trainings-seven a {
     width: 100px;
-    font-family: 'Montserrat Thin'; }
+    font-family: 'Montserrat Regular';
+    font-weight: 200; }
   @media only screen and (min-width: 37.5em) {
     .footer-trainings-seven {
       height: 170px;
@@ -8005,3 +8036,6 @@ button:focus, button:active {
 
 .footer-seven-training-page p {
   color: black; }
+
+.flex-row-between-start {
+  display: flex; }

@@ -56,19 +56,13 @@
   }
 }
 
+///// LAB ////
 
-
-// LAB
-
+  // FOOTER
 .footer-lab-seven {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  // display: grid;
-  // grid-auto-columns: auto;
-  // grid-auto-rows: minmax(75px, auto);
+  max-height: 180px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   background-color: rgb(0,0,0);
   padding: 2rem;
@@ -76,97 +70,80 @@
   p {
     width: 100px;
     font-family: 'Montserrat Bold';
+    font-weight: 700;
     font-size: 1.6rem;
     color: white;
   }
 
   a {
+    margin-left: 5px !important;
+    margin-bottom: 6px;
     width: 100px;
-    font-family: 'Montserrat Light';
-    font-size: 1.4rem;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    font-size: 1.3rem;
     color: rgba(255,255,255,0.8);
-
     &:hover {
       color: rgba(255,255,255,1);
     }
   }
 
-  p, a {
+  p {
     margin-bottom: 1rem;
   }
 
+  .footer-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   @include from-medium {
-    height: 160px;
     // padding: 3rem 10rem 3rem 6rem;
-    padding: 3rem 6rem;
+    padding: 2rem 4rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
+    a {
+      margin-left: 15px !important;
+      font-size: 1.5rem;
+      width: 120px;
+    }
   }
 }
 
 .footer-lab-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
+  border-right: 2px solid white;
+  padding-right: 2rem;
   img {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   p {
-    font-family: 'Montserrat Regular';
-    font-size: 14px;
+    font-family: 'Montserrat Bold';
+    font-size: 10.5px;
     // width: auto;
     margin: 0;
   }
 
   @include from-medium {
+    margin-bottom: 3rem;
     border-right: 2px solid white;
-    padding-right: 3rem;
+    padding-right: 4rem;
     margin-bottom: 0;
-
+    p {
+      font-size: 13.5px;
+    }
     img {
-      margin: 1rem;
+      margin-bottom: 1rem;
     }
   }
 }
-
-// .footer-lab-links-title {
-//   grid-column: 1;
-//   grid-column-start: 1;
-//   grid-column-end: auto;
-//   grid-row: 1;
-// }
-
-// .footer-lab-links-1 {
-//   width: 100px;
-//   grid-column: 1 / 3;
-//   grid-row: 2;
-//   margin-right: 5rem;
-
-//   p {
-//     white-space: nowrap;
-//   }
-// }
-
-// .footer-lab-links-2 {
-//   grid-column: 3;
-//   grid-row: 2;
-// }
-
-// .footer-lab-links-3 {
-//   grid-column: 1;
-//   grid-row: 3;
-// }
-
-// .footer-lab-links-4 {
-//   grid-column: 3;
-//   grid-row: 3;
-// }
 
 .footer-lab-div {
   margin-bottom: 20px;
@@ -177,43 +154,58 @@
 }
 
 #seven-logo-footer {
-  height: 30px;
+  height: 3rem;
 }
 
 .footer-lab-media {
-  margin: 0 1rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p {
+    font-size: 1.2rem;
     width: auto;
   }
 
   @include from-medium {
-    margin: 0 2rem 0 0;
+    margin: 0 1rem;
+    margin-bottom: 10px;
+    justify-content: center;
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
 
 
 .footer-lab-media-icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 90px;
+  width: 120px;
 
   a {
+    text-align: center;
     margin: 0;
     // text-align: center;
     transition: all .25s ease-in-out;
     font-size: 14px;
-    font-family: 'Montserrat Light';
-
-    i {
-      font-size: 14px;
-    }
-
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
     &:hover {
       color: #95B9DB;
     }
+    .fab {
+      color:white !important;
+    }
+  }
+  @include from-medium {
+  width: 100px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   }
 }
 
@@ -272,11 +264,13 @@
   p {
     width: 100px;
     font-family: 'Montserrat Bold';
+    font-weight: 700;
   }
 
   a {
     width: 100px;
-    font-family: 'Montserrat Thin';
+    font-family: 'Montserrat Regular';
+    font-weight: 200;
   }
 
   @include from-medium {
@@ -296,4 +290,8 @@
   p {
     color: black;
   }
+}
+
+.flex-row-between-start {
+  display: flex;
 }
