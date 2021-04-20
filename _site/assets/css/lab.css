@@ -7212,6 +7212,109 @@ button:focus, button:active {
     font-family: 'Montserrat Light';
     margin: 0 10px 10px 0; }
 
+.interview {
+  padding: 0px 0rem;
+  margin: 5rem 0 10rem 0; }
+  @media only screen and (min-width: 50em) {
+    .interview {
+      padding: 0px 10rem; } }
+  @media only screen and (min-width: 64em) {
+    .interview {
+      padding: 0px 17rem; } }
+
+.interview-image img {
+  float: left;
+  width: 100%;
+  padding-top: 9px;
+  padding-right: 0px;
+  padding-bottom: 15px; }
+  @media only screen and (min-width: 37.5em) {
+    .interview-image img {
+      width: 40%;
+      padding-right: 15px;
+      padding-bottom: 0px; } }
+
+.lab-interview-text {
+  margin: 5rem 0; }
+  @media only screen and (min-width: 64em) {
+    .lab-interview-text .lab-interview-text-primary, .lab-interview-text .lab-interview-text-secondary {
+      width: 100%; } }
+  .lab-interview-text h3 {
+    font-family: 'Montserrat Bold';
+    margin-bottom: 3rem;
+    line-height: 3.2rem; }
+  .lab-interview-text h5 {
+    font-family: 'Montserrat Bold';
+    font-size: 2rem;
+    line-height: 3.2rem; }
+  .lab-interview-text h6 {
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+    line-height: 3.2rem; }
+  .lab-interview-text p, .lab-interview-text ul {
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem; }
+  .lab-interview-text h2, .lab-interview-text h5 {
+    margin-bottom: 2rem; }
+  .lab-interview-text h6 {
+    margin-bottom: .5rem; }
+  .lab-interview-text button {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .lab-interview-text button p {
+      font-family: 'Montserrat Bold';
+      margin: 0;
+      height: 2rem;
+      line-height: 2rem; }
+  .lab-interview-text .lab-interview-text-separator {
+    height: 0;
+    width: 4rem;
+    margin: 3rem 0; }
+
+.lab-interview-text-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%; }
+  .lab-interview-text-medias p {
+    font-family: 'Montserrat Bold';
+    color: #95B9DB;
+    margin: 0 2rem 0 0; }
+  .lab-interview-text-medias a {
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    opacity: 0.75; }
+    .lab-interview-text-medias a:hover {
+      opacity: 1; }
+    .lab-interview-text-medias a:first-of-type {
+      background-color: #4267B2; }
+    .lab-interview-text-medias a:nth-of-type(2) {
+      background-color: #1DA1F2; }
+    .lab-interview-text-medias a:last-of-type {
+      background-color: #0072b1; }
+
+.interview-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .navbar-seven {
   display: flex;
   justify-content: space-between;
