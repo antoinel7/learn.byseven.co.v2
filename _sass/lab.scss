@@ -934,8 +934,6 @@
 }
 
 .lab-article-text-secondary {
-
-
   li {
     font-family: 'Montserrat Regular';
     font-size: 1.6rem;
@@ -1266,4 +1264,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.lab-interview-text-secondary {
+  li {
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    list-style: inside;
+    color: #5F6471;
+  }
+
+  a {
+    color: #F9D071;
+    text-decoration: underline;
+  }
+
+  strong {
+    font-family: 'Montserrat Bold';
+  }
+}
+
+.lab-interview-text-primary {
+  li {
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    list-style: inside;
+    color: #5F6471;
+  }
+
+  a {
+    color: #F9D071;
+    text-decoration: underline;
+  }
+
+  strong {
+    font-family: 'Montserrat Bold';
+  }
 }

@@ -7315,6 +7315,30 @@ button:focus, button:active {
   justify-content: center;
   align-items: center; }
 
+.lab-interview-text-secondary li {
+  font-family: 'Montserrat Regular';
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  list-style: inside;
+  color: #5F6471; }
+.lab-interview-text-secondary a {
+  color: #F9D071;
+  text-decoration: underline; }
+.lab-interview-text-secondary strong {
+  font-family: 'Montserrat Bold'; }
+
+.lab-interview-text-primary li {
+  font-family: 'Montserrat Regular';
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  list-style: inside;
+  color: #5F6471; }
+.lab-interview-text-primary a {
+  color: #F9D071;
+  text-decoration: underline; }
+.lab-interview-text-primary strong {
+  font-family: 'Montserrat Bold'; }
+
 .navbar-seven {
   display: flex;
   justify-content: space-between;
