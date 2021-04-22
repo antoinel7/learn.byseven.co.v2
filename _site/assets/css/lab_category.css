@@ -6408,7 +6408,6 @@ button:focus, button:active {
   background-color: white;
   overflow: auto;
   position: relative;
-  padding-bottom: 256px;
   padding-top: 54px; }
   .container-lab-seven h1 {
     color: black;
@@ -6424,7 +6423,7 @@ button:focus, button:active {
   @media only screen and (min-width: 37.5em) {
     .container-lab-seven {
       padding-top: 107px;
-      padding-bottom: 17rem; } }
+      padding-bottom: 0px; } }
 
 .lab-teaser {
   padding: 1rem;
@@ -7212,6 +7211,133 @@ button:focus, button:active {
     font-family: 'Montserrat Light';
     margin: 0 10px 10px 0; }
 
+.interview {
+  padding: 0px 0rem;
+  margin: 5rem 0 10rem 0; }
+  @media only screen and (min-width: 50em) {
+    .interview {
+      padding: 0px 10rem; } }
+  @media only screen and (min-width: 64em) {
+    .interview {
+      padding: 0px 18rem; } }
+
+.interview-image img {
+  float: left;
+  width: 100%;
+  padding-top: 9px;
+  padding-right: 0px;
+  padding-bottom: 15px; }
+  @media only screen and (min-width: 37.5em) {
+    .interview-image img {
+      width: 40%;
+      padding-right: 15px;
+      padding-bottom: 0px; } }
+
+.lab-interview-text {
+  margin: 5rem 0; }
+  @media only screen and (min-width: 64em) {
+    .lab-interview-text .lab-interview-text-primary, .lab-interview-text .lab-interview-text-secondary {
+      width: 100%; } }
+  .lab-interview-text h3 {
+    font-family: 'Montserrat Bold';
+    margin-bottom: 3rem;
+    line-height: 3.2rem; }
+  .lab-interview-text h5 {
+    font-family: 'Montserrat Bold';
+    font-size: 2rem;
+    line-height: 3.2rem; }
+  .lab-interview-text h6 {
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+    line-height: 3.2rem; }
+  .lab-interview-text p, .lab-interview-text ul {
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem; }
+  .lab-interview-text h2, .lab-interview-text h5 {
+    margin-bottom: 2rem; }
+  .lab-interview-text h6 {
+    margin-bottom: .5rem; }
+  .lab-interview-text button {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .lab-interview-text button p {
+      font-family: 'Montserrat Bold';
+      margin: 0;
+      height: 2rem;
+      line-height: 2rem; }
+  .lab-interview-text .lab-interview-text-separator {
+    height: 0;
+    width: 4rem;
+    margin: 3rem 0; }
+
+.lab-interview-text-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%; }
+  .lab-interview-text-medias p {
+    font-family: 'Montserrat Bold';
+    color: #95B9DB;
+    margin: 0 2rem 0 0; }
+  .lab-interview-text-medias a {
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    opacity: 0.75; }
+    .lab-interview-text-medias a:hover {
+      opacity: 1; }
+    .lab-interview-text-medias a:first-of-type {
+      background-color: #4267B2; }
+    .lab-interview-text-medias a:nth-of-type(2) {
+      background-color: #1DA1F2; }
+    .lab-interview-text-medias a:last-of-type {
+      background-color: #0072b1; }
+
+.interview-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lab-interview-text-secondary li {
+  font-family: 'Montserrat Regular';
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  list-style: inside;
+  color: #5F6471; }
+.lab-interview-text-secondary a {
+  color: #F9D071;
+  text-decoration: underline; }
+.lab-interview-text-secondary strong {
+  font-family: 'Montserrat Bold'; }
+
+.lab-interview-text-primary li {
+  font-family: 'Montserrat Regular';
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  list-style: inside;
+  color: #5F6471; }
+.lab-interview-text-primary a {
+  color: #F9D071;
+  text-decoration: underline; }
+.lab-interview-text-primary strong {
+  font-family: 'Montserrat Bold'; }
+
 #category-title {
   padding: 1rem;
   border-radius: 4px;
@@ -7755,55 +7881,68 @@ button:focus, button:active {
 
 .footer-lab-seven {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  max-height: 180px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   background-color: black;
   padding: 2rem; }
   .footer-lab-seven p {
     width: 100px;
     font-family: 'Montserrat Bold';
+    font-weight: 700;
     font-size: 1.6rem;
     color: white; }
   .footer-lab-seven a {
+    margin-left: 5px !important;
+    margin-bottom: 6px;
     width: 100px;
-    font-family: 'Montserrat Light';
-    font-size: 1.4rem;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.8); }
     .footer-lab-seven a:hover {
       color: white; }
-  .footer-lab-seven p, .footer-lab-seven a {
+  .footer-lab-seven p {
     margin-bottom: 1rem; }
+  .footer-lab-seven .footer-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-seven {
-      height: 200px;
-      padding: 3rem 6rem;
+      padding: 2rem 4rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; } }
+      align-items: flex-start; }
+      .footer-lab-seven a {
+        margin-left: 15px !important;
+        font-size: 1.5rem;
+        width: 120px; } }
 
 .footer-lab-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  border-right: 2px solid white;
+  padding-right: 2rem; }
   .footer-lab-logo img {
-    margin-bottom: 1rem; }
+    margin-bottom: 0rem; }
   .footer-lab-logo p {
-    font-family: 'Montserrat Regular';
-    font-size: 14px;
+    font-family: 'Montserrat Bold';
+    font-size: 10.5px;
     margin: 0; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-logo {
+      margin-bottom: 3rem;
       border-right: 2px solid white;
-      padding-right: 3rem;
+      padding-right: 4rem;
       margin-bottom: 0; }
+      .footer-lab-logo p {
+        font-size: 13.5px; }
       .footer-lab-logo img {
-        margin: 1rem; } }
+        margin-bottom: 1rem; } }
 
 .footer-lab-div {
   margin-bottom: 20px; }
@@ -7812,31 +7951,48 @@ button:focus, button:active {
       margin: 0; } }
 
 #seven-logo-footer {
-  height: 30px; }
+  height: 3rem; }
 
 .footer-lab-media {
-  margin: 0 1rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .footer-lab-media p {
+    font-size: 1.2rem;
     width: auto; }
   @media only screen and (min-width: 37.5em) {
     .footer-lab-media {
-      margin: 0 2rem 0 0; } }
+      margin: 0 1rem;
+      margin-bottom: 10px;
+      justify-content: center; }
+      .footer-lab-media p {
+        font-size: 1.8rem; } }
 
 .footer-lab-media-icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 90px; }
+  width: 120px; }
   .footer-lab-media-icons a {
+    text-align: center;
     margin: 0;
     transition: all .25s ease-in-out;
     font-size: 14px;
-    font-family: 'Montserrat Light'; }
-    .footer-lab-media-icons a i {
-      font-size: 14px; }
+    font-family: 'Montserrat Regular';
+    font-weight: 300; }
     .footer-lab-media-icons a:hover {
       color: #95B9DB; }
+    .footer-lab-media-icons a .fab {
+      color: white !important; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-media-icons {
+      width: 100px !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
 
 .footer-lab-links {
   display: flex;
@@ -7863,10 +8019,12 @@ button:focus, button:active {
   margin-top: 50px; }
   .footer-trainings-seven p {
     width: 100px;
-    font-family: 'Montserrat Bold'; }
+    font-family: 'Montserrat Bold';
+    font-weight: 700; }
   .footer-trainings-seven a {
     width: 100px;
-    font-family: 'Montserrat Thin'; }
+    font-family: 'Montserrat Regular';
+    font-weight: 200; }
   @media only screen and (min-width: 37.5em) {
     .footer-trainings-seven {
       height: 170px;
@@ -7878,3 +8036,6 @@ button:focus, button:active {
 
 .footer-seven-training-page p {
   color: black; }
+
+.flex-row-between-start {
+  display: flex; }
