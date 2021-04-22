@@ -10,8 +10,8 @@ title: "Coupler management horizontal sans verticalité"
 image: "/assets/img/articles/ClaireD.jpg"
 image_twitter: "/assets/img/articles/ClaireD.jpg"
 image_alt: "Coupler management horizontal sans verticalité"
-order: 1
-theme: "INTERVIEWS"
+order: 12
+theme: "INTERVIEW"
 theme_colour: "#F9D071"
 tag1: "Article de fond"
 tag2: ""
@@ -93,7 +93,7 @@ lang: fr
         <p>Le style participatif n’est néanmoins pas le seul type de management utilisé par les équipes d’Evaneos. Claire nous affirmait que <i>« le style directif est aussi utilisé. Par exemple, il nous arrive fréquemment de l’utiliser auprès de nos stagiaires. »</i> De même, lors du début de <strong>l’épidémie de covid, c’est d’ailleurs un style beaucoup plus directif qui a été mis en place afin de guider les collaborateurs</strong> en cette période incertaine.</p>
       </div>
       <div class="lab-interview-text-secondary">
-        <h5>Des styles variés suivant les expertise métiers</h5>
+        <h5>Des styles variés suivant les expertises métiers</h5>
         <p>Claire ajoutait que <strong>« suivant les métiers effectués, le style de management varie »</strong>. Elle citait alors les équipes tech et produit qui vont davantage opter pour un style participatif ou délégatif ; à la différence des équipes commerciales qui vont plutôt s’appuyer sur une démarche persuasive ou directive.
         <br><br>
         Chez Seven, lorsque nous enseignons la méthode Hersey & Blanchard, nous précisons que les 4 modes sont cycliques. Passer soudainement d’un management directif à un management délégatif serait potentiellement un trop grand pas, sujettes aux erreurs. Expliquer une première fois comment réaliser une action et procéder à la délégation dès la deuxième fois, ne garantit pas une réalisation parfaite de la mission. Les modes persuasifs et participatifs situés entre ces deux modes, offrent en fait aux collaborateurs la possibilité de comprendre le raisonnement de l’action, de réfléchir par eux-même, de donner leurs avis, de tester et donc d’évoluer.
