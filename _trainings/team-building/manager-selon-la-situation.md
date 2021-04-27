@@ -2,7 +2,7 @@
 layout: training_page
 type: training_page
 permalink: "/trainings/team-building/manager-selon-la-situation.html"
-absolute_link: "http://learn.byseven.co/trainings/manager-selon-la-situation"
+absolute_link: "https://learn.byseven.co/trainings/manager-selon-la-situation"
 title: "Manager selon la situation & Bien déléguer"
 quote: "“Le management, ce n'est pas un art, c'est une discipline.”
  – Noel Goutard"

@@ -7114,12 +7114,15 @@ html {
   color: black; }
 
 .footer-lab-seven {
-  width: 100%;
   max-height: 180px;
   display: flex;
   align-items: flex-start;
   background-color: black;
-  padding: 2rem; }
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
   .footer-lab-seven p {
     width: 100px;
     font-family: 'Montserrat Bold';
@@ -7174,7 +7177,8 @@ html {
       padding-right: 4rem;
       margin-bottom: 0; }
       .footer-lab-logo p {
-        font-size: 13.5px; }
+        font-size: 12.5px;
+        line-height: 20px; }
       .footer-lab-logo img {
         margin-bottom: 1rem; } }
 

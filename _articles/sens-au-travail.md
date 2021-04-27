@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>Co-créer le sens au travail de vos collaborateurs</h3>
       <p><em>La part de travail dans la vie des Français est dans la grande majorité des cas conséquente. Autant donc vivre du mieux possible ses journées de travail et trouver un équilibre convenable entre vie privée et vie professionnelle. Et pour cela, le sens au travail semble être un atout déterminant dans l’appréciation de ses missions et dans son bien-être professionnel. Cependant que faire lorsque des difficultés apparaissent ? Comment formaliser la perte de sens au travail ? Vers quelle méthode se tourner pour accompagner un collaborateur en proie à ce type de préoccupations ?</em>
       </p>
       <div class="lab-article-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>

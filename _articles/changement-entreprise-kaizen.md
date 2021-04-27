@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>Méthode Kaizen : un outil pour s’adapter au changement au travail avec la crise sanitaire</h3>
       <p><em>La crise sanitaire a amené les entreprises à revoir leur organisation et donc à imposer des changements aux salariés. Ces derniers n’ont eu d’autres choix que de s’adapter, et les managers de faire accepter la transformation. Parce qu’en 2021, le changement est loin de s’arrêter, les salariés et les managers doivent s’y préparer au mieux. Pour ne pas bouleverser du jour au lendemain leurs habitudes de travail tout en faisant en sorte que le changement soit pris en compte, la méthode Kaizen ou méthode des petits pas peut constituer une bonne alternative.</em>
       </p>
       <div class="lab-article-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>
