@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>Comment maintenir l’attention des étudiants et les rendre acteurs de leur propre apprentissage ?</h3>
       <p><em>Il n’est pas rare en formation, et même dans tout secteur, de constater une baisse d’attention au fur et à mesure de l’avancée de la journée. Des participants peuvent sembler distants, passifs, difficiles à mobiliser alors même qu’ils font la démarche de participer à un module de formation. Est-ce donc un problème de motivation ? A priori non. Selon John Medina, professeur à l’université d’État de Washington et biologiste du développement moléculaire, le taux d’attention d’un adulte diminuerait de 80 % au bout de 10 minutes. Et oui, scientifiquement, il est prouvé qu’il est difficile de maintenir l’attention d’une personne dans le temps, une donnée à intégrer dans le cadre de nos métiers.</em>
       </p>
       <div class="lab-article-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>

@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>L’intelligence visuo-spatiale : l’une des intelligences multiples d’Howard Gardner</h3>
       <p><em>Vous apprenez plus facilement grâce à des images, des vidéos, des schémas, des dessins ? Vous utilisez des images mentales pour comprendre un concept et trouver des solutions adéquates ? Vous arrivez à vous représenter les choses dans l’espace ? Vous êtes particulièrement observateur et imaginatif ? Peut-être vous reconnaissez-vous et/ou reconnaissez-vous l’image de certains de vos proches ! Si tel est le cas, l’intelligence que vous développez le plus est probablement une intelligence dite visuo-spatiale. Cette dénomination, mise en avant par la théorie des intelligences multiples, a été évoquée par Howard Gardner; et rentre dans les 7 formes d’intelligence qu’il a définies.</em>
       </p>
       <div class="lab-article-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>

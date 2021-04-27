@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>Développer une écoute active : pourquoi et comment apprendre à bien écouter ?</h3>
       <p><em>« Parler est un besoin, écouter est un art » telle est l’affirmation du romancier allemand, Goethe. En effet, nous pouvons difficilement ne pas parler puisque nous vivons dans une société de relations. Aussi bien dans la sphère professionnelle, personnelle que dans la vie de tous les jours, nous ressentons le besoin d’exprimer de vive voix une opinion, une information, une demande, une recommandation, un conseil, un partage d’idées, etc. Parler nous semble alors nécessaire.
       <br><br>
       Dès le plus jeune âge, l’importance est aussi bien donnée à la parole qu’à l’écoute : on apprend aux enfants à prononcer des lettres, associer des syllabes, lire des textes, mais aussi à écouter dans le but de mémoriser, d’être guidé, d’obéir et de comprendre. A l’âge adulte, l’équilibre devient moins stable et nous passons davantage de temps à travailler notre langage que notre capacité d’écoute. C’est comme si l’écoute était une faculté innée, qui une fois développée dès l’enfance, n’avait plus besoin d’être travaillée. L’enjeu de cet article est de démontrer que l’écoute n’est pas une compétence naturelle ou acquise pour toujours mais plutôt une habitude à (app)prendre, en particulier lorsque l’on souhaite développer une écoute active.</em>

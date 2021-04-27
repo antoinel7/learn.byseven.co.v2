@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>La conduite du changement en entreprise avec les 8 étapes de Kotter </h3>
+      <h3 style='color: {{page.theme_colour}};'>Soigner l’intégration des nouveaux collaborateurs pour optimiser les performances en entreprise</h3>
       <p><em>Soigner l’intégration de vos nouveaux collaborateurs est la garantie d’optimiser vos performances. Les nouveaux talents ont un regard neuf, sont heureux de rejoindre une nouvelle équipe (car ils ont fait le choix d’accepter une proposition), sont à l’écoute des habitudes de vie de l’entreprise et sont capables d’être plein d’idées. Les avantages sont multiples. Toutefois, il convient de bien les accueillir et de ne pas improviser au moment de leur arrivée. Comment former ces collaborateurs ? Comment transmettre les valeurs de son entreprise ? Quelles actions mettre en place dans le court ou long terme ? Nous allons tenter d’y répondre !</em>
       </p>
       <div class="lab-article-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>
