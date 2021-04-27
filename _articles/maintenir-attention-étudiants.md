@@ -7,8 +7,8 @@ facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.
 twitter_href: "https://twitter.com/intent/tweet?url=&text=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmaintenir-attention-%C3%A9tudiants"
 training_link : ""
 title: "Comment maintenir l’attention des étudiants et les rendre acteurs de leur propre apprentissage ?"
-image: "/assets/img/articles/maintenir-attention-étudiants.jpg"
-image_twitter: "/assets/img/articles/maintenir-attention-étudiants.jpg"
+image: "/assets/img/articles/attention-étudiants.jpg"
+image_twitter: "/assets/img/articles/attention-étudiants.jpg"
 image_alt: "Maintenir l’attention de vos collaborateurs"
 order: 10
 theme: "RÉFLEXION"
@@ -105,7 +105,7 @@ lang: fr
     </div>
     <div class="lab-article-text-secondary">
       <h5>Allier toutes les méthodes pédagogiques pour capter l’attention</h5>
-      <p>Plutôt qu’un xieme cours de 30 heures en amphis, loin de l’exercice de l’entrepreneur, il a été décidé de <strong>créer un atelier de 36 heures alliant toutes les méthodes pédagogiques</strong> pour faire vivre une expérience d’apprentissage inoubliable aux étudiants.
+      <p>Plutôt qu’un xieme cours de 30 heures en amphis, loin de l’exercice de l’entrepreneur, il a été décidé de <strong>créer un atelier de 33 heures alliant toutes les méthodes pédagogiques</strong> pour faire vivre une expérience d’apprentissage inoubliable aux étudiants.
       <br><br>
       Pour créer ce moment unique à l’ESSEC et maintenir l’attention d’un maximum d’étudiants, nous avons coordonné plusieurs approches, en somme <strong>créer une ingénierie pédagogique sur-mesure</strong>.
       <br><br>
