@@ -1,7 +1,7 @@
 ---
 layout: lab
 type: lab
-permalink: "/lab/articles/envisager-l’entreprise-comme-un-théâtre"
+permalink: "/lab/interviews/envisager-l’entreprise-comme-un-théâtre"
 absolute_link: "https://learn.byseven.co/lab/articles/envisager-l’entreprise-comme-un-théâtre"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&text="
@@ -26,7 +26,7 @@ lang: fr
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <ul>
           <li><a href="/lab">Accueil</a></li>
-          <li><a href="/lab/{{page.theme | downcase}}">{{page.theme | capitalize}}</a></li>
+          <li><a href="/lab/{{page.theme | downcase}}">{{page.theme | capitalize}}s</a></li>
           <li><span aria-current="page">Article</span></li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@ lang: fr
     <div class="lab-interview-text">
       <div class="lab-interview-text-primary">
         <h3 style='color: {{page.theme_colour}};'>Envisager l’entreprise comme un théâtre pour mieux communiquer </h3>
-        <p><i>"L’Entreprise est un Théâtre"</i>telle est la vision de <a href="https://www.linkedin.com/in/ianparizot/?originalSubdomain=fr" target='_blank'>Ian Parizot</a>: comédien, metteur en scène, spécialiste en improvisation théâtrale, formateur en entreprise et également directeur de la troupe <a href="https://www.againproductions.fr" target='_blank'>Again! Productions</a> Chez Seven, nous avons la chance de le compter parmi nos formateurs passionnés de transmission. Parce que la communication orale est une compétence sur laquelle nous intervenons au quotidien, nous avons voulu mettre à l’honneur l’expertise de Ian sur les meilleures techniques à utiliser pour bien communiquer dans la sphère professionnelle.</p>
+        <p><i>"L’Entreprise est un Théâtre"</i>telle est la vision de <a href="https://www.linkedin.com/in/ianparizot/?originalSubdomain=fr" target='_blank'>Ian Parizot</a>: comédien, metteur en scène, spécialiste en improvisation théâtrale, formateur en entreprise et également directeur de la troupe <a href="https://www.againproductions.fr" target='_blank'>Again! Productions.</a><br><br> Chez Seven, nous avons la chance de le compter parmi nos formateurs passionnés de transmission. Parce que la communication orale est une compétence sur laquelle nous intervenons au quotidien, nous avons voulu mettre à l’honneur l’expertise de Ian sur les meilleures techniques à utiliser pour bien communiquer dans la sphère professionnelle.</p>
         <div class="lab-interview-text-separator" style='border: solid 2px {{page.theme_colour}};'></div>
       </div>
       <div class="lab-interview-text-secondary">

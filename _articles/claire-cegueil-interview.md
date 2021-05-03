@@ -1,7 +1,7 @@
 ---
 layout: lab
 type: lab
-permalink: "/lab/articles/management-horizontal-vertical-interview"
+permalink: "/lab/interviews/management-horizontal-vertical-interview"
 absolute_link: "https://learn.byseven.co/lab/articles/management-horizontal-vertical-interview"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&text="
@@ -26,7 +26,7 @@ lang: fr
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <ul>
           <li><a href="/lab">Accueil</a></li>
-          <li><a href="/lab/{{page.theme | downcase}}">{{page.theme | capitalize}}</a></li>
+          <li><a href="/lab/{{page.theme | downcase}}">{{page.theme | capitalize}}s</a></li>
           <li><span aria-current="page">Article</span></li>
       </ul>
     </nav>
