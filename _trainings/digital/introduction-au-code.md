@@ -1,20 +1,19 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/techniques-de-négociation-constructive"
-absolute_link: "http://learn.byseven.co/trainings/gestion_d'équipe/techniques-de-négociation-constructive"
-title: "Techniques De Négociation Constructive"
-quote: "“Se trop ériger en négociateur n'est pas toujours la meilleure qualité pour la négociation.”
- – Jean-François Paul De Gondi."
-duration: "4 demi-journées"
+permalink: "/trainings/outils_digitaux/introduction_au_code"
+absolute_link: "http://learn.byseven.co/trainings/outils_digitaux/introduction_au_code"
+title: "Introduction au code"
+quote: "'In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.' - Andrew Hunt"
+duration: "2 demi-journées"
 location: "Paris ou en ligne"
-price: "840€ HT"
-image: "/assets/img/trainings/handshake.png"
-image_twitter: "/assets/img/trainings/handshake.png"
+price: "420€ HT"
+image: "/assets/img/trainings/introduction-au-code.jpg"
+image_twitter: "/assets/img/trainings/introduction-au-code.jpg"
 order: 1
-category: "BUSINESS DEVELOPMENT"
-category_colour: "#F3B0A3"
-created_at: "23 Avril 2021"
+category: "DIGITAL"
+category_colour: "#845ec2"
+created_at: "30 Avril 2021"
 teaser: ""
 custom_head: true
 lang: fr
@@ -36,8 +35,9 @@ lang: fr
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Réussir ses ventes, préparer une rencontre importante, faire entendre son point de vue : la négociation régit toutes les interactions entre deux individus.<br><br>
-      Dans cette formation, les participants découvriront les meilleures techniques de négociation pour établir une relation de confiance avec leurs interlocuteurs et atteindre leurs objectifs. Ils apprendront à se préparer, à anticiper les tensions et les forces en présence et à trouver des solutions créatives pour repartir avec un deal en main.
+      <p class="training-page-main-banner-left-description">Notre quotidien repose désormais en grande partie sur le digital. La prépondérance des programmes est idéniable, et l’émergence d’Internet, des smartphones, des nouveaux canaux d’informations et de divertissements, ont transformé l’informatique de l’utilitaire à l’indipensable.
+      <br><br>
+      Cette formation a pour but d’introduire des notions de base de la programmation, notamment pour faciliter la collaboration avec les équipes techniques et le développement de projets digitaux.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -76,43 +76,30 @@ lang: fr
     <p>En préparation à l’action de formation du contenu théorique vidéo et les lectures possibles seront partagées aux participants pour assurer un socle minimal commun. Des échanges potentiels avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
     <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
-    <h6>A. ATELIER NÉGOCIER : LES GRANDS PRINCIPES</h6>
     <ul>
-      <li>Mise en situation à l’aide d’une simulation sur mesure</li>
-      <li>Co-construction des 7 grands principes de la négociation sur la base des résultats des participants</li>
-      <li>Découverte des rouages de la négociation raisonnée</li>
+      <li>Qu'est ce qu'un langage de programmation ?</li>
+      <li>Back-end vs Front-end</li>
+      <li>Déclaration de variables et types de données basiques</li>
+      <li>Structures de controle simples</li>
+      <li>Le concept d'Objet et de Classe / Structure d'une base de données</li>
     </ul>
     <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
-    <h6>B. PRÉPARER UNE NEGOCIATION</h6>
     <ul>
-      <li>Découverte de la grille de préparation en 10 points</li>
-      <li>Préparation des négociations à venir sur la base des propositions des participants</li>
-    </ul>
-    <h5 style="color: {{page.category_colour}};">3 | SESSION 3</h5>
-    <h6>C. ANTICIPER LES POSITIONS DANS LA NÉGOCIATION</h6>
-    <ul>
-      <li>Mise en situation à l’aide d’une simulation sur mesure</li>
-      <li>Débriefing personnalisé des résultats des participants</li>
-      <li>Apprentissage des forces et faiblesses des 4 positions</li>
-    </ul>
-    <h5 style="color: {{page.category_colour}};">4 | SESSION 4</h5>
-    <h6>D. MAÎTRISER L’ANCRAGE DANS LA NÉGOCIATION</h6>
-    <ul>
-      <li>Mise en situation par la compétition sur l’ancrage à l’aide d’une simulation</li>
-      <li>Présentation de la grille de proposition de valeur</li>
-      <li>Découverte de la différence entre position initiale élevée, objectif et fall-back</li>
-      <li>Travail sur l’identification des points non négociables</li>
-      <li>Construction d’une proposition de valeur cohérente</li>
+      <li>Decouverte de HTML...</li>
+      <li>...et de CSS</li>
+      <li>Un mot sur le Javascript</li>
+      <li>Le concept de Framework</li>
+      <li>La définition du projet digital</li>
+      <li>Communiquer avec son équipe dev</li>
     </ul>
   </div>
   <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Préparer une négociation<br>
-        - Créer une relation de confiance avec ses interlocuteurs<br>
-        - Atteindre des objectifs chiffrés de vente<br>
-        - Trouver des solutions alternatives pour signer un contrat
+        - Maîtriser le concept d'algorithme et de langage logique<br>
+        - Savoir créer une page web simple<br>
+        - Savoir collaborer avec des équipes de développement web
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
