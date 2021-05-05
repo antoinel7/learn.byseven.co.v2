@@ -1,7 +1,7 @@
 ---
 layout: lab
 type: lab
-permalink: "/lab/interviews/envisager-l’entreprise-comme-un-théâtre"
+permalink: "/lab/articles/envisager-l’entreprise-comme-un-théâtre"
 absolute_link: "https://learn.byseven.co/lab/articles/envisager-l’entreprise-comme-un-théâtre"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&text="
