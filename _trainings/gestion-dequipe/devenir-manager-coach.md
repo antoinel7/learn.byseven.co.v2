@@ -36,7 +36,7 @@ lang: fr
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Piloter l’activité au quotidien nécessite une forte capacité à comprendre les dynamiques de groupe, à revenir sur des situations passées pour mettre en place des actions correctrices concrètes et à réagir efficacement en cas de situation difficile.<br><br>
-      Dans cette formation, les participants apprendront à adopter la posture de Manager Coach en améliorant leur qualité d’écoute, à faire un feedback constructif, à gérer une situation difficile ou conflictuelle et à augmenter leur spectre des informations nécessaires à la prise de décisions.
+      Dans cette formation, les participants apprendront à adopter la posture de Manager Coach en améliorant leur qualité d’écoute, à faire un feedback constructif, à gérer une situation difficile ou conflictuelle et à augmenter leur spectre des informations nécessaires à la prise de décisions.<br><br><span>Population :</span> Cette formation s’adresse aux Managers, Directeurs, Chefs d’équipe mais aussi à toute personne en charge de l’accompagnement de collaborateurs même sans rôle hiérarchique (ex. chef de projet, coordinateur, coach).
       </p>
     </div>
     <div class="training-page-main-banner-right">

@@ -38,6 +38,7 @@ lang: fr
       </div>
       <p class="training-page-main-banner-left-description">Au travers d’un mapping dynamique les participants découvriront comment reconnaître, dans leur environnement professionnel, les acteurs alliés, passifs, hésitants et  antagonistes et définiront des stratégies pour étendre leur influence.<br><br>
       Dans cette formation, les participants apprendront aussi à rédiger et exprimer un message inspirant pour fédérer leurs collaborateurs et devenir leader.
+      <span>Population :</span> Cette formation s’adresse aux leaders, communicants, managers ou commerciaux. qui souhaitent développer leur influence tant dans leurs interactions avec des collaborateurs et partenaires que en ligne.
       </p>
     </div>
     <div class="training-page-main-banner-right">

@@ -5,9 +5,9 @@ permalink: "/trainings/gestion_d'équipe/capter-l'attention"
 absolute_link: "http://learn.byseven.co/trainings/gestion_d'équipe/capter-l'attention"
 title: "Choisir les bons mots pour capter l'attention"
 quote: "“Les mots boivent notre pensée avant que nous ayons eu le temps de la reconnaître.” - Jean-Paul Sartre"
-duration: "une demi-journées"
+duration: "2 demi-journées de 3 heures"
 location: "Paris ou en ligne"
-price: "210€ HT"
+price: "420€ HT"
 image: "/assets/img/trainings/choisir-les-bons-mots.jpg"
 image_twitter: "/assets/img/trainings/choiser-les-bons-mots.jpg"
 order: 1
@@ -35,8 +35,8 @@ lang: fr
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Au travers d’exercices de rédaction et d'analyse de textes, les participants s’entraîneront à rédiger des messages impactants dans l’objectif de provoquer une action chez leur(s) destinataire(s) : adhésion à une idée, appréciation d’un produit, achat, consultation de contenus, inscription à une newsletter, clic sur bouton, etc. Mais également, ils s’interrogeront sur la façon de provoquer l’émotion souhaitée (peur, joie, surprise, dégoût, envie, etc.) chez le récepteur.<br><br>
-      Pour sortir du lot à l’heure de l’info-obésité et interpeller rapidement, des méthodes d’analyse du niveau de sensibilisation, de structuration du message seront ainsi enseignées aux participants.
+      <p class="training-page-main-banner-left-description">Pour sortir du lot à l’heure de l’info-obésité et interpeller rapidement, des méthodes d’analyse du niveau de sensibilisation, de structuration du message seront ainsi enseignées aux participants.
+      <br><br>Au travers d’exercices de rédaction et d'analyse de textes, les participants s’entraîneront à rédiger des messages impactants dans l’objectif de provoquer une action chez leur(s) destinataire(s) : adhésion à une idée, appréciation d’un produit, achat, consultation de contenus, inscription à une newsletter, clic sur bouton, etc. Mais également, ils s’interrogeront sur la façon de provoquer l’émotion souhaitée (peur, joie, surprise, dégoût, envie, etc.) chez le récepteur.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -87,6 +87,7 @@ lang: fr
       <li>Présentation  des 5 niveaux de sensibilisation et association d’un message à un niveau</li>
       <li>Regroupement des messages en deux approches : directes et indirectes</li>
     </ul>
+    <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
     <h6>C. TOUCHER LES ÉMOTIONS</h6>
     <ul>
       <li>Réminiscence d’une publicité, d’un livre, ou d’un discours  marquant</li>
@@ -107,13 +108,15 @@ lang: fr
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Adopter son écriture selon l’émotion voulue chez son destinataire et  son rapport avec le produit ou service <br>
-        - Structurer son message pour une efficacité maximale<br>
-        - Maîtriser des techniques d’écriture<br>
+        - Utiliser les méthodes de rédaction pour pousser ses interlocuteurs à l’action<br>
+        - Construire son propre style d’écriture et en maîtriser la puissance des mots<br>
+        - Structurer son message pour gagner en impact lors des échanges écrits<br>
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-        Grâce à des sessions rythmées, alliant le meilleur du présentiel et du digital, nos formateurs expérimentés s’assurent de la transmission des contenus et de leur application opérationnelle. Des mises en situation et retours d’expérience sont utilisées pour permettre aux participants de s'approprier les concepts. Enfin, si leur curiosité est grande, nous les invitons à consulter nos articles accessibles sur notre espace Le Lab, dans lequel, nous faisons la part belle aux mots!
+        Des formateurs expérimentés et des sessions rythmées, alliant le meilleur du présentiel et du digital, pour s'assurer de la transmission des contenus et de leur mise en application opérationnelle.
+        <br><br>Des mises en situations et retours d'expériences pour s'approprier les concepts.
+        <br><br>Des outils pragmatiques et ludiques accessibles depuis notre espace Lab pour continuer à apprendre après la formation.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">

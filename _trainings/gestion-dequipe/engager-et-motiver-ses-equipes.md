@@ -33,10 +33,10 @@ lang: fr
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
         <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
-        <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
+        <p class="training-page-main-banner-left-quote">{{page.quote}}</p>
       </div>
       <p class="training-page-main-banner-left-description">Cette formation s’adresse aux directeurs, managers et leurs collaborateurs ou aux équipes de management traverse qui souhaitent développer leur capacité à développer un collectif performant.<br><br>
-      Dans cet enchaînement d’ateliers ludiques et pragmatiques les participants découvriront les meilleures méthodes de management agile pour atteindre leurs objectifs et faire grandir leurs collaborateurs.
+      Dans cet enchaînement d’ateliers ludiques et pragmatiques les participants découvriront les meilleures méthodes de management agile pour atteindre leurs objectifs et faire grandir leurs collaborateurs.<br><br><span>Population :</span> Cette formation s’adresse aux Managers, Directeurs, Chefs d’équipe mais aussi à toute personne en charge de l’accompagnement de collaborateurs même sans rôle hiérarchique (ex. chef de projet, coordinateur, coach).
       </p>
     </div>
     <div class="training-page-main-banner-right">
