@@ -36,7 +36,7 @@ lang: fr
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Pour sortir du lot à l’heure de l’info-obésité et interpeller rapidement, des méthodes d’analyse du niveau de sensibilisation, de structuration du message seront ainsi enseignées aux participants.
-      <br><br>Au travers d’exercices de rédaction et d'analyse de textes, les participants s’entraîneront à rédiger des messages impactants dans l’objectif de provoquer une action chez leur(s) destinataire(s) : adhésion à une idée, appréciation d’un produit, achat, consultation de contenus, inscription à une newsletter, clic sur bouton, etc. Mais également, ils s’interrogeront sur la façon de provoquer l’émotion souhaitée (peur, joie, surprise, dégoût, envie, etc.) chez le récepteur.
+      <br><br>Au travers d’exercices de rédaction et d'analyse de textes, les participants de cette formation devront rédiger des messages impactants. Leur objectif, déclencher l’action de leurs interlocuteurs : susciter l’adhésion à une idée, provoquer l’appréciation d’un produit, clore un acte d’achat, favoriser la consultation de contenus ou l’inscription à une newsletter, faire cliquer, etc. Les participants seront challengés sur leur capacité à provoquer les émotions souhaitées et à en obtenir des résultats.
       </p>
     </div>
     <div class="training-page-main-banner-right">
