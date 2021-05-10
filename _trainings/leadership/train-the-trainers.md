@@ -37,7 +37,7 @@ lang: fr
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">La qualité de la transmission de connaissances est étroitement liée à la capacité qu’a le formateur à engager son audience durant ses prises de parole.<br><br>
-      Ces ateliers construits autour de la théorie des intelligences multiples d’Howard Gardner et la méthode pédagogique PLAN permettent aux participants d’apprendre à construire une trame de formation séquencée, rythmée, interactive et impactante pour rendre chaque participant acteur de son propre apprentissage.
+      Ces ateliers construits autour de la théorie des intelligences multiples d’Howard Gardner et la méthode pédagogique PLAN permettent aux participants d’apprendre à construire une trame de formation séquencée, rythmée, interactive et impactante pour rendre chaque participant acteur de son propre apprentissage.<br><br><span>Population :</span> Cette formation s’adresse à tous les collaborateurs en charge de concevoir ou animer des sessions de formation en interne comme en externe.
       </p>
     </div>
     <div class="training-page-main-banner-right">

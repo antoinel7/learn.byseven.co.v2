@@ -37,7 +37,7 @@ lang: fr
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Réussir ses ventes, préparer une rencontre importante, faire entendre son point de vue : la négociation régit toutes les interactions entre deux individus.<br><br>
-      Dans cette formation, les participants découvriront les meilleures techniques de négociation pour établir une relation de confiance avec leurs interlocuteurs et atteindre leurs objectifs. Ils apprendront à se préparer, à anticiper les tensions et les forces en présence et à trouver des solutions créatives pour repartir avec un deal en main.
+      Dans cette formation, les participants découvriront les meilleures techniques de négociation pour établir une relation de confiance avec leurs interlocuteurs et atteindre leurs objectifs. Ils apprendront à se préparer, à anticiper les tensions et les forces en présence et à trouver des solutions créatives pour repartir avec un deal en main.<br><br><span>Population :</span> Cette formation s’adresse à tous les collaborateurs confrontés à des situations de négociation. Commerciaux, Sales, CSM, Managers ou RH sont souvent confrontés  des situation de négociation qui nécessitent d’en comprendre les rouage et d’en  maîtriser le bon déroulement.
       </p>
     </div>
     <div class="training-page-main-banner-right">

@@ -95,7 +95,7 @@ lang: fr
       <br><br>
       Au même titre que les intelligences multiples, <strong>l’intelligence visuo-spatiale comporte des appellations multiples</strong> comme : intelligence visuelle, intelligence spatiale ou intelligence visuo-spatiale. Ici, le choix du terme importe peu. C’est plutôt la compréhension de cette intelligence qui compte. Qu’appelle-t-on « intelligence visuo-spatiale » ? Il s’agit de la <strong>capacité à se repérer dans un environnement dédié et à créer des images mentales pour une meilleure compréhension du monde</strong>.
       <br><br>
-      <em>« Le navigateur ne peut pas voir les îles lorsqu’il pilote; à la place, il cartographie leur position dans sa « représentation » mentale du voyage. » Howard Gardner</em>
+      <em>« Le navigateur ne peut pas voir les îles lorsqu’il pilote; à la place, il cartographie leur position dans sa « représentation » mentale du voyage. » Howard Gardner.</em>
       Cette citation souligne ainsi <strong>la force de la représentation mentale</strong> pour avancer et se repérer. Le navigateur ici s’appuie sur une carte pour poursuivre son voyage et c’est grâce à son intelligence visuo-spatiale qu’il parvient à suivre la direction qui lui semble être la bonne.
       <br><br>
       Pour apprendre à discerner votre intelligence visuo-spatiale et vos autres formes d’intelligence (car elles sont multiples, ne l’oublions pas), nous animons une formation <strong>Transmettre avec les 7 intelligences</strong> dans laquelle nous guidons chaque participant dans leur recherche de leurs intelligences.

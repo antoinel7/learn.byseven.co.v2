@@ -79,6 +79,10 @@
   }
 }
 
+.training-page-main-banner-left-quote {
+  font-family: 'Montserrat Italic' !important;
+}
+
 .training-page-main-banner-left {
   display: flex;
   flex-direction: column;
@@ -112,9 +116,13 @@
   }
 
   p:first-of-type {
-    font-family: 'Montserrat Italic';
+    // font-family: 'Montserrat Italic';
     color: black;
     margin: 1rem;
+  }
+
+  span {
+    font-family: 'Montserrat Bold';
   }
 
   @include from-medium-high {
