@@ -309,14 +309,20 @@
   height: 20rem;
   width: 100%;
   overflow: hidden;
+
+  img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
 
-.article-card-image {
-
+.interview-card-image {
   height: 20rem;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 50% 15% !important;
 }
 
 .article-card-content {
