@@ -30,7 +30,7 @@ ref: home
               <p>et toujours plus de participants</p>
             </div>
           </div>
-          <div class="home-main-left-statistics-3">
+          <div class="home-main-left-statistics-3" onmouseover="mouseOverRed();" onmouseout="mouseOutRed();">
             <div>
               <h2>71<span>&#42;</span></h2>
               <p><strong>Net Promoter Score</strong></p>
@@ -222,6 +222,7 @@ ref: home
         </div>
         <div class="home-main-left-details">
           <a id='home-main-left-details-button'>&#42;Ils nous ont fait confiance</a>
+          <div class='underline-animation'></div>
         </div>
       </div>
       <div id="home-main-left-customers-comments" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -476,4 +477,24 @@ ref: home
       }
     }
   };
+
+
+  netscore = document.getElementsByClassName('home-main-left-statistics-3')
+
+  function mouseOverRed() {
+    confiance = document.querySelector('.home-main-left-details');
+    width = confiance.offsetWidth
+    console.log(width)
+    underline = document.querySelector('.underline-animation')
+    underline.style.width = width + 'px'
+  }
+
+  function mouseOutRed() {
+    confiance = document.querySelector('.home-main-left-details');
+    underline = document.querySelector('.underline-animation')
+    underline.style.width = '0'
+  }
+
+
+
 </script>

@@ -26,7 +26,7 @@ lang: fr
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <ul>
           <li><a href="/lab">Accueil</a></li>
-          <li><a href="/lab/{{page.theme | downcase}}">{{page.theme | capitalize}}s</a></li>
+          <li><a href="/lab/{{page.theme | downcase}}s">{{page.theme | capitalize}}s</a></li>
           <li><span aria-current="page">Article</span></li>
       </ul>
     </nav>
