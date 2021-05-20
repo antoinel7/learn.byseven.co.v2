@@ -32,7 +32,11 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+            <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+            <p><strong>Net Promoter Score</strong></p>
+          </div>
+        </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Notre quotidien repose désormais en grande partie sur le digital. La prépondérance des programmes est idéniable, et l’émergence d’Internet, des smartphones, des nouveaux canaux d’informations et de divertissements, ont transformé l’informatique de l’utilitaire à l’indipensable.
@@ -155,6 +159,22 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse4">
           <p>Oui. Le dispositif FNE-Formation propose à tous les salariés en situation de chômage partiel ou complet de financer ses frais formations. Si votre entreprise est éligible au chômage partiel et que vous êtes dans cette situation : cette formation sera 100% remboursée par le FNE-Formation</p>
         </div>
+      </div>
+      <div class="training-page-faq-element">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
+          <div class="training-page-faq-question flex-row-between-centered">
+            <p><strong>Comment suis-je évalué ?</strong></p>
+            <i class="fas fa-angle-down fa-2x"></i>
+            <i class="fas fa-angle-up fa-2x hidden"></i>
+          </div>
+        </a>
+        <div class="training-page-faq-answer collapse" id="collapse5">
+          <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
+          On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-additional-info">
+        <p>Màj le 01/01/2021</p>
       </div>
     </div>
   </div>
