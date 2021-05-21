@@ -349,3 +349,36 @@
 .test {
   color: #F9D071 !important;
 }
+
+.training-additional-info {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-right: 15px;
+  p {
+    font-size: 12px;
+  }
+}
+
+.net-promote-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+  font-family: 'Montserrat Thin';
+  color: black;
+  }
+  h2 > span {
+    font-size: 24px;
+    font-family: 'Montserrat Thin';
+  }
+  p {
+    font-size: 13px;
+    margin: 0 !important;
+  }
+}
+
+.category-score {
+  display: flex;
+  justify-content: space-between;
+}
