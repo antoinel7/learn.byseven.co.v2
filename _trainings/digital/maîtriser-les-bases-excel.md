@@ -1,19 +1,19 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/team-building/motiver-son-équipe"
-absolute_link: "https://learn.byseven.co/lab/trainings/team-building/motiver-son-équipe"
-title: "Motiver son équipe et construire un collectif performant"
-quote: "« Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite. »  – Henry Ford"
-duration: "2 demi-journées"
+permalink: "/trainings/outils_digitaux/les-bases-excel"
+absolute_link: "http://learn.byseven.co/trainings/outils_digitaux/les-bases-excel"
+title: "Maîtriser les bases Excel"
+quote: "'Celui qui excelle ne discute pas, il maîtrise sa science et se tait.' - Lao Tseu"
+duration: "une demi-journée"
 location: "Paris ou en ligne"
 price: "420€ HT"
-image: "/assets/img/trainings/motiver-son-équipe.png"
-image_twitter: "/assets/img/trainings/motiver-son-équipe.png"
-order: 2
-category: "TEAM BUILDING"
-category_colour: "#97BA8C"
-created_at: "15 Janvier 2021"
+image: "/assets/img/trainings/excel.jpg"
+image_twitter: "/assets/img/trainings/excel.jpg"
+order: 1
+category: "DIGITAL"
+category_colour: "#9F86C0"
+created_at: "3 Mai 2021"
 teaser: ""
 custom_head: true
 lang: fr
@@ -32,15 +32,18 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-          <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
-            <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
-            <p><strong>Net Promoter Score</strong></p>
+        <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+          <p><strong>Net Promoter Score</strong></p>
           </div>
         </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Former une équipe performante est clé pour toute organisation. Durant cet atelier, les participants travailleront sur la dynamique de leur propre équipe et identifiront les motivations intrinsèques à chaque individu. <br><br>
-      A l’aide des leviers de motivation selon Jurgen Appelo et les phases de vie d’un groupe selon Tuckman, les participants définiront un ensemble d’action à mener pour mobiliser, individuellement, chaque membre de leur équipe et construire un collectif fort.
+      <p class="training-page-main-banner-left-description">Certains outils se sont imposés à de très nombreux secteurs et métiers de part leurs forces et impacts sur notre quotidien.
+      <br><br>
+      Dans cette formation personnalisée les participants pourront découvrir, approfondir ou devenir experts de Microsoft EXCEL.
+      <br><br>
+      Les participants se familiarisent avec les  calculs complexes, l’exploitation d’importantes quantités de données jusqu’à la représentation graphique et automatisation des calculs, et seront amenés à améliorer leur aisance, productivité et performance pour mettre  en valeurs les analyses et simplifier la prise de décisions.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -62,7 +65,7 @@ lang: fr
         <p>LIEU & FORMAT</p>
         <p>{{page.location}}</p>
         <p>Groupes de 6 à 9 personnes</p>
-        <p>Online</p>
+        <p>Paris ou Online</p>
     </div>
   </div>
   <div class="training-pages-infos-price">
@@ -76,41 +79,26 @@ lang: fr
 <div class="training-page-main-description">
   <div class="training-page-main-description-left" >
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
-    <p>La préparation est un élément essentiel qui ne doit pas être négligée pour assurer le bon déroulement du chantier. C'est à ce titre que nous nous tenons à votre disposition, en amont des sessions collectives, pour échanger sur les divers articles, livres et écrits qui ont inspiré le contenu de cette formation et notre pédagogie.</p>
+    <p>Des possibles échanges avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | FORMATION COLLECTIVE</h5>
-    <h6>A. ATELIER CONNAÎTRE ET PARTAGER SES LEVIERS DE MOTIVATION</h6>
+    <h5 style="color: {{page.category_colour}};">1 | SESSION 1 </h5>
     <ul>
-      <li>Comprendre et savoir activer les 10 leviers de motivation intrinsèques</li>
-      <li>Construire son propre deck de 10 cartes et identifier ses motivations personnelles</li>
-      <li>Savoir repérer les identifier les motivations intrinsèques des collaborateurs</li>
-      <li>Être en mesure de définir un plan d’action pour motiver ses collaborateurs</li>
-    </ul>
-    <h6>B. ATELIER CONSTRUIRE UN COLLECTIF PERFORMANT</h6>
-    <ul>
-      <li>Connaître les 5 phases de groupe selon Tuckman et en maîtriser les concepts</li>
-      <li>Savoir identifier la phase actuelle dans laquelle se trouve l’équipe des participants</li>
-      <li>Être capable de définir un plan d’action pour faire passer le collectif d’une phase à l’autre</li>
-      <li>Réussir à fédérer les collaborateurs pour générer de la performance collective.</li>
-    </ul>
-    <h5 style="color: {{page.category_colour}};">2 | COACHING INDIVIDUEL PERSONNALISÉ</h5>
-    <ul>
-      <li>Travailler, avec l’aide du formateur, sur des situations de travail actuelles</li>
-      <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
+      <li>S’imprégner des fonctions Excel les plus utiles</li>
+      <li>Organiser et traiter les données efficacement</li>
+      <li>Créer des rapports complets et dynamiques </li>
     </ul>
   </div>
   <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Savoir utiliser d’autres leviers que l’argent pour motiver des collaborateurs<br>
-        - Savoir construire un collectif performant dans lequel chaque collaborateur trouve sa place
+      - Maîtriser les outils digitaux de gestion de donnée pour adapter son activité au distanciel<br>
+      - Savoir interpréter la donnée dans un tableur <br>
+      - Savoir créer des rapports dynamiques et visuels <br>
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-        <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus. <br>
-        <strong>Des mises en situations</strong> et retours d'expériences pour s'approprier les concepts. <br>
-        <strong>Des outils accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
+       Des formateurs expérimentés et des sessions rythmées, pour s'assurer de la transmission des contenus et de leur mise en application opérationnelle. De la pratique et des mises en situations pour s’approprier le concepts.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">
@@ -183,3 +171,4 @@ lang: fr
 </div>
 
 {% include training_page_js.html %}
+

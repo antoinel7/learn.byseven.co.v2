@@ -13,7 +13,7 @@ image: "/assets/img/trainings/brain.png"
 image_twitter: "/assets/img/trainings/brain.png"
 order: 1
 category: "LEADERSHIP"
-category_colour: "#E95F48"
+category_colour: "#EA8065"
 created_at: "23 Avril 2021"
 teaser: ""
 custom_head: true
@@ -132,7 +132,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">

@@ -1,19 +1,19 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/team-building/motiver-son-équipe"
-absolute_link: "https://learn.byseven.co/lab/trainings/team-building/motiver-son-équipe"
-title: "Motiver son équipe et construire un collectif performant"
-quote: "« Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite. »  – Henry Ford"
+permalink: "/trainings/outils_digitaux/impression-3D"
+absolute_link: "http://learn.byseven.co/trainings/nouvelle-tech/impression-3D"
+title: "Introduction vulgaire à l’impression 3D"
+quote: "'Any sufficiently advanced technology is indistinguishable from magic.' - Arthur C.Clark"
 duration: "2 demi-journées"
-location: "Paris ou en ligne"
-price: "420€ HT"
-image: "/assets/img/trainings/motiver-son-équipe.png"
-image_twitter: "/assets/img/trainings/motiver-son-équipe.png"
-order: 2
-category: "TEAM BUILDING"
-category_colour: "#97BA8C"
-created_at: "15 Janvier 2021"
+location: "Paris"
+price: "500€ HT"
+image: "/assets/img/trainings/3d-impression.jpg"
+image_twitter: "/assets/img/trainings/3d-impression.jpg"
+order: 1
+category: "TECH"
+category_colour: "#55828b"
+created_at: "3 Mai 2021"
 teaser: ""
 custom_head: true
 lang: fr
@@ -32,15 +32,18 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-          <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
-            <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
-            <p><strong>Net Promoter Score</strong></p>
+        <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+          <p><strong>Net Promoter Score</strong></p>
           </div>
         </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Former une équipe performante est clé pour toute organisation. Durant cet atelier, les participants travailleront sur la dynamique de leur propre équipe et identifiront les motivations intrinsèques à chaque individu. <br><br>
-      A l’aide des leviers de motivation selon Jurgen Appelo et les phases de vie d’un groupe selon Tuckman, les participants définiront un ensemble d’action à mener pour mobiliser, individuellement, chaque membre de leur équipe et construire un collectif fort.
+      <p class="training-page-main-banner-left-description">L’impression 3D devient aujourd’hui plus abordable et accessible pour le grand public. Prothèses, organes, aliments, objets d’art, … les consommateurs se transforment en véritables créateurs et profitent d’une nouvelle technologie pour bien des besoins. En 2019, son marché représentait 10 Milliards de dollars de recette, dont 489 millions de dollars en France, soit le 4ème marché mondiale. Des chiffres qui témoignent ainsi de l’enjeu de populariser le marché de l’impression 3D.
+      <br><br>
+      Au-delà de l’innovation et de l’agilité rendues possibles, l’imprimante 3D bouleverse nos méthodes de production et d’approvisionnement. Les emplois créés dans ce domaine n’ont cessé de croître, et encore plus depuis la crise sanitaire. En France, beaucoup ont déjà sauté le pas puisqu’on estime à 42%  le taux d’adoption !
+      <br><br>
+      L’objectif de cette formation est donc de démystifier et simplifier, par la pratique, les différentes étapes de l’impression 3D. Mais aussi de faire prendre conscience des multiples possibilités offertes  par cette technologie.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -62,7 +65,7 @@ lang: fr
         <p>LIEU & FORMAT</p>
         <p>{{page.location}}</p>
         <p>Groupes de 6 à 9 personnes</p>
-        <p>Online</p>
+        <p>Paris ou Online</p>
     </div>
   </div>
   <div class="training-pages-infos-price">
@@ -76,41 +79,35 @@ lang: fr
 <div class="training-page-main-description">
   <div class="training-page-main-description-left" >
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
-    <p>La préparation est un élément essentiel qui ne doit pas être négligée pour assurer le bon déroulement du chantier. C'est à ce titre que nous nous tenons à votre disposition, en amont des sessions collectives, pour échanger sur les divers articles, livres et écrits qui ont inspiré le contenu de cette formation et notre pédagogie.</p>
+    <p>Des possibles échanges avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | FORMATION COLLECTIVE</h5>
-    <h6>A. ATELIER CONNAÎTRE ET PARTAGER SES LEVIERS DE MOTIVATION</h6>
+    <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
     <ul>
-      <li>Comprendre et savoir activer les 10 leviers de motivation intrinsèques</li>
-      <li>Construire son propre deck de 10 cartes et identifier ses motivations personnelles</li>
-      <li>Savoir repérer les identifier les motivations intrinsèques des collaborateurs</li>
-      <li>Être en mesure de définir un plan d’action pour motiver ses collaborateurs</li>
+      <li>Comment fonctionne une imprimante 3D ?</li>
+      <li>Que faire avec une imprimante 3D ? Tour d’horizon des possibilités</li>
+      <li>Utilisation des bibliothèques de modèles 3D</li>
+      <li>Découverte du Slicer</li>
+      <li>Lancement de l’impression</li>
     </ul>
-    <h6>B. ATELIER CONSTRUIRE UN COLLECTIF PERFORMANT</h6>
+    <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
     <ul>
-      <li>Connaître les 5 phases de groupe selon Tuckman et en maîtriser les concepts</li>
-      <li>Savoir identifier la phase actuelle dans laquelle se trouve l’équipe des participants</li>
-      <li>Être capable de définir un plan d’action pour faire passer le collectif d’une phase à l’autre</li>
-      <li>Réussir à fédérer les collaborateurs pour générer de la performance collective.</li>
-    </ul>
-    <h5 style="color: {{page.category_colour}};">2 | COACHING INDIVIDUEL PERSONNALISÉ</h5>
-    <ul>
-      <li>Travailler, avec l’aide du formateur, sur des situations de travail actuelles</li>
-      <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
+      <li>Test et itération de la première impression</li>
+      <li>Traitement et post-production d’une pièce</li>
+      <li>Utilisation des bibliothèques de modèles 3D</li>
+      <li>Modélisation de ses propres modèles 3D</li>
     </ul>
   </div>
   <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Savoir utiliser d’autres leviers que l’argent pour motiver des collaborateurs<br>
-        - Savoir construire un collectif performant dans lequel chaque collaborateur trouve sa place
+      - Maîtriser le concept “d’impression par dépôt de matière” <br>
+      - Appréhender les solutions et ressources mis en oeuvre au sein d’un projet d’impression 3D <br>
+      - Pratiquer l’ensemble des étapes de production, de l’idée initiale à l’objet fabriqué <br>
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-        <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus. <br>
-        <strong>Des mises en situations</strong> et retours d'expériences pour s'approprier les concepts. <br>
-        <strong>Des outils accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
+       Des formateurs expérimentés et des sessions rythmées, pour s'assurer de la transmission des contenus et de leur mise en application opérationnelle. De la pratique et des mises en situations pour s’approprier le concepts.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">
@@ -183,3 +180,4 @@ lang: fr
 </div>
 
 {% include training_page_js.html %}
+
