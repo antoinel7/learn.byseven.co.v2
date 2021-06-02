@@ -96,7 +96,7 @@ lang: fr
         <h5>Des styles variés suivant les expertises métiers</h5>
         <p>Claire ajoutait que <strong>« suivant les métiers effectués, le style de management varie »</strong>. Elle citait alors les équipes tech et produit qui vont davantage opter pour un style participatif ou délégatif ; à la différence des équipes commerciales qui vont plutôt s’appuyer sur une démarche persuasive ou directive.
         <br><br>
-        Chez Seven, lorsque nous enseignons la méthode Hersey & Blanchard, nous précisons que les 4 modes sont cycliques. Passer soudainement d’un management directif à un management délégatif serait potentiellement un trop grand pas, sujettes aux erreurs. Expliquer une première fois comment réaliser une action et procéder à la délégation dès la deuxième fois, ne garantit pas une réalisation parfaite de la mission. Les modes persuasifs et participatifs situés entre ces deux modes, offrent en fait aux collaborateurs la possibilité de comprendre le raisonnement de l’action, de réfléchir par eux-même, de donner leurs avis, de tester et donc d’évoluer.
+        Chez Seven, lorsque nous enseignons la méthode Hersey & Blanchard, nous précisons que les 4 modes sont cycliques. Passer soudainement d’un management directif à un management délégatif serait potentiellement un trop grand pas, menant à des erreurs. Expliquer une première fois comment réaliser une action et procéder à la délégation dès la deuxième fois, ne garantit pas une réalisation parfaite de la mission. Les modes persuasifs et participatifs situés entre ces deux modes, offrent en fait aux collaborateurs la possibilité de comprendre le raisonnement de l’action, de réfléchir par eux-même, de donner leurs avis, de tester et donc d’évoluer.
         </p>
       </div>
       <div class="lab-interview-text-secondary">
@@ -105,7 +105,7 @@ lang: fr
         </p>
       </div>
       <div class="lab-interview-text-secondary">
-        <h3> Horizontalité et Verticalité : le bon mix du management</h3>
+        <h3>Horizontalité et Verticalité : le bon mix du management</h3>
         <p>Cette problématique du style de management utilisé est récurrente dans le secteur des RH. Faut-il maintenir une organisation verticale et donc un style très directif ? Ou à l’inverse s’orienter vers une organisation horizontale et ainsi vers un style participatif ? Selon Claire, « <strong>il ne peut y avoir de management horizontal sans verticalité.</strong> Une organisation 100% plate ne sera pas efficace si aucun garant de la prise de décision n’a été défini. En fait, <strong>chaque entreprise doit trouver son chemin pour viser une prise de décision engageante.</strong> »
         </p>
       </div>

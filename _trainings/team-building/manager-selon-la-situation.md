@@ -13,7 +13,7 @@ image: "/assets/img/trainings/manager-selon-la-situation.png"
 image_twitter: "/assets/img/trainings/manager-selon-la-situation.png"
 order: 1
 category: "TEAM BUILDING"
-category_colour: "#739DBF"
+category_colour: "#97BA8C"
 created_at: "15 Janvier 2021"
 teaser: ""
 custom_head: true
@@ -142,7 +142,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">

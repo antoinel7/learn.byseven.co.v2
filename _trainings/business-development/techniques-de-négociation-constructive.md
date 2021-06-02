@@ -13,7 +13,7 @@ image: "/assets/img/trainings/handshake.png"
 image_twitter: "/assets/img/trainings/handshake.png"
 order: 1
 category: "BUSINESS DEVELOPMENT"
-category_colour: "#F3B0A3"
+category_colour: "#EBCB7A"
 created_at: "23 Avril 2021"
 teaser: ""
 custom_head: true

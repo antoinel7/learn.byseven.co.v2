@@ -55,7 +55,7 @@ ref: lab
       {% endfor %}
       {% assign articles = site.articles | sort: 'order' | reverse %}
       {% for article in articles %}
-        {% if article.order == 1 or article.order == 2 or article.order == 3 or article.order == 13 %}
+        {% if article.order == 1 or article.order == 2 or article.order == 3 or article.order == 14 %}
         <div class="col-md-6">
           <div class="article-card">
             <a class='stretched-link' href="{{article.permalink}}"></a>

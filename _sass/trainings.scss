@@ -87,7 +87,7 @@ html {
 }
 
 .main-trainings-left {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   a {
     color: black;
     font-family: 'Montserrat Bold';
@@ -110,30 +110,33 @@ html {
   }
 
   li:nth-of-type(2) > a:hover, li:nth-of-type(2) > a:focus {
-    color: #E95F48;
+    color: #EA8065;
   }
 
   li:nth-of-type(3) > a:hover, li:nth-of-type(3) > a:focus {
-    color: #EF8C64;
+    color: #F0966D;
   }
 
   li:nth-of-type(4) > a:hover, li:nth-of-type(4) > a:focus {
-    color: #F9D071;
+    color: #C1C383;
   }
 
   li:nth-of-type(5) > a:hover, li:nth-of-type(5) > a:focus {
-    color: #F3B0A3;
+    color: #EBCB7A;
   }
 
   li:nth-of-type(6) > a:hover, li:nth-of-type(6) > a:focus {
-    color: #5AC3C8;
+    color: #739DBF;
   }
 
   li:nth-of-type(7) > a:hover, li:nth-of-type(7) > a:focus {
-    color: #739DBF;
+    color: #97BA8C;
   }
     li:nth-of-type(8) > a:hover, li:nth-of-type(8) > a:focus {
-    color: #845ec2;
+    color: #9F86C0;
+  }
+    li:nth-of-type(9) > a:hover, li:nth-of-type(9) > a:focus {
+    color: #55828b;
   }
 
   @include from-medium-low {
@@ -146,6 +149,62 @@ html {
     }
   }
 }
+
+.main-trainings-left-2 {
+  margin-bottom: 0px;
+  a {
+    color: black;
+    font-family: 'Montserrat Bold';
+    transition: color 0.25s ease-in-out;
+    font-size: 1.6rem;
+  }
+
+  li > a {
+    padding: 10px 0px;
+  }
+
+  a:hover, a:focus {
+    border: none !important;
+    background-color: rgb(255,255,255) !important;
+    color: white;
+  }
+
+  li:nth-of-type(1) > a:hover, li:nth-of-type(1) > a:focus {
+    color: #739DBF;
+  }
+
+  li:nth-of-type(2) > a:hover, li:nth-of-type(2) > a:focus {
+    color: #97BA8C;
+  }
+    li:nth-of-type(3) > a:hover, li:nth-of-type(3) > a:focus {
+    color: #9F86C0;
+  }
+    li:nth-of-type(4) > a:hover, li:nth-of-type(4) > a:focus {
+    color: #55828b;
+  }
+
+  @include from-medium-low {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    li > a {
+    padding: 10px 15px;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items:inherit;
+  justify-content: center;
+  width: 100%;
+  @include from-medium-low {
+    align-items:center;
+  }
+}
+
 
 .main-trainings-right {
   width: 100%;
