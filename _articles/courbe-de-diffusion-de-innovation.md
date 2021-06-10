@@ -6,7 +6,7 @@ absolute_link: "http://learn.byseven.co/lab/articles/courbe-de-diffusion-de-inno
 facebook_href: ""
 twitter_href: ""
 training_link : ""
-title: " Investir dans ses collaborateurs : les 10 techniques pour gagner en efficacité"
+title: "Comprendre la diffusion d’une innovation pour faire de l’oeil à ses prospects"
 image: "/assets/img/articles/innovation.jpg"
 image_twitter: "/assets/img/articles/innovation.jpg"
 image_alt: "Comprendre la diffusion d’une innovation"
