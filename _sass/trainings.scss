@@ -125,19 +125,7 @@ html {
     color: #EBCB7A;
   }
 
-  li:nth-of-type(6) > a:hover, li:nth-of-type(6) > a:focus {
-    color: #739DBF;
-  }
 
-  li:nth-of-type(7) > a:hover, li:nth-of-type(7) > a:focus {
-    color: #97BA8C;
-  }
-    li:nth-of-type(8) > a:hover, li:nth-of-type(8) > a:focus {
-    color: #9F86C0;
-  }
-    li:nth-of-type(9) > a:hover, li:nth-of-type(9) > a:focus {
-    color: #55828b;
-  }
 
   @include from-medium-low {
     display: flex;
@@ -181,6 +169,9 @@ html {
   }
     li:nth-of-type(4) > a:hover, li:nth-of-type(4) > a:focus {
     color: #55828b;
+  }
+      li:nth-of-type(5) > a:hover, li:nth-of-type(5) > a:focus {
+    color: #5FB9B2;
   }
 
   @include from-medium-low {

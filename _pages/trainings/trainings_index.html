@@ -28,6 +28,7 @@ ref: trainings
       <li class="nav-item"><a class="nav-link" id="team-building-tab" data-toggle="tab" role="tab" aria-controls="team-building" aria-selected="true" href="#team-building">Team Building</a></li>
       <li class="nav-item"><a class="nav-link" id="digital-tab" data-toggle="tab" role="tab" aria-controls="digital" aria-selected="true" href="#digital">Outils digitaux</a></li>
       <li class="nav-item"><a class="nav-link" id="tech-tab" data-toggle="tab" role="tab" aria-controls="tech" aria-selected="true" href="#tech">Nouvelle Tech</a></li>
+      <li class="nav-item"><a class="nav-link" id="deliveroo-tab" data-toggle="tab" role="tab" aria-controls="deliveroo" aria-selected="true" href="#deliveroo">Partenariat Deliveroo</a></li>
     </ul>
   </div>
   <div class="tab-content main-trainings-right" id="menuTabContent">
@@ -289,8 +290,40 @@ ref: trainings
     </div>
     <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
       <div class="row">
-        {% assign trainings_digital = site.trainings | where: 'category', 'TECH' %}
-        {% for training in trainings_digital %}
+        {% assign trainings_tech = site.trainings | where: 'category', 'TECH' %}
+        {% for training in trainings_tech %}
+          <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
+            <a href="{{training.permalink}}">
+            </a>
+            <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+            <p style="color: {{training.category_colour}}">{{training.quote}}</p>
+            <div class="training-main-info">
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
+                <div>
+                  <p style="color: {{training.category_colour}}">{{training.duration}}</p>
+                </div>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+                <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.location}}</p>
+              </div>
+              <div class="training-main-info-flex">
+                <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+                <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+                <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="tab-pane fade" id="deliveroo" role="tabpanel" aria-labelledby="deliveroo-tab">
+      <div class="row">
+        {% assign trainings_deliveroo = site.trainings | where: 'category', 'DELIVEROO' %}
+        {% for training in trainings_deliveroo %}
           <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
             <a href="{{training.permalink}}">
             </a>
