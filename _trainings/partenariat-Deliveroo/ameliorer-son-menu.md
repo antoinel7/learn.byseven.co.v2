@@ -1,5 +1,5 @@
 ---
-layout: training_page
+layout: trainings_deliveroo
 type: training_page
 permalink: "/trainings/deliveroo/ameliorer-son-menu"
 absolute_link: "http://learn.byseven.co/trainings/deliveroo/ameliorer-son-menu"
@@ -16,6 +16,7 @@ category_colour: "#5FB9B2"
 created_at: "10 Juin 2021"
 teaser: ""
 custom_head: true
+custom_link: 'https://airtable.com/shrVESKU8YHY9KfrO'
 lang: fr
 ---
 
@@ -46,9 +47,6 @@ lang: fr
       Les participants découvriront comment chacune de ces lois s’applique à la construction de leur menu, de leur offre et comment favoriser la validation d’un panier.
       <br><br>
       <strong>Population :</strong> Cette formation s’adresse à tous les restaurateurs et équipe siège en charge de construire et perfectionner le menu et les offres du restaurant.
-      <br>
-      <br>
-      <a href="https://airtable.com/shrVESKU8YHY9KfrO" style='color:#5FB9B2'>Inscrivez-vous</a>
       </p>
     </div>
     <div class="training-page-main-banner-right">

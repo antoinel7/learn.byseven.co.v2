@@ -16,6 +16,7 @@ category_colour: "#5FB9B2"
 created_at: "10 Juin 2021"
 teaser: ""
 custom_head: true
+custom_link: 'https://airtable.com/shrRH5Wa6GBgknacH'
 lang: fr
 ---
 
@@ -44,9 +45,6 @@ lang: fr
      Les participants travailleront sur les notions d’urgence et d’importance. Ils prendront ensuite des actions correctrices concrètes pour se focaliser sur leurs tâches à haute valeur ajoutée et devenir plus intentionnel dans leur travail.
       <br><br>
       <strong>Population :</strong> Cette formation s’adresse à tous les restaurateurs et équipes siège en charge de gérer les opérations en cuisine et la bonne production des commandes passées.
-      <br>
-      <br>
-      <a href="https://airtable.com/shrpgl0YhuS87kDcm" style='color:#5FB9B2'>Inscrivez-vous</a>
       </p>
     </div>
     <div class="training-page-main-banner-right">

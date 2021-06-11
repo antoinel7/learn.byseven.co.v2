@@ -16,6 +16,7 @@ category_colour: "#5FB9B2"
 created_at: "10 Juin 2021"
 teaser: ""
 custom_head: true
+custom_link: 'https://airtable.com/shrpgl0YhuS87kDcm'
 lang: fr
 ---
 
@@ -44,9 +45,6 @@ lang: fr
      Cet atelier permet aux participants de faire un audit sur l’image que leur entreprise renvoient en général et plus spécifiquement en ligne. Il permet également de travailler sur la construction et la diffusion de messages professionnels, que cela soit à l’écrit, en image ou en vidéo pour gagner en notoriété.
       <br><br>
       <strong>Population :</strong> Cette formation s’adresse à tous les restaurateurs et équipes sièges en charge de construire et améliorer la notoriété de leur marque sur les plateformes de livraison.
-      <br>
-      <br>
-      <a href="https://airtable.com/shrRH5Wa6GBgknacH" style='color:#5FB9B2'>Inscrivez-vous</a>
       </p>
     </div>
     <div class="training-page-main-banner-right">
