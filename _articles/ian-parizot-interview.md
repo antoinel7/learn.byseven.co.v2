@@ -10,7 +10,7 @@ title: "Envisager l’entreprise comme un théâtre"
 image: "/assets/img/interviews/Ian-Parizot.jpg"
 image_twitter: "/assets/img/interviews/Ian-Parizot.jpg"
 image_alt: " Envisager l’entreprise comme un théâtre"
-order: 13
+order: 14
 theme: "INTERVIEW"
 theme_colour: "#F9D071"
 tag1: "Article de fond"
