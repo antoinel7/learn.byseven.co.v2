@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/capter-l'attention"
-absolute_link: "http://learn.byseven.co/trainings/gestion_d'équipe/capter-l'attention"
+permalink: "/trainings/communication/capter-l'attention"
+absolute_link: "http://learn.byseven.co/trainings/communication/capter-l'attention"
 title: "Choisir les bons mots pour capter l'attention"
 quote: "“Les mots boivent notre pensée avant que nous ayons eu le temps de la reconnaître.” - Jean-Paul Sartre"
 duration: "2 demi-journées de 3 heures"

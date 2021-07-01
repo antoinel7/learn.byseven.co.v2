@@ -10,8 +10,8 @@ location: "Paris ou en ligne"
 price: "420€ HT"
 image: "/assets/img/trainings/chess.png"
 image_twitter: "/assets/img/trainings/chess.png"
-order: 1
-category: "GESTION D'ÉQUIPE"
+order: 2
+category: "TEAM MANAGEMENT"
 category_colour: "#F0966D"
 created_at: "23 Avril 2021"
 teaser: ""

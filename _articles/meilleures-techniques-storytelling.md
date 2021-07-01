@@ -10,7 +10,7 @@ title: "Raconte-nous une histoire ... les meilleures techniques de storytelling 
 image: "/assets/img/articles/meilleures-techniques-storytelling.jpg"
 image_twitter: "/assets/img/articles/meilleures-techniques-storytelling.jpg"
 image_alt: "les meilleures techniques de storytelling pour captiver son audience"
-order: 15
+order: 17
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
 tag1: "Article de fond"
