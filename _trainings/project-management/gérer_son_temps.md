@@ -2,7 +2,7 @@
 layout: training_page
 type: training_page
 permalink: "/trainings/project_management/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/team-building/gérer-son-temps"
+absolute_link: "http://learn.byseven.co/lab/trainings/project_management/gérer-son-temps"
 title: "Gérer son temps et ses priorités"
 quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
 duration: "2 demi-journées"

@@ -1,9 +1,9 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/dévlopper-son-influence-et-devenir-un-leader"
-absolute_link: "http://learn.byseven.co/lab/trainings/dévlopper-son-influence-et-devenir-un-leader"
-title: "Dévlopper son Influence et Devenir un Leader"
+permalink: "/trainings/leadership/développer-son-influence-et-devenir-un-leader"
+absolute_link: "http://learn.byseven.co/lab/trainings/leadership/développer-son-influence-et-devenir-un-leader"
+title: "Développer son Influence et Devenir un Leader"
 quote: "“People don’t buy what you do, they buy why you do it.”
  – Simon Sinek"
 duration: "2 demi-journées"

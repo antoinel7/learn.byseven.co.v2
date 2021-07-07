@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/train-the-trainers"
-absolute_link: "http://learn.byseven.co/lab/trainings/train-the-trainers"
+permalink: "/trainings/leadership/train-the-trainers"
+absolute_link: "http://learn.byseven.co/lab/trainings/leadership/train-the-trainers"
 title: "Train the Trainers"
 quote: "“Tout ce qui vaut la peine d’être enseigné peut être présenté de différentes façons.”
  – Howard Gardner"

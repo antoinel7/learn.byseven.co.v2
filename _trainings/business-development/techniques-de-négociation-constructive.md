@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/techniques-de-négociation-constructive"
-absolute_link: "http://learn.byseven.co/trainings/gestion_d'équipe/techniques-de-négociation-constructive"
+permalink: "/trainings/business_development/techniques-de-négociation-constructive"
+absolute_link: "http://learn.byseven.co/trainings/business_development/techniques-de-négociation-constructive"
 title: "Techniques De Négociation Constructive"
 quote: "“Se trop ériger en négociateur n'est pas toujours la meilleure qualité pour la négociation.”
  – Jean-François Paul De Gondi."

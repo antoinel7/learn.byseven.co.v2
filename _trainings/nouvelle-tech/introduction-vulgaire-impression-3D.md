@@ -1,7 +1,7 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/outils_digitaux/impression-3D"
+permalink: "/trainings/nouvelle_tech/impression-3D"
 absolute_link: "http://learn.byseven.co/trainings/nouvelle-tech/impression-3D"
 title: "Introduction vulgaire à l’impression 3D"
 quote: "'Any sufficiently advanced technology is indistinguishable from magic.' - Arthur C.Clark"

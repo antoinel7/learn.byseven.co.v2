@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/team-building/motiver-son-équipe"
-absolute_link: "https://learn.byseven.co/lab/trainings/team-building/motiver-son-équipe"
+permalink: "/trainings/team_building/motiver-son-équipe"
+absolute_link: "https://learn.byseven.co/lab/trainings/team_building/motiver-son-équipe"
 title: "Motiver son équipe et construire un collectif performant"
 quote: "« Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite. »  – Henry Ford"
 duration: "2 demi-journées"
