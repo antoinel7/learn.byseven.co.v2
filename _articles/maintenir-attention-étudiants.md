@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/maintenir-attention-étudiants"
-absolute_link: "http://learn.byseven.co/lab/articles/maintenir-attention-étudiants"
+absolute_link: "https://learn.byseven.co/lab/articles/maintenir-attention-étudiants"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmaintenir-attention-%C3%A9tudiants&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=&text=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmaintenir-attention-%C3%A9tudiants"
 training_link : ""

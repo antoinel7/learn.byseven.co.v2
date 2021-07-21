@@ -108,7 +108,7 @@ lang: fr
       <li>Pratique de ces techniques d’écriture</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>

@@ -2,14 +2,14 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/meilleures-techniques-storytelling"
-absolute_link: "http://learn.byseven.co/lab/articles/meilleures-techniques-storytelling"
+absolute_link: "https://learn.byseven.co/lab/articles/meilleures-techniques-storytelling"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmeilleures-techniques-storytelling&amp;src=sdkpreparse"
 twitter_href: 'https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmeilleures-techniques-storytelling'
 training_link : ""
 title: "Raconte-nous une histoire ... les meilleures techniques de storytelling pour captiver son audience"
 image: "/assets/img/articles/meilleures-techniques-storytelling.jpg"
 image_twitter: "/assets/img/articles/meilleures-techniques-storytelling.jpg"
-image_alt: "les meilleures techniques de storytelling pour captiver son audience"
+image_alt: "Les meilleures techniques de storytelling pour captiver son audience"
 order: 17
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"

@@ -2,9 +2,9 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/investir-dans-ses-collaborateurs"
-absolute_link: "http://learn.byseven.co/lab/articles/investir-dans-ses-collaborateurs"
-facebook_href: ""
-twitter_href: ""
+absolute_link: "https://learn.byseven.co/lab/articles/investir-dans-ses-collaborateurs"
+facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Finvestir-dans-ses-collaborateurs&amp;src=sdkpreparse"
+twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Finvestir-dans-ses-collaborateurs&text="
 training_link : ""
 title: " Investir dans ses collaborateurs : les 10 techniques pour gagner en efficacité"
 image: "/assets/img/articles/investir-collab.jpg"

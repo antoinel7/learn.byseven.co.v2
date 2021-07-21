@@ -380,6 +380,7 @@ ref: home
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
+
   selection = getRandomInt(9);
   item = document.querySelector('.item'+selection.toString());
   item.classList.add('active');
@@ -494,7 +495,4 @@ ref: home
     underline = document.querySelector('.underline-animation')
     underline.style.width = '0'
   }
-
-
-
 </script>

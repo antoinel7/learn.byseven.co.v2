@@ -103,7 +103,7 @@ lang: fr
       <li>Définition d’une stratégie d’influence</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>

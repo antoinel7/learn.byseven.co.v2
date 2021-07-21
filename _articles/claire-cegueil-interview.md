@@ -4,7 +4,7 @@ type: lab
 permalink: "/lab/articles/management-horizontal-vertical-interview"
 absolute_link: "https://learn.byseven.co/lab/articles/management-horizontal-vertical-interview"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&amp;src=sdkpreparse"
-twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview&text="
+twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview"
 training_link : ""
 title: "Coupler management horizontal sans verticalité"
 image: "/assets/img/articles/ClaireD.jpg"

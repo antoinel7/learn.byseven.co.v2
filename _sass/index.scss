@@ -220,3 +220,30 @@ button {
     content: "";
     background-color: rgba(0,0,0,0);
 }
+
+.grab-row {
+  min-height: 45rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-right: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.grab-row::-webkit-scrollbar {
+  display: none;
+}
+
+.grab-row.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}

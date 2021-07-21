@@ -2,9 +2,9 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/diffusion-innovation"
-absolute_link: "http://learn.byseven.co/lab/articles/courbe-de-diffusion-de-innovation"
-facebook_href: ""
-twitter_href: ""
+absolute_link: "https://learn.byseven.co/lab/articles/courbe-de-diffusion-de-innovation"
+facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fcourbe-de-diffusion-de-innovation&amp;src=sdkpreparse"
+twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fcourbe-de-diffusion-de-innovation"
 training_link : ""
 title: "Comprendre la diffusion d’une innovation pour faire de l’oeil à ses prospects"
 image: "/assets/img/articles/innovation.jpg"

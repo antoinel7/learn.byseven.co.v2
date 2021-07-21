@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/intelligence-visio-spatiale"
-absolute_link: "http://learn.byseven.co/lab/articles/intelligence-visuo-spatiale"
+absolute_link: "https://learn.byseven.co/lab/articles/intelligence-visuo-spatiale"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fintelligence-visuo-spatiale&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=&text=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fintelligence-visuo-spatiale"
 training_link : ""

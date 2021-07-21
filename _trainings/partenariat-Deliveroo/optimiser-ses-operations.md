@@ -107,7 +107,7 @@ lang: fr
       <li>Atelier de travail collectif : Organiser ses opérations pour assurer une fluidité dans le service de vente en livraison et de click & collect</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>

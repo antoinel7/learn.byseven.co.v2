@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/changement-entreprise-kaizen"
-absolute_link: "http://learn.byseven.co/lab/articles/changement-entreprise-kaizen"
+absolute_link: "https://learn.byseven.co/lab/articles/changement-entreprise-kaizen"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fchangement-entreprise-kaizen&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=&text=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fchangement-entreprise-kaizen"
 training_link : ""

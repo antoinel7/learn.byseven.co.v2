@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/resolutions-objectifs-smart"
-absolute_link: "http://learn.byseven.co/lab/articles/resolutions-objectifs-smart"
+absolute_link: "https://learn.byseven.co/lab/articles/resolutions-objectifs-smart"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fresolutions-objectifs-smart&text=Utiliser%20les%20objectifs%20SMART%20pour%20tenir%20ses%20bonnes%20r%C3%A9solutions%202021"
 training_link : ""

@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/theorie-de-bono-crise-sanitaire"
-absolute_link: "http://learn.byseven.co/lab/articles/theorie-de-bono-crise-sanitaire"
+absolute_link: "https://learn.byseven.co/lab/articles/theorie-de-bono-crise-sanitaire"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Ftheorie-de-bono-crise-sanitaire&text=Pens%C3%A9e%20lat%C3%A9rale%20de%20Bono%20%3A%20une%20utilisation%20involontaire%20en%20entreprise%20lors%20de%20la%20crise"
 training_link : ""

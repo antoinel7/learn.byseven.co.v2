@@ -1,0 +1,723 @@
+.container-single-pages-seven {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 1440px;
+  background-color: white;
+  overflow: visible;
+  position: relative;
+  padding-bottom: 14.5rem;
+
+  h1, h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 3.2rem;
+    margin: 0;
+    color: black;
+
+    @include from-large {
+      font-size: 3.6rem;
+    }
+  }
+
+  h3 {
+    font-family: 'Montserrat Regular';
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+  }
+
+  h4 {
+    font-family: 'Montserrat Bold';
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0 0 0 1.4rem;
+    margin: 0;
+  }
+
+  p, li {
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    margin: 0;
+    color: black;
+  }
+
+  span {
+    font-family: 'Montserrat Italic';
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-family: 'Montserrat Bold';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+    border-radius: .4rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+  }
+}
+
+.yek-call-to-action, .becos-call-to-action {
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.yek-call-to-action {
+  background-color: #FCC94A;
+}
+
+.becos-call-to-action {
+  background-color: #4BC1C6;
+}
+
+.yek-container, .becos-container {
+  // max-width: 144rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.yek-banner, .becos-banner {
+  width: 100vw;
+  padding: 2rem;
+
+  @include from-large {
+    padding: 10rem;
+    width: 125rem;
+  }
+}
+
+.yek-banner__navbar, .becos-banner__navbar, .becos-banner__navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+
+  button {
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}
+
+.yek-banner__navbar {
+
+  button {
+
+    &:last-child {
+      background-color: #FCC94A;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #FCC94A;
+      }
+    }
+  }
+}
+
+.becos-banner__navbar, .becos-banner__navbar-mobile {
+  margin-bottom: 5rem;
+
+  button {
+    margin-left: 5rem;
+  }
+
+  .becos-banner__navbar__contact {
+    border: 1px solid #4BC1C6;
+    opacity: .7;
+
+    &:hover {
+      border: 1px solid #4BC1C6;
+      opacity: 1;
+    }
+  }
+
+  .becos-banner__navbar__subscribe {
+    background-color: #4BC1C6;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid #4BC1C6;
+    }
+  }
+}
+
+.becos-banner__navbar {
+  display: none;
+
+  @include from-large {
+    display: flex;
+  }
+}
+
+.becos-banner__navbar-mobile {
+  align-items: center;
+
+  @include from-large {
+    display: none;
+  }
+}
+
+.becos-dropdown {
+  padding: 1rem;
+  margin-left: 1rem;
+  color: #4BC1C6;
+  border-radius: .4rem;
+  opacity: .7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+.yek-banner__teaser, .becos-banner__teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include from-large {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.yek-banner__teaser__text, .becos-banner__teaser__text {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include from-large {
+    display: block;
+    padding-right: 18rem;
+    margin: 0;
+  }
+
+  h1, h3 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+.becos-banner__teaser__img {
+  img {
+    width: 85vw;
+    margin-bottom: 5rem;
+
+    @include from-large {
+      width: 50rem;
+      margin: 0;
+    }
+  }
+}
+
+.yek-banner__teaser__text__buttons, .becos-banner__text__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  button {
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid black;
+    }
+
+    &:first-child {
+      background-color: #FCC94A;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #FCC94A;
+      }
+    }
+  }
+}
+
+.yek-banner__teaser__text__buttons {
+
+  button {
+
+    &:first-child {
+      background-color: #FCC94A;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #FCC94A;
+      }
+    }
+  }
+}
+
+.becos-banner__teaser__text__buttons {
+
+  button {
+
+    &:first-child {
+      background-color: #4BC1C6;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #4BC1C6;
+      }
+    }
+  }
+}
+
+.yek-dates, .becos-dates {
+  width: 85vw;
+  border-radius: .4rem;
+  margin-bottom: 10rem;
+
+  @include from-large {
+    width: 60rem;
+  }
+}
+
+.yek-dates {
+  border: 2px solid #FCC94A;
+}
+
+.becos-dates {
+  border: 2px solid #4BC1C6;
+}
+
+.yek-dates__date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+
+  &:first-of-type {
+    border-bottom: 2px solid #FCC94A;
+  }
+
+  .yek-dates__date__left {
+    width: 25rem;
+
+    p {
+      font-size: 1.4rem;
+
+      &:first-of-type {
+        font-weight: bold;
+      }
+
+      @include from-large {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  button {
+    background-color: #FCC94A;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid #FCC94A;
+    }
+  }
+}
+
+.becos-dates__date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+  @include from-large {
+    padding: 2rem;
+  }
+
+  &:first-of-type {
+    border-bottom: 2px solid #4BC1C6;
+  }
+
+  .becos-dates__date__left {
+    width: 25rem;
+
+    p {
+      font-size: 1.2rem;
+
+      &:first-of-type {
+        font-family: 'Montserrat Bold';
+      }
+
+      @include from-large {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  button {
+    background-color: #4BC1C6;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid #4BC1C6;
+    }
+  }
+}
+
+.yek-method, .yek-10steps-graduation, .yek-trainers, .yek-contact, .becos-method, .becos-trainers, .becos-needs, .becos-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.yek-method, .becos-method {
+  width: 85vw;
+  margin-bottom: 10rem;
+
+  @include from-large {
+    width: auto;
+    padding: 0 10rem;
+  }
+}
+
+.yek-method__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    padding: 2rem;
+    border: 2px solid #FCC94A;
+
+    h3 {
+      font-family: 'Montserrat Bold';
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include from-large {
+    flex-direction: row;
+  }
+}
+
+.becos-method__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #4BC1C6;
+
+  div {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-bottom: 2px solid #4BC1C6;
+
+    &:last-of-type {
+      border: none;
+    }
+
+    h3 {
+      font-family: 'Montserrat Bold';
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include from-large {
+    flex-direction: row;
+
+    div {
+      width: 35rem;
+      min-width: 35rem;
+      height: 33rem;
+      border-right: 2px solid #4BC1C6;
+      border-bottom: none;
+    }
+  }
+}
+
+.yek-10steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10rem;
+  margin-bottom: 10rem;
+}
+
+.yek-10steps-graduation {
+  margin-bottom: 5rem;
+}
+
+.yek-10steps__selection {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.yek-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  cursor: pointer;
+
+  p {
+    font-family: 'Montserrat Bold';
+    font-size: 1.8rem;
+    color: #FCC94A;
+  }
+
+  .yek-step__circle {
+    border-radius: 50%;
+    background-color: #FCC94A;
+    height: 2rem;
+    width: 2rem;
+  }
+
+}
+
+.yek-step-line {
+  // width: 5rem;
+  flex-grow: 1;
+  height: 4rem;
+  border-bottom: 2px solid #FCC94A;
+}
+
+
+.yek-10steps__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .yek-step__content {
+    width: 65%;
+    min-height: 245px;
+    padding: 2rem;
+    border: 2px solid #FCC94A;
+
+    h4 {
+      font-family: 'Montserrat Bold';
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.yek-trainers, .yek-contact, .becos-trainers, .becos-needs, .becos-contact {
+  margin-bottom: 10rem;
+  width: 85vw;
+
+  @include from-large {
+    width: 100%;
+  }
+}
+
+.becos-trainers__list, .becos-trainers__list, .becos-needs__list {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include from-large {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.yek-trainers__card, .becos-trainers__card, .becos-needs__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 85vw;
+  border-radius: .4rem;
+  margin: 0 7.5vw;
+  cursor: grab;
+
+  @include from-large {
+    width: 375px;
+    min-width: unset;
+    margin: 0;
+    cursor: default;
+  }
+
+  img {
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+  }
+}
+
+.yek-trainers__card-text {
+  padding: 2rem;
+  min-height: 36rem;
+  border: 2px solid #FCC94A;
+  border-top: none;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  flex-grow: 1;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h4 {
+      font-family: 'Montserrat Bold';
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    i {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.becos-trainers__card-text {
+  padding: 2rem;
+  border: 2px solid #4BC1C6;
+  min-height: 40rem;
+  border-top: none;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  flex-grow: 1;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    i {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.becos-needs__card {
+  border: 2px solid #4BC1C6;
+  border-radius: .4rem;
+  height: 32rem;
+}
+
+.becos-needs__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+
+  img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+}
+
+.becos-needs__card-text {
+  padding: 2rem;
+  border-top: none;
+  flex-grow: 1;
+}
+
+.yek-contact, .becos-contact {
+  margin-bottom: 10rem;
+}
+
+.yek-contact__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include from-large {
+    flex-direction: row;
+  }
+
+  button {
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid black;
+    }
+
+    &:last-of-type {
+      background-color: #FCC94A;
+      opacity: .7;
+      margin-left: 3rem;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #FCC94A;
+      }
+    }
+  }
+}
+
+.becos-contact__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 40rem;
+
+  @include from-large {
+    flex-direction: row;
+  }
+
+  button {
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid black;
+    }
+
+    &:last-of-type {
+      background-color: #4BC1C6;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+        border: 1px solid #4BC1C6;
+      }
+    }
+  }
+}

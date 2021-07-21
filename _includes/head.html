@@ -2,8 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{% if page.type != 'index' %} Learn by Seven - {{ page.title }}{% endif %}</title>
+  {% if page.ref == 'yek' %}
+    <title>Yek by Seven</title>
+  {% elsif page.ref == 'becos' %}
+    <title>BeCOS by Seven</title>
+  {% elsif page.ref == 'home' %}
+    <title>Learn by Seven</title>
+  {% else %}
+    <title>{% if page.type != 'index' %} Learn by Seven - {{ page.title }}{% endif %}</title>
+  {% endif %}
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
@@ -23,10 +30,10 @@
   <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <meta property="og:site_name" content="{{site.url}}">
   <meta property="og:url" content="{{page.url}}">
-  {% if page.layout == 'base' or page.layout == 'trainings' %}
-    <link rel="icon" href="/assets/img/favicon.ico">
-  {% elsif page.layout == 'lab' or page.layout == 'lab_category' %}
+  {% if page.layout == 'lab' or page.layout == 'lab_category' %}
      <link rel="icon" href="/assets/img/favicon-lab.ico">
+  {% else %}
+    <link rel="icon" href="/assets/img/favicon.ico">
   {% endif %}
 
   <script>

@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/why-jacinda-ardern"
-absolute_link: "http://learn.byseven.co/lab/articles/why-jacinda-ardern"
+absolute_link: "https://learn.byseven.co/lab/articles/why-jacinda-ardern"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fwhy-jacinda-ardern&amp;src=sdkpreparse"
 twitter_href: 'https://twitter.com/intent/tweet?url=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fwhy-jacinda-ardern&text=L%E2%80%99application%20du%20Why%20en%20politique%20avec%20Jacinda%20Ardern'
 training_link : ""

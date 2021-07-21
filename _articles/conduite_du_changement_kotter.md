@@ -2,7 +2,7 @@
 layout: lab
 type: lab
 permalink: "/lab/articles/conduite-changement-kotter"
-absolute_link: "http://learn.byseven.co/lab/articles/conduite-changement-kotter"
+absolute_link: "https://learn.byseven.co/lab/articles/conduite-changement-kotter"
 facebook_href: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fconduite-changement-kotter&amp;src=sdkpreparse"
 twitter_href: "https://twitter.com/intent/tweet?url=&text=http%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fconduite-changement-kotter"
 training_link : ""
