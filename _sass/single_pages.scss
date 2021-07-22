@@ -239,16 +239,6 @@
     &:hover {
       border: 1px solid black;
     }
-
-    &:first-child {
-      background-color: #FCC94A;
-      opacity: .7;
-
-      &:hover {
-        opacity: 1;
-        border: 1px solid #FCC94A;
-      }
-    }
   }
 }
 
@@ -262,7 +252,7 @@
 
       &:hover {
         opacity: 1;
-        border: 1px solid #FCC94A;
+        border: none;
       }
     }
   }
@@ -278,7 +268,7 @@
 
       &:hover {
         opacity: 1;
-        border: 1px solid #4BC1C6;
+        border: none;
       }
     }
   }
@@ -334,7 +324,6 @@
 
     &:hover {
       opacity: 1;
-      border: 1px solid #FCC94A;
     }
   }
 }
@@ -375,7 +364,6 @@
 
     &:hover {
       opacity: 1;
-      border: 1px solid #4BC1C6;
     }
   }
 }
@@ -703,6 +691,10 @@
     flex-direction: row;
   }
 
+  a {
+    color: black;
+  }
+
   button {
     border: 1px solid transparent;
 
@@ -719,5 +711,30 @@
         border: 1px solid #4BC1C6;
       }
     }
+  }
+}
+
+// MODALS
+
+.modal-header {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.close {
+  padding: 0 !important;
+
+  span {
+    font-size: 3rem;
+  }
+}
+
+.becos-modal__contact-button {
+  background-color: #4BC1C6 !important;
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
   }
 }
