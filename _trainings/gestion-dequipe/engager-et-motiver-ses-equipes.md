@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/gestion_d'équipe/gérer-son-temps"
+permalink: "/trainings/gestion_d'équipe/engager-et-motiver-ses-equipes"
+absolute_link: "http://learn.byseven.co/lab/trainings/gestion_d'équipe/engager-et-motiver-ses-equipes"
 title: "Engager et Motiver ses Équipes"
 quote: "“Le management, ce n'est pas un art, c'est une discipline.”– Noel Goutard"
 duration: "2 demi-journées de 3 heures"

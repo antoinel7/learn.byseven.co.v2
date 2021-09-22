@@ -13,7 +13,7 @@ image_alt: "Intelligence visio-spatiale"
 order: 7
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Ingénierie pédagogique"
 tag2: ""
 created_at: "28 Janvier 2021"
 teaser: "Utilisez-vous votre intelligence visio-spatiale, votre capacité à vous représenter des images mentales pour mieux comprendre votre environnement ? Découvrez ici plus de détails sur ce type d’intelligence, défini par Howard Gardner."

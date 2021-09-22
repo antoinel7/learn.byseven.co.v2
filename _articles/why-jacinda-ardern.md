@@ -13,7 +13,7 @@ image_alt: "Application du Why Jacinda Ardern"
 order: 4
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Tendance"
+tag1: "Leadership"
 tag2: ""
 created_at: "15 Janvier 2021"
 teaser: "S’appuyer sur son Why, sur sa raison d’être, s’applique dans tous secteurs, y compris en politique. Le Premier Ministre néo-zélandais, Yacinda Ardern en est un bon exemple puisqu’elle a su appliquer le Why dans un cadre politique."

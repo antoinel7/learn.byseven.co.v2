@@ -13,7 +13,7 @@ image_alt: "Maintenir l’attention de vos collaborateurs"
 order: 10
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Ingénierie pédagogique"
 tag2: ""
 created_at: "10 Février 2021"
 teaser: "Une baisse d’attention ne s’explique pas seulement par un manque de motivation mais aussi par la façon dont l’information est transmise. Dans le cadre des études, maintenir l’attention des étudiants peut se faire grâce aux intelligences multiples."

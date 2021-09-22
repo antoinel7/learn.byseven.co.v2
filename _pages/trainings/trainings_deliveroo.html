@@ -19,7 +19,7 @@ ref: trainings
     <div class="row">
       {% assign trainings = site.trainings | where: "category", "DELIVEROO" %}
       {% for training in trainings %}
-        <div class="main-trainings-card col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
+        <div class="main-trainings-card main-trainings-card-deliveroo col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
           <a href="{{training.permalink}}">
           </a>
           <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>

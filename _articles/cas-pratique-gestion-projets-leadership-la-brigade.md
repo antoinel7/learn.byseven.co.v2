@@ -7,8 +7,8 @@ facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn
 twitter_href: 'https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fcas-pratique-gestion-projets-leadership-la-brigade'
 training_link : ""
 title: "Retour sur la formation Gestion de projets et Leadership des restaurants La Brigade"
-image: "/assets/img/articles/cas-pratique-gestion-projets-leadership-la-brigade.png"
-image_twitter: "/assets/img/articles/cas-pratique-gestion-projets-leadership-la-brigade.png"
+image: "/assets/img/articles/cas-pratique-gestion-projets-leadership-la-brigade.jpeg"
+image_twitter: "/assets/img/articles/cas-pratique-gestion-projets-leadership-la-brigade.jpeg"
 image_alt: "Gestion de projets et Leadership : les leviers d’efficacité transmises à La Brigade"
 order: 19
 theme: "CAS PRATIQUE"

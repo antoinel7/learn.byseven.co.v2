@@ -45,7 +45,6 @@
   width: 100vw;
   max-width: 1440px;
   background-color: white;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -381,4 +380,19 @@
 .category-score {
   display: flex;
   justify-content: space-between;
+}
+
+
+// DELIVEROO
+
+.training-page-main-banner-left-deliveroo {
+
+  h1 {
+    margin: 0;
+  }
+
+  h4 {
+    font-family: 'Montserrat Italic';
+    margin-bottom: 2rem;
+  }
 }

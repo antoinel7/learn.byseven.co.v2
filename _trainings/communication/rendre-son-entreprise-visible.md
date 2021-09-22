@@ -7,7 +7,7 @@ title: "Rendre son entreprise visible par sa communication"
 quote: "“La meilleure des publicités est un client satisfait.” - Bill Gates"
 duration: "2 journées de 7 heures"
 location: "Paris ou en ligne"
-price: "420€ HT"
+price: "840€ HT"
 image: "/assets/img/trainings/rendre-son-entreprise-visible.jpg"
 image_twitter: "/assets/img/trainings/rendre-son-entreprise-visible.jpg"
 order: 2

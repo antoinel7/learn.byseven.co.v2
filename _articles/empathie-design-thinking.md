@@ -13,7 +13,7 @@ image_alt: "Empathie, étape design thinking pour enclencher stratégie user cen
 order: 18
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion de projets"
 tag2: ""
 created_at: "12 Juillet 2021"
 teaser: "L’empathie, cette phase consistant à connaître et comprendre ses utilisateurs constitue la première étape du design thinking. C’est une démarche essentielle pour poser les jalons d’une stratégie user centric."

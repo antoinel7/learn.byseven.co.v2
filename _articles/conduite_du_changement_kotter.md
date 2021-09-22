@@ -13,7 +13,7 @@ image_alt: "Conduite du changement en entreprise, 8 étapes selon Kotter"
 order: 5
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion de projets"
 tag2: ""
 created_at: "20 Janvier 2021"
 teaser: "Lors d’une conduite de changement en entreprise, il est normal d’avoir des collaborateurs réticents. Pour les faire adhérer à cette nouveauté, les 8 étapes de Kotter peuvent éventuellement s’appliquer."

@@ -13,7 +13,7 @@ image_alt: "Les meilleures techniques de storytelling pour captiver son audience
 order: 17
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Communication"
 tag2: ""
 created_at: "16 Juin 2021"
 teaser: "Devant la surinformation, les entreprises souhaitent capter leur public et l’encourager à passer à l’action, ils peuvent utiliser une méthode de communication efficace : le storytelling. "

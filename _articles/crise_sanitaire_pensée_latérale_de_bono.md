@@ -13,7 +13,7 @@ image_alt: "Pensée latérale de Bono utilisation involontaire en entreprise lor
 order: 3
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Tendance"
+tag1: "Communication"
 tag2: ""
 created_at: "12 Janvier 2021"
 teaser: "Pour maintenir leur activité durant la crise sanitaire, certains collaborateurs ont fait preuve d’adaptabilité et de créativité. Sans s’en rendre compte, ils ont recouru à la théorie de Bono sur la pensée latérale, ce qui s’est avéré fort enrichissant."

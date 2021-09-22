@@ -13,7 +13,7 @@ image_alt: "Méthode Kaizen pour s’adapter au changement au travail"
 order: 8
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion de projets"
 tag2: ""
 created_at: "02 Février 2021"
 teaser: "Découvrez avec la méthode Kaizen, comment les améliorations continues peuvent vous aider à appréhender le changement au travail et ainsi vous permettre d’atteindre vos objectifs finaux."

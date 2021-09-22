@@ -12,8 +12,8 @@ price: "420€ HT"
 image: "/assets/img/trainings/manager-selon-la-situation.png"
 image_twitter: "/assets/img/trainings/manager-selon-la-situation.png"
 order: 1
-category: "TEAM BUILDING"
-category_colour: "#97BA8C"
+category: "TEAM MANAGEMENT"
+category_colour: "#F0966D"
 created_at: "15 Janvier 2021"
 teaser: ""
 custom_head: true

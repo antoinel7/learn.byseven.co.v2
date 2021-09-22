@@ -13,7 +13,7 @@ image_alt: "Coupler management horizontal sans verticalité"
 order: 12
 theme: "INTERVIEW"
 theme_colour: "#F9D071"
-tag1: "Article de fond"
+tag1: "Interviews"
 tag2: ""
 created_at: "19 Avril 2021"
 teaser: "Un management horizontal sans verticalité n’apportera pas de prise de décision rapide. Coupler plusieurs modes de management selon les situations, telle est la méthode Hersey et Blanchard, vue par Claire Degueil durant sa formation chez Seven. Découvrez son interview !"

@@ -1,11 +1,11 @@
 ---
-layout: training_page
+layout: trainings_deliveroo
 type: training_page
 permalink: "/trainings/deliveroo/augmenter-sa-reputation"
 absolute_link: "http://learn.byseven.co/trainings/deliveroo/augmenter-sa-reputation"
 title: "Augmenter sa réputation en ligne pour attirer plus de clients"
 quote: "'Le personal branding, c’est ce que les gens disent de vous quand vous n’êtes plus dans la pièce.'– Jeff Bezos"
-duration: "2 demi-journées de 3 heures  + 1 accompagnement individuel"
+duration: "2 sessions de 2 heures entre les services + 1 accompagnement individuel"
 location: "Paris"
 price: "630€ HT (- 100 € de remise pour les partenaires Deliveroo)"
 image: "/assets/img/trainings/deliveroo3.jpg"
@@ -32,7 +32,10 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
+        <div class='training-page-main-banner-left-deliveroo'>
+          <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
+          <h4 style="background: white;color: {{page.category_colour}};">*frais de formation 100% remboursés par votre OPCO</h4>
+        </div>
         <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
           <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
           <p><strong>Net Promoter Score</strong></p>

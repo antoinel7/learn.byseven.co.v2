@@ -305,4 +305,10 @@ html {
   }
 }
 
+.main-trainings-card-deliveroo {
+  height: 340px;
 
+  & > p {
+    margin: 5px;
+  }
+}

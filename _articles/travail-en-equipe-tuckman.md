@@ -13,7 +13,7 @@ image_alt: "Travail en équipe avec le modèle Tuckman"
 order: 13
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion d’équipe"
 tag2: ""
 created_at: "15 Février 2021"
 teaser: "Développer un travail en équipe amène le passage de plusieurs phases nécessaires selon le modèle Tuckman qui définit la constitution, la tension, la normalisation, la productivité et la dissolution."

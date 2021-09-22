@@ -5,7 +5,7 @@ permalink: "/trainings/deliveroo/ameliorer-son-menu"
 absolute_link: "http://learn.byseven.co/trainings/deliveroo/ameliorer-son-menu"
 title: "Améliorer son menu et ses offres poure faire valider les paniers"
 quote: "Les meilleures techniques et bonnes pratiques pour concevoir des menus impactant qui font valider les paniers."
-duration: "2 demi-journées de 3 heures  + 1 accompagnement individuel"
+duration: "2 sessions de 2 heures entre les services + 1 accompagnement individuel"
 location: "Paris"
 price: "630€ HT (- 100 € de remise pour les partenaires Deliveroo)"
 image: "/assets/img/trainings/deliveroo1.jpg"
@@ -32,7 +32,10 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
+        <div class='training-page-main-banner-left-deliveroo'>
+          <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
+          <h4 style="background: white;color: {{page.category_colour}};">*frais de formation 100% remboursés par votre OPCO</h4>
+        </div>
         <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
           <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
           <p><strong>Net Promoter Score</strong></p>

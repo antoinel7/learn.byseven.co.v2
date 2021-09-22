@@ -13,7 +13,7 @@ image_alt: "Soigner l’intégration des nouveaux collaborateurs pour optimiser 
 order: 9
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion d’équipe"
 tag2: ""
 created_at: "05 Février 2021"
 teaser: "Soigner l’intégration des nouveaux collaborateurs est essentiel pour booster les performances de votre entreprise. Mais alors, comment s’y prendre pour bien les accueillir ?"

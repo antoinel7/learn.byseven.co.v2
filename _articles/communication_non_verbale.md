@@ -13,7 +13,7 @@ image_alt: "Communication non-verbale avec Tik Tok"
 order: 2
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Tendance"
+tag1: "Communication"
 tag2: ""
 created_at: "7 Janvier 2021"
 teaser: "Si la communication non-verbale est en principe peu ou difficilement maîtrisée, Tik Tok renverse ces codes en permettant aux internautes d’être maîtres de leurs contenus. De façon indirecte, la règle des 3 V de Mehrabian est appliquée."

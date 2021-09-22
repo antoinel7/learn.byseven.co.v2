@@ -13,7 +13,7 @@ image_alt: "Développer une écoute active"
 order: 6
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Communication"
 tag2: ""
 created_at: "25 Janvier 2021"
 teaser: "Savoir écouter, s’apprend ! C’est un exercice quotidien, qui bien pratiqué, permet de développer une écoute active et donc d’éviter bien des conflits, créer des liens et stimuler la curiosité."

@@ -13,7 +13,7 @@ image_alt: "Se fixer des résolutions avec les objectifs SMART"
 order: 1
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Tendance"
+tag1: "Gestion d'équipe"
 tag2: ""
 created_at: "4 Janvier 2021"
 teaser: "En début d’année, il est courant de faire le point sur l’année précédente pour se fixer des bonnes résolutions. Or, celles-ci sont difficilement tenues. Pour enfin s’y tenir, les objectifs SMART restent une solution efficace."

@@ -13,7 +13,7 @@ image_alt: " Envisager l’entreprise comme un théâtre"
 order: 14
 theme: "INTERVIEW"
 theme_colour: "#F9D071"
-tag1: "Article de fond"
+tag1: "Interviews"
 tag2: ""
 created_at: "19 Avril 2021"
 teaser: "Bien communiquer dans la sphère professionnelle requiert une bonne maîtrise de son discours et de sa communication non-verbale. En interviewant Ian Parizot, celui-ci soulevait le lien avec l’univers du théâtre. Et si nous envisagions l’entreprise comme un théâtre ?"

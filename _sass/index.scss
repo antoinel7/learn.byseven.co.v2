@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
+main {
+  display: flex;
+  justify-content: center;
+}
 ol, ul {
   list-style: none;
 }
@@ -59,7 +63,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
@@ -189,6 +193,7 @@ button {
 
 
 .modal {
+  overflow-y: auto;
 
   h3 {
     font-family: 'Montserrat Bold';
@@ -207,6 +212,14 @@ button {
       color: black;
     }
   }
+}
+
+.modal-open {
+  overflow: auto;
+}
+
+.modal-open[style] {
+  padding-right: 0px !important;
 }
 
 .stretched-link::after {

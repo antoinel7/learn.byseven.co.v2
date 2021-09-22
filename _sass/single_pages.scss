@@ -1,15 +1,30 @@
+body {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .container-single-pages-seven {
   min-height: 100vh;
-  width: 100vw;
-  max-width: 1440px;
+  width: 100%;
+  // max-width: 1440px;
   background-color: white;
-  overflow: visible;
   position: relative;
-  padding-bottom: 14.5rem;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   h1, h2 {
     font-family: 'Montserrat Bold';
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     margin: 0;
     color: black;
 
@@ -39,8 +54,25 @@
   p, li {
     font-family: 'Montserrat Regular';
     font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
     margin: 0;
     color: black;
+
+    @include from-large {
+      font-size: 1.8rem;
+    }
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: black;
+    }
   }
 
   span {
@@ -52,7 +84,7 @@
     font-family: 'Montserrat Bold';
     font-size: 1.2rem;
     margin: 0;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border-radius: .4rem;
     font-weight: bold;
     background: transparent;
@@ -60,11 +92,54 @@
   }
 }
 
+// CONTAINER
+
+.yek-container, .becos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.becos-container {
+  background-color: white;
+  background-image: url("../img/becos/BeCOS_wallpaper.png");
+  background-position: top 1100px left 0;
+  background-repeat: round;
+}
+
+.yek-container {
+  background-color: white;
+  background-image: url("../img/yek/Yek_wallpaper.png");
+  background-position: top 1100px left 0;
+  background-repeat: repeat;
+}
+
+// NAVBAR
+
+.becos-sticky, .yek-sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
 .yek-call-to-action, .becos-call-to-action {
   display:  flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  cursor: pointer;
 }
 
 .yek-call-to-action {
@@ -75,96 +150,155 @@
   background-color: #4BC1C6;
 }
 
-.yek-container, .becos-container {
-  // max-width: 144rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.yek-banner, .becos-banner {
+.yek-navbar-div__navbar, .becos-navbar-div__navbar {
+  height: 18.6rem;
   width: 100vw;
-  padding: 2rem;
+  margin-top: 4.5rem;
+  padding: 0 1rem;
+}
 
-  @include from-large {
-    padding: 10rem;
-    width: 125rem;
+.yek-navbar-div__navbar-mobile, .becos-navbar-div__navbar-mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 13rem;
+  width: 100vw;
+  background-color: white;
+  z-index: 100;
+
+  .yek-navbar-div__navbar-mobile-logo, .becos-navbar-div__navbar-mobile-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .becos-navbar-div__navbar__subscribe-mobile {
+    background: #4BC1C6;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .yek-navbar-div__navbar__subscribe-mobile {
+    background: #FCC94A;
+    width: auto;
+    padding: 1rem;
   }
 }
 
-.yek-banner__navbar, .becos-banner__navbar, .becos-banner__navbar-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 3rem;
-
-  button {
-    border: 1px solid transparent;
-
-    &:hover {
-      border: 1px solid black;
-    }
-  }
-}
-
-.yek-banner__navbar {
-
-  button {
-
-    &:last-child {
-      background-color: #FCC94A;
-      opacity: .7;
-
-      &:hover {
-        opacity: 1;
-        border: 1px solid #FCC94A;
-      }
-    }
-  }
-}
-
-.becos-banner__navbar, .becos-banner__navbar-mobile {
-  margin-bottom: 5rem;
-
-  button {
-    margin-left: 5rem;
-  }
-
-  .becos-banner__navbar__contact {
-    border: 1px solid #4BC1C6;
-    opacity: .7;
-
-    &:hover {
-      border: 1px solid #4BC1C6;
-      opacity: 1;
-    }
-  }
-
-  .becos-banner__navbar__subscribe {
-    background-color: #4BC1C6;
-    opacity: .7;
-
-    &:hover {
-      opacity: 1;
-      border: 1px solid #4BC1C6;
-    }
-  }
-}
-
-.becos-banner__navbar {
+.yek-navbar-div__navbar, .becos-navbar-div__navbar {
   display: none;
 
   @include from-large {
-    display: flex;
+    display: block;
   }
 }
 
-.becos-banner__navbar-mobile {
+.yek-navbar-div__navbar-mobile, .becos-navbar-div__navbar-mobile {
   align-items: center;
 
   @include from-large {
     display: none;
+  }
+}
+
+.yek-navbar-div__navbar-buttons, .becos-navbar-div__navbar-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include from-large {
+    padding: 5rem 9rem;
+  }
+}
+
+.becos-button__white, .yek-button__white {
+  border: 1px solid transparent !important;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 12rem;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    border: 1px solid black !important;
+  }
+}
+
+.becos-button__white-blue {
+  border: 1px solid #4BC1C6 !important;
+  background: white !important;
+  opacity: .7;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 12rem;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    border: 1px solid #4BC1C6 !important;
+    opacity: 1;
+  }
+}
+
+.yek-button__white-yellow {
+  border: 1px solid #FCC94A !important;
+  background: white !important;
+  opacity: .7;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 12rem;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    border: 1px solid #FCC94A !important;
+    opacity: 1;
+  }
+}
+
+.becos-button__blue {
+  background-color: #4BC1C6 !important;
+  border: 1px solid #4BC1C6 !important;
+  opacity: .7;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 12rem;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    opacity: 1;
+    border: 1px solid #4BC1C6 !important;
+  }
+}
+
+.yek-button__yellow {
+  background-color: #FCC94A !important;
+  border: 1px solid #FCC94A !important;
+  opacity: .7;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  width: 12rem;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    opacity: 1;
+    border: 1px solid #FCC94A !important;
+  }
+}
+
+.yek-navbar-div__navbar, .yek-navbar-div__navbar-mobile, .becos-navbar-div__navbar, .becos-navbar-div__navbar-mobile {
+
+  button {
+    margin-left: 5rem;
+    width: 145px;
   }
 }
 
@@ -182,6 +316,37 @@
 
   i {
     font-size: 1.6rem;
+  }
+}
+
+.yek-dropdown {
+  padding: 1rem;
+  margin-left: 1rem;
+  color: #FCC94A;
+  border-radius: .4rem;
+  opacity: .7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+// BANNER
+
+.yek-banner, .becos-banner {
+  width: 100vw;
+  padding: 1rem;
+  margin: 12rem 0 5rem 0;
+
+  @include from-large {
+    padding: 5rem 10rem 10rem 10rem;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -210,16 +375,15 @@
     margin: 0;
   }
 
-  h1, h3 {
+  h1, p {
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
   }
 }
 
-.becos-banner__teaser__img {
+.yek-banner__teaser__img, .becos-banner__teaser__img {
   img {
     width: 85vw;
-    margin-bottom: 5rem;
 
     @include from-large {
       width: 50rem;
@@ -228,59 +392,37 @@
   }
 }
 
-.yek-banner__teaser__text__buttons, .becos-banner__text__buttons {
+.yek-banner__text__buttons, .becos-banner__text__buttons {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
 
-  button {
-    border: 1px solid transparent;
+.yek-banner__text__buttons, .becos-banner__text__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    &:hover {
-      border: 1px solid black;
-    }
+  button:first-of-type {
+    margin-right: 2rem;
   }
 }
 
-.yek-banner__teaser__text__buttons {
-
-  button {
-
-    &:first-child {
-      background-color: #FCC94A;
-      opacity: .7;
-
-      &:hover {
-        opacity: 1;
-        border: none;
-      }
-    }
-  }
-}
-
-.becos-banner__teaser__text__buttons {
-
-  button {
-
-    &:first-child {
-      background-color: #4BC1C6;
-      opacity: .7;
-
-      &:hover {
-        opacity: 1;
-        border: none;
-      }
-    }
-  }
-}
+// DATES
 
 .yek-dates, .becos-dates {
-  width: 85vw;
   border-radius: .4rem;
-  margin-bottom: 10rem;
+  margin: 0 1rem 5rem 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
 
   @include from-large {
-    width: 60rem;
+    width: auto;
+    margin: 0 0 10rem 0;
   }
 }
 
@@ -293,27 +435,47 @@
 }
 
 .yek-dates__date {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  height: 10rem;
+
+  @include from-large {
+    width: auto;
+    padding: 2rem;
+  }
 
   &:first-of-type {
     border-bottom: 2px solid #FCC94A;
   }
 
   .yek-dates__date__left {
-    width: 25rem;
+    width: 50%;
+    min-width: 20rem;
+
+    @include from-large {
+      width: 25rem;
+    }
+
+    @include from-large {
+      width: 40rem;
+    }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
 
       &:first-of-type {
-        font-weight: bold;
+        font-family: 'Montserrat Bold';
+        margin-bottom: 1rem;
       }
 
       @include from-large {
         font-size: 1.6rem;
+
+        &:first-of-type {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
@@ -321,20 +483,27 @@
   button {
     background-color: #FCC94A;
     opacity: .7;
+    width: 12rem;
 
     &:hover {
       opacity: 1;
+    }
+
+    @include from-large {
+      width: 14.5rem;
     }
   }
 }
 
 .becos-dates__date {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  height: 10rem;
 
   @include from-large {
+    width: auto;
     padding: 2rem;
   }
 
@@ -343,17 +512,31 @@
   }
 
   .becos-dates__date__left {
-    width: 25rem;
+    width: 50%;
+    min-width: 20rem;
+
+    @include from-large {
+      width: 25rem;
+    }
+
+    @include from-large {
+      width: 40rem;
+    }
 
     p {
       font-size: 1.2rem;
 
       &:first-of-type {
         font-family: 'Montserrat Bold';
+        margin-bottom: 1rem;
       }
 
       @include from-large {
         font-size: 1.6rem;
+
+        &:first-of-type {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
@@ -361,12 +544,19 @@
   button {
     background-color: #4BC1C6;
     opacity: .7;
+    width: 12rem;
 
     &:hover {
       opacity: 1;
     }
+
+    @include from-large {
+      width: 14.5rem;
+    }
   }
 }
+
+// METHOD
 
 .yek-method, .yek-10steps-graduation, .yek-trainers, .yek-contact, .becos-method, .becos-trainers, .becos-needs, .becos-contact {
   width: 100%;
@@ -382,92 +572,128 @@
 
 .yek-method, .becos-method {
   width: 85vw;
-  margin-bottom: 10rem;
+  padding-bottom: 5rem;
 
   @include from-large {
-    width: auto;
-    padding: 0 10rem;
+    width: 100%;
+    padding: 0 10rem 10rem 10rem;
   }
 }
 
-.yek-method__blocks {
+.yek-method__blocks, .yek-method__blocks--mobile, .becos-method__blocks, .becos-method__blocks--mobile {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
-  div {
-    padding: 2rem;
-    border: 2px solid #FCC94A;
+  h3 {
+    font-family: 'Montserrat Bold';
+    margin: 2rem 0;
+  }
 
-    h3 {
-      font-family: 'Montserrat Bold';
-      margin-bottom: 2rem;
+  ul {
+    list-style-type: disc;
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-family: 'Montserrat Bold';
+
+    @include from-large {
+      font-size: 1.8rem;
     }
   }
+}
+
+.becos-method__blocks, .yek-method__blocks {
+  display: none;
 
   @include from-large {
-    flex-direction: row;
+    display: block;
   }
 }
 
-.becos-method__blocks {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.becos-method__blocks--mobile {
   border: 2px solid #4BC1C6;
 
+  @include from-large {
+    display: none;
+  }
+
   div {
-    width: 100%;
-    height: auto;
+    background: white;
+    border-radius: .4rem;
     padding: 2rem;
+    cursor: pointer;
     border-bottom: 2px solid #4BC1C6;
 
-    &:last-of-type {
-      border: none;
-    }
-
     h3 {
-      font-family: 'Montserrat Bold';
-      margin-bottom: 2rem;
+      margin: 0;
     }
   }
 
-  @include from-large {
-    flex-direction: row;
-
-    div {
-      width: 35rem;
-      min-width: 35rem;
-      height: 33rem;
-      border-right: 2px solid #4BC1C6;
-      border-bottom: none;
-    }
+  div:last-of-type {
+    border-bottom: 0;
   }
 }
 
+.yek-method__blocks--mobile {
+  border: 2px solid #FCC94A;
+
+  @include from-large {
+    display: none;
+  }
+
+  div {
+    background: white;
+    border-radius: .4rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-bottom: 2px solid #FCC94A;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  div:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+// 10 STEPS
+
 .yek-10steps {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 10rem;
   margin-bottom: 10rem;
+  position: relative;
+
+  @include from-large {
+    padding: 0 10rem;
+  }
 }
 
 .yek-10steps-graduation {
-  margin-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  @include from-large {
+    margin-bottom: 5rem;
+  }
 }
 
 .yek-10steps__selection {
   width: 80%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include from-large {
+    display: flex;
+  }
 }
 
 .yek-step {
@@ -502,7 +728,7 @@
 
 
 .yek-10steps__contents {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -512,25 +738,75 @@
     min-height: 245px;
     padding: 2rem;
     border: 2px solid #FCC94A;
+    background-color: white;
 
     h4 {
       font-family: 'Montserrat Bold';
       font-size: 1.6rem;
     }
   }
+
+  @include from-large {
+    display: flex;
+  }
 }
 
+.yek-10steps__contents--mobile {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .yek-step__content {
+    min-width: 85vw;
+    min-height: 245px;
+    padding: 2rem;
+    border: 2px solid #FCC94A;
+    background-color: white;
+    border-radius: .4rem;
+    margin: 0 7.5vw;
+    cursor: grab;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+
+    h4 {
+      font-family: 'Montserrat Bold';
+      font-size: 1.6rem;
+    }
+  }
+
+  @include from-medium {
+
+    .yek-step__content {
+      min-width: 375px;
+    }
+  }
+
+  @include from-large {
+    display: none;
+  }
+}
+
+// TRAINERS
+
 .yek-trainers, .yek-contact, .becos-trainers, .becos-needs, .becos-contact {
-  margin-bottom: 10rem;
   width: 85vw;
+  position: relative;
 
   @include from-large {
     width: 100%;
   }
 }
 
-.becos-trainers__list, .becos-trainers__list, .becos-needs__list {
+.yek-trainers__list, .yek-trainers__list, .becos-trainers__list, .becos-trainers__list, .becos-needs__list {
   width: 100vw;
+  padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -544,7 +820,53 @@
 
   @include from-large {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 10rem 10rem 10rem;
+  }
+
+  @include from-xlarge {
+    width: 100%;
+    padding: 0 20rem 10rem 20rem;
+  }
+}
+
+.yek-trainers__footer, .becos-trainers__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10rem;
+
+  h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  @include from-large {
+    width: 100%;
+    padding: 0 20rem 10rem 20rem;
+  }
+
+  .becos-trainers__footer-blue {
+    font-family: 'Montserrat Bold';
+    font-size: 1.4rem;
+    color: #4BC1C6;
+  }
+}
+
+.becos-trainer__footer {
+
+  span {
+    font-weight: 700;
+    color: #4BC1C6;
+  }
+}
+
+.yek-trainer__footer {
+
+  span {
+    font-weight: 700;
+    color: #FCC94A;
   }
 }
 
@@ -555,12 +877,13 @@
   border-radius: .4rem;
   margin: 0 7.5vw;
   cursor: grab;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
 
-  @include from-large {
-    width: 375px;
+  @include from-medium {
+    width: 40rem;
     min-width: unset;
     margin: 0;
-    cursor: default;
+    cursor: pointer;
   }
 
   img {
@@ -570,26 +893,93 @@
   }
 }
 
+.yek-trainers__caret--right, .yek-needs__caret--right, .becos-trainers__caret--right, .becos-needs__caret--right {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 45%;
+    right: -2rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.yek-trainers__caret--left, .yek-needs__caret--left, .becos-trainers__caret--left, .becos-needs__caret--left {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 45%;
+    left: -2rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.yek-10steps__caret--right {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 45%;
+    right: 1rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.yek-10steps__caret--left {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 45%;
+    left: 1rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.becos-noscos__caret--right, .yek-nostrainers__caret--right {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 40%;
+    right: 1rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.becos-noscos__caret--left, .yek-nostrainers__caret--left {
+  font-size: 2.4rem;
+  position: absolute;
+    top: 40%;
+    left: 1rem;
+  z-index: 10;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
 .yek-trainers__card-text {
-  padding: 2rem;
   min-height: 36rem;
+  padding: 2rem;
   border: 2px solid #FCC94A;
   border-top: none;
   border-bottom-left-radius: .4rem;
   border-bottom-right-radius: .4rem;
   flex-grow: 1;
+  background-color: white;
 
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-
-    h4 {
-      font-family: 'Montserrat Bold';
-      font-size: 2rem;
-      margin: 0;
-    }
 
     i {
       font-size: 1.8rem;
@@ -605,48 +995,204 @@
   border-bottom-left-radius: .4rem;
   border-bottom-right-radius: .4rem;
   flex-grow: 1;
+  background-color: white;
 
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+  h4 {
+    height: 5rem;
+    margin-bottom: 2rem;
+    line-height: 2.8rem;
+  }
 
-    i {
-      font-size: 1.8rem;
-    }
+  span {
+    font-size: 2rem;
+    margin: 0;
   }
 }
 
-.becos-needs__card {
-  border: 2px solid #4BC1C6;
-  border-radius: .4rem;
-  height: 32rem;
-}
+// NOS
 
-.becos-needs__header {
+.becos-noscos, .yek-nostrainers {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 2rem 0 2rem;
+  position: relative;
+  width: 100%;
 
-  img {
-    width: 10rem;
-    height: 10rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 2rem;
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  @include from-large {
+    padding: 0 10rem 10rem 10rem;
   }
 }
 
-.becos-needs__card-text {
-  padding: 2rem;
-  border-top: none;
-  flex-grow: 1;
+.becos-noscos__cards-list, .yek-nostrainers__cards-list {
+  width: 100vw;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include from-large {
+    width: 100%;
+    padding: 0 10rem;
+  }
 }
 
+.becos-noscos__card {
+  // width: 25rem;
+  height: 38rem;
+  min-width: 85vw;
+  border-radius: .4rem;
+  margin: 0 7.5vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  border: 3px solid #4BC1C6;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+
+  @include from-large {
+    width: 25rem;
+    min-width: unset;
+    margin: 0;
+  }
+
+  .becos-noscos__avatar {
+    width: 100%;
+    min-height: 24.4rem;
+    object-fit: cover;
+  }
+
+  .becos-noscos__card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .becos-noscos__logo {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+.yek-nostrainers__card {
+  // width: 25rem;
+  height: 38rem;
+  min-width: 85vw;
+  border-radius: .4rem;
+  margin: 0 7.5vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  border: 3px solid #FCC94A;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+
+  @include from-large {
+    width: 25rem;
+    min-width: unset;
+    margin: 0;
+  }
+
+  .yek-nostrainers__avatar {
+    width: 100%;
+    min-height: 24.4rem;
+    object-fit: cover;
+  }
+
+  .yek-nostrainers__card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .yek-nostrainers__logo {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+// NEEDS
+
+// .becos-needs__card {
+//   border: 2px solid #4BC1C6;
+//   border-radius: .4rem;
+//   height: 32rem;
+//   width: 25rem;
+//   background-color: white;
+// }
+
+// .becos-needs__header {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   padding: 2rem 1rem 0 1rem;
+
+//   img {
+//     width: 8rem;
+//     height: 8rem;
+//     object-fit: cover;
+//     border-radius: 50%;
+//     margin-right: 2rem;
+//   }
+// }
+
+// .becos-needs__card-text {
+//   padding: 2rem;
+//   border-top: none;
+//   flex-grow: 1;
+
+//   p {
+//     font-size: 1.4rem;
+//     line-height: 1.8rem;
+//   }
+// }
+
+// CONTACT
+
 .yek-contact, .becos-contact {
-  margin-bottom: 10rem;
+  margin: 5rem 0;
+  text-align: center;
 }
 
 .yek-contact__buttons {
@@ -654,9 +1200,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 8rem;
+  width: 40rem;
 
   @include from-large {
     flex-direction: row;
+  }
+
+  a {
+    color: black;
   }
 
   button {
@@ -669,7 +1221,6 @@
     &:last-of-type {
       background-color: #FCC94A;
       opacity: .7;
-      margin-left: 3rem;
 
       &:hover {
         opacity: 1;
@@ -731,10 +1282,160 @@
 }
 
 .becos-modal__contact-button {
+  min-width: 20rem;
   background-color: #4BC1C6 !important;
   opacity: .7;
+  font-size: 1.6rem;
+  color: white;
 
   &:hover {
     opacity: 1;
   }
+}
+
+
+// MODALS
+
+.becos-modal-header {
+  background-color: #4BC1C6;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+
+  .becos-modal-title {
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Montserrat Bold';
+  }
+}
+
+.yek-modal-header {
+  background-color: #FCC94A;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+
+  .becos-modal-title {
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Montserrat Bold';
+  }
+}
+
+.becos-modal-infos, .yek-modal-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  .becos-modal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    p:first-of-type {
+      font-family: 'Montserrat Bold';
+      margin-right: 1rem;
+    }
+  }
+}
+
+.becos-form-group, .becos-form-group-sm, .becos-form-group-message, .becos-form-group-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+  }
+
+  input, select {
+    width: 18rem;
+    border: 1px solid #4BC1C6;
+  }
+}
+
+.yek-form-group, .yek-form-group-sm, .yek-form-group-message, .yek-form-group-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+  }
+
+  input, select {
+    width: 18rem;
+    border: 1px solid #FCC94A;
+  }
+}
+
+.becos-form-group, .becos-form-group-message, .becos-form-group-checkbox, .yek-form-group, .yek-form-group-message, .yek-form-group-checkbox {
+
+  @include from-large {
+    padding: 0 10rem;
+  }
+}
+
+.becos-form-group-message {
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    margin: 2rem 0;
+  }
+
+  textarea {
+    height: 15rem;
+    border: 1px solid #4BC1C6;
+  }
+}
+
+.yek-form-group-message {
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    margin: 2rem 0;
+  }
+
+  textarea {
+    height: 15rem;
+    border: 1px solid #4BC1C6;
+  }
+}
+
+.becos-form-group-checkbox, .yek-form-group-checkbox {
+  margin: 3rem 0;
+
+  input {
+    width: 1.4rem;
+    margin: 0 2rem 0 0;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+
+// FORMS
+
+#form-date, #form-time {
+  padding: 0 1.2rem;
 }

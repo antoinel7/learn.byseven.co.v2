@@ -13,7 +13,7 @@ image_alt: "Co-créer le sens au travail de vos collaborateurs"
 order: 11
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
-tag1: "Article de fond"
+tag1: "Gestion de projets"
 tag2: ""
 created_at: "15 Février 2021"
 teaser: "Le sens au travail est un levier capital dans l’équilibre de vie des collaborateurs, dans leur entrain et leur bien-être au quotidien. Co-créer le sens au travail de ses collaborateurs est devenu indispensable pour tout bon manager."
