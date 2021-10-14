@@ -1,0 +1,1270 @@
+body {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container-single-pages-seven {
+  min-height: 100vh;
+  width: 100%;
+  // max-width: 1440px;
+  background-color: white;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  h1, h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 2.4rem;
+    margin: 0;
+    color: black;
+
+    @include from-large {
+      font-size: 3.6rem;
+    }
+  }
+
+  h3 {
+    font-family: 'Montserrat Regular';
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+  }
+
+  h4 {
+    font-family: 'Montserrat Bold';
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0 0 0 1.4rem;
+    margin: 0;
+  }
+
+  p, li {
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: black;
+
+    @include from-large {
+      font-size: 1.8rem;
+    }
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  span {
+    font-family: 'Montserrat Italic';
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-family: 'Montserrat Bold';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+  }
+
+  .anchor {
+    position: absolute;
+    top: -5rem;
+
+    @include from-large {
+      top: -15rem;
+    }
+  }
+}
+
+// CONTAINER
+
+.becos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  background-image: url("../img/becos/BeCOS_wallpaper.png");
+  background-position: top 1475px left 0;
+  background-repeat: round;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+// NAVBAR
+
+.becos-sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.becos-call-to-action {
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.becos-call-to-action {
+  background-color: #4BC1C6;
+}
+
+.becos-navbar-div__navbar {
+  height: 18.6rem;
+  width: 100vw;
+  max-width: 135rem;
+  padding: 0 1rem;
+}
+
+.becos-navbar-div__navbar-mobile {
+  height: auto;
+  width: 100vw;
+  margin: 2rem 0;
+  background-color: transparent;
+  z-index: 100;
+  align-items: center;
+
+  @include from-large {
+    display: none;
+  }
+
+  .becos-navbar-div__navbar-mobile-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .becos-navbar-div__navbar__subscribe-mobile {
+    background: #4BC1C6;
+    width: auto;
+    padding: 1rem;
+    color: white;
+  }
+
+  li {
+    margin-bottom: 1rem;
+
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.becos-navbar-div__navbar {
+  display: none;
+
+  @include from-large {
+    display: block;
+  }
+}
+
+.becos-navbar-div__navbar-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin: 0 3rem;
+  }
+
+  @include from-large {
+    padding: 7rem 9rem;
+  }
+}
+
+.becos-button__white {
+  width: 13rem;
+  color: #4BC1C6;
+  border: 2px solid white !important;
+  background: white;
+  transition: all .3s ease-in-out;
+
+  @include from-large {
+    width: auto;
+  }
+
+  // &:hover {
+  //   border: 2px solid #4BC1C6 !important;
+  //   background: #4BC1C6;
+  //   color: white;
+  // }
+}
+
+.underline {
+    font-size: 1.6rem;
+    font-family: 'Montserrat Bold';
+    color: #4BC1C6 !important;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &:hover {
+      color: #4BC1C6;
+    }
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #4BC1C6;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.becos-button__white-blue {
+  width: 13rem;
+  color: #4BC1C6;
+  border: 2px solid #4BC1C6 !important;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+  transition: all .3s ease-in-out;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    background: #4BC1C6;
+    color: white;
+  }
+}
+
+.becos-button__blue {
+  width: auto !important;
+  color: white;
+  background: #4BC1C6 !important;
+  border: 1px solid #4BC1C6 !important;
+  padding: 1.5rem !important;
+  opacity: 1;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+  transition: opacity .3s ease-in-out;
+  font-size: 1.6rem !important;
+
+  @include from-large {
+    width: auto;
+  }
+
+  &:hover {
+    opacity: .7;
+    border: 1px solid #4BC1C6 !important;
+  }
+}
+
+.becos-navbar-div__navbar, .becos-navbar-div__navbar-mobile {
+
+  button {
+    margin-left: 5rem;
+    width: 15rem;
+  }
+}
+
+.becos-dropdown {
+  padding: 1rem;
+  margin-left: 1rem;
+  color: #4BC1C6;
+  border-radius: .5rem;
+  opacity: .7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+
+// BANNER
+
+.becos-banner {
+  width: 100vw;
+  max-width: 50rem;
+  padding: 0 2rem;
+  margin: 3rem 0 0 0;
+
+  @include from-large {
+    padding: 5rem 10rem;
+    width: 100%;
+    max-width: 135rem;
+  }
+}
+
+.becos-banner__teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include from-large {
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 35rem;
+    height: 35rem;
+  }
+}
+
+.becos-banner__teaser__text {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include from-large {
+    width: 70rem;
+    min-width: 46rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 5rem 0 0;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  h1, p {
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include from-large {
+      text-align: left;
+    }
+  }
+}
+
+.becos-banner__teaser__img {
+  img {
+    width: 85vw;
+    border-radius: .5rem;
+
+    @include from-large {
+      width: 50rem;
+      height: 35rem;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+}
+
+.becos-banner__text__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.becos-banner__text__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button:first-of-type {
+    margin-right: 2rem;
+  }
+}
+
+// DATES
+
+.becos-dates {
+  border-radius: .5rem;
+  margin: 5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+
+  @include from-large {
+    flex-direction: row;
+    width: auto;
+    margin: 15rem 0 0 0;
+    padding: 5rem;
+    background-color: white;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-family: 'Montserrat Bold' !important;
+    margin: 0 0 2rem 0;
+    text-align: center;
+
+    @include from-large {
+      margin: 0 2rem 0 0;
+      text-align: left;
+    }
+  }
+}
+
+
+// METHOD
+
+.becos-method, .becos-trainers, .becos-needs, .becos-contact {
+  width: 100vw;
+  max-width: 50rem;
+  padding: 0 2rem;
+  margin: 5rem 0 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include from-large {
+    width: 100%;
+    max-width: 135rem;
+    margin: 20rem 0 0 0;
+    padding: 0 10rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include from-large {
+      margin-bottom: 5rem;
+      text-align: left;
+    }
+  }
+
+}
+
+.becos-method {
+  width: 85vw;
+  position: relative;
+
+  @include from-large {
+    width: 100%;
+    max-width: 135rem;
+    padding: 0 10rem;
+  }
+}
+
+.becos-method__blocks, .becos-method__blocks--mobile {
+  width: 100%;
+
+  h3 {
+    font-family: 'Montserrat Bold';
+    margin: 2rem 0;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-family: 'Montserrat Bold';
+
+    @include from-large {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.becos-method__blocks {
+  display: none;
+
+  @include from-large {
+    display: block;
+  }
+}
+
+.becos-method__blocks--mobile {
+
+  @include from-large {
+    display: none;
+  }
+
+  div {
+    background: white;
+    border-radius: .5rem;
+    padding: 2rem;
+    cursor: pointer;
+    border: 2px solid #4BC1C6;
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+// TRAINERS
+
+.becos-trainers__first {
+  margin-bottom: 0;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .becos-trainers__photo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin-bottom: 2rem;
+
+      img {
+        height: 16rem;
+        min-width: 16rem;
+        border-radius: .5rem;
+        object-fit: cover;
+
+        @include from-large {
+          height: 25rem;
+          width: auto;
+          margin: 0;
+        }
+      }
+
+
+      .becos-trainers__text--mobile {
+        width: 40%;
+        font-size: 1.6rem !important;
+        line-height: 2rem;
+
+        strong {
+          font-family: 'Montserrat Bold' !important;
+        }
+
+        @include from-large {
+          display: none;
+        }
+      }
+    }
+
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .becos-trainers__text--desktop {
+        font-size: 2.4rem !important;
+        font-family: 'Montserrat Bold' !important;
+        margin-bottom: 2rem;
+        display: none;
+
+        @include from-large {
+          display: block;
+        }
+      }
+
+      p {
+        line-height: 3rem;
+      }
+
+      @include from-large {
+        height: 25rem;
+        padding: 2rem;
+
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    @include from-large {
+      flex-direction: row;
+    }
+  }
+
+  & > div:last-child {
+    text-align: left;
+    padding: 2rem;
+
+    h3 {
+      font-family: 'Montserrat BoldItalic' !important;
+    }
+
+    @include from-medium {
+      padding: 2rem 0;
+    }
+  }
+}
+
+.becos-trainers__second {
+  margin-bottom: 3rem;
+
+  & > div:first-child {
+    text-align: right;
+    padding: 2rem;
+
+    h3 {
+      font-family: 'Montserrat BoldItalic' !important;
+    }
+
+    @include from-medium {
+      padding: 2rem 0;
+    }
+  }
+
+  & > div:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    .becos-trainers__photo {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin-bottom: 2rem;
+
+      img {
+        height: 16rem;
+        min-width: 16rem;
+        border-radius: .5rem;
+        object-fit: cover;
+
+        @include from-large {
+          height: 25rem;
+          margin: 0;
+        }
+      }
+
+
+      .becos-trainers__text--mobile {
+        width: 40%;
+        font-size: 1.6rem !important;
+        line-height: 2rem;
+
+        strong {
+          font-family: 'Montserrat Bold' !important;
+        }
+
+        @include from-large {
+          display: none;
+        }
+      }
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .becos-trainers__text--desktop {
+        font-size: 2.4rem !important;
+        font-family: 'Montserrat Bold' !important;
+        margin-bottom: 2rem;
+        display: none;
+
+        @include from-large {
+          display: block;
+        }
+      }
+
+      p {
+        line-height: 3rem;
+      }
+
+      @include from-large {
+
+        height: 25rem;
+
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    @include from-large {
+      flex-direction: row;
+    }
+  }
+}
+
+.becos-trainers__list {
+  width: 100%;
+
+  position: relative;
+
+  & > div:first-child {
+    padding: 2rem 0;
+  }
+
+  h3 {
+    font-family: 'Montserrat BoldItalic' !important;
+  }
+
+  @include from-large {
+    max-width: 110rem;
+  }
+
+  .fa-caret-left {
+    font-size: 2rem;
+    height: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 20.9rem;
+    left: -2rem;
+    color: black;
+  }
+
+  .fa-caret-right {
+    font-size: 2rem;
+    height: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 20.9rem;
+    right: -2rem;
+    color: black;
+  }
+}
+
+.becos-trainers__cards-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include from-large {
+    max-width: 110rem;
+    justify-content: space-between;
+    overflow-y: scroll;
+  }
+}
+
+.becos-trainers__card {
+  height: 12.5rem;
+  width: 33rem;
+  border-radius: .5rem;
+  margin: 0 2rem 4rem 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+  &:last-of-type {
+    margin: 0 2rem;
+  }
+
+  @include from-large {
+    height: 38rem;
+    width: 25rem;
+    min-width: 25rem;
+    flex-direction: column;
+  }
+
+  @include from-xlarge {
+    margin: 0 5rem 4rem 5rem;
+
+    &:last-of-type {
+      margin: 0 5rem 4rem 5rem;
+    }
+  }
+
+  .becos-trainers__avatar {
+    height: 100%;
+    width: 11.5rem;
+    object-fit: cover;
+    pointer-events: none;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+
+    @include from-large {
+      width: 100%;
+      height: 24.4rem;
+      border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    }
+  }
+
+  .becos-trainers__card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .becos-trainers__logo {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+
+// NEEDS
+
+.becos-needs {
+  align-items: flex-start;
+
+  @include from-large {
+    max-width: 135rem;
+    padding: 0 10rem;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+
+    @include from-large {
+      text-align: left;
+    }
+  }
+
+  h4 {
+    font-family: 'Montserrat Bold' !important;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 3rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .becos-needs__link {
+    font-family: 'Montserrat Bold' !important;
+    color: #4BC1C6;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+}
+
+
+// PLATFORM
+
+.becos-platform {
+  width: 85vw;
+  max-width: 50rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10rem;
+  padding: 2rem;
+  transition: background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .becos-platform-left {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .becos-platform-right {
+    width: 100%;
+    padding: 2rem;
+
+    img {
+      height: 3.8rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+      line-height: 4rem;
+      font-family: 'Montserrat Bold' !important;
+      margin: 2rem 0;
+    }
+  }
+
+  @include from-large {
+    flex-direction: row;
+    width: auto;
+    max-width: 135rem;
+    margin-top: 20rem;
+
+    .becos-platform-left {
+      width: 40rem;
+      height: 38.2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .becos-platform-right {
+      width: 50%;
+      height: 38.2rem;
+      max-width: 40rem;
+    }
+  }
+}
+
+
+// CONTACT
+
+.becos-contact {
+  margin: 10rem 0;
+  text-align: center;
+
+  @include from-large {
+    margin: 20rem 0;
+  }
+}
+
+.becos-contact__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 40rem;
+
+  @include from-large {
+    flex-direction: row;
+  }
+}
+
+// MODALS
+
+.modal-sm-becos {
+  width: 37.5rem;
+}
+
+.modal-header {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.close {
+  padding: 0 !important;
+
+  span {
+    font-size: 3rem;
+  }
+}
+
+.becos-modal__contact-button {
+  min-width: 20rem;
+  background-color: #4BC1C6 !important;
+  opacity: .7;
+  font-size: 1.6rem;
+  color: white;
+  margin: 2rem 0 !important;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.becos-modal-header {
+  background-color: #4BC1C6;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .becos-modal-title {
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Montserrat Bold';
+  }
+}
+
+.becos-modal-splitted {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+
+  .becos-modal-splitted__left {
+    width: 100%;
+    min-height: 42.5rem;
+    padding: 0 5rem;
+
+    label {
+      font-size: 1.6rem !important;
+      font-family: 'Montserrat Bold';
+      margin-bottom: 1rem !important;
+    }
+
+    textarea {
+      height: 10rem;
+    }
+
+    button {
+      margin-top: 5rem;
+    }
+
+    @include from-large {
+      width: 50%;
+      border-right: 1px solid #4BC1C6;
+    }
+  }
+
+  .becos-modal-splitted__right {
+    width: 50%;
+    height: 42.5rem;
+    padding: 0 5rem;
+    display: none;
+
+    h4 {
+      font-size: 2rem;
+      font-family: 'Montserrat Bold';
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    br {
+      margin-bottom: 2rem;
+    }
+
+    @include from-large {
+      display: block;
+    }
+  }
+}
+
+.becos-form-group, .becos-form-group-sm, .becos-form-group-message, .becos-form-group-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  label {
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+  }
+
+  input, select {
+    width: 18rem;
+    border: 1px solid #4BC1C6;
+  }
+}
+
+.becos-form-group, .becos-form-group-message, .becos-form-group-checkbox, .yek-form-group, .yek-form-group-message, .yek-form-group-checkbox {
+
+  @include from-large {
+    padding: 0 10rem;
+  }
+}
+
+.becos-form-group-message {
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    margin: 2rem 0;
+  }
+
+  textarea {
+    height: 15rem;
+    border: 1px solid #4BC1C6;
+  }
+}
+
+.becos-form-group-checkbox, .yek-form-group-checkbox {
+  margin: 3rem 0;
+
+  input {
+    width: 1.4rem;
+    margin: 0 2rem 0 0;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+
+// FORMS
+
+#form-date, #form-time {
+  padding: 0 1.2rem;
+}
+
+
+// THANK YOU
+
+.becos-thank-you-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  background-color: white;
+  background-image: url("../img/becos/BeCOS_wallpaper.png");
+  background-size: cover;
+  background-position: top 1170px left 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.becos-thank-you__logo {
+  display: none;
+
+  @include from-medium {
+    display: block;
+    position: absolute;
+    top: 9.5rem;
+    left: 10rem;
+  }
+}
+
+.becos-thank-you__logo--mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 9.5rem;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.becos-thank-you {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    color: #4BC1C6;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #4BC1C6;
+
+    &:nth-of-type(2) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  button {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #4BC1C6;
+    float: left;
+    max-width: 15rem;
+    color: #4BC1C6;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: #4BC1C6;
+
+      p {
+        color: white;
+      }
+    }
+  }
+}

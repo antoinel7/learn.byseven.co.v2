@@ -1,22 +1,22 @@
 ---
 layout: trainings_deliveroo
 type: training_page
-permalink: "/trainings/deliveroo/optimiser-ses-operations"
-absolute_link: "http://learn.byseven.co/trainings/deliveroo/optimiser-ses-operations"
-title: "Optimiser ses opérations et disponibilités pour améliorer sa note"
-quote: "'On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.'– Marie Curie"
-duration: "2 sessions de 2 heures entre les services + 1 accompagnement individuel"
-location: "Paris"
-price: "630€ HT (- 100 € de remise pour les partenaires Deliveroo)"
-image: "/assets/img/trainings/deliveroo2.jpg"
-image_twitter: "/assets/img/trainings/deliveroo2.jpg"
+permalink: "/trainings/deliveroo/augmenter-son-chiffre-d'affaires-vente-en-livraison"
+absolute_link: "http://learn.byseven.co/trainings/deliveroo/augmenter-son-chiffre-d'affaires-vente-en-livraison"
+title: "Augmenter son chiffre d'affaires avec la vente en livraison"
+quote:
+duration: "6  demi-journées de 3 heures réparties sur 3 mois"
+location: "Paris ou en ligne"
+price: "1 890€ HT par participant (- 100 € de remise pour les partenaires Deliveroo)"
+image: "/assets/img/trainings/augmenter-son-chiffre-d'affaires-vente-en-livraison.jpg"
+image_twitter: "/assets/img/trainings/augmenter-son-chiffre-d'affaires-vente-en-livraison.jpg"
 order: 1
 category: "DELIVEROO"
 category_colour: "#5FB9B2"
-created_at: "10 Juin 2021"
+created_at: "12 Octobre 2021"
 teaser: ""
 custom_head: true
-custom_link: 'https://airtable.com/shrRH5Wa6GBgknacH'
+custom_link: 'https://airtable.com/shryPN8X4VhWqUJLo'
 lang: fr
 ---
 
@@ -43,11 +43,13 @@ lang: fr
         </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Sur la base de la réalité de leur organisation opérationnelle les participants construiront leur propre matrice d’Eisenhower et s’approprieront les 7 lois du temps pour optimiser leur organisation en cuisine, réussir leurs livraisons et améliorer leur note en ligne.
+      <p class="training-page-main-banner-left-description">Au vu des mutations des métiers de bouche et des modes de consommation, les compétences des collaborateurs doivent évoluer vers une plus grande agilité tant sur les compétences techniques que les compétences humaines.
       <br><br>
-     Les participants travailleront sur les notions d’urgence et d’importance. Ils prendront ensuite des actions correctrices concrètes pour se focaliser sur leurs tâches à haute valeur ajoutée et devenir plus intentionnel dans leur travail.
+      Dans cette formation interactive, les participants découvriront un panel de techniques faciles à mettre en oeuvre pour augmenter leur efficacité opérationnelle et un ensemble de bonnes pratiques pour augmenter leur chiffre d’affaires avec Deliveroo..
       <br><br>
-      <strong>Population :</strong> Cette formation s’adresse à tous les restaurateurs et équipes siège en charge de gérer les opérations en cuisine et la bonne production des commandes passées.
+      Ils travailleront sur leur capacité à générer une offre attractive, à optimiser leurs opérations en cuisine et à augmenter la réputation en ligne de leur entreprise.
+      <br><br>
+      <strong style='font-family: "Montserrat Bold";'>Population</strong> : Cette formation s’adresse à tous les restaurateurs, indépendamment de leur rôle au sein du restaurant ou du siège.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -68,7 +70,7 @@ lang: fr
     <div class="traning-pages-info-text">
         <p>LIEU & FORMAT</p>
         <p>{{page.location}}</p>
-        <p>Groupes de 6 à 9 personnes</p>
+        <p>Groupes de 6 à 10 personnes</p>
         <p>Paris ou Online</p>
     </div>
   </div>
@@ -85,8 +87,23 @@ lang: fr
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
     <p>En préparation à l’action de formation du contenu théorique vidéo et les lectures possibles seront partagées aux participants pour assurer un socle minimal commun. Des échanges potentiels avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
-    <h6>A.MAÎTRISER L’ALGORITHME ET GÉRER SES PRIORITÉS</h6>
+    <h5 style="color: {{page.category_colour}};">1 | AMÉLIORER MON MENU ET MON OFFRE</h5>
+    <h6>A. GAGNER EN INFLUENCE</h6>
+    <ul>
+      <li>Introduction au portail restaurant HUB</li>
+      <li>Menu Manager</li>
+      <li>Comprendre et maîtriser les 6 lois d'influence</li>
+      <li>Utiliser la cohérence dans l'engagement</li>
+      <li>Retravailler mon menu avec les 6 techniques d'influence</li>
+    </ul>
+    <h6>B. PARLER À TOUS LES PROFILS DE CLIENTS</h6>
+    <ul>
+      <li>Menu Marketer Offre : ONE PAGER</li>
+      <li>Les différentes typologies de clients (Thinking Hats / Les lunettes)</li>
+      <li>Retravailler mon offre pour convaincre chaque typologie de client</li>
+    </ul>
+    <h5 style="color: {{page.category_colour}};">2 | OPTIMISER MES OPÉRATIONS</h5>
+    <h6>A. MAÎTRISER L’ALGORITHME ET GÉRER SES PRIORITÉS</h6>
     <ul>
       <li>Le Cercle vertueux de l'algorithme</li>
       <li>Exemple de bonnes pratiques pour faciliter le travail en cuisiner et éviter les rejets de commande</li>
@@ -94,7 +111,7 @@ lang: fr
       <li>Identifier les opérations récurrentes urgentes et les anticiper</li>
       <li>Optimiser les opérations essentielles</li>
     </ul>
-    <h6>B.ÊTRE EFFICIENT AVEC LES 7 LOIS DU TEMPS</h6>
+    <h6>B. ÊTRE EFFICIENT AVEC LES 7 LOIS DU TEMPS</h6>
     <ul>
       <li>Organiser son travail avec la loi de Carlson</li>
       <li>Anticiper avec la loi de Murphy</li>
@@ -103,19 +120,28 @@ lang: fr
       <li>Être efficace avec le principe de Lakein</li>
       <li>S'organiser avec la loi de Pareto</li>
     </ul>
-    <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
-    <h6>C.AMÉLIORER SA NOTE SUR UNE PLATEFORME DIGITALE</h6>
+    <h5 style="color: {{page.category_colour}};">3 | AUGMENTER MA RÉPUTATION EN LIGNE</h5>
+    <h6>A. CONSTRUIRE SON PROFESSIONAL BRANDING</h6>
     <ul>
-      <li>Atelier de travail collectif : Améliorer sa gestion du temps lors de la réception de commande en livraison  pour assurer la qualité des commandes click & collect et en salle</li>
-      <li>Atelier de travail collectif : Organiser ses opérations pour assurer une fluidité dans le service de vente en livraison et de click & collect</li>
+      <li>L'art du storytelling : Golden Circles</li>
+      <li>Définir les valeurs, définir les éléments différenciants, justifier par les réalisations</li>
+      <li>Construire son storytelling</li>
+      <li>Packaging branding</li>
+      <li>Exemples de bonnes pratiques</li>
+    </ul>
+    <h6>B. AUGMENTER MA RÉPUTATION EN LIGNE</h6>
+    <ul>
+      <li>Augmenter ma réputation en ligne</li>
+      <li>Que communiquer ? Comment communiquer ? Sur quel réseau communiquer ? Et sur l'app Deliveroo ?</li>
+      <li>Découverte du Publicités Marketer</li>
     </ul>
   </div>
   <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-      - Réorganiser ses opérations pour réussir la réouverture du restaurant tout en assurant un service de livraison rapide<br>
-      - Développer et améliorer son service client à distance pour améliorer sa note<br>
+      - Développer et construire une nouvelle approche de l’offre proposée par le restaurant, adaptée à la vente en livraison<br>
+      - Concevoir de nouvelles techniques de commercialisation pour le changement de clientèle POST-COVID<br>
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>

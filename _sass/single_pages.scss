@@ -14,7 +14,8 @@ body {
   // max-width: 1440px;
   background-color: white;
   position: relative;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
@@ -153,7 +154,8 @@ body {
 .yek-navbar-div__navbar, .becos-navbar-div__navbar {
   height: 18.6rem;
   width: 100vw;
-  margin-top: 4.5rem;
+  max-width: 135rem;
+  margin-top: 15rem;
   padding: 0 1rem;
 }
 
@@ -212,34 +214,40 @@ body {
   }
 }
 
-.becos-button__white, .yek-button__white {
-  border: 1px solid transparent !important;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
-  width: 12rem;
+.becos-button__white {
+  width: 13rem;
+  color: #4BC1C6;
+  border: 2px solid white !important;
+  background: white;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+  transition: all .3s ease-in-out;
 
   @include from-large {
     width: auto;
   }
 
   &:hover {
-    border: 1px solid black !important;
+    border: 2px solid #4BC1C6 !important;
+    background: #4BC1C6;
+    color: white;
   }
 }
 
 .becos-button__white-blue {
-  border: 1px solid #4BC1C6 !important;
-  background: white !important;
-  opacity: .7;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
-  width: 12rem;
+  width: 13rem;
+  color: #4BC1C6;
+  border: 2px solid #4BC1C6 !important;
+  background: white;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+  transition: all .3s ease-in-out;
 
   @include from-large {
     width: auto;
   }
 
   &:hover {
-    border: 1px solid #4BC1C6 !important;
-    opacity: 1;
+    background: #4BC1C6;
+    color: white;
   }
 }
 
@@ -247,7 +255,7 @@ body {
   border: 1px solid #FCC94A !important;
   background: white !important;
   opacity: .7;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
   width: 12rem;
 
   @include from-large {
@@ -261,18 +269,20 @@ body {
 }
 
 .becos-button__blue {
-  background-color: #4BC1C6 !important;
+  width: 13rem;
+  color: white;
+  background: #4BC1C6 !important;
   border: 1px solid #4BC1C6 !important;
-  opacity: .7;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
-  width: 12rem;
+  opacity: 1;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+  transition: opacity .3s ease-in-out;
 
   @include from-large {
     width: auto;
   }
 
   &:hover {
-    opacity: 1;
+    opacity: .7;
     border: 1px solid #4BC1C6 !important;
   }
 }
@@ -281,7 +291,7 @@ body {
   background-color: #FCC94A !important;
   border: 1px solid #FCC94A !important;
   opacity: .7;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
   width: 12rem;
 
   @include from-large {
@@ -298,7 +308,7 @@ body {
 
   button {
     margin-left: 5rem;
-    width: 145px;
+    width: 15rem;
   }
 }
 
@@ -340,13 +350,13 @@ body {
 
 .yek-banner, .becos-banner {
   width: 100vw;
+  max-width: 135rem;
   padding: 1rem;
-  margin: 12rem 0 5rem 0;
+  margin: 10rem 0 0 0;
 
   @include from-large {
-    padding: 5rem 10rem 10rem 10rem;
+    padding: 5rem 10rem;
     width: 100%;
-    margin: 0;
   }
 }
 
@@ -359,6 +369,8 @@ body {
   @include from-large {
     flex-direction: row;
     align-items: flex-start;
+    min-height: 30rem;
+    height: 30rem;
   }
 }
 
@@ -370,9 +382,14 @@ body {
   align-items: center;
 
   @include from-large {
-    display: block;
-    padding-right: 18rem;
-    margin: 0;
+    width: 70rem;
+    min-width: 46rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 5rem 0 0;
+    height: 100%;
+    max-height: 100%;
   }
 
   h1, p {
@@ -415,14 +432,19 @@ body {
   margin: 0 1rem 5rem 1rem;
   background-color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 5rem;
 
   @include from-large {
     width: auto;
-    margin: 0 0 10rem 0;
+    margin: 15rem 0 0 0;
+  }
+
+  p {
+    font-family: 'Montserrat Bold' !important;
+    margin-right: 2rem;
   }
 }
 
@@ -434,127 +456,6 @@ body {
   border: 2px solid #4BC1C6;
 }
 
-.yek-dates__date {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10rem;
-
-  @include from-large {
-    width: auto;
-    padding: 2rem;
-  }
-
-  &:first-of-type {
-    border-bottom: 2px solid #FCC94A;
-  }
-
-  .yek-dates__date__left {
-    width: 50%;
-    min-width: 20rem;
-
-    @include from-large {
-      width: 25rem;
-    }
-
-    @include from-large {
-      width: 40rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-
-      &:first-of-type {
-        font-family: 'Montserrat Bold';
-        margin-bottom: 1rem;
-      }
-
-      @include from-large {
-        font-size: 1.6rem;
-
-        &:first-of-type {
-          margin-bottom: 2rem;
-        }
-      }
-    }
-  }
-
-  button {
-    background-color: #FCC94A;
-    opacity: .7;
-    width: 12rem;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    @include from-large {
-      width: 14.5rem;
-    }
-  }
-}
-
-.becos-dates__date {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10rem;
-
-  @include from-large {
-    width: auto;
-    padding: 2rem;
-  }
-
-  &:first-of-type {
-    border-bottom: 2px solid #4BC1C6;
-  }
-
-  .becos-dates__date__left {
-    width: 50%;
-    min-width: 20rem;
-
-    @include from-large {
-      width: 25rem;
-    }
-
-    @include from-large {
-      width: 40rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-
-      &:first-of-type {
-        font-family: 'Montserrat Bold';
-        margin-bottom: 1rem;
-      }
-
-      @include from-large {
-        font-size: 1.6rem;
-
-        &:first-of-type {
-          margin-bottom: 2rem;
-        }
-      }
-    }
-  }
-
-  button {
-    background-color: #4BC1C6;
-    opacity: .7;
-    width: 12rem;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    @include from-large {
-      width: 14.5rem;
-    }
-  }
-}
 
 // METHOD
 
@@ -564,6 +465,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 20rem;
 
   h2 {
     margin-bottom: 3rem;
@@ -576,7 +478,8 @@ body {
 
   @include from-large {
     width: 100%;
-    padding: 0 10rem 10rem 10rem;
+    max-width: 135rem;
+    padding: 0 10rem;
   }
 }
 
@@ -670,6 +573,7 @@ body {
   position: relative;
 
   @include from-large {
+    max-width: 135rem;
     padding: 0 10rem;
   }
 }
@@ -773,7 +677,7 @@ body {
     border-radius: .4rem;
     margin: 0 7.5vw;
     cursor: grab;
-    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
 
     h4 {
       font-family: 'Montserrat Bold';
@@ -797,14 +701,202 @@ body {
 
 .yek-trainers, .yek-contact, .becos-trainers, .becos-needs, .becos-contact {
   width: 85vw;
+  margin-top: 20rem;
   position: relative;
 
   @include from-large {
     width: 100%;
+    max-width: 135rem;
+    padding: 0 10rem;
   }
 }
 
-.yek-trainers__list, .yek-trainers__list, .becos-trainers__list, .becos-trainers__list, .becos-needs__list {
+.becos-trainers__first {
+  margin-bottom: 5rem;
+
+  & > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 25rem;
+      object-fit: cover;
+    }
+
+    & > div {
+      height: 25rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 2.4rem !important;
+        font-family: 'Montserrat Bold' !important;
+      }
+
+      p {
+        line-height: 3rem;
+      }
+    }
+  }
+
+  & > div:last-child {
+    text-align: left;
+    padding: 2rem 0;
+
+    h3 {
+      font-family: 'Montserrat BoldItalic' !important;
+    }
+  }
+}
+
+.becos-trainers__second {
+  margin-bottom: 5rem;
+
+  & > div:first-child {
+    text-align: right;
+    padding: 2rem 0;
+
+    h3 {
+      font-family: 'Montserrat BoldItalic' !important;
+    }
+  }
+
+  & > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 25rem;
+      object-fit: cover;
+    }
+
+    & > div {
+      height: 25rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 2.4rem !important;
+        font-family: 'Montserrat Bold' !important;
+      }
+
+      p {
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+.becos-trainers__list {
+  width: 100%;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+
+  & > div:first-child {
+    padding: 2rem 0;
+  }
+
+  h3 {
+    font-family: 'Montserrat BoldItalic' !important;
+  }
+}
+
+.becos-trainers__cards-list {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include from-large {
+    max-width: 135rem;
+    overflow-y: scroll;
+  }
+}
+
+.becos-trainers__card {
+  // width: 25rem;
+  height: 38rem;
+  min-width: 85vw;
+  border-radius: .4rem;
+  margin: 0 7.5vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  border: 3px solid #4BC1C6;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+
+  @include from-large {
+    width: 25rem;
+    min-width: 25rem;
+    margin: 0 5rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .becos-trainers__avatar {
+    width: 100%;
+    min-height: 24.4rem;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .becos-trainers__card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .becos-trainers__logo {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+.yek-trainers__list, .yek-trainers__list {
   width: 100vw;
   padding-bottom: 5rem;
   display: flex;
@@ -820,20 +912,19 @@ body {
 
   @include from-large {
     width: 100%;
-    padding: 0 10rem 10rem 10rem;
+    padding: 0 10rem;
   }
 
   @include from-xlarge {
     width: 100%;
-    padding: 0 20rem 10rem 20rem;
+    padding: 0 20rem;
   }
 }
 
-.yek-trainers__footer, .becos-trainers__footer {
+.yek-trainers__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 10rem;
 
   h3 {
     font-family: 'Montserrat Bold';
@@ -844,23 +935,10 @@ body {
 
   @include from-large {
     width: 100%;
-    padding: 0 20rem 10rem 20rem;
-  }
-
-  .becos-trainers__footer-blue {
-    font-family: 'Montserrat Bold';
-    font-size: 1.4rem;
-    color: #4BC1C6;
+    padding: 0 20rem;
   }
 }
 
-.becos-trainer__footer {
-
-  span {
-    font-weight: 700;
-    color: #4BC1C6;
-  }
-}
 
 .yek-trainer__footer {
 
@@ -870,14 +948,14 @@ body {
   }
 }
 
-.yek-trainers__card, .becos-trainers__card, .becos-needs__card {
+.yek-trainers__card {
   display: flex;
   flex-direction: column;
   min-width: 85vw;
   border-radius: .4rem;
   margin: 0 7.5vw;
   cursor: grab;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
 
   @include from-medium {
     width: 40rem;
@@ -890,78 +968,6 @@ body {
     width: 100%;
     height: 285px;
     object-fit: cover;
-  }
-}
-
-.yek-trainers__caret--right, .yek-needs__caret--right, .becos-trainers__caret--right, .becos-needs__caret--right {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 45%;
-    right: -2rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
-  }
-}
-
-.yek-trainers__caret--left, .yek-needs__caret--left, .becos-trainers__caret--left, .becos-needs__caret--left {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 45%;
-    left: -2rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
-  }
-}
-
-.yek-10steps__caret--right {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 45%;
-    right: 1rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
-  }
-}
-
-.yek-10steps__caret--left {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 45%;
-    left: 1rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
-  }
-}
-
-.becos-noscos__caret--right, .yek-nostrainers__caret--right {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 40%;
-    right: 1rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
-  }
-}
-
-.becos-noscos__caret--left, .yek-nostrainers__caret--left {
-  font-size: 2.4rem;
-  position: absolute;
-    top: 40%;
-    left: 1rem;
-  z-index: 10;
-
-  @include from-medium {
-    display: none;
   }
 }
 
@@ -987,116 +993,23 @@ body {
   }
 }
 
-.becos-trainers__card-text {
-  padding: 2rem;
-  border: 2px solid #4BC1C6;
-  min-height: 40rem;
-  border-top: none;
-  border-bottom-left-radius: .4rem;
-  border-bottom-right-radius: .4rem;
-  flex-grow: 1;
-  background-color: white;
-
-  h4 {
-    height: 5rem;
-    margin-bottom: 2rem;
-    line-height: 2.8rem;
-  }
-
-  span {
-    font-size: 2rem;
-    margin: 0;
-  }
-}
-
-// NOS
-
-.becos-noscos, .yek-nostrainers {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  width: 100%;
-
-  h2 {
-    margin-bottom: 3rem;
-  }
-
-  @include from-large {
-    padding: 0 10rem 10rem 10rem;
-  }
-}
-
-.becos-noscos__cards-list, .yek-nostrainers__cards-list {
-  width: 100vw;
+.yek-nostrainers__cards-list {
+  width: auto;
   padding-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  overflow-x: scroll;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-right: 0;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   @include from-large {
-    width: 100%;
     padding: 0 10rem;
-  }
-}
-
-.becos-noscos__card {
-  // width: 25rem;
-  height: 38rem;
-  min-width: 85vw;
-  border-radius: .4rem;
-  margin: 0 7.5vw;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 4px;
-  border: 3px solid #4BC1C6;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
-
-  @include from-large {
-    width: 25rem;
-    min-width: unset;
-    margin: 0;
-  }
-
-  .becos-noscos__avatar {
-    width: 100%;
-    min-height: 24.4rem;
-    object-fit: cover;
-  }
-
-  .becos-noscos__card-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    padding: 1rem;
-    text-align: center;
-
-    h4 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-
-    span {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .becos-noscos__logo {
-    height: 5rem;
-    width: auto;
   }
 }
 
@@ -1113,7 +1026,7 @@ body {
   align-items: center;
   border-radius: 4px;
   border: 3px solid #FCC94A;
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.05);
 
   @include from-large {
     width: 25rem;
@@ -1154,44 +1067,46 @@ body {
 
 // NEEDS
 
-// .becos-needs__card {
-//   border: 2px solid #4BC1C6;
-//   border-radius: .4rem;
-//   height: 32rem;
-//   width: 25rem;
-//   background-color: white;
-// }
+.becos-needs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-top: 20rem;
 
-// .becos-needs__header {
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   padding: 2rem 1rem 0 1rem;
+  h2 {
+    margin-bottom: 5rem;
+  }
 
-//   img {
-//     width: 8rem;
-//     height: 8rem;
-//     object-fit: cover;
-//     border-radius: 50%;
-//     margin-right: 2rem;
-//   }
-// }
+  p {
+    font-family: 'Montserrat Bold' !important;
+    margin-bottom: 1rem;
+  }
 
-// .becos-needs__card-text {
-//   padding: 2rem;
-//   border-top: none;
-//   flex-grow: 1;
+  p:last-of-type {
+    color: #4BC1C6;
+  }
 
-//   p {
-//     font-size: 1.4rem;
-//     line-height: 1.8rem;
-//   }
-// }
+  ul {
+    list-style-type: disc;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  @include from-large {
+    max-width: 135rem;
+    padding: 0 10rem;
+  }
+}
 
 // CONTACT
 
 .yek-contact, .becos-contact {
-  margin: 5rem 0;
+  margin: 20rem 0;
   text-align: center;
 }
 
@@ -1438,4 +1353,93 @@ body {
 
 #form-date, #form-time {
   padding: 0 1.2rem;
+}
+
+
+// THANK YOU
+
+.becos-thank-you-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  background-color: white;
+  background-image: url("../img/becos/BeCOS_wallpaper.png");
+  background-size: cover;
+  background-position: top 1170px left 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.becos-thank-you__logo {
+  display: none;
+
+  @include from-medium {
+    display: block;
+    position: absolute;
+    top: 9.5rem;
+    left: 10rem;
+  }
+}
+
+.becos-thank-you__logo--mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 9.5rem;
+
+  @include from-medium {
+    display: none;
+  }
+}
+
+.becos-thank-you {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    color: #4BC1C6;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #4BC1C6;
+
+    &:nth-of-type(2) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  button {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #4BC1C6;
+    float: left;
+    max-width: 15rem;
+    color: #4BC1C6;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: #4BC1C6;
+
+      p {
+        color: white;
+      }
+    }
+  }
 }

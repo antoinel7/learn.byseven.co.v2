@@ -1,6 +1,6 @@
 ---
 layout: single_pages
-type: single_pages
+type: becos
 permalink: /becos
 title: Seven | BeCOS
 lang: fr
@@ -8,35 +8,40 @@ ref: becos
 ---
 
 <div class="becos-container">
-  <div class="becos-sticky">
-    <div class="becos-call-to-action" data-toggle='modal' data-target='#subscribe'>
+  <!-- <div class="becos-sticky">
+    <div class="becos-call-to-action" data-toggle='modal' data-target='#program'>
       <p>DEMARRER LA FORMATION 🚀</p>
     </div>
-  </div>
+  </div> -->
   <div class="becos-navbar-div">
     <div class="becos-navbar-div__navbar">
       <div class="becos-navbar-div__navbar-buttons">
         <img src="/assets/img/becos/LOGO-BeCOS.png" height='50px'>
-        <button class='becos-button__white' data-toggle='modal' data-target='#syllabus'>FORMATION</button>
-        <button class='becos-button__white-blue' data-toggle='modal' data-target='#rdvMail'>NOUS CONTACTER</button>
-        <button class='becos-button__blue' data-toggle='modal' data-target='#subscribe'>POSTULER</button>
+        <div class="flex-row-left-center">
+          <a href='#anchor_program' class='underline'>Programme</a>
+          <a href='#anchor_experts' class='underline'>Experts</a>
+          <a href='#anchor_press' class='underline'>Presse</a>
+          <button class='becos-button__blue' data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
+        </div>
       </div>
     </div>
     <div class="becos-navbar-div__navbar-mobile">
-      <div class="becos-call-to-action">
+      <!-- <div class="becos-call-to-action">
         <p>DEMARRER LA FORMATION 🚀</p>
-      </div>
+      </div> -->
       <div class="becos-navbar-div__navbar-mobile-logo">
         <img src="/assets/img/becos/LOGO-BeCOS.png" width='100px'>
         <div class="flex-row-between-centered">
-          <button class='becos-navbar-div__navbar__subscribe-mobile' data-toggle='modal' data-target='#subscribe'>POSTULER</button>
+          <button class='becos-navbar-div__navbar__subscribe-mobile' data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
           <div class="dropdown">
             <div class="becos-dropdown dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">
               <i class="fas fa-bars"></i>
             </div>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
-              <li><a data-toggle='modal' data-target='#syllabus'>Formation</a></li>
-              <li><a data-toggle='modal' data-target='#rdvMail'>Nous contacter</a></li>
+              <li><a href='#anchor_program' class='underline'>Programme</a></li>
+              <li><a href='#anchor_experts' class='underline'>Experts</a></li>
+              <li><a href='#anchor_press' class='underline'>Presse</a></li>
+              <!-- <li><a data-toggle='modal' data-target='#rdvMail'>Nous contacter</a></li> -->
             </ul>
           </div>
         </div>
@@ -46,14 +51,15 @@ ref: becos
   <div class="becos-banner">
     <div class="becos-banner__teaser">
      <div class="becos-banner__teaser__text">
-       <h1>BECOME A CHIEF OF STAFF</h1>
-       <p>Un programme complet pour comprendre et apprendre la fonction stratégique de Chief of Staff.
+       <h1>Lancez votre carrière de<br>Chief of Staff</h1>
+       <p>
+        Un programme complet pour comprendre et apprendre la fonction stratégique de  Chief of Staff.
         <br><br>
-        Véritable bras droit du CEO au quotidien, aux missions diverses selon les situations.
+        Véritable bras droit de dirigeants au quotidien, aux missions diverses selon les situations et les besoins.
       </p>
        <div class="becos-banner__text__buttons">
-        <button class='becos-button__blue' data-toggle='modal' data-target='#subscribe'>SE FORMER MAINTENANT</button>
-        <button class='becos-button__white-blue' data-toggle='modal' data-target='#syllabus'>VOIR LE SYLLABUS</button>
+        <button class='becos-button__blue' data-toggle='modal' data-target='#program'>En savoir plus sur le programme</button>
+        <!-- <button class='becos-button__white-blue' data-toggle='modal' data-target='#syllabus'>VOIR LE SYLLABUS</button> -->
        </div>
      </div>
      <div class="becos-banner__teaser__img">
@@ -62,27 +68,16 @@ ref: becos
     </div>
   </div>
   <div class="becos-dates">
-    <div class="becos-dates__date">
-      <div class="becos-dates__date__left">
-        <p>TEMPS PLEIN (2 SEMAINES)</p>
-        <p>27 sept. 2021 - 7 oct. 2021</p>
-      </div>
-      <button data-toggle='modal' data-target='#subscribe'>POSTULER 🗒</button>
-    </div>
-    <div class="becos-dates__date">
-      <div class="becos-dates__date__left">
-        <p>TEMPS PARTIEL (5 SEMAINES)</p>
-        <p>27 sept. 2021 - 7 oct. 2021</p>
-      </div>
-      <button data-toggle='modal' data-target='#subscribe'>POSTULER 🗒</button>
-    </div>
+    <p>Notre prochaine session est en Novembre ! Vous êtes intéressés ?</p>
+    <button class="becos-button__blue" data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
   </div>
   <div class="becos-method">
-    <h2>NOTRE METHODE, LE CONTENU ET LES OBJECTIFS</h2>
+    <a id="anchor_program" class='anchor'></a>
+    <h2>Notre méthode, le contenu et les objectifs</h2>
     <div class="becos-method__blocks">
-      <h3>LA PEDAGOGIE SEVEN</h3>
-      <p>Un rythme d'apprentissage séquencé alternant l'analyses de cas pratiques et applications concrètes de concepts théoriques.  Nos simulations individualles et en groupe vous immergeront dans vos futurs challenges quotidiens. Vous aurez aussi l'occasion d'<span class='strong'>échanger avec des CoS expérimentés</span> qui contribuent à la formation.</p>
-      <h3>LE PROGRAMME</h3>
+      <h3>La pédagogie SEVEN</h3>
+      <p>Un rythme d'apprentissage séquencé alternant l'analyses de cas pratiques et applications concrètes de concepts théoriques.  Nos simulations individuelles et en groupe vous immergeront dans vos futurs challenges quotidiens. Vous aurez aussi l'occasion d'<span class='strong'>échanger avec des CoS expérimenté(e)s</span> qui contribuent à la formation.</p>
+      <h3>Le programme</h3>
       <p>10 jours pour appréhender tous les enjeux et toutes les facettes de cette fonction clef :</p>
       <ul>
         <li>Qu'est-ce qu'un Chief of Staff ?</li>
@@ -90,7 +85,7 @@ ref: becos
         <li>Comment exercer ce métier en fonction des CEO et des entreprises ?</li>
         <li>Que faire ensuite ?</li>
       </ul>
-      <h3>LES RESULTATS ATTENDUS</h3>
+      <h3>Les résultats attendus</h3>
       <ul>
         <li>Comprendre le <span class='strong'>caractère stratégique</span> de la fonction de CoS et la façon de se positionner.</li>
         <li>Apprendre à <span class='strong'>optimiser le temps du CEO</span>, l'aider à prioriser ses objectifs et se positionner dans l'entreprise et vis-à-vis des interlocuteurs externes.</li>
@@ -100,11 +95,11 @@ ref: becos
     </div>
     <div class="becos-method__blocks--mobile">
       <div onclick="blockExpand(this);">
-        <h3>LA PEDAGOGIE SEVEN</h3>
+        <h3>La pédagogie SEVEN</h3>
         <p class='hidden'>Un rythme d'apprentissage séquencé alternant l'analyses de cas pratiques, l’application de concepts théoriques sur vos problématiques et l'élaboration palpable de votre projet.  Nos mises en situation en groupe ou individuel vous projèteront concrêtement dans vos futurs challenges quotidien.</p>
       </div>
       <div onclick="blockExpand(this);">
-        <h3>LE PROGRAMME</h3>
+        <h3>Le programme</h3>
         <p class='hidden'>10 jours pour appréhender tous les enjeux et toutes les facettes de cette fonction clef:</p>
         <ul class='hidden'>
           <li><strong>Qu'est-ce qu'un Chief of Staff ?</strong></li>
@@ -114,7 +109,7 @@ ref: becos
         </ul>
       </div>
       <div onclick="blockExpand(this);">
-        <h3>LES RESULTATS ATTENDUS</h3>
+        <h3>Les résultats attendus</h3>
         <ul class='hidden'>
           <li><strong>Comprendre</strong> le caractère stratégique de la fonction de CoS et la façon de se positionner.</li>
           <li><strong>Apprendre</strong> à optimiser le temps du CEO, l'aider à prioriser ses objectifs et se positionner dans l'entreprise et vis-à-vis des interlocuteurs externes.</li>
@@ -125,281 +120,250 @@ ref: becos
     </div>
   </div>
   <div class="becos-trainers">
-    <h2>QUI A CREE BeCoS ?</h2>
-    <div class="becos-trainers__list">
-      <i class="becos-trainers__caret--right fas fa-caret-right"></i>
-      <i class="becos-trainers__caret--left fas fa-caret-left"></i>
-      <a href="https://www.linkedin.com/in/yahya-fallah/">
-        <div class="becos-trainers__card">
+    <a id="anchor_experts" class='anchor'></a>
+    <h2>Qui a créé le programme BeCoS ?</h2>
+    <div class="becos-trainers__first">
+      <div>
+        <div class="becos-trainers__photo">
           <img src="/assets/img/becos/yahya.png">
-          <div class="becos-trainers__card-text">
-            <div>
-              <h4>YAHYA FALLAH - <span>FONDATEUR @SEVEN</span></h4>
-            </div>
-            <p>Eternel optimiste, il accompagne avec SEVEN les entreprises dans leur développement à travers la formation et la transmission des connaissances. Il assure les investissements dans des start-ups en tant que BA.
-            </p>
-          </div>
+          <h3 class='becos-trainers__text--mobile'><strong>Yahya Fallah,</strong><br> Head of Innovation & Co-fondateur de Seven</h3>
         </div>
-      </a>
-      <a href="https://www.linkedin.com/in/gregoirekopp/">
+        <div>
+          <h3 class='becos-trainers__text--desktop'>Yahya Fallah, Head of Innovation & Co-fondateur de Seven</h3>
+          <p>Eternel optimiste, Yahya a cofondé Seven, cabinet de formations agréé, dont l'expertise est reconnue en ingénierie pédagogique et animation. Yahya est enseignant à l'ESSEC et membre de la faculté du CNAM Paris. Il a également investis dans plusieurs / de multiples (ou choix) startups en tant que Business Angel.</p>
+        </div>
+      </div>
+      <div>
+        <h3>L'expertise formation...</h3>
+      </div>
+    </div>
+    <div class="becos-trainers__second">
+      <div>
+        <h3>...et l'expérience métier</h3>
+      </div>
+      <div>
+        <div>
+          <h3 class='becos-trainers__text--desktop'>Grégoire Kopp, Ex-Chief of Staff OVHcloud et fondateur du cabinet de conseil stratégique GRK</h3>
+          <p>Avocat de formation, ancien conseiller ministériel et expert en communication stratégique et gestion de crise, Grégoire a notamment été le premier directeur de la communication d'Uber France et son porte-parole, ainsi que le CoS d'Octave Klaba chez OVHcloud. Grégoire gère aujourd'hui sa propre boutique de communication stratégique.</p>
+        </div>
+        <div class="becos-trainers__photo">
+          <img src="/assets/img/becos/grégoire_kopp.png">
+          <h3 class='becos-trainers__text--mobile'><strong>Grégoire Kopp,</strong><br> Ex-Chief of Staff OVHcloud et fondateur du cabinet de conseil stratégique GRK</h3>
+        </div>
+      </div>
+    </div>
+    <div class="becos-trainers__list">
+      <div>
+        <h3>...avec les meilleurs Chiefs of Staff français</h3>
+      </div>
+      <!-- <i class="fas fa-caret-left hidden" onclick='carouselBecos(this, "left");'></i>
+      <i class="fas fa-caret-right" onclick='carouselBecos(this, "right");'></i> -->
+      <div class="becos-trainers__cards-list">
         <div class="becos-trainers__card">
-          <img src="/assets/img/becos/gregoire_kopp.png">
-          <div class="becos-trainers__card-text">
-            <div>
-              <h4>GREGOIRE KOPP - <span>EX COS OVH - FOUNDER @ GRK Impact&Comms</span></h4>
-            </div>
-            <p>Avocat de formation, ancien conseiller ministériel et expert en communication stratégique et gestion de crise, Grégoire a notamment été le premier directeur de la communication d'Uber France et son porte-parole, ainsi que le CoS d'Ovtave Klaba chez OVH Cloud. <br>
-            Grégoire gère aujourd'hui sa propre boutique de communication stratégique.
-            </p>
+          <img src="/assets/img/becos/veronique_marimon.png" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Véronique Marimon</h4>
+            <span>CoS @Salesforce</span>
+            <img src="/assets/img/becos/salesforce.png" draggable="false" class="becos-trainers__logo">
           </div>
         </div>
-      </a>
-    </div>
-    <div class="becos-trainers__footer">
-      <h3>UNE PHRASE "COUP DE POING" POUR EXPLIQUER LEUR ASSOCIATION SUR CE PROJET ET L'INTERET DE LEUR COMPLEMENTARITE</h3>
-      <p>DES INTERVENANTS EXPERTS ET PROFESSIONNELS</p>
-      <p class='becos-trainers__footer-blue'>3 phrases sur l'interêt de nos formateurs professionnels, anciens COD, meilleures pratiques, apprendre de leurs expériences.</p>
+        <div class="becos-trainers__card">
+          <img src="/assets/img/becos/henri-françois_martin.jpg" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Henri-François Martin</h4>
+            <span>CoS @PayFit</span>
+            <img src="/assets/img/becos/PayFit - logo.png" draggable="false" class="becos-trainers__logo">
+          </div>
+        </div>
+        <div class="becos-trainers__card">
+          <img src="/assets/img/becos/laurie_perniola.png" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Laurie Perniola</h4>
+            <span>CoS @Accor</span>
+            <img src="/assets/img/becos/accor.png" draggable="false" class="becos-trainers__logo">
+          </div>
+        </div>
+        <div class="becos-trainers__card">
+          <img src="/assets/img/becos/xavier_monty.png" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Xavier Monty</h4>
+            <span>CoS @Cegid</span>
+            <img src="/assets/img/becos/cegid.png" draggable="false" class="becos-trainers__logo">
+          </div>
+        </div>
+        <div class="becos-trainers__card">
+          <img src="/assets/img/becos/alexandra_hengel.png" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Alexandra Hengel</h4>
+            <span>CoS @PWC</span>
+            <img src="/assets/img/becos/pwc.png" draggable="false" class="becos-trainers__logo">
+          </div>
+        </div>
+        <div class="becos-trainers__card">
+          <img src="/assets/img/becos/maud_cadeau.png" draggable="false" class='becos-trainers__avatar'>
+          <div class="becos-trainers__card-footer">
+            <h4>Maud Cadeau</h4>
+            <span>CoS @Ornikar</span>
+            <img src="/assets/img/becos/ornikar.png" draggable="false" class="becos-trainers__logo">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="becos-noscos">
-    <h2>NOS CoS</h2>
-    <div class="becos-noscos__cards-list">
-      <i class="becos-noscos__caret--right fas fa-caret-right"></i>
-      <i class="becos-noscos__caret--left fas fa-caret-left"></i>
-      <div class="becos-noscos__card">
-        <img src="/assets/img/becos/Sociabble-Victor.png" alt="" class='becos-noscos__avatar'>
-        <div class="becos-noscos__card-footer">
-          <h4>VICTOR GLEYZE</h4>
-          <span>CoS @Sociabble</span>
-          <img src="/assets/img/becos/Sociabble - logo.png" alt="" class="becos-noscos__logo">
-        </div>
-      </div>
-      <div class="becos-noscos__card">
-        <img src="/assets/img/becos/gregoire_kopp.png" alt="" class='becos-noscos__avatar'>
-        <div class="becos-noscos__card-footer">
-          <h4>GREGOIRE KOPP</h4>
-          <span>EX CoS OVH - FOUNDER @GRK Impact&Comms</span>
-          <img src="/assets/img/becos/GRK - logo.png" alt="" class="becos-noscos__logo">
-        </div>
-      </div>
-      <div class="becos-noscos__card">
-        <img src="/assets/img/becos/henri-françois_martin.jpg" alt="" class='becos-noscos__avatar'>
-        <div class="becos-noscos__card-footer">
-          <h4>HENTI-FRANCOIS MARTIN</h4>
-          <span>CoS @PayFit</span>
-          <img src="/assets/img/becos/PayFit - logo.png" alt="" class="becos-noscos__logo">
-        </div>
-      </div>
+  <div class="becos-needs">
+    <h2>À qui s'adresse BeCoS ?</h2>
+    <h4>Cette liste n'est pas exhaustive ni excluante, il y a autant de variations dans le profil CoS qu'il y a d'entreprises !</h4>
+    <ul>
+      <li>Vous êtes entrepreneur ou avez mené des projets entrepreneuriaux</li>
+      <li>Vous avez quotidiennement dans votre poste actuel des missions transverses</li>
+      <li>Vous avez travaillé dans un cabinet de conseil pendant plusieurs années</li>
+      <li>Vous avez une excellente connaissance de votre entreprise et souhaitez avoir un regard plus global et stratégique</li>
+    </ul>
+    <p data-toggle='modal' data-target='#contact-us' class='becos-needs__link underline'>Contactez-nous pour en savoir plus sur la prochaine session</p>
+    <h4>La sélection des candidats</h4>
+    <p>Nous prêtons un grand soin à la sélection des candidats pour le programme. L'enjeu majeur est de nous assurer que le contenu de ce programme et le temps que vous y passerez seront en phase avec votre expérience et vos objectifs. Les entretiens nous permettront de déterminer cela ensemble. Hâte de vous rencontrer !</p>
+  </div>
+  <div class="becos-platform">
+    <a id="anchor_press" class='anchor'></a>
+    <a href="https://www.lesechos.fr/start-up/portraits/chief-of-staff-dans-lombre-des-pdg-de-la-french-tech-1349155" class='stretched-link' target='_blank'></a>
+    <div class="becos-platform-left">
+      <img src="/assets/img/becos/newspaper_platform.png">
+    </div>
+    <div class="becos-platform-right">
+      <img src="/assets/img/becos/les_echos.png">
+      <p>Publiée le 24 sept. 2021</p>
+      <h3>Un dossier dans Les Echos pour mieux comprendre le métier de CoS</h3>
+      <p>Une première introduction à travers les portraits de CoS de la French Tech !</p>
     </div>
   </div>
-<!--   <div class="becos-needs">
-    <h2>UN BESOIN EXISTANT CHEZ LES ENTREPRISES</h2>
-    <div class="becos-needs__list">
-      <i class="becos-needs__caret--right fas fa-caret-right"></i>
-      <i class="becos-needs__caret--left fas fa-caret-left"></i>
-      <div class="becos-needs__card">
-        <div class="becos-needs__header">
-          <img src="/assets/img/becos/paul_fournier.png">
-          <div class="becos-needs__title">
-            <h4>PAUL FOURNIER</h4>
-            <span>Innovative Corporate Clients @BNP Paribas CIB</span>
-          </div>
-        </div>
-        <div class="becos-needs__card-text">
-          <p>Les capacités d'adaptation et d'analyse d'un CoS sont devenues essentielles pour tous les grands patrons. Bien connues dans les pays anglo-saxons, la demande en France est en train d'exploser !</p>
-        </div>
-      </div>
-      <div class="becos-needs__card">
-        <div class="becos-needs__header">
-          <img src="/assets/img/becos/meghan_clarken.png">
-          <div class="becos-needs__title">
-            <h4>MEGHAN CLARKEN</h4>
-            <span>CEO @Criteo</span>
-          </div>
-        </div>
-        <div class="becos-needs__card-text">
-          <p>Ce qui caractérise le plus ce métier est la relation de confiance et le lien privilégié qui existent avec le CEO. Dans un véritable duo, le Chief of Staff évolue dans l'ombre pour faire gagner du temps au CEO et "doubler" son temps de cerveau disponible.</p>
-        </div>
-      </div>
-      <div class="becos-needs__card">
-        <div class="becos-needs__header">
-          <img src="/assets/img/becos/meghan_clarken.png">
-          <div class="becos-needs__title">
-            <h4>MEGHAN CLARKEN</h4>
-            <span>CEO @Criteo</span>
-          </div>
-        </div>
-        <div class="becos-needs__card-text">
-          <p>Rôle parfois réduit aux expressions telles que "l'extension du CEO", "couteau-suisse du CEO", le CoS est bien plus que cela tant son impact est important dans l'organisation de l'entreprise.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div class="becos-contact">
-    <h2>VOUS SOUHAITEZ ECHANGER AVEC NOUS ?</h2>
+    <h2>Vous souhaitez échanger avec nous ?</h2>
     <div class="becos-contact__buttons">
-      <button><a target="_top" href="mailto:hedi.mestiri@byseven.co">ENVOYER UN E-MAIL</a></button>
-      <button data-toggle='modal' data-target='#rdvTel'>RDV TELEPHONIQUE</button>
+      <!-- <button><a target="_top" href="mailto:hedi.mestiri@byseven.co">ENVOYER UN E-MAIL</a></button> -->
+      <button data-toggle='modal' data-target='#contact-us' class='becos-button__blue'>Fixer un rendez-vous</button>
     </div>
   </div>
 </div>
 
 <!-- MODALS -->
 
-<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document" style="border-radius: 2rem">
+<div class="modal fade" id="program" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document" style="border-radius: 2rem">
     <div class="modal-content">
       <div class="modal-header becos-modal-header">
         <div id="modal-title" class='becos-modal-title' style=" display: flex; justify-content: space-between;">
-          <h3 class="modal-title" id="myModalLabel">POSTULER AU PROGRAMME</h3>
+          <h3 class="modal-title" id="myModalLabel">Je veux en savoir plus</h3>
         </div>
       </div>
       <div class="modal-body" id="modalNewBookinBody">
-        <div class="becos-modal-infos">
-          <div class="becos-modal-info">
-            <p>Prix : </p><p>100 patates</p>
+        <div class="becos-modal-splitted">
+          <div class="becos-modal-splitted__left">
+            <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
+              <div class="form-group">
+                <label for="form-firstname">Prénom</label>
+                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa'>
+              </div>
+              <div class="form-group">
+                <label for="form-lastname">Nom</label>
+                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks'>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+              </div>
+              <div class="form-group hidden">
+                <label for="form-email">Email</label>
+                <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+              </div>
+              <!-- <div class="form-group">
+                <label for="form-date">Session</label>
+                <select name="date" id='form-date' class='form-control becos-modal-select'>
+                  <option value="01/01/2021">01 Janvier 2021</option>
+                  <option value="31/12/2021">31 Décembre 2021</option>
+                </select>
+              </div> -->
+              <div class="form-group">
+                <label for="form-linkedin">Linkedin</label>
+                <input type="text" name="linkedin" id='form-linkedin' autocomplete="off" class='form-control becos-modal-input' placeholder='https://linkedin.com/in/rosaparks'>
+              </div>
+              <div class="form-group hidden">
+                <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Souhaite en recevoir le programme</textarea>
+              </div>
+              <div class="centered-item">
+                <button type="submit" class="becos-button__blue" id='form-button'>Envoyez moi le programme</button>
+              </div>
+            </form>
           </div>
-          <div class="becos-modal-info">
-            <p>Pré-requis : </p><p>aucun</p>
-          </div>
-          <div class="becos-modal-info">
-            <p>Format : </p><p>Présentiel et distanciel</p>
-          </div>
-          <div class="becos-modal-info">
-            <p>Sélection : </p><p>Entretien et cas d'usage</p>
+          <div class="becos-modal-splitted__right">
+            <h4>Un apprentissage pragmatique</h4>
+            <p>Pratiquez tous les concepts sur des cas réel de Payfit, PwC et d'autres entreprises.</p>
+            <br>
+            <h4>Un accompagnement continu</h4>
+            <p>Des postes de Chief of staff, Chef de cabinet, Bras droit sont à pouvoir. Nous vous accompagneront dans vos candidatures et échanges à venir. Nous sommes une équipe.</p>
+            <br>
+            <h4>Rejoignez notre communauté</h4>
+            <p>Nous sommes déjà une communauté de 100+ Chiefs en Staff français et européens. Hâte de vous y retrouver !</p>
           </div>
         </div>
-        <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
-          <div class="form-group becos-form-group">
-            <label for="form-firstname">Prénom</label>
-            <input type="text" name="firstname" id='form-firstname' class='form-control becos-modal-input' placeholder='Rosa'>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-lastname">Nom</label>
-            <input type="text" name="lastname" id='form-lastname' class='form-control becos-modal-input' placeholder='Parks'>
-          </div>
-          <div class="form-group becos-form-group hidden">
-            <label for="form-email">Email</label>
-            <input type="text" name="email" id='form-email' class='form-control becos-modal-input'>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-email_2">Email</label>
-            <input type="text" name="email_2" id='form-email_2' class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-date">Session</label>
-            <select name="date" id='form-date' class='form-control becos-modal-select'>
-              <option value="01/01/2021">01 Janvier 2021</option>
-              <option value="31/12/2021">31 Décembre 2021</option>
-            </select>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-linkedin">Linkedin</label>
-            <input type="text" name="linkedin" id='form-linkedin' class='form-control becos-modal-input' placeholder='https://linkedin.com/in/rosaparks'>
-          </div>
-          <div class="centered-item">
-            <button type="submit" class="becos-modal__contact-button" id='form-button'>ENVOYER</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="rdvTel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" role="document" style="border-radius: 2rem">
+<div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document" style="border-radius: 2rem">
     <div class="modal-content">
       <div class="modal-header becos-modal-header">
         <div id="modal-title" class='becos-modal-title' style=" display: flex; justify-content: space-between;">
-          <h3 class="modal-title" id="myModalLabel">ÊTRE RAPPELÉ</h3>
+          <h3 class="modal-title" id="myModalLabel">Je veux en savoir plus</h3>
         </div>
       </div>
       <div class="modal-body" id="modalNewBookinBody">
-        <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
-          <div class="form-group becos-form-group-sm">
-            <label for="form-firstname">Prénom</label>
-            <input type="text" name="firstname" id='form-firstname' class='form-control becos-modal-input' placeholder='Rosa'>
+        <div class="becos-modal-splitted">
+          <div class="becos-modal-splitted__left">
+            <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
+              <div class="form-group">
+                <label for="form-firstname">Prénom</label>
+                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa'>
+              </div>
+              <div class="form-group">
+                <label for="form-lastname">Nom</label>
+                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks'>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+              </div>
+              <div class="form-group hidden">
+                <label for="form-email">Email</label>
+                <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea name="message" id="form-message" autocomplete="off" cols="30" rows="10" class='form-control'></textarea>
+              </div>
+              <div class="centered-item">
+                <button type="submit" class="becos-button__blue" id='form-button'>Contactez-moi</button>
+              </div>
+            </form>
           </div>
-          <div class="form-group becos-form-group-sm">
-            <label for="form-lastname">Nom</label>
-            <input type="text" name="lastname" id='form-lastname' class='form-control becos-modal-input' placeholder='Parks'>
+          <div class="becos-modal-splitted__right">
+            <h4>Un apprentissage pragmatique</h4>
+            <p>Pratiquez tous les concepts sur des cas réel de Payfit, PwC et d'autres entreprises.</p>
+            <br>
+            <h4>Un accompagnement continu</h4>
+            <p>Des postes de Chief of staff, Chef de cabinet, Bras droit sont à pouvoir. Nous vous accompagneront dans vos candidatures et échanges à venir. Nous sommes une équipe.</p>
+            <br>
+            <h4>Rejoignez notre communauté</h4>
+            <p>Nous sommes déjà une communauté de 100+ Chiefs en Staff français et européens. Hâte de vous y retrouver !</p>
           </div>
-          <div class="form-group becos-form-group-sm">
-            <label for="form-phone">Tel</label>
-            <input type="text" name="phone" id='form-phone' class='form-control becos-modal-input' placeholder='06 00 00 00 00'>
-          </div>
-          <div class="form-group becos-form-group-sm">
-            <label for="form-date">Date</label>
-            <input type="date" name="date" id='form-date' class='form-control becos-modal-input'>
-          </div>
-          <div class="form-group becos-form-group-sm">
-            <label for="form-time">Heure</label>
-            <input type="time" name="time" id='form-time' class='form-control becos-modal-input'>
-          </div>
-          <div class="form-group becos-form-group-sm hidden">
-            <label for="form-email">Email</label>
-            <input type="text" name="email" id='form-email' class='form-control becos-modal-input'>
-          </div>
-          <div class="form-group becos-form-group-sm">
-            <label for="form-email">Email</label>
-            <input type="text" name="email_2" id='form-email' class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
-          </div>
-          <div class="form-group hidden">
-            <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Demande de RDV téléphonique</textarea>
-          </div>
-          <div class="centered-item">
-            <button type="submit" class="becos-modal__contact-button" id='form-button'>ÊTRE RAPPELÉ</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="rdvMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document" style="border-radius: 2rem">
-    <div class="modal-content">
-      <div class="modal-header becos-modal-header">
-        <div id="modal-title" class='becos-modal-title' style=" display: flex; justify-content: space-between;">
-          <h3 class="modal-title" id="myModalLabel">ÊTRE RECONTACTER PAR EMAIL</h3>
-        </div>
-      </div>
-      <div class="modal-body" id="modalNewBookinBody">
-        <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
-          <div class="form-group becos-form-group">
-            <label for="form-firstname">Prénom</label>
-            <input type="text" name="firstname" id='form-firstname' class='form-control becos-modal-input' placeholder='Rosa'>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-lastname">Nom</label>
-            <input type="text" name="lastname" id='form-lastname' class='form-control becos-modal-input' placeholder='Parks'>
-          </div>
-          <div class="form-group becos-form-group hidden">
-            <label for="form-email">Email</label>
-            <input type="text" name="email" id='form-email' class='form-control becos-modal-input'>
-          </div>
-          <div class="form-group becos-form-group">
-            <label for="form-email">Email</label>
-            <input type="text" name="email_2" id='form-email' class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
-          </div>
-          <div class="form-group becos-form-group-message">
-            <label for="form-message">Message</label>
-            <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'></textarea>
-          </div>
-          <div class="form-group becos-form-group-checkbox">
-            <input type="checkbox" id="form-news" name="news">
-            <label for="form-news">Je souhaite être tenu au courant des nouveautés du programme et des prochains événements</label>
-          </div>
-          <div class="centered-item">
-            <button type="submit" class="becos-modal__contact-button" id='form-button'>ÊTRE RECONTACTER PAR EMAIL</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="syllabus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="syllabus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document" style="border-radius: 2rem">
     <div class="modal-content">
       <div class="modal-header becos-modal-header">
@@ -408,25 +372,28 @@ ref: becos
         </div>
       </div>
       <div class="modal-body" id="modalNewBookinBody">
-        <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
+        <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
           <div class="form-group becos-form-group">
             <label for="form-firstname">Prénom</label>
-            <input type="text" name="firstname" id='form-firstname' class='form-control becos-modal-input' placeholder='Rosa'>
+            <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa'>
           </div>
           <div class="form-group becos-form-group">
             <label for="form-lastname">Nom</label>
-            <input type="text" name="lastname" id='form-lastname' class='form-control becos-modal-input' placeholder='Parks'>
-          </div>
-          <div class="form-group becos-form-group hidden">
-            <label for="form-email">Email</label>
-            <input type="text" name="email" id='form-email' class='form-control becos-modal-input'>
+            <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks'>
           </div>
           <div class="form-group becos-form-group">
             <label for="form-email">Email</label>
-            <input type="text" name="email_2" id='form-email' class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+            <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+          </div>
+          <div class="form-group becos-form-group hidden">
+            <label for="form-email">Email</label>
+            <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+          </div>
+          <div class="form-group hidden">
+            <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Souhaite recevoir le syllabus</textarea>
           </div>
           <div class="form-group becos-form-group-checkbox">
-            <input type="checkbox" id="form-news" name="news">
+            <input type="checkbox" id="form-news" name="newsletter">
             <label for="form-news">Je souhaite être tenu au courant des nouveautés du programme et des prochains événements</label>
           </div>
           <div class="centered-item">
@@ -436,11 +403,12 @@ ref: becos
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- SCRIPTS -->
 
 <script>
+
   function blockExpand(element) {
     title = element.querySelector('h3')
     if (title.style.marginBottom != '20px') {
@@ -452,4 +420,33 @@ ref: becos
       el.classList.toggle('hidden')
     })
   }
+
+  sliders = document.querySelectorAll('.becos-trainers__cards-list');
+  sliders.forEach((slider) => {
+    isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  })
 </script>
