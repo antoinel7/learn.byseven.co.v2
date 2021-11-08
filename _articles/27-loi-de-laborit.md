@@ -9,7 +9,7 @@ training_link: ""
 title: "Loi de Laborit : Modifier sa routine en débutant par ses missions difficiles"
 image: "/assets/img/articles/loi-de-laborit.jpg"
 image_twitter: "/assets/img/articles/loi-de-laborit.jpg"
-image_alt: "Faire monter ses équipes en compétences "
+image_alt: "Faire monter ses équipes en compétences"
 order: 27
 theme: "RÉFLEXION"
 theme_colour: "#5AC3C8"
@@ -103,7 +103,7 @@ lang: fr
       <p>Ne jetons pas la pierre à la complexité car elle offre des avantages. <strong>Rien ne dit qu'une mission difficile demande d'y consacrer plusieurs heures, jours ou semaines</strong>.  Pourquoi prendrait-elle nécessairement plus de temps qu'une autre ? Vous pouvez être à l'aise sur une tâche vous demandant plusieurs heures ou jours de réflexions; et paradoxalement vous sentir inconfortable sur une autre exigeant seulement 30 minutes de réflexions ! <strong>La durée et la difficulté perçue d'une tâche peuvent, de ce fait, être décorrélées l'une de l'autre</strong>.</p>
       <h6>Se faire accompagner le temps de prendre le pli</h6>
       <p>Si réaliser ses missions seul(e) parait hors de portée, cela signifie qu'un accompagnement lors d'un démarrage d'une activité est probablement préférable. <strong>Des collaborateurs</strong> ayant déjà réalisé ces tâches <strong>comprendront plus facilement les difficultés éprouvées actuellement par le salarié</strong>. Ces échanges privilégiés avec eux pourront les rassurer et prouver la faisabilité de leur mission.</p>
-      <h6>Se faire accompagner le temps de prendre le pli</h6>
+      <h6>Se récompenser lors de la réalisation d'une mission difficile</h6>
       <p>Pour conserver sa motivation sur son coeur de métier, <strong>un collaborateur peut de lui-même se récompenser lorsqu'il a entièrement clôturé une mission complexe</strong> (ou qu'il l'a partiellement, si celle-ci s'étale sur plusieurs jours). Les récompenses peuvent prendre diverses formes : prise d'une pause, d'un temps pour soi, encas, auto-félicitation, etc. A chacun de trouver son propre gain !</p>
       <p class='italic'>Débuter par vos missions "difficiles" telle est une nouvelle habitude que vous devriez prendre. Certes, elle va à l'encontre d'un comportement naturel. De plus, en conservant ce réflexe, les missions risquent d'être reportées à plusieurs reprises, et finalement être réalisées (ou pas réalisées) avec une exécution trop rapide et imprécise. Changer votre routine et vous conditionner pour renverser l'ordre sont préférables. Pour cela, une planification de votre journée, une dédramatisation de la difficulté apparente, un accompagnent par des mentors et une instauration de rituels de récompenses peuvent être clés.
       <br><br>

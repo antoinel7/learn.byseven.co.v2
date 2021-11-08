@@ -124,6 +124,25 @@ body {
   }
 }
 
+.becos-alumni-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  background-image: url("../img/becos/BeCOS_wallpaper.png");
+  background-position: top 0 left 0;
+  background-size: 100% auto;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 
 // NAVBAR
 
@@ -153,6 +172,19 @@ body {
   width: 100vw;
   max-width: 135rem;
   padding: 0 1rem;
+  display: none;
+
+  @include from-large {
+    display: block;
+  }
+
+  img {
+    height: 4rem;
+
+    @include from-xlarge {
+      height: 5rem;
+    }
+  }
 }
 
 .becos-navbar-div__navbar-mobile {
@@ -189,21 +221,17 @@ body {
   }
 }
 
-.becos-navbar-div__navbar {
-  display: none;
-
-  @include from-large {
-    display: block;
-  }
-}
-
 .becos-navbar-div__navbar-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   a {
-    margin: 0 3rem;
+    margin: 0 1.5rem;
+
+    @include from-xlarge {
+      margin: 0 3rem;
+    }
   }
 
   @include from-large {
@@ -230,15 +258,15 @@ body {
 }
 
 .underline {
-    font-size: 1.6rem;
-    font-family: 'Montserrat Bold';
-    color: #4BC1C6 !important;
-    position: relative;
-    padding-bottom: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Montserrat Bold';
+  color: #4BC1C6 !important;
+  position: relative;
+  padding-bottom: 1rem;
 
-    &:hover {
-      color: #4BC1C6;
-    }
+  &:hover {
+    color: #4BC1C6;
+  }
 }
 
 .underline:before {
@@ -301,7 +329,7 @@ body {
 .becos-navbar-div__navbar, .becos-navbar-div__navbar-mobile {
 
   button {
-    margin-left: 5rem;
+    margin-left: 2rem;
     width: 15rem;
   }
 }
@@ -1062,6 +1090,24 @@ body {
   h3 {
     color: white;
     font-family: 'Montserrat Bold';
+  }
+}
+
+.becos-modal {
+  padding: 0 5rem;
+
+  label {
+    font-size: 1.6rem !important;
+    font-family: 'Montserrat Bold';
+    margin-bottom: 1rem !important;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  button {
+    margin-top: 5rem;
   }
 }
 

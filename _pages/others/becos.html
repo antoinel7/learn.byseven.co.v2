@@ -16,11 +16,12 @@ ref: becos
   <div class="becos-navbar-div">
     <div class="becos-navbar-div__navbar">
       <div class="becos-navbar-div__navbar-buttons">
-        <img src="/assets/img/becos/LOGO-BeCOS.png" height='50px'>
+        <img src="/assets/img/becos/LOGO-BeCOS.png">
         <div class="flex-row-left-center">
           <a href='#anchor_program' class='underline'>Programme</a>
           <a href='#anchor_experts' class='underline'>Experts</a>
           <a href='#anchor_press' class='underline'>Presse</a>
+          <a href='/becos_alumnis' class='underline'>Recrutez nos alumnis</a>
           <button class='becos-button__blue' data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
         </div>
       </div>
@@ -38,10 +39,10 @@ ref: becos
               <i class="fas fa-bars"></i>
             </div>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
-              <li><a href='#anchor_program' class='underline'>Programme</a></li>
-              <li><a href='#anchor_experts' class='underline'>Experts</a></li>
-              <li><a href='#anchor_press' class='underline'>Presse</a></li>
-              <!-- <li><a data-toggle='modal' data-target='#rdvMail'>Nous contacter</a></li> -->
+              <li><a href='#anchor_program'>Programme</a></li>
+              <li><a href='#anchor_experts'>Experts</a></li>
+              <li><a href='#anchor_press'>Presse</a></li>
+              <!-- <a href='/becos_alumnis' class='underline'>Recrutez nos alumnis</a> -->
             </ul>
           </div>
         </div>
@@ -261,15 +262,15 @@ ref: becos
             <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
               <div class="form-group">
                 <label for="form-firstname">Prénom</label>
-                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa'>
+                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa' required>
               </div>
               <div class="form-group">
                 <label for="form-lastname">Nom</label>
-                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks'>
+                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks' required>
               </div>
               <div class="form-group">
                 <label for="form-email">Email</label>
-                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com' required>
               </div>
               <div class="form-group hidden">
                 <label for="form-email">Email</label>
@@ -287,6 +288,9 @@ ref: becos
                 <input type="text" name="linkedin" id='form-linkedin' autocomplete="off" class='form-control becos-modal-input' placeholder='https://linkedin.com/in/rosaparks'>
               </div>
               <div class="form-group hidden">
+                <input type="text" name="type" id='form-type' autocomplete="off" class='form-control becos-modal-input' value="Participant">
+              </div>
+              <div class="form-group hidden">
                 <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Souhaite en recevoir le programme</textarea>
               </div>
               <div class="centered-item">
@@ -302,7 +306,7 @@ ref: becos
             <p>Des postes de Chief of staff, Chef de cabinet, Bras droit sont à pouvoir. Nous vous accompagneront dans vos candidatures et échanges à venir. Nous sommes une équipe.</p>
             <br>
             <h4>Rejoignez notre communauté</h4>
-            <p>Nous sommes déjà une communauté de 100+ Chiefs en Staff français et européens. Hâte de vous y retrouver !</p>
+            <p>Nous sommes déjà une communauté de 100+ Chiefs of Staff français et européens. Hâte de vous y retrouver !</p>
           </div>
         </div>
       </div>
@@ -321,22 +325,25 @@ ref: becos
       <div class="modal-body" id="modalNewBookinBody">
         <div class="becos-modal-splitted">
           <div class="becos-modal-splitted__left">
-            <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
+            <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form__calendly">
               <div class="form-group">
                 <label for="form-firstname">Prénom</label>
-                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa'>
+                <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa' required>
               </div>
               <div class="form-group">
                 <label for="form-lastname">Nom</label>
-                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks'>
+                <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks' required>
               </div>
               <div class="form-group">
                 <label for="form-email">Email</label>
-                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com'>
+                <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com' required>
               </div>
               <div class="form-group hidden">
                 <label for="form-email">Email</label>
                 <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+              </div>
+              <div class="form-group hidden">
+                <input type="text" name="type" id='form-type' autocomplete="off" class='form-control becos-modal-input' value="Participant">
               </div>
               <div class="form-group">
                 <label for="form-message">Message</label>
@@ -355,7 +362,7 @@ ref: becos
             <p>Des postes de Chief of staff, Chef de cabinet, Bras droit sont à pouvoir. Nous vous accompagneront dans vos candidatures et échanges à venir. Nous sommes une équipe.</p>
             <br>
             <h4>Rejoignez notre communauté</h4>
-            <p>Nous sommes déjà une communauté de 100+ Chiefs en Staff français et européens. Hâte de vous y retrouver !</p>
+            <p>Nous sommes déjà une communauté de 100+ Chiefs of Staff français et européens. Hâte de vous y retrouver !</p>
           </div>
         </div>
       </div>
@@ -406,6 +413,8 @@ ref: becos
 </div> -->
 
 <!-- SCRIPTS -->
+
+<!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> -->
 
 <script>
 

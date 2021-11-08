@@ -10,7 +10,7 @@ location: "Paris ou en ligne"
 price: "420€ HT"
 image: "/assets/img/trainings/motiver-son-équipe.png"
 image_twitter: "/assets/img/trainings/motiver-son-équipe.png"
-order: 2
+order: 1
 category: "TEAM BUILDING"
 category_colour: "#97BA8C"
 created_at: "15 Janvier 2021"
