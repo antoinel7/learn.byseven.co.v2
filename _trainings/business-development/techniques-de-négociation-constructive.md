@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/techniques-de-négociation-constructive"
-absolute_link: "http://learn.byseven.co/lab/trainings/techniques-de-négociation-constructive"
+permalink: "/trainings/business_development/techniques-de-négociation-constructive"
+absolute_link: "http://learn.byseven.co/trainings/business_development/techniques-de-négociation-constructive"
 title: "Techniques De Négociation Constructive"
 quote: "“Se trop ériger en négociateur n'est pas toujours la meilleure qualité pour la négociation.”
  – Jean-François Paul De Gondi."
@@ -13,7 +13,7 @@ image: "/assets/img/trainings/handshake.png"
 image_twitter: "/assets/img/trainings/handshake.png"
 order: 1
 category: "BUSINESS DEVELOPMENT"
-category_colour: "#F3B0A3"
+category_colour: "#EBCB7A"
 created_at: "23 Avril 2021"
 teaser: ""
 custom_head: true
@@ -33,11 +33,15 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+        <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+          <p><strong>Net Promoter Score</strong></p>
+          </div>
+        </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Réussir ses ventes, préparer une rencontre importante, faire entendre son point de vue : la négociation régit toutes les interactions entre deux individus.<br><br>
-      Dans cette formation, les participants découvriront les meilleures techniques de négociation pour établir une relation de confiance avec leurs interlocuteurs et atteindre leurs objectifs. Ils apprendront à se préparer, à anticiper les tensions et les forces en présence et à trouver des solutions créatives pour repartir avec un deal en main.
+      Dans cette formation, les participants découvriront les meilleures techniques de négociation pour établir une relation de confiance avec leurs interlocuteurs et atteindre leurs objectifs. Ils apprendront à se préparer, à anticiper les tensions et les forces en présence et à trouver des solutions créatives pour repartir avec un deal en main.<br><br><span>Population :</span> Cette formation s’adresse à tous les collaborateurs confrontés à des situations de négociation. Commerciaux, Sales, CSM, Managers ou RH sont souvent confrontés  des situation de négociation qui nécessitent d’en comprendre les rouage et d’en  maîtriser le bon déroulement.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -105,7 +109,7 @@ lang: fr
       <li>Construction d’une proposition de valeur cohérente</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
@@ -142,7 +146,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">
@@ -168,6 +173,22 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse4">
           <p>Oui. Le dispositif FNE-Formation propose à tous les salariés en situation de chômage partiel ou complet de financer ses frais formations. Si votre entreprise est éligible au chômage partiel et que vous êtes dans cette situation : cette formation sera 100% remboursée par le FNE-Formation</p>
         </div>
+      </div>
+      <div class="training-page-faq-element">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
+          <div class="training-page-faq-question flex-row-between-centered">
+            <p><strong>Comment suis-je évalué ?</strong></p>
+            <i class="fas fa-angle-down fa-2x"></i>
+            <i class="fas fa-angle-up fa-2x hidden"></i>
+          </div>
+        </a>
+        <div class="training-page-faq-answer collapse" id="collapse5">
+          <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
+          On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-additional-info">
+        <p>Màj le 01/01/2021</p>
       </div>
     </div>
   </div>

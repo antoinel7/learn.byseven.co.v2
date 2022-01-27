@@ -30,9 +30,9 @@ ref: home
               <p>et toujours plus de participants</p>
             </div>
           </div>
-          <div class="home-main-left-statistics-3">
+          <div class="home-main-left-statistics-3" onmouseover="mouseOverRed();" onmouseout="mouseOutRed();">
             <div>
-              <h2>69<span>&#42;</span></h2>
+              <h2>71<span>&#42;</span></h2>
               <p><strong>Net Promoter Score</strong></p>
             </div>
           </div>
@@ -222,6 +222,7 @@ ref: home
         </div>
         <div class="home-main-left-details">
           <a id='home-main-left-details-button'>&#42;Ils nous ont fait confiance</a>
+          <div class='underline-animation'></div>
         </div>
       </div>
       <div id="home-main-left-customers-comments" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -318,6 +319,24 @@ ref: home
             Les formateurs SEVEN installent un climat de bienveillance qui permet à chacun de se sentir bien, de se concentrer sur le contenu et ses mises en applications. <br><br>
             On ne perd pas de temps, on ne se sent pas gênés de poser des questions, on prend confiance en soi, on est écoutés et on apprend réellement."</p>
           </div>
+          <div class="item item10">
+            <img src="/assets/img/interviews/Claire Degueil.jpg" alt="">
+            <p>Claire Degueil</p>
+            <p>Chief People Officer chez Evaneos</p>
+            <p>"Lunettes bleues, rouges, blanches, vertes, noires ou jaunes, font désormais parties de notre vocabulaire usuel !
+              <br><br>
+              Désormais je peux mieux accompagner les leaders et prendre parfois le temps de réfléchir à leur style de management."
+            </p>
+          </div>
+          <div class="item item11">
+            <img src="/assets/img/interviews/Léo Willefert.PNG" alt="">
+            <p>Léo Willefert</p>
+            <p>Directeur des opérations chez La Brigade</p>
+            <p>"Avec l’atelier réalisé sur les intelligences multiples, j’ai pu apprendre à adapter mon discours selon les personnes présentées.
+              <br><br>
+              Je suis désormais capable de prioriser mes missions, de les catégoriser dans la case importante et/ou urgente et enfin décider des pour-actions à déployer."
+            </p>
+          </div>
         </div>
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#home-main-left-customers-comments" data-slide="prev">
@@ -379,7 +398,8 @@ ref: home
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
-  selection = getRandomInt(9);
+
+  selection = getRandomInt(11);
   item = document.querySelector('.item'+selection.toString());
   item.classList.add('active');
 
@@ -476,4 +496,20 @@ ref: home
       }
     }
   };
+
+  netscore = document.getElementsByClassName('home-main-left-statistics-3')
+
+  function mouseOverRed() {
+    confiance = document.querySelector('.home-main-left-details');
+    width = confiance.offsetWidth
+    console.log(width)
+    underline = document.querySelector('.underline-animation')
+    underline.style.width = width + 'px'
+  }
+
+  function mouseOutRed() {
+    confiance = document.querySelector('.home-main-left-details');
+    underline = document.querySelector('.underline-animation')
+    underline.style.width = '0'
+  }
 </script>

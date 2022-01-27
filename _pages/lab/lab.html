@@ -55,7 +55,7 @@ ref: lab
       {% endfor %}
       {% assign articles = site.articles | sort: 'order' | reverse %}
       {% for article in articles %}
-        {% if article.order == 1 or article.order == 2 or article.order == 3 or article.order == 4 %}
+        {% if article.order == 1 or article.order == 2 or article.order == 3 or article.order == 14 %}
         <div class="col-md-6">
           <div class="article-card">
             <a class='stretched-link' href="{{article.permalink}}"></a>
@@ -63,7 +63,7 @@ ref: lab
             <h3 class="article-card-title">{{article.title}}</h3>
             <div class="article-card-separator" style='border: 1px solid {{article.theme_colour}};'></div>
             <div class="article-card-image-wrap">
-              <img src="{{article.image}}" alt="{{article.image_alt}}" class="article-card-image">
+              <img src="{{article.image}}" alt="{{article.image_alt}}" class="{{article.theme | downcase}}-card-image">
               <div class="article-card-content" style='background-color: {{article.theme_colour}};'><p>{{article.teaser}}</p></div>
             </div>
             <div class="article-card-footer">
@@ -95,30 +95,6 @@ ref: lab
     </div>
   </div>
 </div>
-
-<!-- <script type="text/javascript">
-  function recentCardFront() {
-    var titles = document.querySelectorAll('.article-card-title');
-    if (window.innerWidth > 990) {
-      var max = 0;
-      titles.forEach((element) => {
-        if (element.clientHeight > max) {
-          max = element.clientHeight;
-        }
-      })
-      titles.forEach((element) => {
-        element.style.height = max.toString() + 'px';
-      })
-    } else {
-      titles.forEach((element) => {
-        element.style.height = 'auto';
-      })
-    }
-  }
-  recentCardFront();
-  window.addEventListener('resize', recentCardFront);
-</script> -->
-
 
 <script>
   var ellipsizeTextBox = function (element_class) {

@@ -1,0 +1,164 @@
+---
+layout: single_pages
+type: becos
+permalink: /becos_alumnis
+title: Seven | BeCOS
+lang: fr
+ref: becos
+---
+
+<div class="becos-alumni-container">
+  <div class="becos-navbar-div">
+    <div class="becos-navbar-div__navbar">
+      <div class="becos-navbar-div__navbar-buttons">
+        <img src="/assets/img/becos/LOGO-BeCOS.png">
+        <div class="flex-row-left-center">
+          <a href='/becos#anchor_program' class='underline'>Programme</a>
+          <a href='/becos#anchor_experts' class='underline'>Experts</a>
+          <a href='/becos#anchor_press' class='underline'>Presse</a>
+          <a href='/becos_alumnis' class='underline'>Recrutez nos alumnis</a>
+          <button class='becos-button__blue' data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
+        </div>
+      </div>
+    </div>
+    <div class="becos-navbar-div__navbar-mobile">
+      <!-- <div class="becos-call-to-action">
+        <p>DEMARRER LA FORMATION 🚀</p>
+      </div> -->
+      <div class="becos-navbar-div__navbar-mobile-logo">
+        <img src="/assets/img/becos/LOGO-BeCOS.png" width='100px'>
+        <div class="flex-row-between-centered">
+          <button class='becos-navbar-div__navbar__subscribe-mobile' data-toggle='modal' data-target='#contact-us'>Contactez-nous</button>
+          <div class="dropdown">
+            <div class="becos-dropdown dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+              <li><a href='/becos'>Notre programme</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="becos-banner">
+    <div class="becos-banner__teaser">
+     <div class="becos-banner__teaser__text">
+       <h1>Recrutez gratuitement votre futur Chief of Staff</h1>
+       <p>
+        Demandez un accès gratuit aux Chiefs of Staff sélectionnées et formés par <img src="/assets/img/becos/LOGO-BeCOS.png" height='16px'> et decouvrez tous les 3 mois les profils de nouveaux talents.
+      </p>
+       <div class="becos-banner__text__buttons">
+        <button class='becos-button__blue' data-toggle='modal' data-target='#alumnis'>Accéder aux talents</button>
+        <!-- <button class='becos-button__white-blue' data-toggle='modal' data-target='#syllabus'>VOIR LE SYLLABUS</button> -->
+       </div>
+     </div>
+     <div class="becos-banner__teaser__img">
+       <img src="/assets/img/becos/BeCOS-alumni-banner.png">
+     </div>
+    </div>
+  </div>
+  <div class="becos-contact">
+    <h2>Vous souhaitez échanger avec nous ?</h2>
+    <div class="becos-contact__buttons">
+      <!-- <button><a target="_top" href="mailto:hedi.mestiri@byseven.co">ENVOYER UN E-MAIL</a></button> -->
+      <button data-toggle='modal' data-target='#contact-us' class='becos-button__blue'>Fixer un rendez-vous</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modals -->
+
+<div class="modal fade" id="alumnis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="border-radius: 2rem">
+    <div class="modal-content">
+      <div class="modal-header becos-modal-header">
+        <div id="modal-title" class='becos-modal-title' style=" display: flex; justify-content: space-between;">
+          <h3 class="modal-title" id="myModalLabel">Avoir accès aux profils d'alumnis CoS</h3>
+        </div>
+      </div>
+      <div class="modal-body" id="modalNewBookinBody">
+        <div class="becos-modal">
+          <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form">
+            <div class="form-group">
+              <label for="form-firstname">Prénom</label>
+              <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa' required>
+            </div>
+            <div class="form-group">
+              <label for="form-lastname">Nom</label>
+              <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks' required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com' required>
+            </div>
+            <div class="form-group hidden">
+              <label for="form-email">Email</label>
+              <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+            </div>
+            <div class="form-group">
+              <label for="form-company">Entreprise</label>
+              <input type="text" name="company" id='form-company' autocomplete="off" class='form-control becos-modal-input' placeholder='Civil Rights Movement' required>
+            </div>
+            <div class="form-group hidden">
+              <input type="text" name="type" id='form-type' autocomplete="off" class='form-control becos-modal-input' value="Recruiter">
+            </div>
+            <div class="form-group hidden">
+              <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Souhaite avoir accès aux alumnis</textarea>
+            </div>
+            <div class="centered-item">
+              <button type="submit" class="becos-button__blue" id='form-button'>Rencontrer nos alumnis</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="border-radius: 2rem">
+    <div class="modal-content">
+      <div class="modal-header becos-modal-header">
+        <div id="modal-title" class='becos-modal-title' style=" display: flex; justify-content: space-between;">
+          <h3 class="modal-title" id="myModalLabel">Je veux en savoir plus</h3>
+        </div>
+      </div>
+      <div class="modal-body" id="modalNewBookinBody">
+        <div class="becos-modal">
+          <form action="https://seven-builder.herokuapp.com/contact_form_becos" method="GET" id="contact-form__calendly">
+            <div class="form-group">
+              <label for="form-firstname">Prénom</label>
+              <input type="text" name="firstname" id='form-firstname' autocomplete="off" class='form-control becos-modal-input' placeholder='Rosa' required>
+            </div>
+            <div class="form-group">
+              <label for="form-lastname">Nom</label>
+              <input type="text" name="lastname" id='form-lastname' autocomplete="off" class='form-control becos-modal-input' placeholder='Parks' required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" name="email" id='form-email' autocomplete="off" class='form-control becos-modal-input' placeholder='rosa.parks@gmail.com' required>
+            </div>
+            <div class="form-group hidden">
+              <label for="form-email">Email</label>
+              <input type="email" name="email_2" id='form-email' autocomplete="off" class='form-control becos-modal-input'>
+            </div>
+            <div class="form-group">
+              <label for="form-company">Entreprise</label>
+              <input type="text" name="company" id='form-company' autocomplete="off" class='form-control becos-modal-input' placeholder='Civil Rights Movement' required>
+            </div>
+            <div class="form-group hidden">
+              <textarea name="message" id="form-message" cols="30" rows="10" class='form-control'>Souhaite en savoir plus</textarea>
+            </div>
+            <div class="form-group hidden">
+              <input type="text" name="type" id='form-type' autocomplete="off" class='form-control becos-modal-input' value="Recruiter">
+            </div>
+            <div class="centered-item">
+              <button type="submit" class="becos-button__blue" id='form-button'>Contactez-moi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,7 @@
 layout: training_page
 type: training_page
 permalink: "/trainings/project_management/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/team-building/gérer-son-temps"
+absolute_link: "http://learn.byseven.co/lab/trainings/project_management/gérer-son-temps"
 title: "Gérer son temps et ses priorités"
 quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
 duration: "2 demi-journées"
@@ -12,7 +12,7 @@ image: "/assets/img/trainings/gérer-son-temps.png"
 image_twitter: "/assets/img/trainings/gérer-son-temps.png"
 order: 1
 category: "PROJECT MANAGEMENT"
-category_colour: "#5AC3C8"
+category_colour: "#739DBF"
 created_at: "15 Janvier 2021"
 teaser: ""
 custom_head: true
@@ -32,7 +32,11 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+            <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+            <p><strong>Net Promoter Score</strong></p>
+          </div>
+        </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Dans cet atelier ludique les participants découvriront les fondements du management situationnel et travailleront leur capacité à s’adapter à chaque situation pour mobiliser leurs équipes, les faire grandir et bien déléguer. <br><br>
@@ -93,7 +97,7 @@ lang: fr
       <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
@@ -128,7 +132,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">
@@ -154,6 +159,22 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse4">
           <p>Oui. Le dispositif FNE-Formation propose à tous les salariés en situation de chômage partiel ou complet de financer ses frais formations. Si votre entreprise est éligible au chômage partiel et que vous êtes dans cette situation : cette formation sera 100% remboursée par le FNE-Formation</p>
         </div>
+      </div>
+      <div class="training-page-faq-element">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
+          <div class="training-page-faq-question flex-row-between-centered">
+            <p><strong>Comment suis-je évalué ?</strong></p>
+            <i class="fas fa-angle-down fa-2x"></i>
+            <i class="fas fa-angle-up fa-2x hidden"></i>
+          </div>
+        </a>
+        <div class="training-page-faq-answer collapse" id="collapse5">
+          <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
+          On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-additional-info">
+        <p>Màj le 01/01/2021</p>
       </div>
     </div>
   </div>

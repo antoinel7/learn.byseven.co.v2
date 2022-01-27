@@ -1,0 +1,104 @@
+---
+layout: trainings
+type: trainings
+permalink: /trainings_deliveroo/
+absolute_link: "https://learn.byseven.co/trainings_deliveroo/"
+title: Seven | Formations DELIVEROO
+lang: fr
+ref: trainings
+---
+
+<div class="banner-trainings">
+  <div class="banner-trainings-description">
+    <h1>Formations DELIVEROO</h1>
+    <h4>Des <span class="underline-deliveroo">formations rythmées</span> et une expérience riche pour tous nos participants</h4>
+  </div>
+</div>
+<div class="main-trainings">
+  <div class="main-trainings-right" id="menuTabContent">
+    <div class="row">
+      {% assign trainings = site.trainings | where: "category", "DELIVEROO" %}
+      {% for training in trainings %}
+        <div class="main-trainings-card main-trainings-card-deliveroo col-xs-12 col-sm-4 col-lg-3" style="background-color: white; border: 2px solid {{training.category_colour}}">
+          <a href="{{training.permalink}}">
+          </a>
+          <h5 style="color: {{training.category_colour}}">{{training.title | upcase}}</h5>
+          <p style="color: {{training.category_colour}}">{{training.quote}}</p>
+          <div class="training-main-info">
+            <div class="training-main-info-flex">
+              <img src="/assets/img/PICTO_DATEwhite.png" alt="" class='training-page-picto picto-white'>
+              <img src="/assets/img/PICTO_DATE.png" alt="" class='training-page-picto picto-black'>
+              <div>
+                <p style="color: {{training.category_colour}}">{{training.duration}}</p>
+              </div>
+            </div>
+            <div class="training-main-info-flex">
+              <img src="/assets/img/PICTO_LIEUwhite.png" alt="" class='training-page-picto-lieu picto-white'>
+              <img src="/assets/img/PICTO_LIEU.png" alt="" class='training-page-picto-lieu picto-black'>
+              <p style="color: {{training.category_colour}}">{{training.location}}</p>
+            </div>
+            <div class="training-main-info-flex">
+              <img src="/assets/img/PICTO_TARIFSwhite.png" alt="" class='training-page-picto picto-white'>
+              <img src="/assets/img/PICTO_TARIFS.png" alt="" class='training-page-picto picto-black'>
+              <p style="color: {{training.category_colour}}">{{training.price}} par personne</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  cards = document.querySelectorAll('.main-trainings-card');
+  test = document.querySelector('.main-trainings-card');
+  color_test = 'r' + test.style.border.split('r')[1];
+  cards.forEach(element => {
+    element.addEventListener('mouseover', el => {
+      color = 'r' + element.style.border.split('r')[1];
+      title = event.currentTarget.querySelector('h5');
+      texts = event.currentTarget.querySelectorAll('p');
+      pictos_white = event.currentTarget.querySelectorAll('.picto-white');
+      console.log(pictos_white);
+      pictos_black = event.currentTarget.querySelectorAll('.picto-black');
+      event.currentTarget.style.backgroundColor = color;
+      title.style.color = 'white';
+      texts.forEach(text => {
+        text.style.color = 'white';
+      })
+      pictos_white.forEach(white => {
+        white.style.display = 'block';
+        white.style.visibility = 'visible';
+        white.style.opacity = '1';
+      })
+      pictos_black.forEach(black => {
+        black.style.display = 'none';
+        black.style.visibility = 'hidden';
+        black.style.opacity = '0';
+      })
+    })
+    element.addEventListener('mouseout', el => {
+      color = 'r' + element.style.border.split('r')[1];
+      title = event.currentTarget.querySelector('h5');
+      texts = event.currentTarget.querySelectorAll('p');
+      pictos_white = event.currentTarget.querySelectorAll('.picto-white');
+      console.log(pictos_white);
+      pictos_black = event.currentTarget.querySelectorAll('.picto-black');
+      event.currentTarget.style.backgroundColor = 'white';
+      title.style.color = color;
+      texts.forEach(text => {
+        text.style.color = color;
+      })
+      pictos_white.forEach(white => {
+        white.style.display = 'none';
+        white.style.visibility = 'hidden';
+        white.style.opacity = '0';
+      })
+      pictos_black.forEach(black => {
+        black.style.display = 'block';
+        black.style.visibility = 'visible';
+        black.style.opacity = '1';
+      })
+    })
+  })
+</script>

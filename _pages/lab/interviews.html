@@ -1,7 +1,7 @@
 ---
 layout: lab_category
 type: lab_category
-permalink: /lab/interviews
+permalink: /lab/interviews/
 title: Seven | Interviews
 lang: fr
 ref: lab_category
@@ -30,7 +30,7 @@ ref: lab_category
               <h3 class="article-card-title">{{article.title}}</h3>
               <div class="article-card-separator" style='border: 1px solid {{article.theme_colour}};'></div>
               <div class="article-card-image-wrap">
-                <img src="{{article.image}}" alt="{{article.image_alt}}" class="article-card-image">
+                <img src="{{article.image}}" alt="{{article.image_alt}}" class="{{article.theme | downcase}}-card-image">
                 <div class="article-card-content" style='background-color: {{article.theme_colour}};'><p>{{article.teaser}}</p></div>
               </div>
               <div class="article-card-footer">

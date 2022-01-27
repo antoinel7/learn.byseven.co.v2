@@ -1,0 +1,17 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+    {% include head.html %}
+    <body class="page-{{ page.type }}{% if page.layout contains 'content' %} content{% endif %}{% if page.color %} {{ page.color }}{% endif %}">
+      <main>
+        <div class="container-single-pages-seven">
+          {{ content }}
+          {% if page.ref == 'yek' %}
+            {% include footer_yek.html %}
+          {% elsif page.ref == 'becos' %}
+            {% include footer_becos.html %}
+          {% endif %}
+        </div>
+      </main>
+    </body>
+    <script src="/assets/javascripts/bootstrap.js"></script>
+</html>

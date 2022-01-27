@@ -1,8 +1,8 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/gestion_d'équipe/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/gestion_d'équipe/gérer-son-temps"
+permalink: "/trainings/gestion_d'équipe/engager-et-motiver-ses-equipes"
+absolute_link: "http://learn.byseven.co/lab/trainings/gestion_d'équipe/engager-et-motiver-ses-equipes"
 title: "Engager et Motiver ses Équipes"
 quote: "“Le management, ce n'est pas un art, c'est une discipline.”– Noel Goutard"
 duration: "2 demi-journées de 3 heures"
@@ -10,9 +10,9 @@ location: "Paris ou en ligne"
 price: "420€ HT"
 image: "/assets/img/trainings/chess.png"
 image_twitter: "/assets/img/trainings/chess.png"
-order: 1
-category: "GESTION D'ÉQUIPE"
-category_colour: "#EF8C64"
+order: 2
+category: "TEAM MANAGEMENT"
+category_colour: "#F0966D"
 created_at: "23 Avril 2021"
 teaser: ""
 custom_head: true
@@ -32,11 +32,15 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
-        <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
+        <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+          <p><strong>Net Promoter Score</strong></p>
+          </div>
+        </div>
+        <p class="training-page-main-banner-left-quote">{{page.quote}}</p>
       </div>
       <p class="training-page-main-banner-left-description">Cette formation s’adresse aux directeurs, managers et leurs collaborateurs ou aux équipes de management traverse qui souhaitent développer leur capacité à développer un collectif performant.<br><br>
-      Dans cet enchaînement d’ateliers ludiques et pragmatiques les participants découvriront les meilleures méthodes de management agile pour atteindre leurs objectifs et faire grandir leurs collaborateurs.
+      Dans cet enchaînement d’ateliers ludiques et pragmatiques les participants découvriront les meilleures méthodes de management agile pour atteindre leurs objectifs et faire grandir leurs collaborateurs.<br><br><span>Population :</span> Cette formation s’adresse aux Managers, Directeurs, Chefs d’équipe mais aussi à toute personne en charge de l’accompagnement de collaborateurs même sans rôle hiérarchique (ex. chef de projet, coordinateur, coach).
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -106,7 +110,7 @@ lang: fr
       <li>Fédérer les collaborateurs pour générer de la performance collective long-terme</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant">
+  <div class="training-page-main-description-right">
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
@@ -143,7 +147,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">
@@ -169,6 +174,22 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse4">
           <p>Oui. Le dispositif FNE-Formation propose à tous les salariés en situation de chômage partiel ou complet de financer ses frais formations. Si votre entreprise est éligible au chômage partiel et que vous êtes dans cette situation : cette formation sera 100% remboursée par le FNE-Formation</p>
         </div>
+      </div>
+      <div class="training-page-faq-element">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
+          <div class="training-page-faq-question flex-row-between-centered">
+            <p><strong>Comment suis-je évalué ?</strong></p>
+            <i class="fas fa-angle-down fa-2x"></i>
+            <i class="fas fa-angle-up fa-2x hidden"></i>
+          </div>
+        </a>
+        <div class="training-page-faq-answer collapse" id="collapse5">
+          <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
+          On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-additional-info">
+        <p>Màj le 01/01/2021</p>
       </div>
     </div>
   </div>

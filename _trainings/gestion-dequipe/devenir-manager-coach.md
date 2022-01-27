@@ -11,8 +11,8 @@ price: "420€ HT"
 image: "/assets/img/trainings/sand.png"
 image_twitter: "/assets/img/trainings/sand.png"
 order: 1
-category: "GESTION D'ÉQUIPE"
-category_colour: "#EF8C64"
+category: "TEAM MANAGEMENT"
+category_colour: "#F0966D"
 created_at: "23 Avril 2021"
 teaser: ""
 custom_head: true
@@ -32,11 +32,15 @@ lang: fr
     <div class="training-page-main-banner-left">
       <div>
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
-        <h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+          <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
+            <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
+              <p><strong>Net Promoter Score</strong></p>
+            </div>
+          </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
       <p class="training-page-main-banner-left-description">Piloter l’activité au quotidien nécessite une forte capacité à comprendre les dynamiques de groupe, à revenir sur des situations passées pour mettre en place des actions correctrices concrètes et à réagir efficacement en cas de situation difficile.<br><br>
-      Dans cette formation, les participants apprendront à adopter la posture de Manager Coach en améliorant leur qualité d’écoute, à faire un feedback constructif, à gérer une situation difficile ou conflictuelle et à augmenter leur spectre des informations nécessaires à la prise de décisions.
+      Dans cette formation, les participants apprendront à adopter la posture de Manager Coach en améliorant leur qualité d’écoute, à faire un feedback constructif, à gérer une situation difficile ou conflictuelle et à augmenter leur spectre des informations nécessaires à la prise de décisions.<br><br><span>Population :</span> Cette formation s’adresse aux Managers, Directeurs, Chefs d’équipe mais aussi à toute personne en charge de l’accompagnement de collaborateurs même sans rôle hiérarchique (ex. chef de projet, coordinateur, coach).
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -105,7 +109,7 @@ lang: fr
       <li>Mise en pratique du feedback à chaud dans une situation difficile</li>
     </ul>
   </div>
-  <div class="training-page-main-description-right etre_inspiré_et_inspirant" >
+  <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
@@ -142,7 +146,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>A tous les architectes, collaborateurs ou indépendants qui travaillent dans l’univers de l’architecture.</p>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>
       <div class="training-page-faq-element">
@@ -168,6 +173,22 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse4">
           <p>Oui. Le dispositif FNE-Formation propose à tous les salariés en situation de chômage partiel ou complet de financer ses frais formations. Si votre entreprise est éligible au chômage partiel et que vous êtes dans cette situation : cette formation sera 100% remboursée par le FNE-Formation</p>
         </div>
+      </div>
+      <div class="training-page-faq-element">
+        <a class='training-page-faq-question-link' data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse4" style="color: {{page.category_colour}};">
+          <div class="training-page-faq-question flex-row-between-centered">
+            <p><strong>Comment suis-je évalué ?</strong></p>
+            <i class="fas fa-angle-down fa-2x"></i>
+            <i class="fas fa-angle-up fa-2x hidden"></i>
+          </div>
+        </a>
+        <div class="training-page-faq-answer collapse" id="collapse5">
+          <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
+          On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-additional-info">
+        <p>Màj le 01/01/2021</p>
       </div>
     </div>
   </div>

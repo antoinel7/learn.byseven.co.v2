@@ -187,6 +187,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 145px;
 
   @include from-medium-high {
     flex-direction: row;
@@ -308,14 +309,20 @@
   height: 20rem;
   width: 100%;
   overflow: hidden;
+
+  img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
 
-.article-card-image {
-
+.interview-card-image {
   height: 20rem;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 50% 15% !important;
 }
 
 .article-card-content {
@@ -345,6 +352,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   margin-top: 20px;
 
   .article-card-date {
@@ -468,6 +476,7 @@
 .container-lab-article {
   width: 100%;
   padding: 0 2rem;
+  margin-bottom: 130px;
 
   @include from-medium {
     padding: 0 5rem;
@@ -932,7 +941,7 @@
   }
 }
 
-.lab-article-text-secondary {
+.lab-article-text-primary, .lab-article-text-secondary {
   li {
     font-family: 'Montserrat Regular';
     font-size: 1.6rem;
@@ -965,7 +974,7 @@
   @include from-medium-high {
 
     img {
-      max-width: 50rem;
+      max-width: 100%;
     }
   }
 }
@@ -1301,4 +1310,13 @@
   strong {
     font-family: 'Montserrat Bold';
   }
+}
+
+.italic {
+  font-family: 'Monserrat Italic';
+}
+
+.italic-embed {
+  font-family: 'Monserrat Italic';
+  font-weight: 900;
 }

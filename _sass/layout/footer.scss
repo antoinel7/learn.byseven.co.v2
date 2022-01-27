@@ -1,4 +1,6 @@
-// HOME
+//////////
+// HOME //
+//////////
 
 .footer-seven, .footer-seven-training-page {
   height: 87px;
@@ -24,7 +26,6 @@
 
   @include from-medium {
     padding: 20px 70px;
-    // height: 107px;
   }
 }
 
@@ -56,11 +57,44 @@
   }
 }
 
-///// LAB ////
+.footer-qualiopi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  // FOOTER
+  div {
+    margin-right: 1.5rem;
+  }
+
+  p {
+    width: 22rem !important;
+    text-align: right;
+  }
+
+  p:first-of-type {
+    font-size: .9rem;
+    font-family: 'Montserrat SemiBold';
+    line-height: 1.5rem;
+  }
+
+  p:last-of-type {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Bold';
+    margin: 0;
+  }
+
+  img {
+    height: 77px;
+    width: 144px;
+  }
+}
+
+
+//////////////
+///// LAB ////
+//////////////
+
 .footer-lab-seven {
-  // width: 100%;
   max-height: 180px;
   display: flex;
   align-items: flex-start;
@@ -87,6 +121,7 @@
     font-weight: 300;
     font-size: 1.3rem;
     color: rgba(255,255,255,0.8);
+
     &:hover {
       color: rgba(255,255,255,1);
     }
@@ -103,11 +138,11 @@
   }
 
   @include from-medium {
-    // padding: 3rem 10rem 3rem 6rem;
     padding: 2rem 4rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
     a {
       margin-left: 15px !important;
       font-size: 1.5rem;
@@ -131,7 +166,6 @@
   p {
     font-family: 'Montserrat Bold';
     font-size: 10.5px;
-    // width: auto;
     margin: 0;
   }
 
@@ -193,7 +227,6 @@
   a {
     text-align: center;
     margin: 0;
-    // text-align: center;
     transition: all .25s ease-in-out;
     font-size: 14px;
     font-family: 'Montserrat Regular';
@@ -255,7 +288,10 @@
   }
 }
 
-// TRAININGS
+
+///////////////
+// TRAININGS //
+///////////////
 
 .footer-trainings-seven {
   width: 100%;
@@ -288,7 +324,10 @@
   }
 }
 
-// TRAINING PAGE
+
+///////////////////
+// TRAINING PAGE //
+///////////////////
 
 .footer-seven-training-page {
 
@@ -299,4 +338,147 @@
 
 .flex-row-between-start {
   display: flex;
+}
+
+
+///////////////////////
+///// YEK / BECOS /////
+///////////////////////
+
+.footer-yek-seven, .footer-becos-seven {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+
+  p {
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  a {
+    margin-left: 5px !important;
+    margin-bottom: 6px;
+    width: 100px;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgba(0,0,0,0.8);
+
+    &:hover {
+      color: rgba(0,0,0,1);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .footer-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-left: 2px solid black;
+  }
+
+  @include from-medium {
+    max-height: 180px;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    a {
+      margin-left: 15px;
+      font-size: 1.5rem;
+      width: 120px;
+    }
+  }
+}
+
+.footer-yek-seven {
+  background-color: #FCC94A;
+}
+
+.footer-becos-seven {
+  background-color: #4BC1C6;
+}
+
+.footer-single-pages-logo {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+
+  #seven-logo-footer {
+    margin-bottom: 1rem;
+    height: 5rem;
+  }
+
+  p {
+    font-family: 'Montserrat Bold';
+    font-size: 10.5px;
+    margin: 0;
+  }
+
+  @include from-medium {
+    padding-right: 4rem;
+    margin-bottom: 0;
+
+    p {
+      font-size: 12.5px;
+      line-height: 20px;
+    }
+
+    #seven-logo-footer {
+      height: 3rem;
+    }
+  }
+}
+
+.footer-single-pages-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+
+  a {
+    text-align: center;
+    margin: 0;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    font-family: 'Montserrat Regular';
+    font-weight: 300;
+    &:hover {
+      color: #95B9DB;
+    }
+    .fab {
+      color:white !important;
+    }
+  }
+
+  @include from-medium {
+    width: 100px !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.side-text {
+  line-height: initial !important;
+  margin-top: 1rem !important;
+
+  @include from-large {
+    margin-top: 0;
+  }
 }

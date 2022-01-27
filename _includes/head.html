@@ -2,8 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{% if page.type != 'index' %} Learn by Seven - {{ page.title }}{% endif %}</title>
+  {% if page.ref == 'yek' %}
+    <title>Yek by Seven</title>
+  {% elsif page.ref == 'becos' %}
+    <title>BeCOS by Seven</title>
+  {% elsif page.ref == 'home' %}
+    <title>Learn by Seven</title>
+  {% else %}
+    <title>{% if page.type != 'index' %} Learn by Seven - {{ page.title }}{% endif %}</title>
+  {% endif %}
   <meta name="description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
@@ -16,17 +23,25 @@
   {% if page.custom_head %}
     <meta property="og:title" content="Learn by SEVEN - {{page.title}}">
     <meta property="og:image" content="{{page.image}}">
+    <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
+  {% elsif page.ref == 'becos' %}
+    <meta property="og:title" content="BeCoS - Lancez votre carrière de
+Chief of Staff">
+    <meta property="og:image" content="https://learn.byseven.co/assets/img/becos/BeCOS-banner.png">
+    <meta property="og:description" content="Un programme complet pour comprendre et apprendre la fonction stratégique de Chief of Staff.">
   {% else %}
     <meta property="og:title" content="Learn by SEVEN - Empowering people and organizations">
     <meta property="og:image" content="https://learn.byseven.co/assets/img/home-page.jpg">
+    <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   {% endif %}
-  <meta property="og:description" content="SEVEN, cabinet de formation créant des expériences d'apprentissage de façon à transformer les organisations.">
   <meta property="og:site_name" content="{{site.url}}">
   <meta property="og:url" content="{{page.url}}">
-  {% if page.layout == 'base' %}
+  {% if page.layout == 'lab' or page.layout == 'lab_category' %}
+    <link rel="icon" href="/assets/img/favicon-lab.ico">
+  {% elsif page.ref == 'becos' %}
+    <link rel="icon" href="/assets/img/becos/favicon-becos.ico">
+  {% else %}
     <link rel="icon" href="/assets/img/favicon.ico">
-  {% elsif page.layout == 'lab' or page.layout == 'lab_category' %}
-     <link rel="icon" href="/assets/img/favicon-lab.ico">
   {% endif %}
 
   <script>
