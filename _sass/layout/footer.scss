@@ -1,4 +1,6 @@
-// HOME
+//////////
+// HOME //
+//////////
 
 .footer-seven, .footer-seven-training-page {
   height: 87px;
@@ -24,7 +26,6 @@
 
   @include from-medium {
     padding: 20px 70px;
-    // height: 107px;
   }
 }
 
@@ -56,11 +57,44 @@
   }
 }
 
-///// LAB ////
+.footer-qualiopi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  // FOOTER
+  div {
+    margin-right: 1.5rem;
+  }
+
+  p {
+    width: 22rem !important;
+    text-align: right;
+  }
+
+  p:first-of-type {
+    font-size: .9rem;
+    font-family: 'Montserrat SemiBold';
+    line-height: 1.5rem;
+  }
+
+  p:last-of-type {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Bold';
+    margin: 0;
+  }
+
+  img {
+    height: 77px;
+    width: 144px;
+  }
+}
+
+
+//////////////
+///// LAB ////
+//////////////
+
 .footer-lab-seven {
-  // width: 100%;
   max-height: 180px;
   display: flex;
   align-items: flex-start;
@@ -104,7 +138,6 @@
   }
 
   @include from-medium {
-    // padding: 3rem 10rem 3rem 6rem;
     padding: 2rem 4rem;
     display: flex;
     flex-direction: row;
@@ -133,7 +166,6 @@
   p {
     font-family: 'Montserrat Bold';
     font-size: 10.5px;
-    // width: auto;
     margin: 0;
   }
 
@@ -195,7 +227,6 @@
   a {
     text-align: center;
     margin: 0;
-    // text-align: center;
     transition: all .25s ease-in-out;
     font-size: 14px;
     font-family: 'Montserrat Regular';
@@ -257,7 +288,10 @@
   }
 }
 
-// TRAININGS
+
+///////////////
+// TRAININGS //
+///////////////
 
 .footer-trainings-seven {
   width: 100%;
@@ -290,7 +324,10 @@
   }
 }
 
-// TRAINING PAGE
+
+///////////////////
+// TRAINING PAGE //
+///////////////////
 
 .footer-seven-training-page {
 
@@ -304,18 +341,15 @@
 }
 
 
+///////////////////////
 ///// YEK / BECOS /////
+///////////////////////
 
 .footer-yek-seven, .footer-becos-seven {
-  // width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
 
   p {
     font-family: 'Montserrat Bold';
@@ -355,7 +389,6 @@
   }
 
   @include from-medium {
-    // padding: 3rem 10rem 3rem 6rem;
     max-height: 180px;
     padding: 2rem 4rem;
     display: flex;
@@ -394,7 +427,6 @@
   p {
     font-family: 'Montserrat Bold';
     font-size: 10.5px;
-    // width: auto;
     margin: 0;
   }
 
@@ -423,7 +455,6 @@
   a {
     text-align: center;
     margin: 0;
-    // text-align: center;
     transition: all .25s ease-in-out;
     font-size: 14px;
     font-family: 'Montserrat Regular';

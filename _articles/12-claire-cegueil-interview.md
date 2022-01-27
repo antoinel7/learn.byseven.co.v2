@@ -7,8 +7,8 @@ facebook_href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn
 twitter_href: "https://twitter.com/intent/tweet?url=https%3A%2F%2Flearn.byseven.co%2Flab%2Farticles%2Fmanagement-horizontal-vertical-interview"
 training_link : ""
 title: "Coupler management horizontal sans verticalité"
-image: "/assets/img/articles/ClaireD.jpg"
-image_twitter: "/assets/img/articles/ClaireD.jpg"
+image: "/assets/img/interviews/Claire Degueil.jpg"
+image_twitter: "/assets/img/interviews/Claire Degueil.jpg"
 image_alt: "Coupler management horizontal sans verticalité"
 order: 12
 theme: "INTERVIEW"
