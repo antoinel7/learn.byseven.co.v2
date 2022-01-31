@@ -441,33 +441,70 @@ body {
 
 // DATES
 
-.becos-dates {
-  border-radius: .5rem;
-  margin: 5rem 0 0 0;
+.becos-dates-container {
   display: flex;
   flex-direction: column;
+  height: auto;
+  width: 80vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.becos-dates-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include from-medium {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.becos-dates {
+  display: flex;
+  border-radius: .5rem;
+  margin: 5rem 0 0 0;
+  height: 30vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  flex-direction: column;
+  border: solid 2px;
+  border-color: #70C9DC;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 2rem;
+  width: 35rem;
 
   @include from-large {
-    flex-direction: row;
-    width: auto;
+    width: 35rem;
     margin: 15rem 0 0 0;
     padding: 5rem;
     background-color: white;
   }
 
   p {
+    text-align: center;
     font-size: 1.8rem;
     font-family: 'Montserrat Bold' !important;
-    margin: 0 0 2rem 0;
-    text-align: center;
+  }
 
-    @include from-large {
-      margin: 0 2rem 0 0;
-      text-align: left;
-    }
+  .dates-session {
+    color: #70C9DC;
+    font-weight: bold;
+  }
+
+  .dates-text {
+    font-weight: bold;
+  }
+
+  .dates-alert {
+    font-size: 1.4rem;
   }
 }
 
@@ -904,6 +941,150 @@ body {
 }
 
 
+// HOST
+
+.becos-host-container {
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+  padding: 10rem 0 0 0;
+
+    h4 {
+      text-align: center;
+      margin-top: 3rem;
+      max-width: 60vw;
+    }
+}
+
+.becos-host-grid {
+  display: flex;
+  justify-content: center;
+  max-width: 100rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.becos-host__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 5px;
+  border-bottom: solid 3px #4CBDC4;
+  margin: 0 2rem 3rem 2rem;
+  width: 25rem;
+  height: 10rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.becos-host__avatar {
+  height: 5rem;
+  width: auto;
+}
+
+// CASE
+
+.becos-case-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  height: auto;
+  text-align: center;
+
+    h1 {
+      margin-top: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    h4 {
+
+      max-width: 80vw;
+
+      @include from-medium {
+        max-width: 60vw;
+      }
+    }
+}
+
+.becos-case-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: space-around;
+
+  @include from-medium {
+    flex-direction: row;
+  }
+}
+
+.becos-case-card {
+  display: flex;
+  flex-direction: column;
+  width: 31rem;
+  background-color: white;
+  height: 50rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  @include from-medium {
+    width: 33rem;
+  }
+}
+
+.becos-case-visual {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: auto;
+}
+
+.becos-case-description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+    h4 {
+      text-align: left;
+    }
+
+    p {
+      margin-top : 1rem;
+      font-size: 1.4rem;
+    }
+}
+
+.becos-case-tags-container {
+  display: flex;
+  width: 100%;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.becos-case-tag {
+  display: flex;
+  background-color: #4cbdc4;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-right: 1rem;
+
+  p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+}
+
+
 // NEEDS
 
 .becos-needs {
@@ -1015,6 +1196,28 @@ body {
       max-width: 40rem;
     }
   }
+}
+
+
+// WEBINAR
+
+.becos-webinar-container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 75vh;
+  margin-top: 10rem;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+.becos-yt-player {
+    width: 75vw;
+    height: 100%;
 }
 
 
