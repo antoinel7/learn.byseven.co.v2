@@ -405,7 +405,6 @@ if (typeof jQuery === 'undefined') {
   }
 
   Carousel.prototype.next = function () {
-    console.log('test')
     if (this.sliding) return
     return this.slide('next')
   }
