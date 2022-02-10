@@ -103,7 +103,10 @@ body {
   }
 }
 
-// CONTAINER
+
+///////////////
+// CONTAINER //
+///////////////
 
 .becos-container {
   display: flex;
@@ -144,7 +147,9 @@ body {
 }
 
 
-// NAVBAR
+////////////
+// NAVBAR //
+////////////
 
 .becos-sticky {
   position: fixed;
@@ -249,12 +254,6 @@ body {
   @include from-large {
     width: auto;
   }
-
-  // &:hover {
-  //   border: 2px solid #4BC1C6 !important;
-  //   background: #4BC1C6;
-  //   color: white;
-  // }
 }
 
 .underline {
@@ -352,7 +351,9 @@ body {
 }
 
 
-// BANNER
+////////////
+// BANNER //
+////////////
 
 .becos-banner {
   width: 100vw;
@@ -439,7 +440,10 @@ body {
   }
 }
 
-// DATES
+
+///////////
+// DATES //
+///////////
 
 .becos-dates-container {
   display: flex;
@@ -509,7 +513,9 @@ body {
 }
 
 
-// METHOD
+////////////
+// METHOD //
+////////////
 
 .becos-method, .becos-trainers, .becos-needs, .becos-contact {
   width: 100vw;
@@ -608,10 +614,21 @@ body {
 }
 
 
-// TRAINERS
+//////////////
+// TRAINERS //
+//////////////
+
+.becos-trainers {
+  padding: 0;
+}
 
 .becos-trainers__first {
   margin-bottom: 0;
+  padding: 0 2rem;
+
+  @include from-large {
+    padding: 0 10rem;
+  }
 
   & > div:first-child {
     display: flex;
@@ -709,6 +726,11 @@ body {
 
 .becos-trainers__second {
   margin-bottom: 3rem;
+  padding: 0 2rem;
+
+  @include from-large {
+    padding: 0 10rem;
+  }
 
   & > div:first-child {
     text-align: right;
@@ -813,10 +835,11 @@ body {
 
   h3 {
     font-family: 'Montserrat BoldItalic' !important;
-  }
+    padding: 0 2rem;
 
-  @include from-large {
-    max-width: 110rem;
+    @include from-large {
+      padding: 0 10rem;
+    }
   }
 
   .fa-caret-left {
@@ -941,7 +964,9 @@ body {
 }
 
 
-// HOST
+//////////
+// HOST //
+//////////
 
 .becos-host-container {
   display: flex;
@@ -985,7 +1010,10 @@ body {
   width: auto;
 }
 
-// CASE
+
+//////////
+// CASE //
+//////////
 
 .becos-case-container {
   display: flex;
@@ -1085,7 +1113,9 @@ body {
 }
 
 
-// NEEDS
+///////////
+// NEEDS //
+///////////
 
 .becos-needs {
   align-items: flex-start;
@@ -1130,7 +1160,9 @@ body {
 }
 
 
-// PLATFORM
+//////////////
+// PLATFORM //
+//////////////
 
 .becos-platform {
   width: 85vw;
@@ -1199,7 +1231,9 @@ body {
 }
 
 
-// WEBINAR
+/////////////
+// WEBINAR //
+/////////////
 
 .becos-webinar-container {
   display: flex;
@@ -1221,7 +1255,9 @@ body {
 }
 
 
-// CONTACT
+/////////////
+// CONTACT //
+/////////////
 
 .becos-contact {
   margin: 10rem 0;
@@ -1245,16 +1281,13 @@ body {
   }
 }
 
-// MODALS
+
+////////////
+// MODALS //
+////////////
 
 .modal-sm-becos {
   width: 37.5rem;
-}
-
-.modal-header {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
 }
 
 .close {
@@ -1423,14 +1456,18 @@ body {
 }
 
 
-// FORMS
+///////////
+// FORMS //
+///////////
 
 #form-date, #form-time {
   padding: 0 1.2rem;
 }
 
 
-// THANK YOU
+///////////////
+// THANK YOU //
+///////////////
 
 .becos-thank-you-container {
   display: flex;
@@ -1517,3 +1554,83 @@ body {
     }
   }
 }
+
+
+////////////////////
+// MULTI CAROUSEL //
+////////////////////
+
+.multi-item-carousel__container {
+  padding: 0;
+
+  .col-xs-4 {
+    display: flex;
+    justify-content: center;
+    // width: 25rem;
+  }
+}
+
+.multi-item-carousel{
+
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+
+}
+
+.multi-carousel-control{
+
+  &:hover {
+    opacity: 1 !important;
+  }
+
+  &.left, &.right{
+    background-image: none;
+  }
+
+  svg {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    background: white;
+  }
+
+  .arrow-left {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+  }
+
+  .arrow-right {
+    position: absolute;
+    top: 45%;
+    right: 35%;
+  }
+}
+
+////////////////////
