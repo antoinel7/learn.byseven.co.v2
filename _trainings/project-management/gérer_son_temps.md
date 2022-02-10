@@ -101,8 +101,9 @@ lang: fr
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Savoir utiliser d’autres leviers que l’argent pour motiver des collaborateurs<br>
-        - Savoir construire un collectif performant dans lequel chaque collaborateur trouve sa place
+        - Adpoter la bonne organisation pour travailler dans l’urgence<br>
+        - Prendre le contrôle sur la gestion de son temps<br>
+        - Traiter les priorités avec sérénité pour limiter l’axiété liée aux urgences
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
