@@ -81,12 +81,12 @@ lang: fr
     <p>Du contenu théorique, des extraits de textes, des exemples de messages de communication seront partagés aux participants pour leur assurer un socle minimal de connaissance. Par ailleurs, de potentiels échanges avec les formateurs seront à prévoir pour évaluer le contexte et le niveau de chaque participant.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
     <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
-    <h6>A-PASSER DU STATUT DE PASSIF SUR LINKEDIN ...  </h6>
+    <h6>A- PASSER DU STATUT DE PASSIF SUR LINKEDIN ...  </h6>
     <ul>
       <li>Compréhension des opportunités offertes par le canal Linkedin</li>
       <li>Identification sur Linkedin des meilleurs leviers pour augmenter sa connaissance d’un (ou plusieurs) sujet(s)</li>
     </ul>
-    <h6>B-... A CELUI D’ACTIF, VOIRE DE REACTIF</h6>
+    <h6>B- ... A CELUI D’ACTIF, VOIRE DE REACTIF</h6>
     <ul>
       <li>Définition de sa stratégie personnelle de contenu</li>
       <li>Rédaction de posts efficaces en fonction de son profil</li>
