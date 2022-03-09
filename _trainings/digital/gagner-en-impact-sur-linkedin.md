@@ -1,19 +1,19 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/outils_digitaux/concevoir-un-meilleur-produit"
-absolute_link: "http://learn.byseven.co/trainings/outils_digitaux/concevoir-un-meilleur-produit"
-title: "Concevoir Un Meilleur Produit"
-quote: "'Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible.' - Donald A. Norman"
-duration: "une demi-journée"
+permalink: "/trainings/outils_digitaux/gagner-en-impact-sur-linkedin"
+absolute_link: "http://learn.byseven.co/trainings/outils_digitaux/gagner-en-impact-sur-linkedin"
+title: "Gagner En Impact Sur Linkedin"
+quote: "'Linkedin is a channel to increase, not a tool to replace, your networking efforts.' - Vivenka Vonrosen"
+duration: "2 demi-journées"
 location: "Paris ou en ligne"
 price: "420€ HT"
-image: "/assets/img/trainings/concevoir-un-meilleur-produit.png"
-image_twitter: "/assets/img/trainings/concevoir-un-meilleur-produit.png"
-order: 1
+image: "/assets/img/trainings/Linkedin_Alexander_Shatov.jpg"
+image_twitter: "/assets/img/trainings/Linkedin_Alexander_Shatov.jpg"
+order: 4
 category: "DIGITAL"
 category_colour: "#9F86C0"
-created_at: "3 Mai 2021"
+created_at: "11 Février 2022"
 teaser: ""
 custom_head: true
 lang: fr
@@ -34,18 +34,19 @@ lang: fr
         <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
         <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
           <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
-          <p><strong>Net Promoter Score</strong></p>
+            <p><strong>Net Promoter Score</strong></p>
           </div>
         </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Dans cet atelier, les participants découvriront les techniques les plus adaptées pour concevoir un produit en phase avec les besoins et usages des utilisateurs.
+      <p class="training-page-main-banner-left-description">Pour développer sa notoriété, vendre un produit ou service, interpeller les recruteurs ou les bons candidats, rester à l’affût des actualités de son secteur, trouver les bons contacts : Linkedin offre à ses utilisateurs bien plus qu’un CV en ligne. Ce réseau professionnel aux 23 millions de membres inscrits en France compte 10 millions d’utilisateurs actifs par mois. Comment exploiter au mieux les ressources de ce réseau social ? Comment gagner en impact sur Linkedin et l’utiliser efficacement pour son personal ou professional branding ?
       <br><br>
-      Ils travailleront ainsi sur les cinq étapes du processus de conception dans le but d’offrir une excellente expérience utilisateur. Pour mettre en pratique leurs acquis, ils appliqueront ensuite cette méthode à la conception d'un produit hypothétique.
+      Au cours de cette formation, les participants découvriront les fonctionnalités cachées de LinkedIn et de quelle manière s’inspirer des meilleurs profils pour augmenter leur e-réputation. Pour cela, ils testeront les meilleures stratégies d’influence, optimiseront leur page personnelle, créeront des contenus engageants et élargiront leur base de contacts.
       </p>
     </div>
     <div class="training-page-main-banner-right">
       <img src="{{page.image}}" alt="">
+      <em>Illustration Alexander Shatov</em>
     </div>
   </div>
 </div>
@@ -77,48 +78,52 @@ lang: fr
 <div class="training-page-main-description">
   <div class="training-page-main-description-left" >
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
-    <p>Du contenu théorique, des vidéos et des lectures seront partagés aux participants pour leur assurer un socle minimal de connaissance. De potentiels échanges avec les formateurs seront à prévoir pour évaluer le contexte et le niveau de chaque participant.</p>
+    <p>Du contenu théorique, des extraits de textes, des exemples de messages de communication seront partagés aux participants pour leur assurer un socle minimal de connaissance. Par ailleurs, de potentiels échanges avec les formateurs seront à prévoir pour évaluer le contexte et le niveau de chaque participant.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | 1 | INTRODUCTION À  LA CONCEPTION UX</h5>
-    <h6>A.DÉFINITION DE L’UX ET DES OBJECTIFS </h6>
+    <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
+    <h6>A- PASSER DU STATUT DE PASSIF SUR LINKEDIN ...  </h6>
     <ul>
-      <li>Découverte des bons et mauvais usages de conception UX</li>
-      <li>Diffusion d’une vidéo TEDx de Don Norman</li>
-      <li>Définition des objectifs de l'utilisateur et de l’entreprise</li>
+      <li>Compréhension des opportunités offertes par le canal Linkedin</li>
+      <li>Identification sur Linkedin des meilleurs leviers pour augmenter sa connaissance d’un (ou plusieurs) sujet(s)</li>
     </ul>
-    <h6>B. ANALYSE DU BESOIN UTILISATEUR</h6>
+    <h6>B- ... A CELUI D’ACTIF, VOIRE DE REACTIF</h6>
     <ul>
-      <li>Découverte des différentes méthodes de recueil d’informations clients </li>
-      <li>Analyse des besoins utilisateurs</li>
+      <li>Définition de sa stratégie personnelle de contenu</li>
+      <li>Rédaction de posts efficaces en fonction de son profil</li>
+      <li>Amélioration de réactions (impressions, likes, commentaires)</li>
+      <li>Interaction avec les contenus des autres</li>
     </ul>
-    <h6>C. TEST & AMÉLIORATION DU PRODUIT</h6>
+    <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
+    <h6>C- DEVELOPPER SA NOTORIETE, TROUVER DES CANDIDATS OU UN EMPLOI PAR UN DISCOURS IMPACTANT</h6>
     <ul>
-      <li>Observation des utilisations du produit par l’utilisateur </li>
-      <li>Amélioration d’un produit</li>
+      <li>Etude du concept du Golden Circles de Simon Sinek</li>
+      <li>Rédaction d’une introduction convaincante et représentative de soi-même</li>
+      <li>Découverte des règles d’un bon profil personnel Linkedin</li>
+      <li>Optimisation de sa page profil</li>
     </ul>
-    <h6>D. CONCEPTION ET DÉVELOPPEMENT</h6>
+    <h6>D- ELARGIR SON RESEAU, CHERCHER DES TALENTS OU LEADS PAR UN BON USAGE DES LOIS D’INFLUENCE</h6>
     <ul>
-      <li>Découverte des outils pour optimiser sa mise en page  </li>
-      <li>Construction des flux d’utilisateurs/user flows</li>
-      <li>Analyse de l’architecture de l’information </li>
-      <li>Création de wireframes, prototypes et maquettes</li>
-    </ul>
-    <h6>E. LANCEMENT PRODUIT</h6>
-    <ul>
-      <li>Mise en place du lancement produit </li>
-      <li>Suivi de l’évolution du produit</li>
+      <li>Présentation des 6 lois d’influence de Robert Cialdini</li>
+      <li>Expérimentation de la loi de la soumission à l’autorité</li>
+      <li>Réalisation par ses relations d’une action voulue grâce à la cohérence dans l’engagement</li>
+      <li>Mise en avant de sa rareté par son profil, ses posts et ses actions</li>
+      <li>Utilisation de la réciprocité en se comportant envers autrui comme on aimerait qu’ils se comportent envers nous</li>
+      <li>Connexion avec les contacts nous ressemblant</li>
+      <li>Utilisation du principe de la preuve sociale</li>
     </ul>
   </div>
   <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Savoir développer un produit attrayant et adapté aux besoins utilisateurs <br>
-        - Appréhender les étapes du processus de conception UX<br>
+        - Savoir utiliser les fonctionnalités majeures ou cachées de LinkedIn<br>
+        - Développer son réseau et sa notoriété<br>
+        - Améliorer sa page ou son profil Linkedln<br>
+        - Rédiger des contenus engageants<br>
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-       Nos formateurs expérimentés proposent aux participants des sessions rythmées, alliant le meilleur du présentiel et du digital. L’enjeu : assurer une transmission des contenus efficace. Grâce à des mises en situations concrètes et des retours d'expériences, les participants pourront s'approprier les concepts. Enfin, des outils pragmatiques et ludiques sont mis à disposition sur notre espace Le Lab, pour permettre à chacun de continuer d’apprendre, même une fois la formation terminée.
+       Grâce à des sessions rythmées, alliant le meilleur du présentiel et du digital, nos formateurs expérimentés s’assurent de la transmission des contenus et de leur application opérationnelle. Des mises en situation et retours d’expérience sont utilisées pour permettre aux participants de s'approprier les concepts. Enfin, si leur curiosité est grande, nous les invitons à consulter nos articles accessibles sur notre espace Le Lab, dans lequel, nous faisons la part belle aux mots  !
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">
@@ -184,7 +189,7 @@ lang: fr
         </div>
       </div>
       <div class="training-additional-info">
-        <p>Màj le 01/01/2021</p>
+        <p>Màj le 11/02/2022</p>
       </div>
     </div>
   </div>
