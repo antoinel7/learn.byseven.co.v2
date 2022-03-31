@@ -349,7 +349,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem 10rem;
+  padding: 2rem;
 
   p {
     font-family: 'Montserrat Bold';
@@ -461,11 +461,9 @@
     font-family: 'Montserrat Regular';
     font-weight: 300;
     &:hover {
-      color: #95B9DB;
+      color: #C4C4C4;
     }
-    .fab {
-      color:white !important;
-    }
+
   }
 
   @include from-medium {

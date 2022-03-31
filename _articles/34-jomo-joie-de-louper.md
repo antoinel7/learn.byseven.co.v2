@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>Le management hybride : comment manager ses équipes à distance et au bureau ?</h3>
+      <h3 style='color: {{page.theme_colour}};'>JOMO (not FOMO) ou joie de tout louper : comment adopter cette philosophie ?</h3>
       <p class='italic'>Le JOMO dont le nom laisse plutôt penser à un jeu de société ou à une tentative ratée en Scrabble, est en réalité l’acronyme de “Joy of Missing Out”, soit en français “la joie de manquer quelque chose”. Vous pratiquez le JOMO si vous loupez un événement, une actualité ou une information importante, que les incidences ne vous atteignent pas, que vous ne vous souciez pas des réactions des autres, ni de leur jugement.
       <br><br>
       Par exemple, on dira de vous que vous êtes amateur de JOMO (formulé comme ça, cela ressemble vraiment à un jeu de société), si vous ne vous rendez pas à une soirée entre collègues et êtes content de rester chez vous, de préparer à manger, de vous poser sur votre canapé pour y lire votre bouquin préféré ou tout simplement vous détendre. Dans cette situation, vous vivez à un rythme plus lent, vous vous concentrez sur le moment présent et pratiquez le “JOMO” sans même le savoir (car les vrais adeptes du JOMO ne connaissent pas ce terme le plus souvent) ! </p>
@@ -85,7 +85,7 @@ lang: fr
           <span class='italic'>Renforcé par l’hyper-connectivité</span>
           <p>Pour expliquer le concept de JOMO, il nous paraissait important de rappeler la nature de son cousin : le <strong>FOMO</strong> (= Fear of Missing Out) soit “la peur de manquer quelque chose”. Il a d’abord été <strong>exposé en 1996 par Dan Herman, un expert en marketing qui soulignait l’angoisse des individus de rater quelque chose</strong>. Si cette peur existait bien avant 1996, elle s’était vite agrandie avec l’avènement des réseaux sociaux, le développement des applications et la mine d’informations rendues accessibles sur Internet.
           <br><br>
-          Une étude britannique réalisée par [Tecmark](https://www.tecmark.co.uk/insights/uk-smartphone-usage-data-2014) sur un panel de 2000 personnes, révélait même que ces derniers consultaient en moyenne 221 fois leur smartphone par jour. Un chiffre démontrant l’<strong>utilisation exagérée et soutenue des smartphones par les individus</strong> et indirectement leur addiction pour ces outils.
+          Une étude britannique réalisée par <a href="https://www.tecmark.co.uk/insights/uk-smartphone-usage-data-2014">Tecmark</a> sur un panel de 2000 personnes, révélait même que ces derniers consultaient en moyenne 221 fois leur smartphone par jour. Un chiffre démontrant l’<strong>utilisation exagérée et soutenue des smartphones par les individus</strong> et indirectement leur addiction pour ces outils.
           <br><br>
           Cette peur se développe à mesure que <strong>nos canaux de communication augmentent</strong> ! Voyez comment nous échangeons différemment et adoptons un levier plutôt qu’un autre suivant que notre interlocuteur soit un collègue, un partenaire, un client, un ami, un membre de notre famille, un(e) conjoint(e)...  Mail, MP Instagram, message What’s App, sms, appel, message vocal, message slack... Nous avons l’embarras du choix.</p>
         </li>
