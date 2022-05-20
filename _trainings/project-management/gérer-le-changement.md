@@ -1,19 +1,19 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/project_management/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/project_management/gérer-son-temps"
-title: "Gérer son temps et ses priorités"
-quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
-duration: "2 demi-journées"
+permalink: "/trainings/project_management/gérer-le-changement"
+absolute_link: "http://learn.byseven.co/lab/trainings/project_management/gérer-le-changement"
+title: "Gérer le changement"
+quote: "“The only person who likes change is a wet baby.” – Mark Twain"
+duration: "1 demi-journée de 3 heures"
 location: "Paris ou en ligne"
-price: "420€ HT"
-image: "/assets/img/trainings/gérer-son-temps.png"
-image_twitter: "/assets/img/trainings/gérer-son-temps.png"
-order: 1
+price: "210€ HT"
+image: "/assets/img/trainings/gérer-le-changement.jpg"
+image_twitter: "/assets/img/trainings/gérer-le-changement.jpg"
+order: 3
 category: "PROJECT MANAGEMENT"
 category_colour: "#739DBF"
-created_at: "15 Janvier 2021"
+created_at: "13 Avril 2022"
 teaser: ""
 custom_head: true
 lang: fr
@@ -39,8 +39,9 @@ lang: fr
         </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Dans cet atelier ludique les participants découvriront les fondements du management situationnel et travailleront leur capacité à s’adapter à chaque situation pour mobiliser leurs équipes, les faire grandir et bien déléguer. <br><br>
-      A l’aide de la théorie du Management Situationnel et Hersey & Blanchard et du jeu de Delegation Poker de Jurgen Appelo, les participants adopteront le bon style de management et le bon niveau de délégation pour générer des résultats.
+      <p class="training-page-main-banner-left-description">Durant cette formation, les participants découvriront les mécaniques universelles qui découlent d’un changement, ainsi que les différentes façons de réagir lorsqu’un événement inattendu qui bouleverse des habitudes bien ancrées.
+      <br><br>
+      Au cours des ateliers, les apprenants seront confrontés à de véritables changements. Ils seront amenés à définir des actions concrètes qu’ils devront piloter. Puis, ils détermineront les stratégies les plus efficaces pour embarquer leurs collaborateurs, communiquer avec ces derniers et les encourager à agir pour conduire ce changement plutôt que le subir.
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -62,7 +63,6 @@ lang: fr
         <p>LIEU & FORMAT</p>
         <p>{{page.location}}</p>
         <p>Groupes de 6 à 9 personnes</p>
-        <p>Online</p>
     </div>
   </div>
   <div class="training-pages-infos-price">
@@ -76,40 +76,37 @@ lang: fr
 <div class="training-page-main-description">
   <div class="training-page-main-description-left" >
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
-    <p>La préparation est un élément essentiel qui ne doit pas être négligée pour assurer le bon déroulement du chantier. C'est à ce titre que nous nous tenons à votre disposition, en amont des sessions collectives, pour échanger sur les divers articles, livres et écrits qui ont inspiré le contenu de cette formation et notre pédagogie.</p>
+    <p>En préparation à l’action de formation du contenu théorique vidéo et les lectures possibles seront partagées aux participants pour assurer un socle minimal commun. Des échanges potentiels avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | FORMATION COLLECTIVE</h5>
-    <h6>A. ATELIER ÊTRE « EFFICIENT » AVEC LES LOIS DU TEMPS</h6>
+    <h5 style="color: {{page.category_colour}};">1 | SESSION</h5>
+    <h6>A. ATELIER GÉRER LE CHANGEMENT</h6>
     <ul>
-      <li>Comprendre les différences dans le rapport de chacun au temps</li>
-      <li>Être en mesure de mettre en place une organisation efficace pour réaliser ses tâches dans un laps de temps plus court</li>
-      <li>Mettre en place une organisation qui permette d’aborder l’avenir avec sérénité</li>
+      <li>Découvrir la courbe du changement</li>
+      <li>Être en mesure d’avancer, ou faire avancer ses collaborateurs, vers l’acceptation et la promotion du changement</li>
+      <li>Définir d’un plan d’action pour accompagner les collaborateurs dans le contexte actuel de changements réguliers</li>
     </ul>
-    <h6>B. ATELIER GÉRER SES PRIORITÉS</h6>
+    <h6>B. ATELIER ÊTRE MOTEUR DU CHANGEMENT</h6>
     <ul>
-      <li>Maîtriser la différence entre les notions d’urgence et d’importance</li>
-      <li>Identifier des activités “polluantes” et savoir les traiter</li>
-      <li>Mettre en place des actions correctrices concrètes pour gérer ses priorités avec méthode</li>
-    </ul>
-    <h5 style="color: {{page.category_colour}};">2 | COACHING INDIVIDUEL PERSONNALISÉ</h5>
-    <ul>
-      <li>Travailler, avec l’aide du formateur, sur des situations de travail actuelles</li>
-      <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
+      <li>Créer un sentiment d’urgence pour initier le changement</li>
+      <li>Identifier l’équipe de pilotage, leur partager vision et la stratégie</li>
+      <li>Faire adhérer les parties-prenantes et favoriser la prise d’initiatives</li>
+      <li>Mesurer l’impact et préserver une motivation forte</li>
+      <li>Créer une nouvelle culture</li>
     </ul>
   </div>
   <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Adopter la bonne organisation pour travailler dans l’urgence<br>
-        - Prendre le contrôle sur la gestion de son temps<br>
-        - Traiter les priorités avec sérénité pour limiter l’anxiété liée aux urgences
+        - Être en mesure d’initier et de piloter le changement pour soi et pour les autres.<br>
+        - Accompagner des collaborateurs dans leur capacité à réagir face aux changements.<br>
+        - Savoir s’adapter dans un environnement instable.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-        <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus. <br>
+        <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus et de leur mise en application opérationnelle.<br>
         <strong>Des mises en situations</strong> et retours d'expériences pour s'approprier les concepts. <br>
-        <strong>Des outils accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
+        <strong>Des outils pragmatiques et ludiques accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">
@@ -133,8 +130,7 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
-          <p> * accessible aux publics en situation de handicap</p>
+          <p>Cette formation s’adresse à toute personne souhaitant développer sa capacité à faire face au changement, à l’initier, à le piloter.</p>
         </div>
       </div>
       <div class="training-page-faq-element">
@@ -175,7 +171,7 @@ lang: fr
         </div>
       </div>
       <div class="training-additional-info">
-        <p>Màj le 01/01/2021</p>
+        <p>Màj le 01/01/2022</p>
       </div>
     </div>
   </div>

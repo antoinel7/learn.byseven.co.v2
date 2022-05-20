@@ -1,19 +1,20 @@
 ---
 layout: training_page
 type: training_page
-permalink: "/trainings/project_management/gérer-son-temps"
-absolute_link: "http://learn.byseven.co/lab/trainings/project_management/gérer-son-temps"
-title: "Gérer son temps et ses priorités"
-quote: "“On ne voit jamais ce qu’on a fait, toujours ce qu’il reste à faire.”  – Marie Curie"
-duration: "2 demi-journées"
+permalink: "/trainings/gestion_d'équipe/bien-etre-equipe"
+absolute_link: "http://learn.byseven.co/lab/trainings/gestion_d'équipe/bien-etre-equipe"
+title: "Devenir un manager au service de son équipe"
+title_full: "Devenir un manager au service de son équipe : décupler son attention sur le bien-être au travail"
+quote: "“Pour qu’un château de cartes s’écroule, il suffit d’en retirer une seule.” — Isaac Newton"
+duration: "2 demi-journées de 3 heures"
 location: "Paris ou en ligne"
 price: "420€ HT"
-image: "/assets/img/trainings/gérer-son-temps.png"
-image_twitter: "/assets/img/trainings/gérer-son-temps.png"
-order: 1
-category: "PROJECT MANAGEMENT"
-category_colour: "#739DBF"
-created_at: "15 Janvier 2021"
+image: "/assets/img/trainings/sand.png"
+image_twitter: "/assets/img/trainings/sand.png"
+order: 3
+category: "TEAM MANAGEMENT"
+category_colour: "#F0966D"
+created_at: "20 Mai 2022"
 teaser: ""
 custom_head: true
 lang: fr
@@ -31,16 +32,21 @@ lang: fr
   <div class="training-page-main-banner">
     <div class="training-page-main-banner-left">
       <div>
-        <h1 class="training-page-main-banner-left-title">{{page.title | upcase}}</h1>
+        <h1 class="training-page-main-banner-left-title">{{page.title_full | upcase}}</h1>
           <div class='category-score'><h4 class="training-page-main-banner-left-category" style="background: {{page.category_colour}};">{{page.category}}</h4>
             <div class='net-promote-score'><h2>71<span>&#42;</span></h2>
-            <p><strong>Net Promoter Score</strong></p>
+              <p><strong>Net Promoter Score</strong></p>
+            </div>
           </div>
-        </div>
         <p class="training-page-main-banner-left-quote"><em>{{page.quote}}</em></p>
       </div>
-      <p class="training-page-main-banner-left-description">Dans cet atelier ludique les participants découvriront les fondements du management situationnel et travailleront leur capacité à s’adapter à chaque situation pour mobiliser leurs équipes, les faire grandir et bien déléguer. <br><br>
-      A l’aide de la théorie du Management Situationnel et Hersey & Blanchard et du jeu de Delegation Poker de Jurgen Appelo, les participants adopteront le bon style de management et le bon niveau de délégation pour générer des résultats.
+      <p class="training-page-main-banner-left-description">Pour tous les professionnels qui pensent que le collectif tient une place fondamentale, pour tous ceux qui veulent maintenir ou renforcer le bien-être dans leur organisation et enfin pour tous ceux qui souhaitent accompagner leurs collaborateurs dans leur montée en compétences et leur réussite d’objectifs, cette formation s’adresse à vous.
+      <br><br>
+      Au cours de celle-ci, les participants renforceront la connaissance de leur équipe, apprendront à identifier les meilleures actions à entreprendre pour un management bienveillant et développeront de nouvelles habitudes pour favoriser le bien-être de chaque collaborateur. Par ces mesures, le manager tâchera de rendre chaque membre composant d’une équipe motivée et créative.
+      <br><br>
+      Prêt à faire face au défi humain du management ?
+      <br><br>
+      <span>Population :</span> Cette formation s’adresse aux Managers, Directeurs, Chefs d’équipe mais aussi à toute personne en charge de l’accompagnement de collaborateurs même sans rôle hiérarchique (ex. chef de projet, coordinateur, coach).
       </p>
     </div>
     <div class="training-page-main-banner-right">
@@ -76,40 +82,45 @@ lang: fr
 <div class="training-page-main-description">
   <div class="training-page-main-description-left" >
     <h4 style="text-decoration-color: {{page.category_colour}};">Pour préparer la formation</h4>
-    <p>La préparation est un élément essentiel qui ne doit pas être négligée pour assurer le bon déroulement du chantier. C'est à ce titre que nous nous tenons à votre disposition, en amont des sessions collectives, pour échanger sur les divers articles, livres et écrits qui ont inspiré le contenu de cette formation et notre pédagogie.</p>
+    <p>En préparation à l’action de formation du contenu théorique vidéo et les lectures possibles seront partagées aux participants pour assurer un socle minimal commun. Des échanges potentiels avec les formateurs sont à prévoir pour évaluer le contexte et l'expérience des participants.</p>
     <h4 style="text-decoration-color: {{page.category_colour}};">Programme de la formation</h4>
-    <h5 style="color: {{page.category_colour}};">1 | FORMATION COLLECTIVE</h5>
-    <h6>A. ATELIER ÊTRE « EFFICIENT » AVEC LES LOIS DU TEMPS</h6>
+    <h5 style="color: {{page.category_colour}};">1 | SESSION 1</h5>
+    <h6>A. L’INFLUENCE DE L’IMAGE POSITIVE</h6>
     <ul>
-      <li>Comprendre les différences dans le rapport de chacun au temps</li>
-      <li>Être en mesure de mettre en place une organisation efficace pour réaliser ses tâches dans un laps de temps plus court</li>
-      <li>Mettre en place une organisation qui permette d’aborder l’avenir avec sérénité</li>
+      <li>Découvrir la Méthode GIVE (Dutton, Roberts & Bednar)</li>
+      <li>Dresser son bilan Gain - Identité - Vertu - Estime</li>
+      <li>Renforcer ses connaissances de soi et accroître ses compétences</li>
+      <li>Instaurer de nouveaux rituels pour engager les équipes</li>
     </ul>
-    <h6>B. ATELIER GÉRER SES PRIORITÉS</h6>
+    <h6>B. OPPORTUNITÉ ET STRATÉGIE</h6>
     <ul>
-      <li>Maîtriser la différence entre les notions d’urgence et d’importance</li>
-      <li>Identifier des activités “polluantes” et savoir les traiter</li>
-      <li>Mettre en place des actions correctrices concrètes pour gérer ses priorités avec méthode</li>
+      <li>Partager les valeurs managériales de son entreprise</li>
+      <li>Appliquer la méthode des 3RCT (Reformuler - Repenser - Remodeler - Communiquer - Transformer)</li>
+      <li>Créer de nouvelles opportunités managériales, stratégiques et humaines</li>
+      <li>Fédérer les collaborateurs à la stratégie de l’entreprise</li>
     </ul>
-    <h5 style="color: {{page.category_colour}};">2 | COACHING INDIVIDUEL PERSONNALISÉ</h5>
+    <h5 style="color: {{page.category_colour}};">2 | SESSION 2</h5>
+    <h6>C. LA CO-CONSTRUCTION D’UN PROJET D’ÉQUIPE</h6>
     <ul>
-      <li>Travailler, avec l’aide du formateur, sur des situations de travail actuelles</li>
-      <li>Définir une liste d’actions à mener pour faire le pont entre théorie et pratique quotidienne</li>
+      <li>Développer la productivité collective</li>
+      <li>Créer un cadre favorable à la co-construction</li>
+      <li>Mise en situation (réunion plénière → préparation du travail asynchrone → travail asynchrone individuel → réunion en sous-groupe pour suivre le travail asynchrone...)</li>
     </ul>
   </div>
   <div class="training-page-main-description-right" >
     <div>
       <h4 style="text-decoration-color: {{page.category_colour}};">Objectifs de la formation</h4>
       <p>
-        - Adopter la bonne organisation pour travailler dans l’urgence<br>
-        - Prendre le contrôle sur la gestion de son temps<br>
-        - Traiter les priorités avec sérénité pour limiter l’anxiété liée aux urgences
+        - Gagner en confiance (en soi et en ses collaborateurs)<br>
+        - Rendre le management concret, en lien avec la réalité<br>
+        - Apprendre à manager avec des techniques efficaces et adaptées<br>
+        - Construire une équipe heureuse et performante
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">Méthodes pédagogiques</h4>
       <p>
-        <strong>Des formateurs expérimentés</strong> et des sessions rythmées, alliant le meilleur de présentiel et du digital, pour s'assurer de la transmission des contenus. <br>
-        <strong>Des mises en situations</strong> et retours d'expériences pour s'approprier les concepts. <br>
-        <strong>Des outils accessibles depuis notre espace Lab</strong> pour continuer à apprendre après la formation.
+        Des formateurs expérimentés et des sessions rythmées, alliant le meilleur du présentiel et du digital, pour s'assurer de la transmission des contenus et de leur mise en application opérationnelle. <br>
+        Des mises en situations et retours d'expériences pour s'approprier les concepts.Des mises en situations et retours d'expériences pour s'approprier les concepts. <br>
+        Des outils pragmatiques et ludiques accessibles depuis notre espace Lab pour continuer à apprendre après la formation.
       </p>
       <h4 style="text-decoration-color: {{page.category_colour}};">À propos</h4>
       <div class="training-page-faq-element">

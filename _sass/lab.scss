@@ -942,17 +942,22 @@
 }
 
 .lab-article-text-primary, .lab-article-text-secondary {
+
+  a {
+    color: #F9D071;
+    text-decoration: underline;
+  }
+
+  ul > p {
+    padding-left: 1.5rem;
+  }
+
   li {
     font-family: 'Montserrat Regular';
     font-size: 1.6rem;
     line-height: 2.8rem;
     list-style: inside;
     color: #5F6471;
-  }
-
-  a {
-    color: #F9D071;
-    text-decoration: underline;
   }
 
   strong {

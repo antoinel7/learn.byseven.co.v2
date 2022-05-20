@@ -16,7 +16,7 @@ theme_colour: "#5AC3C8"
 tag1: "Gestion de projet"
 tag2: ""
 created_at: "15 Mars 2022"
-teaser: "Des informations bien présentées peuvent aider à comprendre des données initialement complexes, appuyer ses faits, ajuster ses actions et bien d’autres choses. Découvrez les effets et la mise en place du management visuel, aussi dit “visual management”."
+teaser: "Des informations bien présentées peuvent aider à comprendre des données initialement complexes, appuyer ses faits, ajuster ses actions et bien d’autres choses. Découvrez les effets du management visuel, « visual management » ou « data visualisation »."
 custom_head: true
 lang: fr
 ---
@@ -71,7 +71,7 @@ lang: fr
   </div>
   <div class="lab-article-text">
     <div class="lab-article-text-primary">
-      <h3 style='color: {{page.theme_colour}};'>Le management hybride : comment manager ses équipes à distance et au bureau ?</h3>
+      <h3 style='color: {{page.theme_colour}};'>Le management visuel : un outil incontournable à déployer en gestion d’équipe</h3>
       <p class='italic'>Des assiettes soigneusement dressées vous donnent-elles envie de savourer ce qui est présenté devant vous ? De jolis dessins sur vos cappuccinos égayent-ils votre dégustation de cafés ? Une maison joliment décorée, vous fait-elle vous sentir mieux chez vous ? De beaux vêtements portés pour la première fois vous donnent-ils plus d’assurance pour la journée ? En prenant des exemples personnels et en observant autour de vous, vous constaterez que le visuel peut sublimer les instants de vie, transformer des éléments initialement classiques, améliorer sa capacité de mémorisation, favoriser sa motivation à réaliser une action...
       <br><br>
       Dans le monde professionnel, le visuel peut aussi faire la différence ! En effet, une excellente présentation des informations peut considérablement vous aider dans votre travail. Au lieu de lire les données sans les comprendre, ni les retenir, elles peuvent, lorsqu’elles sont bien présentées, rendre une information lisible, compréhensible et assimilable. Les sociétés qui utilisent la perception visuelle afin de clarifier leur message, expérimentent en fait le “management visuel”  ou “data visualisation” : une méthode issue du “Lean Management”, utilisée en gestion de projet. Parce que ce concept apporte tant au niveau de la société, de l’équipe que de l’individu, nous pensons utile de vous partager de quelle façon déployer le management visuel.</p>
