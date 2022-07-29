@@ -173,6 +173,13 @@ button {
   align-items: center;
 }
 
+.flex-column-start-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
 .flex-column-centered {
   display: flex;
   flex-direction: column;
