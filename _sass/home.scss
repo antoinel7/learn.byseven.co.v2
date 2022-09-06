@@ -1,9 +1,6 @@
 .container-seven {
   width: 100vw;
-  background-image: url("/assets/img/LEARN_BANNER.png");
-  background-size: cover;
-  background-position: 40%;
-  object-fit: cover;
+  background-color: $bs-dark-grey;
   overflow: auto;
   position: relative;
   display: flex;
@@ -11,65 +8,9 @@
   justify-content: space-between;
   align-items: center;
 
-
   @include from-large {
     min-height: 100vh;
-    max-width: 144rem;
   }
-}
-
-.home-main-container {
-  width: 100vw;
-  display: flex;
-  padding: 5rem 2rem;
-  overflow-y: hidden;
-  margin: auto;
-
-  @include from-medium {
-    padding: 5rem;
-    height: calc(100% - 10.7rem);
-  }
-
-  @include from-large {
-    padding: 0 5rem;
-    width: auto;
-    overflow-y: visible;
-  }
-
-  & > div {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-
-    @include from-large {
-      flex-direction: row;
-      align-items: center;
-    }
-  }
-
-}
-
-.home-main-left {
-  position: relative;
-  // width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  @include from-large {
-    overflow: hidden;
-    width: 50%;
-    margin: 0 5rem 0 0;
-    box-sizing: content-box;
-  }
-
-  @include from-xlarge {
-    margin: 0 50px 0 0;
-  }
-
 }
 
 .glyphicon.glyphicon-chevron-up {
@@ -105,11 +46,7 @@
     letter-spacing: 0.2px;
     line-height: 29px;
     margin-bottom: 2rem;
-    font-size: 20px;
-
-    @include from-medium {
-      font-size: 21px;
-    }
+    font-size: 23px;
   }
 
   p {
@@ -137,24 +74,25 @@
 }
 
 .home-main-left-statistics {
-  width: 100%;
-  margin-top: 5rem;
-
-  div > div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   & > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     border-right: 1px solid #FBC84A;
-    width: 30%;
+    width: fit-content !important;
 
-    @include from-large {
-      width: 33%;
+    &:first-of-type {
+      padding-right: 4rem;
+    }
+
+    &:nth-of-type(2) {
+      padding: 0 4rem;
+    }
+
+    &:last-of-type {
+      padding-left: 4rem;
+      border: none !important;
     }
   }
 
@@ -182,28 +120,11 @@
     font-size: 11px;
     margin-left: 3px;
     margin-bottom: 0;
-    width: 100px;
-  }
-}
-
-.home-main-left-statistics-1 {
-
-  p:last-of-type {
-    // padding-right: 50px;
-  }
-}
-
-.home-main-left-statistics-3 {
-  border: none !important;
-
-  p {
-    font-family: 'Montserrat BoldItalic';
   }
 }
 
 .home-main-left-customers {
   width: 100%;
-  margin: 5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -322,23 +243,6 @@
   }
 }
 
-
-
-#home-main-left-retractable {
-  transition:transform 1.2s ease-out;
-  // height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  @include from-large {
-    width: auto;
-    justify-content: space-between;
-  }
-}
-
 #home-main-left-customers-comments {
   height: 100%;
   margin-top: 7rem;
@@ -443,16 +347,10 @@
 
 
   @include from-large {
-    // height: 75%;
     margin: 0 0 0 5rem;
     width: 40%;
     align-items: flex-end;
     justify-content: space-between;
-    // min-height: 56rem;
-  }
-
-  @include from-xlarge {
-    margin: 0 50px 0 0;
   }
 }
 

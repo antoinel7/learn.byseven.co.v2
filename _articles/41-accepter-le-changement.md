@@ -217,7 +217,7 @@ lang: fr
       Votre ami a revu son itinéraire de vacances et mis en place un tableau pour suivre ses comptes. Ce sont deux actions qu’il ne menait pas auparavant et qui sont positives. On pourrait parler de petites victoires. Optez pour les paroles encourageantes comme “Bravo !”, “C’est bien ce que tu fais, tu évolues.”, “Tes premières actions ont déjà porté leurs fruits, je suis sûr.” Votre soutien aura pour effet d’augmenter la motivation de votre ami et lui permettre d’accéder plus vite à l’étape 4 : l’acceptation.</p>
       <ul>
         <li>
-          Tournée vers l’avenir => Enumérez avec lui les enseignements !
+          Tournée vers l’avenir => Enumérez avec elle les enseignements !
         </li>
       </ul>
       <p style="margin-left: 2rem;">Votre ami a accepté le fait qu’il ne pouvait plus dépenser son argent comme avant. Grâce à ses nouvelles habitudes, il se rend compte qu’il a progressé en comptabilité, est devenu plus organisé et plus réaliste. Il s’est mis à faire attention aux produits qu’il achetait, à préparer de bons petits plats, à inviter ses proches à dîner et à visiter les régions qui l’entouraient. Il n’a pas l’impression de manquer de quelque chose mais au contraire d’être gagnant par les nombreuses découvertes et les qualités humaines qu’il a pu développer. Pour l’accompagner, vous pouvez énumérer avec lui les enseignements de ce changement.</p>

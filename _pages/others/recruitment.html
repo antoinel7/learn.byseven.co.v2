@@ -1,0 +1,135 @@
+---
+layout: base
+type: recruitment
+permalink: /recruitment
+title: Seven | Recruitment
+lang: fr
+ref: recruitment
+---
+
+<div class="d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-2rem m-auto from-medium__p-5rem from_large__py-0
+            from_large__px-5rem max-width-screen">
+
+  <div class="d-flex flex-column from-large__flex-row justify-content-between
+              align-items-start w-100 m-auto">
+
+    <div class="from-large__width-50 from-large__pr-5rem pos-rel">
+
+      <div class="recruitment-main-left-description mb-5rem">
+
+        <h1>Transmettre pour<span class="txt-rotate" data-period="2000" data-rotate='[ "innover", "manager", "vendre", "transformer", "créer", "piloter", "développer", "communiquer", "diriger", "construire", "inspirer" ]'></span></h1>
+
+        <p>Chez Seven nous sommes passionnés par la <strong class="font-weight-600">transmission</strong> et l’<strong class="font-weight-600">éducation</strong>. Toujours à la recherche de profils qui ont à coeur d’enseigner et de partager leur expérience, nous serions ravi d’échanger avec vous !</p>
+
+        <p class="fs-2_3rem font-weight-700 bs-white mt-3rem mb-2rem bs-yellow">
+          Rejoignez-nous !
+        </p>
+
+        <p class="mb-2rem">À la recherche de nouveaux collaborateurs galvanisés par l’idée de travailler dans l’univers EdTech. Si l’excellence et la polyvalence sont de mise pour nous rejoindre, l’envie de s’impliquer, de progresser individuellement et collectivement dans le projet feront la différence.
+        <br><br>
+        Si vous souhaitez faire partie de l’aventure Seven, venez consulter <a href="/" class="bs-yellow bs-yellow-hover underline">nos offres</a> en CDI !</p>
+
+      </div>
+
+      <a class="height-4rem px-2rem py-1rem bs-bg-yellow rounded-3px fs-1_5rem bs-dark-grey uppercase"
+         href="https://www.welcometothejungle.com/fr/companies/seven"
+         target="_blank">
+        Nos offres
+      </a>
+
+    </div>
+    <div class="home-main-right">
+
+      <div class="recruitment-main-right-description">
+
+        <p class="fs-2_3rem font-weight-700 bs-white mb-2rem bs-yellow">
+          Devenez Sevener !
+        </p>
+
+        <p>
+          En école ou en entreprise, <strong class="font-weight-700">venez transmettre un contenu</strong> avec notre ingénierie pédagogique que vous maîtrisez ou montez en compétence sur de nouveaux sujets. <strong class="font-weight-700">Nous vous accompagnons</strong> tout au long de la préparation pour assurer au mieux vos animations.
+          <br><br>
+          Devenez Sevener pour faire partie de notre réseau d’intervenants, remplissez notre questionnaire pour que nous puissions vous contacter et vous proposer des missions !
+        </p>
+
+      </div>
+
+      <div class="home-main-right-form">
+        <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre nom et prénom'" onchange="this.style.color='#FBC84A'" class='form-control'>
+          </div>
+          <div class="form-group hidden">
+            <input type="email" name="email_2" id='form-email2' placeholder="Votre e-mail" class='form-control'>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre e-mail'" onchange="this.style.color='#FBC84A'" class='form-control'>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder =  'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'" onchange="this.style.color='#FBC84A'" class='form-control'></textarea>
+          </div>
+          <button type="submit" class="btn contact-button" id='form-button'><p>ENVOYER</p></button>
+        </form>
+      </div>
+
+    </div>
+  
+  </div>
+
+</div>
+
+<!-- Text Carousel -->
+
+<script>
+  var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">&nbsp;'+this.txt+'<div class="span_border"></span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+  };
+</script>

@@ -1,59 +1,133 @@
 // HOME
 
-.navbar-seven {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 30px;
-  transition: all 0.8s ease;
-  width: 100%;
+.header-links {
 
-  img {
-    height: 33px;
-    margin: 7px 0;
+  .header-links__active {
+    &::after {
+      height: 2px;
+      position: absolute;
+      content: "";
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background: #FFC447;
+      transition: transform 0.5s;
+      transform: scaleX(0);
+      transform-origin: right;
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 
-  i {
-    color: white;
-    font-size: 14px;
+  & > a, .dropdown {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 4px 0;
+    transition: 0.5s;
   }
 
-  @include from-medium {
-    padding: 30px 70px;
+  & > a::after, .dropdown::after {
+    height: 2px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: #FFC447;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  & > a:hover::after, .dropdown:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
 
-.seven-burger-menu {
+// .seven-burger-menu {
+//   background-color: rgba(0,0,0,0);
+//   top: -9px;
+//   left: -135px;
+//   box-shadow: none;
+//   border: none;
+//   cursor: default !important;
+//   min-width: 0;
+
+//   div {
+//     display: flex;
+//     flex-direction: column;
+//     width: 110px;
+//     align-items: flex-end
+//   }
+
+//   a {
+//     font-family: 'Montserrat Bold';
+//     font-size: 18.36px;
+//     color: white;
+//     margin-bottom: 5px;
+//     border-bottom: 1px solid rgba(0,0,0,0);
+//     width: min-content;
+//     margin-bottom: 1rem;
+//     opacity: 0;
+//     transition: all .25s ease-in-out;
+//     white-space: nowrap;
+
+//     &:hover {
+//       // border-bottom: 1px solid white;
+//       color: #FBC84A;
+//     }
+
+//     @keyframes translateX {
+//       0% {
+//         opacity: 0;
+//         transform: translateX(0px);
+//       }
+//       50% {
+//       }
+//       100% {
+//         opacity: 1;
+//         transform: translateX(-10px);
+//       }
+//     }
+//   }
+
+//   @for $item from 1 through 3 {
+//     a:nth-of-type(#{$item}) {
+//       animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
+//       // transform-origin: top center;
+//     }
+//   }
+// }
+
+.seven-header-dropdown-menu {
   background-color: rgba(0,0,0,0);
-  top: -9px;
-  left: -135px;
+  top: 2.5rem;
+  left: 0;
   box-shadow: none;
   border: none;
   cursor: default !important;
   min-width: 0;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    width: 110px;
-    align-items: flex-end
-  }
+  width: 10rem;
+  overflow-x: hidden;
 
   a {
-    font-family: 'Montserrat Bold';
-    font-size: 18.36px;
+    font-family: 'Montserrat';
+    font-size: 13px !important;
+    font-weight:  700;
     color: white;
-    margin-bottom: 5px;
+    width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0);
-    width: min-content;
-    margin-bottom: 1rem;
+    padding: .5rem 0;
+    margin-left: -.75rem;
     opacity: 0;
     transition: all .25s ease-in-out;
+    white-space: nowrap;
 
     &:hover {
-      // border-bottom: 1px solid white;
-      color: #FBC84A;
+      margin-left: .75rem;
     }
 
     @keyframes translateX {
@@ -70,12 +144,16 @@
     }
   }
 
-  @for $item from 1 through 2 {
+  @for $item from 1 through 3 {
     a:nth-of-type(#{$item}) {
       animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
       // transform-origin: top center;
     }
   }
+}
+
+#dropdownMenuHeaderButton {
+
 }
 
 #dropdownMenuButton {
@@ -436,14 +514,6 @@
   }
 }
 
-// .dropdown-desktop {
-//   display: none;
-
-//   @include from-medium {
-//     display: block;
-//   }
-// }
-
 .open > .dropdown-menu-lab {
   display: flex;
   flex-direction: column;
@@ -530,8 +600,6 @@
     }
   }
 }
-
-
 
 .navbar-category-menu {
   position: absolute;
@@ -713,6 +781,3 @@
     }
   }
 }
-
-
-

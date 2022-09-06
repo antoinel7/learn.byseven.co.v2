@@ -1,0 +1,42 @@
+// Define variables for your color scheme
+$bs-white: #FFFFFF;
+$bs-becos-blue: #4BBEC5;
+$bs-dark-grey : #131313;
+$bs-yellow: #FCC74C;
+
+
+.bs-white                     { color: $bs-white; }
+.bs-becos-blue                { color: $bs-becos-blue; }
+.bs-dark-grey                 { color: $bs-dark-grey; }
+.bs-yellow                    { color: $bs-yellow; }
+
+.bs-white-important           { color: $bs-white !important; }
+.bs-dark-grey-important       { color: $bs-dark-grey !important; }
+.bs-yellow-important          { color: $bs-yellow !important; }
+
+.bs-white-hover               { &:hover { color: $bs-white !important; } }
+.bs-dark-grey-hover           { &:hover { color: $bs-dark-grey !important; } }
+.bs-yellow-hover              { &:hover { color: $bs-yellow !important; } }
+
+.bs-bg-white                  { background-color: $bs-white; }
+.bs-bg-dark-grey              { background-color: $bs-dark-grey; }
+.bs-bg-yellow                 { background-color: $bs-yellow; }
+
+.bs-bg-white-important        { background-color: $bs-white !important; }
+.bs-bg-dark-grey-important    { background-color: $bs-dark-grey !important; }
+.bs-bg-yellow-important       { background-color: $bs-yellow !important; }
+
+.bs-bg-white-hover            { &:hover { background-color: $bs-white !important; } }
+.bs-bg-dark-grey-hover        { &:hover { background-color: $bs-dark-grey !important; } }
+.bs-bg-yellow-hover           { &:hover { background-color: $bs-yellow !important; } }
+
+
+//////////////
+// ON CLICK //
+//////////////
+
+.bs-yellow-onclick { &:active { color: $bs-yellow !important; } }
+
+/////////////////
+// PLACEHOLDER //
+/////////////////
