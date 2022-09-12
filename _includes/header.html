@@ -1,5 +1,5 @@
-<div class="height-10rem d-flex-wrap justify-content-center align-items-center py-3rem px-2rem
-            from-medium__px-5rem width-100 smooth-transition-0_8s max-width-screen pos-rel">
+<div class="height-10rem d-flex-wrap justify-content-end from-large__justify-content-center align-items-center
+            py-3rem px-2rem from-medium__px-5rem width-100 smooth-transition-0_8s max-width-screen pos-rel">
 
   <a class="pos-abs ml-2rem from-medium__ml-5rem"
      href="/"
@@ -11,20 +11,20 @@
 
   </a>
 
-  <div class="header-links d-flex align-items-center">
+  <div class="header-links d-none-changeable from-medium-low__d-flex align-items-center">
 
-    <a class="height-2_5rem bs-white bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
        href="/">Accueil</a>
 
-    <a class="height-2_5rem bs-white bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
        href="/lab"
        target="_blank">Lab</a>
 
-    <a class="height-2_5rem bs-white bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
        href="/trainings"
        target="_blank">Formations</a>
 
-    <div class="dropdown fs-1_5rem height-2_5rem bs-white bs-white-hover mx-2rem cursor-pointer">
+    <div class="dropdown fs-1_5rem height-2_5rem bs-white bs-white-onclick bs-white-hover mx-2rem cursor-pointer">
 
       <p id="dropdownMenuHeaderButton"
          class="dropdown-toggle font-weight-700 height-2_5rem"
@@ -50,7 +50,7 @@
 
     </div>
 
-    <a class="height-2_5rem bs-white bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
        href="/recruitment"
        target="_blank">Recrutement</a>
 
@@ -61,7 +61,7 @@
 <!-- BURGER -->
 <!------------>
 
-<!--   <div>
+  <div id="seven-burger-menu-container">
     <div class="dropdown">
       <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span></span>
@@ -76,9 +76,24 @@
           <a class="dropdown-item dropdown-item-1" href="/lab">Lab</a>
           <a class="dropdown-item dropdown-item-2" href="/trainings">Formations</a>
           <a class="dropdown-item dropdown-item-3" href="/becos">Programme BeCoS</a>
+          <a class="dropdown-item dropdown-item-4" href="/recrutement">Recrutement</a>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('#dropdownMenuButton').click(function(){
+      $(this).toggleClass('open');
+    });
+
+    $(function() {
+      $(document).on("click", function() {
+        $("#dropdownMenuButton").removeClass('open');
+      });
+    });
+  });
+</script>

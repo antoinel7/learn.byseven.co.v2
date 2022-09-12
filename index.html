@@ -8,14 +8,14 @@ ref: home
 ---
 
 
-<div class="w-100vw d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-2rem m-auto from-medium__p-5rem from_large__py-0
-            from_large__px-5rem max-width-screen">
+<div class="from-large__width-100vw d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-1rem m-auto from-medium__px-5rem
+            from-medium__py-10rem from_large__py-0 from_large__px-5rem max-width-screen">
 
   <div class="d-flex flex-column from-large__flex-row from-large__align-items-center justify-content-between
-              align-items-center w-100 m-auto">
+              align-items-center m-auto">
 
     <div class="home-main-left from-large__overflow-hidden d-flex flex-column justify-content-between align-items-start
-                from-large__width-50 from-large__mr-5rem content-box pos-rel">
+                from-large__width-50 from-large__mr-5rem pos-rel">
 
       <span class="glyphicon glyphicon-chevron-up hidden"></span>
 
@@ -37,11 +37,13 @@ ref: home
           En <span class="bs-yellow">9 ans</span>, nous avons :
         </p>
 
-        <div class="home-main-left-statistics flex-row-between-start">
+        <div class="width-100 d-flex justify-content-center from-large__justify-content-start">
+
+          <div class="home-main-left-statistics width-100 d-flex justify-content-center align-items-start">
 
           <div class="home-main-left-statistics-1">
 
-            <p class="fs-1_1rem font-weight-600 bs-yellow mb-1rem uppercase">Collaboré avec</p>
+            <p class="font-weight-600 bs-yellow mb-1rem uppercase">Collaboré avec</p>
 
             <div class="d-flex align-items-end">
               <h2 class="mr-1rem">114</h2>
@@ -51,7 +53,7 @@ ref: home
 
           <div class="home-main-left-statistics-2">
 
-            <p class="fs-1_1rem font-weight-600 bs-yellow mb-1rem uppercase">Animé plus de</p>
+            <p class="font-weight-600 bs-yellow mb-1rem uppercase">Animé plus de</p>
 
             <div class="d-flex align-items-end">
               <h2 class="mr-1rem">57k</h2>
@@ -61,13 +63,15 @@ ref: home
 
           <div class="home-main-left-statistics-3">
 
-            <p class="fs-1_1rem font-weight-600 bs-yellow mb-1rem uppercase">Obtenu un NPS de</p>
+            <p class="font-weight-600 bs-yellow mb-1rem uppercase">Obtenu un NPS de</p>
 
             <div class="d-flex align-items-end">
               <h2 class="mr-1rem">71</h2>
               <p>sur les 3 dernières<br> années</p>
             </div>
           </div>
+
+        </div>
 
         </div>
 
@@ -244,7 +248,7 @@ ref: home
 
         </div>
 
-        <div class="width-100 d-flex justify-content-center align-items-center mt-3rem">
+        <div class="width-100 d-none-changeable from-large__d-flex justify-content-center align-items-center mt-3rem">
 
           <p class="fs-1_6rem font-weight-700 bs-white text-center mr-0_75rem">
             ... et des personnes qui nous ont fait <span class="bs-yellow">confiance</span>
@@ -261,7 +265,7 @@ ref: home
       </div>
 
       <div id="home-main-left-customers-comments" class="carousel slide" data-ride="carousel" data-interval="false">
-        <p>Ils nous font confiance, ils en parlent.</p>
+        <p class="text-center from-medium__text-left">Ils nous font confiance, ils en parlent.</p>
         <div class="carousel-inner">
           <div class="item item0">
             <img src="/assets/img/anne.jpg">

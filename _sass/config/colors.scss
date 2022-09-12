@@ -35,7 +35,8 @@ $bs-yellow: #FCC74C;
 // ON CLICK //
 //////////////
 
-.bs-yellow-onclick { &:active { color: $bs-yellow !important; } }
+.bs-white-onclick  { &:active { color: $bs-white !important; } &:focus { color: $bs-white !important } }
+.bs-yellow-onclick { &:active { color: $bs-yellow !important; } &:focus { color: $bs-yellow !important } }
 
 /////////////////
 // PLACEHOLDER //

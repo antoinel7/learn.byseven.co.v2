@@ -46,12 +46,21 @@
     letter-spacing: 0.2px;
     line-height: 29px;
     margin-bottom: 2rem;
-    font-size: 23px;
+    font-size: 20px;
+
+    @include from-medium {
+      font-size: 23px;
+    }
   }
 
   p {
     letter-spacing: 0.3px;
     line-height: 21px;
+    // font-size: 1.2rem;
+
+    @include from-medium {
+      font-size: 1.4rem;
+    }
   }
 
   .span_border {
@@ -83,22 +92,37 @@
     width: fit-content !important;
 
     &:first-of-type {
-      padding-right: 4rem;
+      padding-right: 2rem;
     }
 
     &:nth-of-type(2) {
-      padding: 0 4rem;
+      padding: 0 2rem;
     }
 
     &:last-of-type {
-      padding-left: 4rem;
+      padding-left: 2rem;
       border: none !important;
+    }
+
+    @include from-medium {
+      &:first-of-type {
+        padding-right: 4rem;
+      }
+
+      &:nth-of-type(2) {
+        padding: 0 4rem;
+      }
+
+      &:last-of-type {
+        padding-left: 4rem;
+        border: none !important;
+      }
     }
   }
 
   h2 {
     font-family: 'Montserrat Thin';
-    font-size: 24px;
+    font-size: 14px;
     margin: 0;
     position: relative;
 
@@ -107,26 +131,22 @@
     }
   }
 
-  h2 > span {
-    color: #FBC84A;
-    font-size: 24px;
-    position: absolute;
-    left: 4rem;
-    top: 0;
-  }
-
   p {
     font-family: 'Montserrat Bold';
-    font-size: 11px;
+    font-size: 8px;
     margin-left: 3px;
     margin-bottom: 0;
+
+    @include from-medium {
+      font-size: 11px;
+    }
   }
 }
 
 .home-main-left-customers {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   img {
@@ -138,6 +158,7 @@
     height: 5rem;
     width: 5rem;
     cursor: pointer;
+    margin: 0 1rem;
 
     img {
       position: absolute;
@@ -163,6 +184,7 @@
     .icon-carousel {
       height: 7rem;
       width: 7rem;
+      margin: 0 3rem;
     }
 
     img {
@@ -245,7 +267,7 @@
 
 #home-main-left-customers-comments {
   height: 100%;
-  margin-top: 7rem;
+  margin-top: 10rem;
   height: auto;
   transition:transform 1.2s ease-out;
   overflow: hidden;
@@ -277,8 +299,12 @@
 
   p:first-of-type {
     font-family: 'Montserrat Bold';
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
+
+    @include from-medium {
+      font-size: 2.1rem;
+    }
   }
 
   .item {
@@ -286,6 +312,11 @@
 
     @include from-xlarge {
       padding: 0 75px;
+    }
+
+    p {
+      letter-spacing: 0.3px;
+      line-height: 21px;
     }
 
     p:first-of-type {
@@ -304,7 +335,6 @@
       text-align: justify;
       font-family: 'Montserrat Italic';
       font-size: 1.4rem;
-      line-height: 1.8rem;
       margin-bottom: 1rem;
 
       @include from-large {

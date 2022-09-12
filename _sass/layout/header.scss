@@ -47,60 +47,67 @@
   }
 }
 
-// .seven-burger-menu {
-//   background-color: rgba(0,0,0,0);
-//   top: -9px;
-//   left: -135px;
-//   box-shadow: none;
-//   border: none;
-//   cursor: default !important;
-//   min-width: 0;
+#seven-burger-menu-container {
 
-//   div {
-//     display: flex;
-//     flex-direction: column;
-//     width: 110px;
-//     align-items: flex-end
-//   }
+  @include from-medium-low {
+    display: none;
+  }
+}
 
-//   a {
-//     font-family: 'Montserrat Bold';
-//     font-size: 18.36px;
-//     color: white;
-//     margin-bottom: 5px;
-//     border-bottom: 1px solid rgba(0,0,0,0);
-//     width: min-content;
-//     margin-bottom: 1rem;
-//     opacity: 0;
-//     transition: all .25s ease-in-out;
-//     white-space: nowrap;
+.seven-burger-menu {
+  background-color: rgba(0,0,0,0);
+  top: -9px;
+  left: -135px;
+  box-shadow: none;
+  border: none;
+  cursor: default !important;
+  min-width: 0;
 
-//     &:hover {
-//       // border-bottom: 1px solid white;
-//       color: #FBC84A;
-//     }
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    align-items: flex-end
+  }
 
-//     @keyframes translateX {
-//       0% {
-//         opacity: 0;
-//         transform: translateX(0px);
-//       }
-//       50% {
-//       }
-//       100% {
-//         opacity: 1;
-//         transform: translateX(-10px);
-//       }
-//     }
-//   }
+  a {
+    font-family: 'Montserrat Bold';
+    font-size: 18.36px;
+    color: white;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    width: min-content;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    white-space: nowrap;
 
-//   @for $item from 1 through 3 {
-//     a:nth-of-type(#{$item}) {
-//       animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
-//       // transform-origin: top center;
-//     }
-//   }
-// }
+    &:hover {
+      // border-bottom: 1px solid white;
+      color: #FBC84A;
+    }
+
+    @keyframes translateX {
+      0% {
+        opacity: 0;
+        transform: translateX(0px);
+      }
+      50% {
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  @for $item from 1 through 4 {
+    a:nth-of-type(#{$item}) {
+      animation: translateX 300ms ($item * 120ms) ease-in-out forwards;
+      // transform-origin: top center;
+    }
+  }
+}
 
 .seven-header-dropdown-menu {
   background-color: rgba(0,0,0,0);
