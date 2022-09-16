@@ -8,11 +8,10 @@ ref: home
 ---
 
 
-<div class="from-large__width-100vw d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-1rem m-auto from-medium__px-5rem
-            from-medium__py-10rem from_large__py-0 from_large__px-5rem max-width-screen">
+<div class="from-large__width-100vw d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-1rem m-auto
+            from-medium__px-5rem from-medium__py-10rem from_large__py-0 from_large__px-5rem max-width-screen">
 
-  <div class="d-flex flex-column from-large__flex-row from-large__align-items-center justify-content-between
-              align-items-center m-auto">
+  <div class="d-flex flex-column from-large__flex-row justify-content-between align-items-center m-auto">
 
     <div class="home-main-left from-large__overflow-hidden d-flex flex-column justify-content-between align-items-start
                 from-large__width-50 from-large__mr-5rem pos-rel">
@@ -503,7 +502,7 @@ ref: home
     carousel.style.transform = 'translateY(0)';
     retractable.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
     mainLeft.style.height = mainRight.getBoundingClientRect()['height'].toString() + 'px';
-    // mainLeft.style.overflow = 'hidden';
+    mainLeft.style.overflow = 'hidden';
     setTimeout(function(){carousel.style.height = '0px'}, 1200);
     setTimeout(function(){button_up.classList.add('hidden')}, 1200);
   })

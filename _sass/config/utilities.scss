@@ -81,6 +81,34 @@ a.disabled-link { pointer-events: none; }
   .from-large__align-items-center { align-items: center; }
 }
 
+@include from-xlarge {
+  .from-xlarge__d-block { display: block !important;}
+  .from-xlarge__d-flex { display: flex !important;}
+
+  .from-xlarge__flex-row { flex-direction: row; }
+  .from-xlarge__flex-column { flex-direction: column; }
+
+  .from-xlarge__justify-content-between { justify-content: space-between; }
+  .from-xlarge__justify-content-center { justify-content: center; }
+  .from-xlarge__justify-content-start { justify-content: start; }
+
+  .from-xlarge__align-items-center { align-items: center; }
+}
+
+@include from-xxlarge {
+  .from-xxlarge__d-block { display: block !important;}
+  .from-xxlarge__d-flex { display: flex !important;}
+
+  .from-xxlarge__flex-row { flex-direction: row; }
+  .from-xxlarge__flex-column { flex-direction: column; }
+
+  .from-xxlarge__justify-content-between { justify-content: space-between; }
+  .from-xxlarge__justify-content-center { justify-content: center; }
+  .from-xxlarge__justify-content-start { justify-content: start; }
+
+  .from-xxlarge__align-items-center { align-items: center; }
+}
+
 
 /////////////
 // Z-INDEX //
@@ -319,7 +347,7 @@ a.disabled-link { pointer-events: none; }
 .min-height-70vh  { min-height: 70vh; }
 .min-height-80vh  { min-height: 80vh; }
 .min-height-90vh  { min-height: 90vh; }
-.min-height-100vh { min-height: 100vw; }
+.min-height-100vh { min-height: 100vh; }
 
 .max-height-4rem  { max-height: 4rem }
 .max-height-6rem  { max-height: 6rem }

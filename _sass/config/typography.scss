@@ -48,10 +48,11 @@
 .font-weight-800 { font-weight: 800 !important; }
 .font-weight-900 { font-weight: 900 !important; }
 
-.italic        { font-style: italic; }
+.italic, .italic-bold       { font-style: italic; }
+
 .uppercase     { text-transform: uppercase; }
 
-.text-center { text-align: center; }
+.text-center   { text-align: center; }
 
 @include from-medium {
 	.from-medium__text-left {

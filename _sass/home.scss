@@ -204,8 +204,6 @@
   }
 }
 
-
-
 .underline-animation {
   width: 0;
   border-top: 1px solid #FBC84A;
@@ -374,7 +372,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  height: 56rem;
 
   @include from-large {
     margin: 0 0 0 5rem;
@@ -494,8 +492,4 @@
   @include from-medium-high {
     max-width: 80rem;
   }
-}
-
-.italic, .italic-bold {
-  font-style: italic;
 }

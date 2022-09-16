@@ -10,8 +10,7 @@ ref: recruitment
 <div class="d-flex overflow-y-hidden from-large__overflow-visible py-5rem px-2rem m-auto from-medium__p-5rem from_large__py-0
             from_large__px-5rem max-width-screen">
 
-  <div class="d-flex flex-column from-large__flex-row justify-content-between
-              align-items-start w-100 m-auto">
+  <div class="d-flex flex-column from-xlarge__flex-row justify-content-between align-items-start m-auto">
 
     <div class="from-large__width-50 from-large__pr-5rem pos-rel">
 
@@ -27,7 +26,7 @@ ref: recruitment
 
         <p class="mb-2rem">À la recherche de nouveaux collaborateurs galvanisés par l’idée de travailler dans l’univers EdTech. Si l’excellence et la polyvalence sont de mise pour nous rejoindre, l’envie de s’impliquer, de progresser individuellement et collectivement dans le projet feront la différence.
         <br><br>
-        Si vous souhaitez faire partie de l’aventure Seven, venez consulter <a href="/" class="bs-yellow bs-yellow-hover underline">nos offres</a> en CDI !</p>
+        Si vous souhaitez faire partie de l’aventure Seven, venez consulter <a href="https://www.welcometothejungle.com/fr/companies/seven" class="bs-yellow bs-yellow-hover underline">nos offres</a> en CDI !</p>
 
       </div>
 
@@ -38,6 +37,7 @@ ref: recruitment
       </a>
 
     </div>
+
     <div class="home-main-right">
 
       <div class="recruitment-main-right-description">
@@ -55,21 +55,63 @@ ref: recruitment
       </div>
 
       <div class="home-main-right-form">
+
         <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
+
           <div class="form-group">
-            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre nom et prénom'" onchange="this.style.color='#FBC84A'" class='form-control'>
+
+            <input id='form-name'
+                   class='form-control'
+                   type="text"
+                   name="name"
+                   placeholder="Votre nom et prénom"
+                   onfocus="this.placeholder = '';this.style.color='#FBC84A'"
+                   onblur="this.placeholder = 'Votre nom et prénom'"
+                   onchange="this.style.color='#FBC84A'">
+
           </div>
+
           <div class="form-group hidden">
-            <input type="email" name="email_2" id='form-email2' placeholder="Votre e-mail" class='form-control'>
+
+            <input id='form-email2'
+                   class='form-control'
+                   type="email"
+                   name="email_2"
+                   placeholder="Votre e-mail">
+
           </div>
+
           <div class="form-group">
-            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre e-mail'" onchange="this.style.color='#FBC84A'" class='form-control'>
+
+            <input id='form-email'
+                   class='form-control'
+                   type="email"
+                   name="email"
+                   placeholder="Votre e-mail"
+                   onfocus="this.placeholder = '';this.style.color='#FBC84A'"
+                   onblur="this.placeholder = 'Votre e-mail'"
+                   onchange="this.style.color='#FBC84A'">
+
           </div>
+
           <div class="form-group">
-            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder =  'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'" onchange="this.style.color='#FBC84A'" class='form-control'></textarea>
+
+            <textarea id="form-message"
+                      class='form-control'
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur."
+                      onfocus="this.placeholder = '';this.style.color='#FBC84A'"
+                      onblur="this.placeholder = 'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'"
+                      onchange="this.style.color='#FBC84A'"></textarea>
+
           </div>
+
           <button type="submit" class="btn contact-button" id='form-button'><p>ENVOYER</p></button>
+
         </form>
+
       </div>
 
     </div>

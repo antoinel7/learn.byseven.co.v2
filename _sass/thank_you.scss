@@ -5,6 +5,16 @@
   justify-content: center;
   align-items: center;
 
+  h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  p {
+    letter-spacing: 0.3px;
+    line-height: 21px;
+  }
+
   button {
     background-color: rgba(0,0,0,0);
     border: 3px solid #FCC74C;
@@ -18,17 +28,11 @@
 
     &:hover {
       background-color: #FCC74C;
-      // border: 1px solid #F9D071;
 
       p {
         color: black;
       }
     }
-  }
-
-  @include from-medium {
-    min-height: calc(100vh - 108.5px);
-    flex-direction: row;
   }
 }
 

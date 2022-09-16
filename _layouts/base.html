@@ -4,7 +4,7 @@
     <body class="page-{{ page.type }}{% if page.layout contains 'content' %} content{% endif %}{% if page.color %} {{ page.color }}{% endif %}">
       <main>
         <div class="width-100vw d-flex flex-column justify-content-between align-items-center
-                    bs-bg-dark-grey from-large__height-100vh">
+                    bs-bg-dark-grey min-height-100vh">
           {% include header.html %}
           {{ content }}
           {% include footer.html %}
