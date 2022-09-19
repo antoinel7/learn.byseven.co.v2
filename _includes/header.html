@@ -1,8 +1,70 @@
-<div class="navbar-seven">
-  <a href="/">
-    <img src="/assets/img/LOGO_BLANC_LEARN.png" alt="" id='seven-logo'>
+<div class="height-10rem d-flex-wrap justify-content-end from-large__justify-content-center align-items-center
+            py-3rem px-2rem from-medium__px-5rem width-100 smooth-transition-0_8s max-width-screen pos-rel">
+
+  <a class="pos-abs ml-2rem from-medium__ml-5rem"
+     href="/"
+     style="top: 3rem; left: 0;">
+
+    <img id='seven-logo'
+         src="/assets/img/LOGO_BLANC_LEARN.png"
+         style="height: 33px; margin: 3.5px 0;">
+
   </a>
-  <div>
+
+  <div class="header-links d-none-changeable from-medium-low__d-flex align-items-center">
+
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+       href="/">Accueil</a>
+
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+       href="/lab"
+       target="_blank">Lab</a>
+
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+       href="/trainings"
+       target="_blank">Formations</a>
+
+    <div class="dropdown fs-1_5rem height-2_5rem bs-white bs-white-onclick bs-white-hover mx-2rem cursor-pointer">
+
+      <p id="dropdownMenuHeaderButton"
+         class="dropdown-toggle font-weight-700 height-2_5rem"
+         type="button"
+         data-toggle="dropdown"
+         aria-haspopup="true"
+         aria-expanded="false">Programmes</p>
+
+      <div class="dropdown-menu seven-header-dropdown-menu" aria-labelledby="dropdownMenuHeaderButton">
+
+        <a class="dropdown-item dropdown-item-1 d-flex align-items-center"
+           href="/becos"
+           target="_blank">
+          <iconify-icon icon="ci:dot-03-m" class="mr-0_5rem bs-becos-blue"></iconify-icon>
+          <p>BeCoS</p>
+        </a>
+
+        <!-- <a class="dropdown-item dropdown-item-2 d-flex align-items-center"
+           href="/yek"
+           target="_blank">
+          <iconify-icon icon="ci:dot-03-m" class="mr-0_5rem bs-yellow"></iconify-icon>
+          <p>Yek</p>
+        </a> -->
+
+      </div>
+
+    </div>
+
+    <a class="height-2_5rem bs-white bs-white-onclick bs-white-hover fs-1_5rem font-weight-700 mx-2rem"
+       href="/recruitment"
+       target="_blank">Recrutement</a>
+
+  </div>
+
+
+<!------------>
+<!-- BURGER -->
+<!------------>
+
+  <div id="seven-burger-menu-container">
     <div class="dropdown">
       <div class="dropdown-toggle burger-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span></span>
@@ -16,10 +78,13 @@
         <div>
           <a class="dropdown-item dropdown-item-1" href="/lab">Lab</a>
           <a class="dropdown-item dropdown-item-2" href="/trainings">Formations</a>
+          <a class="dropdown-item dropdown-item-3" href="/becos">Programme BeCoS</a>
+          <a class="dropdown-item dropdown-item-4" href="/recrutement">Recrutement</a>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 
 <script>

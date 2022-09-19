@@ -1,0 +1,46 @@
+.recruitment-main-left-description {
+  width: 100%;
+
+  @include from-large {
+    margin: 0 50px 0 0;
+  }
+
+  h1 {
+    letter-spacing: 0.2px;
+    line-height: 29px;
+    margin-bottom: 2rem;
+    font-size: 23px;
+  }
+
+  p {
+    letter-spacing: 0.3px;
+    line-height: 21px;
+  }
+
+  .span_border {
+    width: 1rem;
+    height: 29px;
+    border-bottom: 0.08em solid #FBC84A;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink { 50% { border-color:rgba(0,0,0,0); }  }
+
+  span {
+    max-width: 20rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: #FBC84A;
+  }
+}
+
+.recruitment-main-right-description {
+  width: 100%;
+
+  p {
+    letter-spacing: 0.3px;
+    line-height: 21px;
+  }
+}

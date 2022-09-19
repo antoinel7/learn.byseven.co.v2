@@ -23,18 +23,14 @@
       color: #FBC84A;
     }
   }
-
-  @include from-medium {
-    padding: 20px 70px;
-  }
 }
 
 .footer-link-linkedin {
-  margin-left: 15px;
+  margin-left: 15px !important;
   transition: all .25s ease-in-out;
   cursor: pointer;
 
-  i{
+  i, iconify-icon {
     font-size: 2rem;
   }
 
@@ -349,7 +345,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem 10rem;
+  padding: 2rem;
 
   p {
     font-family: 'Montserrat Bold';
@@ -461,11 +457,9 @@
     font-family: 'Montserrat Regular';
     font-weight: 300;
     &:hover {
-      color: #95B9DB;
+      color: #C4C4C4;
     }
-    .fab {
-      color:white !important;
-    }
+
   }
 
   @include from-medium {
