@@ -196,6 +196,17 @@ lang: fr
           On vous remettra un certificat de réalisation en fin de formation.</p>
         </div>
       </div>
+      <div class="training-page-faq-element">
+        <div class="training-page-faq-question flex-row-between-centered">
+          <p><strong>Comment se passe mon accueil ?</strong></p>
+          <a href="/livret"
+             target="_blank"
+             class="fs-1_4rem font-weight-700 p-2rem rounded-5px bs-white bs-black-hover smooth-transition"
+             style="background-color: {{page.category_colour}};">
+            Voir le livret d'accueil
+          </a>
+        </div>
+      </div>
       <div class="training-additional-info">
         <p>Màj le 01/01/2021</p>
       </div>

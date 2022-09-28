@@ -8,8 +8,8 @@ quote:
 duration: "6  demi-journées de 3 heures réparties sur 3 mois"
 location: "Paris ou en ligne"
 price: "1 890€ HT par participant (- 100 € de remise pour les partenaires Deliveroo)"
-image: "/assets/img/trainings/augmenter-son-chiffre-d'affaires-vente-en-livraison.jpg"
-image_twitter: "/assets/img/trainings/augmenter-son-chiffre-d'affaires-vente-en-livraison.jpg"
+image: "/assets/img/trainings/augmenter-son-chiffre-d_affaires-vente-en-livraison.jpg"
+image_twitter: "/assets/img/trainings/augmenter-son-chiffre-d_affaires-vente-en-livraison.jpg"
 order: 1
 category: "DELIVEROO"
 category_colour: "#5FB9B2"
@@ -210,6 +210,17 @@ lang: fr
         <div class="training-page-faq-answer collapse" id="collapse5">
           <p>On évaluera vos acquis de formation par un cas pratique, une mise en situation ou par un questionnaire.<br>
           On vous remettra un certificat de réalisation en fin de formation.</p>
+        </div>
+      </div>
+      <div class="training-page-faq-element">
+        <div class="training-page-faq-question flex-row-between-centered">
+          <p><strong>Comment se passe mon accueil ?</strong></p>
+          <a href="/livret"
+             target="_blank"
+             class="fs-1_4rem font-weight-700 p-2rem rounded-5px bs-white bs-black-hover smooth-transition"
+             style="background-color: {{page.category_colour}};">
+            Voir le livret d'accueil
+          </a>
         </div>
       </div>
       <div class="training-additional-info">

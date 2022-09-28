@@ -1,4 +1,5 @@
 // Define variables for your color scheme
+$bs-black: #000000;
 $bs-white: #FFFFFF;
 $bs-becos-blue: #4BBEC5;
 $bs-dark-grey : #131313;
@@ -14,6 +15,7 @@ $bs-yellow: #FCC74C;
 .bs-dark-grey-important       { color: $bs-dark-grey !important; }
 .bs-yellow-important          { color: $bs-yellow !important; }
 
+.bs-black-hover				  { &:hover { color: $bs-black !important; } }
 .bs-white-hover               { &:hover { color: $bs-white !important; } }
 .bs-dark-grey-hover           { &:hover { color: $bs-dark-grey !important; } }
 .bs-yellow-hover              { &:hover { color: $bs-yellow !important; } }
