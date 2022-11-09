@@ -465,7 +465,7 @@ body {
   @include from-medium {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -486,9 +486,13 @@ body {
   padding: 2rem;
   width: 35rem;
 
+  @include from-medium {
+    margin: 5rem 3rem;
+  }
+
   @include from-large {
     width: 35rem;
-    margin: 15rem 0 0 0;
+    // margin: 15rem 0 0 0;
     padding: 5rem;
     background-color: white;
   }
@@ -555,6 +559,7 @@ body {
   @include from-large {
     width: 100%;
     max-width: 135rem;
+    margin: 10rem 0 0 0;
     padding: 0 10rem;
   }
 }

@@ -145,7 +145,8 @@ lang: fr
           </div>
         </a>
         <div class="training-page-faq-answer collapse" id="collapse2">
-          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p><br><br>
+          <p>Formation accessible à tous*, jusqu’à une semaine avant le début de la formation.</p>
+          <p>Aucun prérequis n'est exigé pour s'inscrire à la formation.</p><br><br>
           <p> * accessible aux publics en situation de handicap</p>
         </div>
       </div>

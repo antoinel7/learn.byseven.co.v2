@@ -11,11 +11,10 @@ ref: lab
   <h1>Restons curieux. Découvrez nos réalisations, réflexions et idées.</h1>
 </div>
 <div class="banner-lab">
-  {% for banner_article in site.articles %}
-    {% if banner_article.order == 5 %}
+  {% assign articles = site.articles | sort: 'order' | reverse %}
+  {% for banner_article in articles limit: 1 %}
     <a class='stretched-link' href="{{banner_article.permalink}}"></a>
-    <div class="banner-lab-img" style="background-image: url({{banner_article.image}});
-"></div>
+    <div class="banner-lab-img" style="background-image: url({{banner_article.image}});"></div>
     <div class="banner-lab-description">
       <a href="./{{banner_article.theme | downcase}}s"><h4 style='background-color: {{banner_article.theme_colour}};'>{{banner_article.theme}}</h4></a>
       <h2>{{banner_article.title}}</h2>
@@ -26,36 +25,13 @@ ref: lab
         <p>{{banner_article.tag1}}</p>
       </div>
     </div>
-    {% endif%}
   {% endfor %}
 </div>
 <div class="main-lab">
   <div class="main-lab-left">
     <div class="row">
-      {% for banner_article in site.articles %}
-        {% if banner_article.order == 5 %}
-          <div class="col-md-6 article-banner-card">
-            <div class="article-card">
-              <a class='stretched-link' href="{{banner_article.permalink}}"></a>
-              <div class="article-card-topic"><a href="./{{banner_article.theme | downcase}}s"><h4 style='background-color: {{banner_article.theme_colour}};'>{{banner_article.theme}}</h4></a></div>
-              <h3 class="article-card-title">{{banner_article.title}}</h3>
-              <div class="article-card-separator" style='border: 1px solid {{banner_article.theme_colour}};'></div>
-              <div class="article-card-image-wrap">
-                <img src="{{banner_article.image}}" alt="{{banner_article.image_alt}}" class="article-card-image">
-                <div class="article-card-content" style='background-color: {{banner_article.theme_colour}};'><p>{{banner_article.teaser}}</p></div>
-              </div>
-              <div class="article-card-footer">
-                <p class="article-card-date">{{banner_article.created_at}}</p>
-                <p class='article-card-tag'>{{banner_article.tag1}}</p>
-                <!-- <span class='article-card-tag'>{{article.tag2}}</span> -->
-              </div>
-            </div>
-          </div>
-        {% endif%}
-      {% endfor %}
-      {% assign articles = site.articles | sort: 'order' | reverse %}
-      {% for article in articles %}
-        {% if article.order == 1 or article.order == 2 or article.order == 3 or article.order == 14 %}
+      <!-- {% assign articles = site.articles | sort: 'order' | reverse %} -->
+      {% for article in articles limit: 8 offset: 1 %}
         <div class="col-md-6">
           <div class="article-card">
             <a class='stretched-link' href="{{article.permalink}}"></a>
@@ -73,25 +49,24 @@ ref: lab
             </div>
           </div>
         </div>
-        {% endif %}
       {% endfor %}
     </div>
   </div>
   <div class="main-lab-right">
     <div class="main-lab-right-recent">
-      <h4>LES DERNIERES PUBLICATIONS</h4>
-    {% for article in articles limit: 3 %}
-      <div class="main-lab-right-separator" style='border-top: 2px solid {{article.theme_colour}};'></div>
-      <a href="{{article.permalink}}">
-        <div class="main-lab-right-recent-card">
-          <div class="main-lab-right-recent-infos">
-            <h4 style='color: {{article.theme_colour}};'>{{article.theme}}</h4>
-            <p>{{article.created_at}}</p>
+      <h4>LES AUTRES PUBLICATIONS</h4>
+      {% for article in articles limit: 6 offset: 9 %}
+        <div class="main-lab-right-separator" style='border-top: 2px solid {{article.theme_colour}};'></div>
+        <a href="{{article.permalink}}">
+          <div class="main-lab-right-recent-card">
+            <div class="main-lab-right-recent-infos">
+              <h4 style='color: {{article.theme_colour}};'>{{article.theme}}</h4>
+              <p>{{article.created_at}}</p>
+            </div>
+            <h3 class="main-lab-right-recent-title">{{article.title}}</h3>
           </div>
-          <h3 class="main-lab-right-recent-title">{{article.title}}</h3>
-        </div>
-      </a>
-    {% endfor %}
+        </a>
+      {% endfor %}
     </div>
   </div>
 </div>

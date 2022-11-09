@@ -395,16 +395,16 @@ ref: home
       <div class="home-main-right-form">
         <form action="https://seven-builder.herokuapp.com/contact_form" method="GET" id="contact-form">
           <div class="form-group">
-            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre nom et prénom'" onchange="this.style.color='#FBC84A'" class='form-control'>
+            <input type="text" name="name" id='form-name' placeholder="Votre nom et prénom" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre nom et prénom'" onchange="this.style.color='#FBC84A'" class='form-control' required>
           </div>
           <div class="form-group hidden">
             <input type="email" name="email_2" id='form-email2' placeholder="Votre e-mail" class='form-control'>
           </div>
           <div class="form-group">
-            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre e-mail'" onchange="this.style.color='#FBC84A'" class='form-control'>
+            <input type="email" name="email" id='form-email' placeholder="Votre e-mail" onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder = 'Votre e-mail'" onchange="this.style.color='#FBC84A'" class='form-control' required>
           </div>
           <div class="form-group">
-            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder =  'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'" onchange="this.style.color='#FBC84A'" class='form-control'></textarea>
+            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Donnez nous plus d'éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur." onfocus="this.placeholder = '';this.style.color='#FBC84A'" onblur="this.placeholder =  'Donnez nous plus d&apos;éléments sur votre besoin afin que nous puissions vous mettre en relation avec le bon interlocuteur.'" onchange="this.style.color='#FBC84A'" class='form-control' required></textarea>
           </div>
           <button type="submit" class="btn contact-button" id='form-button'><p>ENVOYER</p></button>
         </form>
